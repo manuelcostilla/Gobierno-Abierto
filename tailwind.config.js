@@ -7,6 +7,24 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        'main': 'repeat(3, minmax(0, 2fr))',
+        },
+        gridTemplateRows: {
+          // Simple 8 row grid
+          'main-row': 'repeat(2, minmax(150px))',
+          },
+      colors: {
+        'blue-header': '#0170B9',
+        'gray-nav': '#E6E6E6',
+        'green-nav': '#3EAF53',
+        'black-footer': '#333333',
+        'emergencia': '#BDBFC1',
+        'policia': '#00AFEF',
+        'bombero': '#Ed3237',
+        'hospital': '#00A859',
+        'genero': '#A8518A',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

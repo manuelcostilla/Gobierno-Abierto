@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link'
+import React from 'react'
 
 const Main_presupuesto = () => {
   return (
@@ -28,7 +28,7 @@ const Main_presupuesto = () => {
         </Link>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Main_presupuesto;
+export default Main_presupuesto

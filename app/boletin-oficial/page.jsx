@@ -1,17 +1,17 @@
-"use client";
-import { BoletinOficial } from "./components/BoletinOficial";
-import { BoletinOficialTexto } from "./components/BoletinOficialTexto";
-import { useState } from "react";
-import { pdfBox } from "./data/pdfBoletinOficial";
+'use client'
+import { BoletinOficial } from './components/BoletinOficial'
+import { BoletinOficialTexto } from './components/BoletinOficialTexto'
+import { useState } from 'react'
+import { pdfBox } from './data/pdfBoletinOficial'
 
 const PdfDownloader = () => {
-  const [estadoBox, selectedBox] = useState("1");
+  const [estadoBox, selectedBox] = useState('1')
 
-  const pdfBoxData = pdfBox.find((pdfBox) => pdfBox.id === estadoBox);
+  const pdfBoxData = pdfBox.find((pdfBox) => pdfBox.id === estadoBox)
 
   const cambiarBox = (id) => {
-    selectedBox(id);
-  };
+    selectedBox(id)
+  }
 
   return (
     <>
@@ -28,8 +28,8 @@ const PdfDownloader = () => {
                   className={`mt-2 text-blue-header font-bold py-4 px-4 
                   ${
                     estadoBox === box.id
-                      ? " text-green-400 border-dotted border-l border-r border-t border-gray-400"
-                      : ""
+                      ? ' text-green-400 border-dotted border-l border-r border-t border-gray-400'
+                      : ''
                   }`}
                 >
                   BOLETÍN OFICIAL {box.año}
@@ -41,11 +41,11 @@ const PdfDownloader = () => {
       </div>
       <BoletinOficial
         id={estadoBox}
-        titulo={pdfBoxData ? pdfBoxData.titulo : ""}
-        texto={pdfBoxData ? pdfBoxData.texto : ""}
-        boton={pdfBoxData ? pdfBoxData.boton : ""}
+        titulo={pdfBoxData ? pdfBoxData.titulo : ''}
+        texto={pdfBoxData ? pdfBoxData.texto : ''}
+        boton={pdfBoxData ? pdfBoxData.boton : ''}
       />
     </>
-  );
-};
-export default PdfDownloader;
+  )
+}
+export default PdfDownloader

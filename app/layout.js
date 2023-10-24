@@ -19,7 +19,6 @@ export default function RootLayout ({ children }) {
         </head>
         <body className={inter.className} suppressHydrationWarning={true}>
           <Header />
-          {/* <Dialogflow /> */}
           {children}
           <Footer />
         </body>

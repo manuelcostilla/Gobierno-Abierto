@@ -1,6 +1,7 @@
 export const licitaciones = [{
   id: 1,
-  titulo: 'Licitación Pública N° 11/2023',
+  titulo: 'Licitación Pública N° 11/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-20-16646/D– DECRETO 478',
   decreto: 'Decreto',
   numdecreto: '478',
@@ -21,7 +22,8 @@ export const licitaciones = [{
 },
 {
   id: 2,
-  titulo: 'Licitación Pública N° 10/2023',
+  titulo: 'Licitación Pública N° 10/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-2016474/D– DECRETO 404',
   decreto: 'Decreto',
   numdecreto: '404',
@@ -42,7 +44,8 @@ export const licitaciones = [{
 },
 {
   id: 3,
-  titulo: 'Licitación Pública N° 09/2023',
+  titulo: 'Licitación Pública N° 09/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-2016257/D– DECRETO 403',
   decreto: 'Decreto',
   numdecreto: '403',
@@ -63,7 +66,8 @@ export const licitaciones = [{
 },
 {
   id: 4,
-  titulo: 'Licitación Pública N° 08/2023',
+  titulo: 'Licitación Pública N° 08/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-20-16423/D– DECRETO 345',
   decreto: 'Decreto',
   numdecreto: '345',
@@ -84,7 +88,8 @@ export const licitaciones = [{
 },
 {
   id: 5,
-  titulo: 'Licitación Pública N° 07/2023',
+  titulo: 'Licitación Pública N° 07/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-20-16422/D– DECRETO 344',
   decreto: 'Decreto',
   numdecreto: '344',
@@ -105,7 +110,8 @@ export const licitaciones = [{
 },
 {
   id: 6,
-  titulo: 'Licitación Pública N° 06/2023',
+  titulo: 'Licitación Pública N° 06/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-20-16390/S – DECRETO 326',
   decreto: 'Decreto',
   numdecreto: '326',
@@ -126,7 +132,8 @@ export const licitaciones = [{
 },
 {
   id: 7,
-  titulo: 'Licitación Pública N° 05/2023',
+  titulo: 'Licitación Pública N° 05/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-20-16390/S – DECRETO 325',
   decreto: 'Decreto',
   numdecreto: '325',
@@ -147,7 +154,8 @@ export const licitaciones = [{
 },
 {
   id: 8,
-  titulo: 'Licitación Pública N° 04/2023',
+  titulo: 'Licitación Pública N° 04/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-20-16268/S – DECRETO 321',
   decreto: 'Decreto',
   numdecreto: '321',
@@ -168,7 +176,8 @@ export const licitaciones = [{
 },
 {
   id: 9,
-  titulo: 'Licitación Pública N° 03/2023',
+  titulo: 'Licitación Pública N° 03/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-20-16278/S – DECRETO 320',
   decreto: 'Decreto',
   numdecreto: '320',
@@ -189,7 +198,8 @@ export const licitaciones = [{
 },
 {
   id: 10,
-  titulo: 'Licitación Pública N° 02/2023',
+  titulo: 'Licitación Pública N° 02/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-20-16347/S – DECRETO 309',
   decreto: 'Decreto',
   numdecreto: ' 944',
@@ -210,7 +220,8 @@ export const licitaciones = [{
 },
 {
   id: 11,
-  titulo: 'Licitación Pública N° 01/2023',
+  titulo: 'Licitación Pública N° 01/',
+  año: '2023',
   tituloAcordeonAbierto: 'EXPTE 4009-20-16646/D– DECRETO 478',
   decreto: 'LICITACIÓN PÚBLICA: 01/2023 RECTIFIQUESE FECHA DE APERTURA',
   numdecreto: '17/02/2023',
@@ -229,7 +240,8 @@ export const licitaciones = [{
 },
 {
   id: 12,
-  titulo: 'Licitación Pública N° 24/2022',
+  titulo: 'Licitación Pública N° 24/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-15576/S – DECRETO 945',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Construcción nuevo edificio etapa 1 Jardin de Infantes N° 907 Juana Manso de la ciudad de Baradero',
@@ -248,7 +260,8 @@ export const licitaciones = [{
 },
 {
   id: 13,
-  titulo: 'Licitación Pública N° 23/2022',
+  titulo: 'Licitación Pública N° 23/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-15572/S – DECRETO 944',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Construcción nuevo edificio etapa 1 Jardin de Infantes Jirimm N° 6 Gerónimo Cossi de la ciudad de Baradero',
@@ -267,7 +280,8 @@ export const licitaciones = [{
 },
 {
   id: 14,
-  titulo: 'Licitación Pública N° 18/2022 (2)',
+  titulo: 'Licitación Pública N° 18/ (2)',
+  año: '2022',
   tituloAcordeonAbierto: 'SEGUNDO LLAMADO – EXPTE 4009-14831/22 Alcance 1 – DECRETO 841',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra carpeta asfáltica Barrio “La Margaritas” Baradero.',
@@ -284,7 +298,8 @@ export const licitaciones = [{
 },
 {
   id: 15,
-  titulo: 'Licitación Pública N° 22/2022',
+  titulo: 'Licitación Pública N° 22/',
+  año: '2022',
   tituloAcordeonAbierto: 'SEGUNDO LLAMADO – EXPTE 4009-20-15202/D – DECRETO 770',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Red de agua Baradero – ETAPA 1 en la ciudad de Baradero',
@@ -303,7 +318,8 @@ export const licitaciones = [{
 },
 {
   id: 16,
-  titulo: 'Licitación Pública N° 21/2022',
+  titulo: 'Licitación Pública N° 21/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-15208/S – DECRETO 755',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Compra materiales mejoramiento Red Vial Urbana Barrio La Igualdad, 2 De Septiembre Y Sindicatos De La Ciudad De Baradero',
@@ -322,7 +338,8 @@ export const licitaciones = [{
 },
 {
   id: 17,
-  titulo: 'Licitación Pública N° 20/2022',
+  titulo: 'Licitación Pública N° 20/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-15155/S – DECRETO 731',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra: Ampliación del Jardín de Infantes Municipal N ° 4 Presidente Irigoyen de la ciudad de Baradero',
@@ -341,7 +358,8 @@ export const licitaciones = [{
 },
 {
   id: 18,
-  titulo: 'Licitación Pública N° 19/2022',
+  titulo: 'Licitación Pública N° 19/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-15153/S – DECRETO 730',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra: AMPLIACIÓN UN AULA Y REFACCIÓN DE SANITARIOS en el jardín Infantes Municipal Paula Albarracín de Sarmiento – Alsina – Partido de Baradero',
@@ -360,7 +378,8 @@ export const licitaciones = [{
 },
 {
   id: 19,
-  titulo: 'Licitación Pública N° 18/2022',
+  titulo: 'Licitación Pública N° 18/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-14831/22 Alcance 1 – DECRETO 628',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra: carpeta asfáltica Barrio “La Margaritas” Baradero.',
@@ -377,7 +396,8 @@ export const licitaciones = [{
 },
 {
   id: 20,
-  titulo: 'Licitación Pública N° 17/2022',
+  titulo: 'Licitación Pública N° 17/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-14757 S Alcance 1 – DECRETO 590',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra: conclusión de 25 viviendas Barrio Bonini de la Ciudad de Baradero',
@@ -394,7 +414,8 @@ export const licitaciones = [{
 },
 {
   id: 21,
-  titulo: 'Licitación Pública N° 16/2022',
+  titulo: 'Licitación Pública N° 16/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-14792-D – DECRETO 562',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra: pozo N°4 ubicado en Godoy Cruz entre Hernandarias y J.V. González de la Ciudad de Baradero',
@@ -413,7 +434,8 @@ export const licitaciones = [{
 },
 {
   id: 22,
-  titulo: 'Licitación Pública N° 15/2022',
+  titulo: 'Licitación Pública N° 15/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-14825- D – DECRETO 543',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Construcción de comedor, cocina y refacciones etapa 1 de la Escuela Primaria N° 14 José Hernández de la Ciudad de Baradero',
@@ -432,7 +454,8 @@ export const licitaciones = [{
 },
 {
   id: 23,
-  titulo: 'Licitación Pública N° 14/2022',
+  titulo: 'Licitación Pública N° 14/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-14680- D – DECRETO 519',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra: Construcción de Centro de Desarrollo Infantil II Alsina',
@@ -449,7 +472,8 @@ export const licitaciones = [{
 },
 {
   id: 24,
-  titulo: 'Licitación Pública N° 13/2022',
+  titulo: 'Licitación Pública N° 13/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-14605- D – DECRETO 474',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Completamiento carpeta asfáltica Barrio Bernabé de la ciudad de Baradero',
@@ -468,7 +492,8 @@ export const licitaciones = [{
 },
 {
   id: 25,
-  titulo: 'Licitación Pública N° 12/2022',
+  titulo: 'Licitación Pública N° 12/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-2014507- S – DECRETO 391',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo:Ampliación del sistema de monitoreo Urbano de la ciudad de Baradero.',
@@ -487,7 +512,8 @@ export const licitaciones = [{
 },
 {
   id: 26,
-  titulo: 'Licitación Pública N° 11/2022',
+  titulo: 'Licitación Pública N° 11/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-14475- S – DECRETO 390',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo:Dársena Avenida San Martin y Avenida del Trabajo de la ciudad de Baradero.',
@@ -506,7 +532,8 @@ export const licitaciones = [{
 },
 {
   id: 27,
-  titulo: 'Licitación Pública N° 10/2022',
+  titulo: 'Licitación Pública N° 10/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-14405- S – DECRETO 389',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra: Complemento Carpeta asfáltica barrio Pompeya y Toyota de la Ciudad de Baradero.',
@@ -525,7 +552,8 @@ export const licitaciones = [{
 },
 {
   id: 28,
-  titulo: 'Licitación Pública N° 09/2022',
+  titulo: 'Licitación Pública N° 09/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-14381- S – DECRETO 315',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo:Obra Conexiones domiciliarias de agua potable e instalaciones intra-lote de agua potable y cloacas Barrios Tobares y Don Pedro de la ciudad de Baradero.',
@@ -543,7 +571,8 @@ export const licitaciones = [{
 },
 {
   id: 29,
-  titulo: 'Licitación Pública N° 08/2022',
+  titulo: 'Licitación Pública N° 08/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-14162/D – 2022 – DECRETO 209',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra: SUM DE LA COMUNIDAD – Casa refugio para Mujeres y Diversidades',
@@ -562,7 +591,8 @@ export const licitaciones = [{
 },
 {
   id: 30,
-  titulo: 'Licitación Pública N° 07/2022',
+  titulo: 'Licitación Pública N° 07/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-2011054/ S 2020 -Cuerpo 1 – DECRETO 167',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra: Construcción de 17 Viviendas loteo en la localidad de Santa Coloma – Partido de Baradero.',
@@ -581,7 +611,8 @@ export const licitaciones = [{
 },
 {
   id: 31,
-  titulo: 'Licitación Pública N° 06/2022',
+  titulo: 'Licitación Pública N° 06/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-2011054/ S 2020 -Cuerpo 1 – DECRETO 167',
   dias: 'POR 2 DÍAS-',
   motivo: 'Motivo: Obra: Construcción de 11 Viviendas loteo en la localidad de Ireneo Portela Partido de Baradero',
@@ -600,7 +631,8 @@ export const licitaciones = [{
 },
 {
   id: 32,
-  titulo: 'Licitación Pública N° 05/2022',
+  titulo: 'Licitación Pública N° 05/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-13861/ S 2022 – DECRETO 166',
   dias: 'POR 2 DÍAS-',
   motivo: ' Motivo: Obra: Conexiones domiciliarias de agua Potable e instalaciones intra-late de agua potable y Cloaca – Barrio Igualdad de la ciudad de Baradero.',
@@ -619,7 +651,8 @@ export const licitaciones = [{
 },
 {
   id: 33,
-  titulo: 'Licitación Pública N° 04/2022',
+  titulo: 'Licitación Pública N° 04/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-13828/D 2022 – DECRETO 163',
   decreto: 'Decreto',
   numdecreto: ' 163',
@@ -640,7 +673,8 @@ export const licitaciones = [{
 },
 {
   id: 34,
-  titulo: 'Licitación Pública N° 03/2022',
+  titulo: 'Licitación Pública N° 03/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-16278/S – DECRETO 320',
   decreto: 'Decreto',
   numdecreto: '320',
@@ -661,7 +695,8 @@ export const licitaciones = [{
 },
 {
   id: 35,
-  titulo: 'Licitación Pública N° 02/2022',
+  titulo: 'Licitación Pública N° 02/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-13800/2022S – DECRETO 122',
   decreto: 'Decreto',
   numdecreto: ' 122',
@@ -682,7 +717,8 @@ export const licitaciones = [{
 },
 {
   id: 36,
-  titulo: 'Licitación Pública N° 01/2022',
+  titulo: 'Licitación Pública N° 01/',
+  año: '2022',
   tituloAcordeonAbierto: 'EXPTE 4009-20-13839/2022S – DECRETO 121',
   decreto: 'DECRETO',
   numdecreto: '121',

@@ -15,7 +15,7 @@ export default function RootLayout ({ children }) {
     <>
       <html lang="es-ar">
         <head>
-          <link rel="icon" href="../LOGOS_icono-100x100.png" />
+          <link rel="icon" href="../LOGOS_icono-100x100.png"/>
         </head>
         <body className={inter.className} suppressHydrationWarning={true}>
           <Header />

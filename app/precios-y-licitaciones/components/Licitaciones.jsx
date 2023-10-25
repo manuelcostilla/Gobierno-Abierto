@@ -8,7 +8,6 @@ import Direcciondecompras from './Direcciondecompras'
 
 export const AcordeonDeLicitaciones = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(null)
-  const [selectedYear, setSelectedYear] = useState(null)
   const [objects, setObjects] = useState(data)
 
   const toggleAccordion = (index) => {
@@ -26,12 +25,10 @@ export const AcordeonDeLicitaciones = ({ data }) => {
   const handleShowObjects = (year) => {
     const filteredObjects = data.filter((obj) => obj.año === year)
     setObjects(filteredObjects)
-    setSelectedYear(year)
   }
 
   const resetList = () => {
     setObjects(data) // Restablece a los objetos originales (data)
-    setSelectedYear(null)
   }
 
   return (

@@ -12,9 +12,9 @@ export const AcordeonDeLicitaciones = ({ data }) => {
 
   const toggleAccordion = (index) => {
     if (openIndex === index) {
-      setOpenIndex(null) // Si el mismo acordeón está abierto, ciérralo
+      setOpenIndex(null)
     } else {
-      setOpenIndex(index) // De lo contrario, establece el índice del acordeón abierto
+      setOpenIndex(index)
     }
   }
 
@@ -38,39 +38,38 @@ export const AcordeonDeLicitaciones = ({ data }) => {
           COMPRAS Y LICITACIONES
         </h1>
       </div>
-      <div className="flex gap-4">
+      <div className="flex">
         <button
           onClick={() => handleShowObjects('2023')}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
-        >
-          Mostrar objetos 2023
+          className="mt-2 ml-16 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400">
+          2023
         </button>
         <button
           onClick={() => handleShowObjects('2022')}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+          className="mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400"
         >
-          Mostrar objetos 2022
+          2022
         </button>
         <button
           onClick={() => handleShowObjects('2021')}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+          className="mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400"
         >
-          Mostrar objetos 2021
+          2021
         </button>
         <button
           onClick={() => handleShowObjects('2020')}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+          className="mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400"
         >
-          Mostrar objetos 2020
+          2020
         </button>
         <button
           onClick={resetList}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+          className="mt-2 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400"
         >
           Mostrar todos
         </button>
       </div>
-      <div className="p-6 mx-2 mt-4 leading-10 max-w-[800px]">
+      <div className="flex flex-col w-full lg:w-[1250px] mb-10 m-auto p-10 border-dotted border border-gray-400 clip-your-needful-style">
         {objects.map((item, index) => (
           <div className="" key={index}>
             <div>

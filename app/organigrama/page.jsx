@@ -1,4 +1,3 @@
-import React from 'react'
 import { Organigrama } from './components/Organigrama'
 
 const Mapa_Del_Estado = () => {

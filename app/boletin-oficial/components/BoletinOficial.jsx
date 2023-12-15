@@ -9,7 +9,7 @@ export const BoletinOficial = ({ data }) => {
             <div className="lg:flex lg:flex-col">
                 <div className="mb-4">
                   <p className="text-center lg:text-left">{data.texto}</p>
-                  <Link href='' className="block mx-auto lg:mx-0 mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4" >
+                  <Link href={data.pdfLink} className="block mx-auto lg:mx-0 mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4" >
                   {data.boton}
                   </Link>
                 </div>

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const gestion_compromisos = () => {
   return (
     <div>

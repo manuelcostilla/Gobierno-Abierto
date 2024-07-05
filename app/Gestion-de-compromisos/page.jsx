@@ -1,5 +1,5 @@
 const gestion_compromisos = () => {
-return   (
+  return (
     <div>
         <p>
             Hola desde gestion de compromisos

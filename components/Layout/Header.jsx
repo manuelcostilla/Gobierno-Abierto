@@ -53,7 +53,9 @@ export const Header = () => {
           </ul>
         </div>
         <div className="flex justify-center sm:justify-start items-center p-[50px] sm:w-auto">
+          <Link href="/">
           <Image alt="" src={logo} height={79} width={247} />
+          </Link>
         </div>
       </header>
       <HeadernavBar />

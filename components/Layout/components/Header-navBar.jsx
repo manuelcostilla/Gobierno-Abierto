@@ -21,12 +21,12 @@ export const HeadernavBar = () => {
   const presupuestoRef = useRef(null)
   const compromisosRef = useRef(null)
 
-  const handleSubMenuClick = (menu) => {
-    setSubMenus((prevState) => ({
-      ...prevState,
-      [menu]: !prevState[menu]
-    }))
-  }
+  // const handleSubMenuClick = (menu) => {
+  //   setSubMenus((prevState) => ({
+  //     ...prevState,
+  //     [menu]: !prevState[menu]
+  //   }))
+  // }
 
   const handleClickOutside = (event) => {
     if (
@@ -71,19 +71,20 @@ export const HeadernavBar = () => {
     </div>
     <nav className={`lg:flex lg:justify-evenly lg:items-center ${isNavOpen ? 'block' : 'hidden'} lg:w-full lg:h-[60px] bg-gray-nav lg:border-b-2 lg:border-b-green-nav w-full h-auto`}>
       <ul className="lg:flex lg:flex-row lg:space-x-8 flex flex-col">
-      <Link href="#">
+      <Link href="/">
           <li className="relative">
             <button className="text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0">
               Inicio
             </button>
           </li>
         </Link>
+        {/* INICIA SECCION ORGANIGRAMA BARRA DE NAVEGACIÓN */}
         <li className="relative" ref={organigramaRef}>
           <button
-            className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
-            onClick={() => handleSubMenuClick('organigrama')}
+            // className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
+            // onClick={() => handleSubMenuClick('organigrama')}
           >
-            Mapa del Estado Municipal<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" />
+            <Link href="../organigrama">Organigrama<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
           </button>
           {subMenus.organigrama && (
             <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
@@ -102,13 +103,14 @@ export const HeadernavBar = () => {
             </div>
           )}
         </li>
+        {/* INICIA BOLETIN OFICIAL BARRA DE NAVEGACIÓN */}
         <li className="relative" ref={boletinRef}>
           <div className="flex justify-between">
           <button
-            className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
-            onClick={() => handleSubMenuClick('boletin')}
+            // className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
+            // onClick={() => handleSubMenuClick('boletin')}
           >
-            Boletin Oficial<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" />
+           <Link href="../boletin-oficial">Boletin Oficial<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
           </button>
           </div>
           {subMenus.boletin && (
@@ -134,12 +136,13 @@ export const HeadernavBar = () => {
             </div>
           )}
         </li>
+        {/* INICIA COMPRAS Y LICITACIONES */}
         <li className="relative" ref={licitacionesRef}>
           <button
-            className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
-            onClick={() => handleSubMenuClick('licitaciones')}
+            // className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
+            // onClick={() => handleSubMenuClick('licitaciones')}
           >
-            Compras y Licitaciones<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" />
+            <Link href="../precios-y-licitaciones">Compras y Licitaciones<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
           </button>
           {subMenus.licitaciones && (
             <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
@@ -158,12 +161,13 @@ export const HeadernavBar = () => {
             </div>
           )}
         </li>
+        {/* INICIA PRESUPUESTO PUBLICO */}
         <li className="relative" ref={presupuestoRef}>
           <button
-            className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
-            onClick={() => handleSubMenuClick('presupuesto')}
+            // className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
+            // onClick={() => handleSubMenuClick('presupuesto')}
           >
-            Presupuesto Publico<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" />
+            <Link href="../presupuesto-publico">Presupuesto Publico<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
           </button>
           {subMenus.presupuesto && (
             <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
@@ -182,19 +186,12 @@ export const HeadernavBar = () => {
             </div>
           )}
         </li>
-        <Link href="#">
-          <li className="relative">
-            <button className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0">
-              Datos Abiertos
-            </button>
-          </li>
-        </Link>
         <li className="relative" ref={compromisosRef}>
           <button
-            className="text-black text-left lg:text-center w-full lg:w-full border-b border-gray-400 lg:border-b-0 lg:p-0 p-2 lg:hover:text-gray-700 px-4 lg:px-0"
-            onClick={() => handleSubMenuClick('compromisos')}
+            // className="text-black text-left lg:text-center w-full lg:w-full border-b border-gray-400 lg:border-b-0 lg:p-0 p-2 lg:hover:text-gray-700 px-4 lg:px-0"
+            // onClick={() => handleSubMenuClick('compromisos')}
           >
-            Gestion de Compromisos<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" />
+            <Link href="#">Gestion de Compromisos<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
           </button>
           {subMenus.compromisos && (
             <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
@@ -210,13 +207,13 @@ export const HeadernavBar = () => {
             </div>
           )}
         </li>
-        <Link href="#">
+        {/* <Link href="#">
           <li className="relative">
             <button className="text-black text-left lg:text-center w-full lg:w-full border-b border-gray-400 lg:border-b-0 lg:p-0 p-2 lg:hover:text-gray-700 px-4 lg:px-0">
               Contacto
             </button>
           </li>
-        </Link>
+        </Link> */}
       </ul>
     </nav>
     </>

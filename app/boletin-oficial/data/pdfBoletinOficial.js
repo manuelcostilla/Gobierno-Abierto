@@ -1,5 +1,47 @@
 export const pdfBox = [
   {
+    id: 42,
+    año: '2024',
+    texto: 'Boletin Oficial Enero de 2024',
+    pdfLink: '',
+    boton: 'Descargar'
+  },
+  {
+    id: 43,
+    año: '2024',
+    texto: 'Boletin Oficial Febrero de 2024',
+    pdfLink: '',
+    boton: 'Descargar'
+  },
+  {
+    id: 44,
+    año: '2024',
+    texto: 'Boletin Oficial Marzo de 2024',
+    pdfLink: '',
+    boton: 'Descargar'
+  },
+  {
+    id: 45,
+    año: '2024',
+    texto: 'Boletin Oficial Abril de 2024',
+    pdfLink: '',
+    boton: 'Descargar'
+  },
+  {
+    id: 46,
+    año: '2024',
+    texto: 'Boletin Oficial Mayo de 2024',
+    pdfLink: '',
+    boton: 'Descargar'
+  },
+  {
+    id: 47,
+    año: '2024',
+    texto: 'Boletin Oficial Junio de 2024',
+    pdfLink: '',
+    boton: 'Descargar'
+  },
+  {
     id: 1,
     año: '2023',
     texto: 'Boletin Oficial Enero de 2023',

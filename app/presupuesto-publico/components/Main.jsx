@@ -4,8 +4,8 @@ import React from 'react'
 const Main_presupuesto = () => {
   return (
     <>
-      <div className="flex h-36 w-full bg-blue-header justify-center items-center">
-        <h1 className="text-4xl font-sans text-white font-bold">PRESUPUESTO PUBLICO</h1>
+      <div className="flex h-36 w-full bg-blue-title justify-center items-center">
+        <h1 className="text-4xl font-sans text-white font-bold"style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>PRESUPUESTO PUBLICO</h1>
       </div>
       <div className="flex p-8 break-normal">
         <p>Información de gastos en personal, no personales, bienes de consumo, bienes de personal, y otros gastos, realizados por el Municipio de Baradero.</p>

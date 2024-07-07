@@ -19,6 +19,7 @@ module.exports = {
         'gray-nav': '#E6E6E6',
         'green-nav': '#3eaf53',
         'black-footer': '#333333',
+        'black-nav': '#909092',
         'blue-btn': '#4a8eff',
         'blue-title': '#00689c',
         emergencia: '#BDBFC1',

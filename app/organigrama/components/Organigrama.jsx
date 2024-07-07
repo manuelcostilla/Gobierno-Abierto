@@ -47,7 +47,7 @@ export const Organigrama = () => {
           ORGANIGRAMA
         </h1>
       </div>
-      <div className="lg:mt-4 lg:flex lg:justify-center lg:items-center flex justify-center items-center p-4 lg:p-0">
+      <div className="lg:mt-4 lg:flex lg:justify-center lg:items-center flex justify-center items-center p-4 lg:p-0 font-sans">
         <h3 className="lg:text-[20px] text-[18px]">ESQUEMA DE LA ESTRUCTURA ORGÁNICA - FUNCIONAL DE LA MUNICIPALIDAD DE BARADERO</h3>
       </div>
       <div className="p-6 w-full">

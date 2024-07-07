@@ -32,19 +32,19 @@ export const Main = () => {
         <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105">
           <Link href="../organigrama" className='flex flex-col justify-center items-center content-center p-3'>
             <Image className="m-auto" src={mapa_estado_municipal} height={80} width={80} alt="" />
-            <p>Mapa Del Estado Municipal</p>
+            <p>MAPA DEL ESTADO MUNICIPAL</p>
           </Link>
         </div>
         <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105 ">
           <Link href="../boletin-oficial" className='flex flex-col justify-center items-center content-center  p-3'>
             <Image className="m-auto" src={boletin_oficial} height={80} width={80} alt="" />
-            <p>Boletín Oficial</p>
+            <p>BOLETÍN OFICIAL</p>
           </Link>
         </div>
         <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105 flex flex-col">
           <Link href="../precios-y-licitaciones" className='flex flex-col justify-center items-center content-center'>
             <Image className="m-auto" src={compra_licitaciones} height={80} width={80} alt="" />
-            <p>Compras y Licitaciones</p>
+            <p>COMPRAS Y LICITACIONES</p>
           </Link>
         </div>
         {/* <div className="text-black text-center p-[20px] mt-[3px]">
@@ -56,13 +56,13 @@ export const Main = () => {
         <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105">
           <Link href="../Gestion-de-compromisos" className='flex flex-col justify-center items-center content-center p-3'>
             <Image className="m-auto" src={gestion_compromisos} height={80} width={80} alt="" />
-            <p>Gestión de Compromisos</p>
+            <p>GESTIÓN DE COMPROMISOS</p>
           </Link>
         </div>
         <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105">
           <Link href="../presupuesto-publico" className='flex flex-col justify-center items-center content-center p-3'>
             <Image className="m-auto" src={presupuesto_publico} height={80} width={80} alt="" />
-            <p>Presupuesto Publico</p>
+            <p>PRESUPUESTO PUBLICO</p>
           </Link>
         </div>
       </div>

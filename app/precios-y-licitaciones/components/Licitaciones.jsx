@@ -33,8 +33,8 @@ export const AcordeonDeLicitaciones = ({ data }) => {
 
   return (
     <>
-      <div className="flex max-w-screen h-36 bg-blue-header justify-center items-center">
-        <h1 className="flex justify-center items-center text-center text-4xl font-sans text-white font-bold">
+      <div className="flex max-w-screen h-36 bg-blue-title justify-center items-center">
+        <h1 className="flex justify-center items-center text-center text-4xl font-sans text-white font-bold" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>
           COMPRAS Y LICITACIONES
         </h1>
       </div>

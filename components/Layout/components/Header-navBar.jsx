@@ -191,7 +191,7 @@ export const HeadernavBar = () => {
             // className="text-black text-left lg:text-center w-full lg:w-full border-b border-gray-400 lg:border-b-0 lg:p-0 p-2 lg:hover:text-gray-700 px-4 lg:px-0"
             // onClick={() => handleSubMenuClick('compromisos')}
           >
-            <Link href="#">Gestion de Compromisos<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+            <Link href="../Gestion-de-compromisos">Gestion de Compromisos<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
           </button>
           {subMenus.compromisos && (
             <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">

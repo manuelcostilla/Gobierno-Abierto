@@ -21,7 +21,7 @@ function BoletinOficialButtons () {
               onClick={() => cambiarBox(año)}
               className={`mt-2 text-blue-header font-bold py-4 px-4 ${
                 selectedYear === año
-                  ? 'text-green-400 border-dotted border-l border-r border-t border-gray-400'
+                  ? 'text-green-nav border-dotted border-l border-r border-t border-gray-400'
                   : ''
               }`}
             >

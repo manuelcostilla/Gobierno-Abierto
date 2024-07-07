@@ -15,10 +15,12 @@ module.exports = {
         'main-row': 'repeat(2, minmax(150px))'
       },
       colors: {
-        'blue-header': '#0170B9',
+        'blue-header': '#0170b9',
         'gray-nav': '#E6E6E6',
-        'green-nav': '#3EAF53',
+        'green-nav': '#3eaf53',
         'black-footer': '#333333',
+        'blue-btn': '#4a8eff',
+        'blue-title': '#00689c',
         emergencia: '#BDBFC1',
         policia: '#00AFEF',
         bombero: '#Ed3237',

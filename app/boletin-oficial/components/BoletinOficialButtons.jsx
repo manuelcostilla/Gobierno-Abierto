@@ -14,14 +14,14 @@ function BoletinOficialButtons () {
 
   return (
     <>
-      <div className="flex justify-evenly">
+      <div className="w-full flex justify-evenly  xs:text-xs xs:justify-center">
         {añosUnicos.map((año) => (
           <div key={año}>
             <button
               onClick={() => cambiarBox(año)}
               className={`mt-2 text-blue-header font-bold py-4 px-4 ${
                 selectedYear === año
-                  ? 'text-green-nav border-dotted border-l border-r border-t border-gray-400'
+                  ? 'text-green-nav border-dotted border-l border-r border-t border-gray-400 text-sm'
                   : ''
               }`}
             >

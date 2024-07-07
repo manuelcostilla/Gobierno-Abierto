@@ -1,3 +1,4 @@
+const { nextui } = require('@nextui-org/react')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -28,12 +29,37 @@ module.exports = {
         hospital: '#00A859',
         genero: '#A8518A'
       },
+      fontSize: {
+        xs: '.75rem',
+        sm: '.875rem',
+        base: '1rem',
+        lg: '1.125rem',
+        xl: '1.25rem',
+        '2xl': '1.5rem',
+        '3xl': '1.875rem',
+        '4xl': '2.25rem',
+        '5xl': '3rem',
+        '6xl': '3.75rem',
+        '7xl': '4.5rem',
+        '8xl': '6rem',
+        '9xl': '8rem',
+        'custom-size': '2.5rem' // Tamaño personalizado
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       }
+    },
+    screens: {
+      xs: '390px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px'
     }
   },
-  plugins: []
+  darkMode: 'class',
+  plugins: [nextui()]
 }

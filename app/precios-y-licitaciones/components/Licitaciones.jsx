@@ -38,33 +38,38 @@ export const AcordeonDeLicitaciones = ({ data }) => {
           COMPRAS Y LICITACIONES
         </h1>
       </div>
-      <div className="flex">
+      <div className="flex justify-center xs:text-center xs:items-center xs:content-center xs:flex-wrap xs:text-xs xs:m-0 xs:p-0 xs:w-full font-sans">
+      <button
+          onClick={() => handleShowObjects('2024')}
+          className="mt-2 ml-16 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-lg xs:ml-2">
+          2024
+        </button>
         <button
           onClick={() => handleShowObjects('2023')}
-          className="mt-2 ml-16 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400">
+          className="mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-lg">
           2023
         </button>
         <button
           onClick={() => handleShowObjects('2022')}
-          className="mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400"
+          className="mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-lg"
         >
           2022
         </button>
         <button
           onClick={() => handleShowObjects('2021')}
-          className="mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400"
+          className="mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-lg"
         >
           2021
         </button>
         <button
           onClick={() => handleShowObjects('2020')}
-          className="mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400"
+          className="mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-lg"
         >
           2020
         </button>
         <button
           onClick={resetList}
-          className="mt-2 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400"
+          className="mt-2 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-2 xs:py-2 lg:text-lg"
         >
           Mostrar todos
         </button>

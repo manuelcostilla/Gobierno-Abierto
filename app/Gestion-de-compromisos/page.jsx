@@ -1,11 +1,13 @@
-import React from 'react'
-import Compromisos from './components/compromisos'
+/* eslint-disable */
 
-const Page = () => {
+const gestion_compromisos = () => {
   return (
-        <div>
-            <Compromisos />
-        </div>
+    <div>
+        <p>
+            Hola desde gestion de compromisos
+        </p>
+    </div>
   )
 }
-export default Page
+
+export default gestion_compromisos

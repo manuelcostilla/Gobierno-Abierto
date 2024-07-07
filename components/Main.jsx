@@ -14,7 +14,7 @@ export const Main = () => {
     <>
 
       <div className="block lg:flex lg:justify-around overflow-x-hidden">
-        <div className="block lg:flex lg:w-[450px] w-full lg:ml-[100px] lg:mt-[60px] ml-8 mt-8">
+        <div className="block lg:flex lg:w-[450px] w-full lg:ml-[100px] lg:mt-[60px]  mt-8">
           <h1 className="block lg:flex font-bold text-blue-header font-sans lg:text-[80px] text-[60px] text-center">GOBIERNO ABIERTO</h1>
         </div>
         <div className="block lg:flex lg:w-[600px] lg:mr-[100px] lg:mt-[30px]">
@@ -25,10 +25,10 @@ export const Main = () => {
         </div>
       </div>
       <div className="hidden lg:w-[100px] lg:h-[10px] lg:bg-green-nav lg:absolute lg:top-[585px] lg:left-[100px]">{/* Barra verde */}</div>
-      <div className="ml-[30px]">
+      <div className="items-center w-full xs:flex xs:justify-center md:justify-start lg:justify-start ">
         <h4 className="w-1/2 text-center font-bold font-helvetica text-gray-700 text-[40px] lg:absolute lg:top-[620px]">Municipio de Baradero</h4>
       </div>
-      <div className="flex mb-56 mt-56  justify-around font-sans font-semibold ">
+      <div className="flex mb-56 mt-56  justify-around font-sans font-semibold flex-wrap">
         <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105">
           <Link href="../organigrama" className='flex flex-col justify-center items-center content-center p-3'>
             <Image className="m-auto" src={mapa_estado_municipal} height={80} width={80} alt="" />

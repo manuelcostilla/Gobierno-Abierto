@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Bar, Doughnut } from 'react-chartjs-2'
 import Chart from 'chart.js/auto'
-
+import { Button } from '@nextui-org/react'
 import { Tooltip, Legend, BarController } from 'chart.js'
 
 Chart.register(Tooltip, Legend, BarController)
@@ -16,6 +16,7 @@ export const Grafico_ingresos = () => {
   const [chartOptions, setChartOptions] = useState({})
   const [activeChart, setActiveChart] = useState(0)
   const [chartType, setChartType] = useState('Bar')
+  const [selectedYear, setSelectedYear] = useState(null)
 
   useEffect(() => {
     const chartData1 = {
@@ -82,57 +83,77 @@ export const Grafico_ingresos = () => {
     setChartType(newChartType)
   }
 
+  const handleYearClick = (year) => {
+    setSelectedYear(year)
+  }
+
   return (
     <>
       <div className="container mx-auto px-4 lg:w-[800px]">
         {/* Buttons for different years */}
         <div className="flex justify-center items-center my-3">
-          <button className="mt-2 mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4">
+          <Button
+            className={`mt-2 mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 
+              ${selectedYear === 2023 ? 'text-white bg-green-nav text-xl' : ''}`}
+            onClick={() => handleYearClick(2023)}
+          >
             2023
-          </button>
-          <button className="mt-2 mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4">
+          </Button>
+          <Button
+            className={`mt-2 mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4  
+              ${selectedYear === 2022 ? 'text-white bg-green-nav text-xl' : ''}`}
+            onClick={() => handleYearClick(2022)}
+          >
             2022
-          </button>
-          <button className="mt-2 mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4">
+          </Button>
+          <Button
+            className={`mt-2 mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 
+              ${selectedYear === 2021 ? 'text-white bg-green-nav text-xl' : ''}`}
+            onClick={() => handleYearClick(2021)}
+          >
             2021
-          </button>
-          <button className="mt-2 mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4">
+          </Button>
+          <Button
+            className={`mt-2 mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 
+              ${selectedYear === 2020 ? 'text-white bg-green-nav text-xl' : ''}`}
+            onClick={() => handleYearClick(2020)}
+          >
             2020
-          </button>
+          </Button>
         </div>
 
         {/* Container for chart type toggle button */}
         <div className="flex justify-center my-3">
-          <button
+          <Button
             className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4"
             onClick={toggleChartType}
           >
             Cambiar tipo de gráfico
-          </button>
+          </Button>
         </div>
 
         {/* Container for previous and next buttons */}
         <div className="flex justify-center my-3">
           {activeChart > 0 && (
-            <button
+            <Button
               className="mt-2 mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4"
               onClick={() => setActiveChart((prevId) => prevId - 1)}
             >
               Anterior
-            </button>
+            </Button>
           )}
           {activeChart < 4 && (
-            <button
+            <Button
               className="mt-2 mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4"
               onClick={() => setActiveChart((prevId) => prevId + 1)}
             >
               Siguiente
-            </button>
+            </Button>
           )}
         </div>
 
         {/* Container for the charts */}
-        <div className="flex justify-center items-center m-auto w-full h-[400px]">
+        <div className="flex justify-center items-center m-auto w-full h-[400px] mb-10 mt-10 ">
           {chartType === 'Bar'
             ? (
             <Bar data={chartData} options={chartOptions} />
@@ -147,3 +168,5 @@ export const Grafico_ingresos = () => {
     </>
   )
 }
+
+export default Grafico_ingresos

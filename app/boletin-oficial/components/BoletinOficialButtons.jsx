@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { pdfBox } from '../data/pdfBoletinOficial'
 import { BoletinOficial } from './BoletinOficial'
-
+import { Button } from '@nextui-org/react'
 function BoletinOficialButtons () {
   const [selectedYear, setSelectedYear] = useState('2023')
 
@@ -17,16 +17,16 @@ function BoletinOficialButtons () {
       <div className="w-full flex justify-evenly  xs:text-xs xs:justify-center">
         {añosUnicos.map((año) => (
           <div key={año}>
-            <button
+            <Button color="primary"
               onClick={() => cambiarBox(año)}
-              className={`mt-2 text-blue-header font-bold py-4 px-4 ${
+              className={`mt-2 text-blue-header font-bold py-3 px-3  ${
                 selectedYear === año
                   ? 'text-green-nav border-dotted border-l border-r border-t border-gray-400 text-sm'
                   : ''
               }`}
             >
               BOLETÍN OFICIAL {año}
-            </button>
+            </Button>
           </div>
         ))}
       </div>

@@ -21,7 +21,7 @@ export const Header = () => {
             <li className="inline-block list-none sm:w-auto">
               <Link href="https://www.facebook.com/MunicipalidaddeBaradero/">
                 <AiFillFacebook
-                  size="35px"
+                  size="25"
                   className="text-white hover:text-slate-200"
                 />
               </Link>
@@ -29,7 +29,7 @@ export const Header = () => {
             <li className="inline-block list-none sm:w-auto">
               <Link href="https://www.instagram.com/municipiodebaradero/">
                 <AiFillInstagram
-                  size="35px"
+                  size="25"
                   className="text-white hover:text-slate-200"
                 />
               </Link>
@@ -37,7 +37,7 @@ export const Header = () => {
             <li className="inline-block list-none sm:w-auto">
               <Link href="https://twitter.com/municipalidadba">
                 <AiFillTwitterSquare
-                  size="35px"
+                  size="25"
                   className="text-white hover:text-slate-200"
                 />
               </Link>
@@ -45,7 +45,7 @@ export const Header = () => {
             <li className="inline-block list-none sm:w-auto">
               <Link href="https://www.youtube.com/@municipalidadbaradero9936">
                 <AiFillYoutube
-                  size="35px"
+                  size="25"
                   className="text-white hover:text-slate-200"
                 />
               </Link>

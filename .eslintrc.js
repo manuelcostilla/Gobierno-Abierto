@@ -33,6 +33,8 @@ module.exports = {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     camelcase: 'off',
-    quotes: 'off'
+    quotes: 'off',
+    'no-multiple-empty-lines': 'off', 
+    'comma-dangle': 'off', 
   }
 }

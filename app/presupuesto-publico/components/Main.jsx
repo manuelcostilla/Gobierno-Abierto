@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { Button } from '@nextui-org/react'
+import { Button } from '@/components/ui/button'
 const Main_presupuesto = () => {
   return (
     <>

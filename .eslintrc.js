@@ -6,7 +6,8 @@ module.exports = {
   },
   extends: [
     'standard',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    'next/core-web-vitals'
   ],
   overrides: [
     {

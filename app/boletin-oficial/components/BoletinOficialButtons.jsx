@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { pdfBox } from '../data/pdfBoletinOficial'
 import { BoletinOficial } from './BoletinOficial'
-import { Button } from '@nextui-org/react'
+import { Button } from '@/components/ui/button'
 function BoletinOficialButtons () {
   const [selectedYear, setSelectedYear] = useState('2023')
 

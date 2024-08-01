@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Bar, Doughnut } from 'react-chartjs-2'
 import Chart from 'chart.js/auto'
-import { Button } from '@nextui-org/react'
+import { Button } from '@/components/ui/button'
 import { Tooltip, Legend, BarController } from 'chart.js'
 
 Chart.register(Tooltip, Legend, BarController)

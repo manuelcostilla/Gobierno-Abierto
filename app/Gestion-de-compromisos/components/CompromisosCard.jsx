@@ -15,11 +15,11 @@ const CompromisosCard = () => {
   return (
     <div className="flex flex-wrap justify-center m-20 ">
       {dataObra.map((data, index) => (
-        <Card key={index} className="relative py-4 flex m-5 h-80 w-60">
+        <Card key={index} className="relative py-4 flex m-5 h-80 w-60 justify-center self-center">
           <div className="relative z-10 flex flex-col items-center p-4 bg-white bg-opacity-25 h-full justify-center rounded-xl">
             <div className="pb-0 pt-2 px-4 flex-col items-center">
               <CardHeader>
-                <CardTitle className="text-tiny">
+                <CardTitle className="text-xl">
                   {data.title}
                 </CardTitle>
               </CardHeader>

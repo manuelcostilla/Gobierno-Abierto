@@ -1,16 +1,17 @@
-'use client'
+"use client"
 
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import logo from '../../public/imagenes/Logo2_Municipio.png'
-import { HeadernavBar } from './components/Header-navBar'
+import React from "react"
+import Link from "next/link"
+import Image from "next/image"
+import logo from "../../public/imagenes/Logo2_Municipio.png"
+import { HeadernavBar } from "./components/Header-navBar"
+import { ModeToggle } from "../toggletheme"
 import {
   AiFillFacebook,
   AiFillInstagram,
   AiFillTwitterSquare,
-  AiFillYoutube
-} from 'react-icons/ai'
+  AiFillYoutube,
+} from "react-icons/ai"
 
 export const Header = () => {
   return (
@@ -54,8 +55,11 @@ export const Header = () => {
         </div>
         <div className="flex justify-center sm:justify-start items-center p-[50px] sm:w-auto">
           <Link href="/">
-          <Image alt="" src={logo} height={79} width={247} />
+            <Image alt="" src={logo} height={79} width={247} />
           </Link>
+        </div>
+        <div className="flex justify-center sm:justify-start items-center p-[50px] sm:w-auto">
+          <ModeToggle />
         </div>
       </header>
       <HeadernavBar />

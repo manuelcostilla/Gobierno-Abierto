@@ -17,11 +17,11 @@ function BoletinOficialButtons () {
       <div className="w-full flex justify-evenly  xs:text-xs xs:justify-center">
         {añosUnicos.map((año) => (
           <div key={año}>
-            <Button color="primary"
+            <Button
               onClick={() => cambiarBox(año)}
-              className={`mt-2 text-blue-header font-bold py-3 px-3  ${
+              className={`mt-2 text-white bg-blue-header hover:bg-blue-400 font-bold py-3 px-3  ${
                 selectedYear === año
-                  ? 'text-green-nav border-dotted border-l border-r border-t border-gray-400 text-sm'
+                  ? 'text-black border-dotted border-l border-r border-t border-gray-400 text-sm'
                   : ''
               }`}
             >

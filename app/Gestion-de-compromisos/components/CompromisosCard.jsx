@@ -2,7 +2,7 @@ import React from "react"
 import { dataObra } from "../data/dataObraJSON"
 import { Progress } from "@/components/ui/progress"
 import { Button } from "@/components/ui/button"
-// import Image from "next/image"
+import Image from "next/image"
 import {
   Card,
   CardContent,
@@ -55,13 +55,7 @@ const CompromisosCard = () => {
                   </DialogHeader>
                   <DialogDescription>{data.description}</DialogDescription>
                   <DialogFooter>
-                    {/* error no renderiza la imagen */}
-                    {/* <Image
-                      alt="Imagen obra"
-                      height={150}
-                      width={150}
-                      src="/./trabajador.png"
-                    /> */}
+
                   </DialogFooter>
                 </DialogContent>
               </Dialog>
@@ -69,6 +63,12 @@ const CompromisosCard = () => {
           </Card>
         ))}
       </div>
+      <Image
+                      alt="Imagen obra"
+                      height={1280}
+                      width={920}
+                      src="/imagenes/anfiteatro1.jpg"
+                    />
     </div>
   )
 }

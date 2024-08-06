@@ -9,6 +9,7 @@ export const dataObra = [
     progressvalue: 100,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/costanero_sur_obra.jpg",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const dataObra = [
     progressvalue: 87.25,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/cañerias del centro.jpg",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ export const dataObra = [
     progressvalue: 83.11,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/puesta_en_valor_puerto.jpg",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ export const dataObra = [
     progressvalue: 79.11,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/pavimentacion_calle_roca_obra.jpg",
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ export const dataObra = [
     progressvalue: 100,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/portada3_inaguracion Casa de la Provincia.jpg",
   },
   {
     id: 6,
@@ -63,7 +68,8 @@ export const dataObra = [
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 100,
     postUrl:
-      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/"
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/camino_a_portela_obra.jpg",
   },
   {
     id: 7,
@@ -75,6 +81,7 @@ export const dataObra = [
     progressvalue: 100,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/anfiteatro1.jpg",
   },
   {
     id: 8,
@@ -86,6 +93,7 @@ export const dataObra = [
     progressvalue: 75,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/escuela_industria_obra.jpg",
   },
   {
     id: 9,
@@ -97,6 +105,7 @@ export const dataObra = [
     progressvalue: 75,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/acceso_alsina_obra.jpg",
   },
   {
     id: 10,
@@ -108,6 +117,7 @@ export const dataObra = [
     progressvalue: 100,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/polideportivo_obra.jpg",
   },
   {
     id: 11,
@@ -119,6 +129,7 @@ export const dataObra = [
     progressvalue: 100,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/Hogar.jpg",
   },
   {
     id: 12,
@@ -130,5 +141,6 @@ export const dataObra = [
     progressvalue: 100,
     postUrl:
       "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
+    Imagelocation: "/imagenes/pavimentacion_fonavi_obra.jpg",
   },
 ]

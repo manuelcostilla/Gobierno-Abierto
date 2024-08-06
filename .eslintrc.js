@@ -34,7 +34,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     camelcase: 'off',
     quotes: 'off',
-    'no-multiple-empty-lines': 'off', 
-    'comma-dangle': 'off', 
+    'no-multiple-empty-lines': 'off',
+    'comma-dangle': 'off',
   }
 }

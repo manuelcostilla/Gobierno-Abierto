@@ -12,7 +12,7 @@ export function Organigrama () {
         <DialogTrigger asChild>
           <Button variant="outline">Mirar imagen</Button>
         </DialogTrigger>
-        <DialogContent className=" max-sm:max-h-[700px] max-h-[1000px] max-w-[1000px]">
+        <DialogContent className=" max-sm:max-h-[700] max-h-[1000px] max-w-[1000px]">
           <div className="w-full h-full">
             <Image
               alt="Imagen obra"
@@ -22,7 +22,6 @@ export function Organigrama () {
             />
           </div>
         </DialogContent>
-
       </Dialog>
       <div className="grid gap-4 py-4 sm:max-w-[745px]  "></div>
     </>

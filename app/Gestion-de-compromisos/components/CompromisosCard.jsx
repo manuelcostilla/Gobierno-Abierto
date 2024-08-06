@@ -28,7 +28,9 @@ const CompromisosCard = () => {
         {dataObra.map((data, index) => (
           <Card key={index} className="w-[250px] m-5">
             <CardHeader className="flex items-center justify-center bg-blue-header">
-              <CardTitle className="text-xl">{data.title}</CardTitle>
+              <CardTitle className="text-xl text-balance">
+                {data.title}
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-xs text-wrap w-[250px] h-[150px] flex justify-center items-center border-b  mt-2">
               <div>{data.description}</div>
@@ -53,9 +55,21 @@ const CompromisosCard = () => {
                   <DialogHeader>
                     <DialogTitle>{data.title}</DialogTitle>
                   </DialogHeader>
-                  <DialogDescription>{data.description}</DialogDescription>
+                  <DialogDescription>
+                    {data.description}
+                    <div className="flex justify-center items-center">
+                      <Image
+                        alt="Imagen obra"
+                        height={250}
+                        width={250}
+                        src="/imagenes/anfiteatro1.jpg"
+                      />
+                    </div>
+                  </DialogDescription>
                   <DialogFooter>
-
+                    <Button asChild>
+                      <a target="_blank" href="https://baradero.gob.ar/finalizo-la-obra-de-pavimentacion-de-costanera-sur-y-baradero-esta-listo-para-recibir-al-turismo/"> Informacion relacionada</a>
+                    </Button>
                   </DialogFooter>
                 </DialogContent>
               </Dialog>
@@ -63,12 +77,6 @@ const CompromisosCard = () => {
           </Card>
         ))}
       </div>
-      <Image
-                      alt="Imagen obra"
-                      height={1280}
-                      width={920}
-                      src="/imagenes/anfiteatro1.jpg"
-                    />
     </div>
   )
 }

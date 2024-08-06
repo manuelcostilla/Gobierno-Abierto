@@ -1,52 +1,52 @@
 export const dataObra = [
   {
     id: 1,
-    title: "Construcción acceso",
+    title: "Pavimentacion de costanera sur",
     description:
       "El proyecto consiste en la construcción de una carretera de acceso a la ciudad de Puno, que incluye la construcción de un puente sobre el río Puno y la construcción de una carretera de acceso a la ciudad de Puno.",
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
-    progressvalue: 30,
+    progressvalue: 100,
   },
   {
     id: 2,
-    title: "Construcción",
+    title: "Recambio de cañerias en la zona centrica",
     description:
       "El proyecto consiste en la construcción de un hospital en la ciudad de Cusco, que incluye la construcción de un hospital de 200 camas y la construcción de un hospital de 200 camas.",
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
-    progressvalue: 10,
+    progressvalue: 87.25,
   },
   {
     id: 3,
-    title: "Construcción",
+    title: "Puesta en valor del paseo del puerto",
     description:
       "El proyecto consiste en la construcción de un puente en la ciudad de Arequipa, que incluye la construcción de un puente sobre el río Arequipa y la construcción de un puente sobre el río Arequipa.",
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
-    progressvalue: 40,
+    progressvalue: 83.11,
   },
   {
     id: 4,
-    title: "Construcción",
+    title: "Pavimentacion de calle roca",
     description:
       "El proyecto consiste en la construcción de un hospital en la ciudad de Lima, que incluye la construcción de un hospital de 200 camas y la construcción de un hospital de 200 camas.",
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
-    progressvalue: 60,
+    progressvalue: 79.11,
   },
   {
     id: 5,
-    title: "Construcción",
+    title: "Casa de la Provincia",
     description:
       "El proyecto consiste en la construcción de un puente en la ciudad de Trujillo, que incluye la construcción de un puente sobre el río Trujillo y la construcción de un puente sobre el río Trujillo.",
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
-    progressvalue: 80,
+    progressvalue: 100,
   },
   {
     id: 6,
-    title: "Construcción",
+    title: "Pavimentacion del camino a Portela",
     description:
       "El proyecto consiste en la construcción de un hospital en la ciudad de Piura, que incluye la construcción de un hospital de 200 camas y la construcción de un hospital de 200 camas.",
     image:
@@ -55,20 +55,56 @@ export const dataObra = [
   },
   {
     id: 7,
-    title: "Construcción",
+    title: "Obra barrio del anfiteatro",
     description:
       "El proyecto consiste en la construcción de un puente en la ciudad de Iquitos, que incluye la construcción de un puente sobre el río Iquitos y la construcción de un puente sobre el río Iquitos.",
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
-    progressvalue: 45,
+    progressvalue: 100,
   },
   {
     id: 8,
-    title: "Construcción",
+    title: "Obras escuela tecnica N 1",
     description:
       "El proyecto consiste en la construcción de un hospital en la ciudad de Chiclayo, que incluye la construcción de un hospital de 200 camas y la construcción de un hospital de 200 camas.",
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
-    progressvalue: 15,
+    progressvalue: 75,
+  },
+  {
+    id: 9,
+    title: "Pavimentacion del acceso a Alsina",
+    description:
+      "El proyecto consiste en la construcción de un hospital en la ciudad de Chiclayo, que incluye la construcción de un hospital de 200 camas y la construcción de un hospital de 200 camas.",
+    image:
+      "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
+    progressvalue: 75,
+  },
+  {
+    id: 10,
+    title: "Obra del Polideportivo Municipal",
+    description:
+      "El proyecto consiste en la construcción de un hospital en la ciudad de Chiclayo, que incluye la construcción de un hospital de 200 camas y la construcción de un hospital de 200 camas.",
+    image:
+      "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
+    progressvalue: 100,
+  },
+  {
+    id: 11,
+    title: "Obra del hogar del niño JUAN XXIII",
+    description:
+      "El proyecto consiste en la construcción de un hospital en la ciudad de Chiclayo, que incluye la construcción de un hospital de 200 camas y la construcción de un hospital de 200 camas.",
+    image:
+      "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
+    progressvalue: 100,
+  },
+  {
+    id: 12,
+    title: "Pavimentacion del barrio Fonavi",
+    description:
+      "El proyecto consiste en la construcción de un hospital en la ciudad de Chiclayo, que incluye la construcción de un hospital de 200 camas y la construcción de un hospital de 200 camas.",
+    image:
+      "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
+    progressvalue: 100,
   },
 ]

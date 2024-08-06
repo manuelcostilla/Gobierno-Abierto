@@ -10,7 +10,7 @@ export function Organigrama () {
     <>
       <Dialog>
         <DialogTrigger asChild>
-          <Button variant="outline">Edit Profile</Button>
+          <Button variant="outline">Mirar imagen</Button>
         </DialogTrigger>
         <DialogContent className=" max-h-[1240px] max-w-[1240px]">
           <div className="w-full h-full">

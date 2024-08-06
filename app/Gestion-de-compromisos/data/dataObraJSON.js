@@ -7,15 +7,19 @@ export const dataObra = [
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 100,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
   {
     id: 2,
-    title: "Recambio de cañerias en la zona centrica",
+    title: "Recambio cañerias zona centrica",
     description:
       "El proyecto consiste en la construcción de un hospital en la ciudad de Cusco, que incluye la construcción de un hospital de 200 camas y la construcción de un hospital de 200 camas.",
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 87.25,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ export const dataObra = [
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 83.11,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
   {
     id: 4,
@@ -34,15 +40,19 @@ export const dataObra = [
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 79.11,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
   {
     id: 5,
-    title: "Casa de la Provincia",
+    title: "Primera Casa de la Provincia",
     description:
       "El proyecto consiste en la construcción de un puente en la ciudad de Trujillo, que incluye la construcción de un puente sobre el río Trujillo y la construcción de un puente sobre el río Trujillo.",
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 100,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
   {
     id: 6,
@@ -52,6 +62,8 @@ export const dataObra = [
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 100,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/"
   },
   {
     id: 7,
@@ -61,6 +73,8 @@ export const dataObra = [
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 100,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
   {
     id: 8,
@@ -70,6 +84,8 @@ export const dataObra = [
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 75,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
   {
     id: 9,
@@ -79,15 +95,19 @@ export const dataObra = [
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 75,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
   {
     id: 10,
-    title: "Obra del Polideportivo Municipal",
+    title: "Obra Polideportivo Municipal",
     description:
       "El proyecto consiste en la construcción de un hospital en la ciudad de Chiclayo, que incluye la construcción de un hospital de 200 camas y la construcción de un hospital de 200 camas.",
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 100,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
   {
     id: 11,
@@ -97,6 +117,8 @@ export const dataObra = [
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 100,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
   {
     id: 12,
@@ -106,5 +128,7 @@ export const dataObra = [
     image:
       "https://baradero.gob.ar/wp-content/uploads/2023/11/Obra-finalizada-costanera-sur.jpg",
     progressvalue: 100,
+    postUrl:
+      "https://baradero.gob.ar/secretaria-de-obras-y-servicios-publicos/",
   },
 ]

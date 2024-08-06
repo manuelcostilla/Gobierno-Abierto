@@ -57,7 +57,7 @@ const CompromisosCard = () => {
                   </DialogHeader>
                   <DialogDescription>
                     {data.description}
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center mt-5 mb-5">
                       <Image
                         alt="Imagen obra"
                         height={250}
@@ -68,7 +68,7 @@ const CompromisosCard = () => {
                   </DialogDescription>
                   <DialogFooter>
                     <Button asChild>
-                      <a target="_blank" href="https://baradero.gob.ar/finalizo-la-obra-de-pavimentacion-de-costanera-sur-y-baradero-esta-listo-para-recibir-al-turismo/"> Informacion relacionada</a>
+                      <a target="_blank" href={data.postUrl}> Informacion relacionada</a>
                     </Button>
                   </DialogFooter>
                 </DialogContent>

@@ -18,7 +18,7 @@ export function Organigrama () {
               alt="Imagen obra"
               height={800}
               width={800}
-              src="/imagenes/Untitled-2024-08-05-1004.png"
+              src="/imagenes/organigrama6-8.png"
             />
           </div>
         </DialogContent>

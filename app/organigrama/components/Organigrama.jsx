@@ -12,14 +12,13 @@ export function Organigrama () {
         <DialogTrigger asChild>
           <Button variant="outline">Mirar imagen</Button>
         </DialogTrigger>
-        <DialogContent className=" max-h-[1240px] max-w-[1240px]">
+        <DialogContent className=" max-sm:max-h-[700px] max-h-[1000px] max-w-[1000px]">
           <div className="w-full h-full">
             <Image
               alt="Imagen obra"
-              height={1240}
-              width={1240}
+              height={800}
+              width={800}
               src="/imagenes/Untitled-2024-08-05-1004.png"
-              className="w-full h-full object-cover rounded-sm"
             />
           </div>
         </DialogContent>

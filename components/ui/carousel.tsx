@@ -32,7 +32,7 @@ type CarouselContextProps = {
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null)
 
-function useCarousel() {
+function useCarousel () {
   const context = React.useContext(CarouselContext)
 
   if (!context) {
@@ -124,7 +124,7 @@ const Carousel = React.forwardRef<
       <CarouselContext.Provider
         value={{
           carouselRef,
-          api: api,
+          api,
           opts,
           orientation:
             orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),

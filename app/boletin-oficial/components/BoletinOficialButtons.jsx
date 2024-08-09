@@ -24,6 +24,7 @@ function BoletinOficialButtons () {
                   ? 'text-black border-dotted border-l border-r border-t border-gray-400 text-sm bg-gray-300'
                   : ''
               }`}
+              style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
             >
               BOLETÍN OFICIAL {año}
             </Button>

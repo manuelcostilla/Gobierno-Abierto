@@ -28,24 +28,30 @@ export const Main = () => {
       <div className="xs:mt-5 items-center w-full xs:flex xs:justify-center md:justify-start lg:justify-start flex ">
         <h4 className="w-1/2 text-center font-bold font-sans  text-gray-700 text-[40px] lg:absolute lg:top-[620px] mt-40">Municipio de Baradero</h4>
       </div>
-      <div className="flex mb-56 mt-56  justify-around font-sans font-semibold flex-wrap ">
-        <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105">
+      <div className="flex items-center mb-56 mt-56  justify-around font-sans font-semibold flex-wrap">
+        <div>
+        <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105 ">
           <Link href="../organigrama" className='flex flex-col justify-center items-center content-center p-3'>
             <Image className="m-auto" src={mapa_estado_municipal} height={80} width={80} alt="" />
-            <p>MAPA DEL ESTADO MUNICIPAL</p>
           </Link>
         </div>
+        <p>MAPA DEL ESTADO MUNICIPAL</p>
+        </div>
+        <div>
         <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105 ">
           <Link href="../boletin-oficial" className='flex flex-col justify-center items-center content-center  p-3'>
             <Image className="m-auto" src={boletin_oficial} height={80} width={80} alt="" />
-            <p>BOLETÍN OFICIAL</p>
           </Link>
         </div>
-        <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105 flex flex-col">
-          <Link href="../precios-y-licitaciones" className='flex flex-col justify-center items-center content-center'>
-            <Image className="m-auto" src={compra_licitaciones} height={80} width={80} alt="" />
-            <p>COMPRAS Y LICITACIONES</p>
-          </Link>
+        <p>BOLETÍN OFICIAL</p>
+        </div>
+        <div>
+          <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105  ">
+            <Link href="../precios-y-licitaciones" className='flex flex-col justify-center items-center content-center p-2'>
+              <Image className="m-auto" src={compra_licitaciones} height={80} width={80} alt="" />
+            </Link>
+          </div>
+          <p>COMPRAS Y LICITACIONES</p>
         </div>
         {/* <div className="text-black text-center p-[20px] mt-[3px]">
           <Link href="#">
@@ -53,17 +59,21 @@ export const Main = () => {
             <p>Datos Abiertos</p>
           </Link>
         </div> */}
-        <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105">
+        <div>
+        <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105 ">
           <Link href="../Gestion-de-compromisos" className='flex flex-col justify-center items-center content-center p-3'>
             <Image className="m-auto" src={gestion_compromisos} height={80} width={80} alt="" />
-            <p>GESTIÓN DE COMPROMISOS</p>
           </Link>
         </div>
-        <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105">
+        <p>GESTIÓN DE COMPROMISOS</p>
+        </div>
+        <div>
+        <div className="text-black text-center p-4 transition duration-300 ease-in-out transform hover:scale-105 ">
           <Link href="../presupuesto-publico" className='flex flex-col justify-center items-center content-center p-3'>
             <Image className="m-auto" src={presupuesto_publico} height={80} width={80} alt="" />
-            <p>PRESUPUESTO PUBLICO</p>
           </Link>
+        </div>
+        <p>PRESUPUESTO PUBLICO</p>
         </div>
       </div>
     </>

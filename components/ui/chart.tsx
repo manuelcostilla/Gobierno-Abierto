@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 "use client"
 
 import * as React from "react"
@@ -24,7 +26,7 @@ type ChartContextProps = {
 
 const ChartContext = React.createContext<ChartContextProps | null>(null)
 
-function useChart() {
+function useChart () {
   const context = React.useContext(ChartContext)
 
   if (!context) {
@@ -198,14 +200,18 @@ const ChartTooltipContent = React.forwardRef<
                   indicator === "dot" && "items-center"
                 )}
               >
-                {formatter && item?.value !== undefined && item.name ? (
-                  formatter(item.value, item.name, item, index, item.payload)
-                ) : (
+                {formatter && item?.value !== undefined && item.name
+                  ? (
+                      formatter(item.value, item.name, item, index, item.payload)
+                    )
+                  : (
                   <>
-                    {itemConfig?.icon ? (
+                    {itemConfig?.icon
+                      ? (
                       <itemConfig.icon />
-                    ) : (
-                      !hideIndicator && (
+                        )
+                      : (
+                          !hideIndicator && (
                         <div
                           className={cn(
                             "shrink-0 rounded-[2px] border-[--color-border] bg-[--color-bg]",
@@ -224,8 +230,8 @@ const ChartTooltipContent = React.forwardRef<
                             } as React.CSSProperties
                           }
                         />
-                      )
-                    )}
+                          )
+                        )}
                     <div
                       className={cn(
                         "flex flex-1 justify-between leading-none",
@@ -245,7 +251,7 @@ const ChartTooltipContent = React.forwardRef<
                       )}
                     </div>
                   </>
-                )}
+                    )}
               </div>
             )
           })}
@@ -296,16 +302,18 @@ const ChartLegendContent = React.forwardRef<
                 "flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3 [&>svg]:text-muted-foreground"
               )}
             >
-              {itemConfig?.icon && !hideIcon ? (
+              {itemConfig?.icon && !hideIcon
+                ? (
                 <itemConfig.icon />
-              ) : (
+                  )
+                : (
                 <div
                   className="h-2 w-2 shrink-0 rounded-[2px]"
                   style={{
                     backgroundColor: item.color,
                   }}
                 />
-              )}
+                  )}
               {itemConfig?.label}
             </div>
           )
@@ -317,7 +325,7 @@ const ChartLegendContent = React.forwardRef<
 ChartLegendContent.displayName = "ChartLegend"
 
 // Helper to extract item config from a payload.
-function getPayloadConfigFromPayload(
+function getPayloadConfigFromPayload (
   config: ChartConfig,
   payload: unknown,
   key: string

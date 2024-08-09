@@ -20,7 +20,7 @@ export function Organigrama () {
               alt="Imagen obra"
               height={800}
               width={800}
-              src="/imagenes/organigrama6-8.png"
+              src="/ImgOrg/OrgIntendencia.jpg"
             />
           </div>
         </DialogContent>
@@ -36,7 +36,7 @@ export function Organigrama () {
               alt="Imagen obra"
               height={800}
               width={800}
-              src="/imagenes/organigrama6-8.png"
+              src="/ImgOrg/OrgGobierno.jpg"
             />
           </div>
         </DialogContent>
@@ -52,7 +52,7 @@ export function Organigrama () {
               alt="Imagen obra"
               height={800}
               width={800}
-              src="/imagenes/organigrama6-8.png"
+              src="/imgOrg/OrgPlanificacion.jpg"
             />
           </div>
         </DialogContent>
@@ -68,7 +68,7 @@ export function Organigrama () {
               alt="Imagen obra"
               height={800}
               width={800}
-              src="/imagenes/organigrama6-8.png"
+              src="/ImgOrg/OrgServpublicos.jpg"
             />
           </div>
         </DialogContent>
@@ -84,7 +84,7 @@ export function Organigrama () {
               alt="Imagen obra"
               height={800}
               width={800}
-              src="/imagenes/organigrama6-8.png"
+              src="/ImgOrg/OrgHacienda.jpg"
             />
           </div>
         </DialogContent>
@@ -100,7 +100,7 @@ export function Organigrama () {
               alt="Imagen obra"
               height={800}
               width={800}
-              src="/imagenes/organigrama6-8.png"
+              src="/ImgOrg/OrgSocial.jpg"
             />
           </div>
         </DialogContent>
@@ -116,7 +116,7 @@ export function Organigrama () {
               alt="Imagen obra"
               height={800}
               width={800}
-              src="/imagenes/organigrama6-8.png"
+              src="/ImgOrg/OrgSalud.jpg"
             />
           </div>
         </DialogContent>
@@ -132,7 +132,7 @@ export function Organigrama () {
               alt="Imagen obra"
               height={800}
               width={800}
-              src="/imagenes/organigrama6-8.png"
+              src="/ImgOrg/OrgCultura.jpg"
             />
           </div>
         </DialogContent>

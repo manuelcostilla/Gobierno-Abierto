@@ -65,7 +65,7 @@ export const dataObra = [
     description:
       "Se trata del convenio firmado con el ministro de Obras Públicas de la Nación, Gabriel Katopodis, en su visita a Baradero en 2020 para la ejecución de obras por medio del Plan “Argentina Hace II”. En este caso, es una inversión de más de 25 millones de pesos destinados al mejoramiento del tránsito y desagüe de la zona. Específicamente son $25.187.840, 91 que contemplan 10.530 m2 de pavimento asfáltico, 1.056 metros lineales de cordón cuneta y 294 m2 de boca calles y badenes financiados en su totalidad por el Ministerio de Obras Públicas de la Nación.",
     progressvalue: 100,
-    Imagelocation: "/imagenes/anfiteatro1.jpg",
+    Imagelocation: "/imagenes/anfiteatro_obra.jpg",
     subtitle:
       "La obra consta de la construcción de la cinta asfáltica, entubamiento pluvial y construcción de cunetas badenes en el barrio.",
   },

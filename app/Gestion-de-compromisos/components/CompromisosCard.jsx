@@ -60,8 +60,8 @@ const CompromisosCard = () => {
                     <div className="flex justify-center items-center mt-5 mb-5">
                       <Image
                         alt="Imagen obra"
-                        height={960}
-                        width={642}
+                        height={500}
+                        width={500}
                         src={data.Imagelocation}
                         priority={true}
                       />

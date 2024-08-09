@@ -248,7 +248,7 @@ export const pdfBox = [
     id: 30,
     año: '2020',
     texto: 'Boletin Oficial Enero de 2020',
-    pdfLink: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin_oficial_2020/BoletinOficialEnero2020.pdf',
+    pdfLink: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin_oficial_2020/Boletin%20Oficial%20Enero%202020.pdf',
     boton: 'Descargar'
   },
   {

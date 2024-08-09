@@ -3,7 +3,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import logo from "../../public/imagenes/Logo2_Municipio.png"
+import logo from "../../public/logo_gobiernoAbierto (1).svg"
 import { HeadernavBar } from "./components/Header-navBar"
 import { ModeToggle } from "../toggletheme"
 import {

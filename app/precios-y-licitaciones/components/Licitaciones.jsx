@@ -119,7 +119,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
           </div>
         ))}
       </ScrollArea>
-      <div className="border-2 border-gray-nav"></div>
+      <div className="mt-10 border-2 border-gray-nav"></div>
       <div className="flex items-center gap-4"></div>
       <Direcciondecompras />
     </>

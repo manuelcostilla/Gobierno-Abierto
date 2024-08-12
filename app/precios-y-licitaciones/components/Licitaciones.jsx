@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { BsFileEarmarkPdfFill, BsFillArrowUpCircleFill } from 'react-icons/bs'
 import Direcciondecompras from './Direcciondecompras'
 import { ScrollArea } from '@/components/ui/scroll-area'
+import { Button } from '@/components/ui/button'
 
 export const AcordeonDeLicitaciones = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(null)
@@ -39,46 +40,46 @@ export const AcordeonDeLicitaciones = ({ data }) => {
           COMPRAS Y LICITACIONES
         </h1>
       </div>
-      <div className="flex justify-center xs:text-center xs:items-center xs:content-center xs:flex-wrap xs:text-xs xs:m-0 xs:p-0 xs:w-full font-sans">
-        <button
+      <div className="m-5 flex justify-center xs:text-center xs:items-center xs:content-center xs:flex-wrap xs:text-xs xs:m-0 xs:p-0 xs:w-full font-sans">
+        <Button
           onClick={() => handleShowObjects('2024')}
-          className={`mt-2 ml-16 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-lg ${selectedYear === '2024' ? 'text-green-nav text-lg lg:text-xl' : ''}`}
+          className={`mt-2 ml-16 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2024' ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           2024
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={() => handleShowObjects('2023')}
-          className={`mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-lg ${selectedYear === '2023' ? 'text-green-nav text-lg lg:text-xl' : ''}`}
+          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2023' ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           2023
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={() => handleShowObjects('2022')}
-          className={`mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-lg ${selectedYear === '2022' ? 'text-green-nav text-lg lg:text-xl' : ''}`}
+          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2022' ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           2022
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={() => handleShowObjects('2021')}
-          className={`mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-lg ${selectedYear === '2021' ? 'text-green-nav text-lg lg:text-xl' : ''}`}
+          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2021' ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           2021
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={() => handleShowObjects('2020')}
-          className={`mt-2 mr-4 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-lg ${selectedYear === '2020' ? 'text-green-nav text-lg lg:text-xl' : ''}`}
+          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2020' ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           2020
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={resetList}
-          className={`mt-2 text-blue-header font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-2 xs:py-2 lg:text-lg ${selectedYear === null ? 'text-green-nav text-lg lg:text-xl' : ''}`}
+          className={`mt-2 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-2 xs:py-2 lg:text-base ${selectedYear === null ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           Mostrar todos
-        </button>
+        </Button>
       </div>
 
-      <ScrollArea className="flex flex-col w-full lg:w-[1250px] h-[350px] mb-10 m-auto p-10 border-dotted border border-gray-400 clip-your-needful-style min-h-60">
+      <ScrollArea className="flex flex-col w-full lg:w-[1250px] h-[500px] mb-10 m-auto p-10 border-dotted border border-gray-400 clip-your-needful-style min-h-60">
         {objects.map((item, index) => (
           <div className="" key={index}>
             <div>
@@ -117,10 +118,10 @@ export const AcordeonDeLicitaciones = ({ data }) => {
             </div>
           </div>
         ))}
-        <Direcciondecompras />
-        <div className="border-2 border-gray-nav"></div>
-        <div className="flex items-center gap-4"></div>
       </ScrollArea>
+      <div className="border-2 border-gray-nav"></div>
+      <div className="flex items-center gap-4"></div>
+      <Direcciondecompras />
     </>
   )
 }

@@ -7,7 +7,7 @@ import { FaCity } from 'react-icons/fa'
 function Direcciondecompras () {
   return (
     <>
-      <div className="lg:w-full mt-4  lg:left-[900px] lg:top-[550px]  flex flex-col items-center font-sans font-bold">
+      <div className="lg:w-full mt-16 mb-16 lg:left-[900px] lg:top-[550px]  flex flex-col items-center font-sans font-bold">
         <div className="items-center flex flex-col">
           <h1 className="text-center font-bold text-blue-header lg:flex lg:justify-center ">
             Dirección de Compras

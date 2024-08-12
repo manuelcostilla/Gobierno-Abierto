@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { BsFileEarmarkPdfFill, BsFillArrowUpCircleFill } from 'react-icons/bs'
 import Direcciondecompras from './Direcciondecompras'
+import { ScrollArea } from '@/components/ui/scroll-area'
 
 export const AcordeonDeLicitaciones = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(null)
@@ -77,7 +78,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
         </button>
       </div>
 
-      <div className="flex flex-col w-full lg:w-[1250px] mb-10 m-auto p-10 border-dotted border border-gray-400 clip-your-needful-style min-h-60">
+      <ScrollArea className="flex flex-col w-full lg:w-[1250px] mb-10 m-auto p-10 border-dotted border border-gray-400 clip-your-needful-style min-h-60">
         {objects.map((item, index) => (
           <div className="" key={index}>
             <div>
@@ -119,7 +120,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
         <Direcciondecompras />
         <div className="border-2 border-gray-nav"></div>
         <div className="flex items-center gap-4"></div>
-      </div>
+      </ScrollArea>
     </>
   )
 }

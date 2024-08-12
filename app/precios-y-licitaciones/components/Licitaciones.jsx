@@ -78,7 +78,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
         </button>
       </div>
 
-      <ScrollArea className="flex flex-col w-full lg:w-[1250px] mb-10 m-auto p-10 border-dotted border border-gray-400 clip-your-needful-style min-h-60">
+      <ScrollArea className="flex flex-col w-full lg:w-[1250px] h-[350px] mb-10 m-auto p-10 border-dotted border border-gray-400 clip-your-needful-style min-h-60">
         {objects.map((item, index) => (
           <div className="" key={index}>
             <div>

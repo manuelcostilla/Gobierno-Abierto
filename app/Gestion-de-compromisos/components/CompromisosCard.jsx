@@ -19,6 +19,13 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  // CarouselNext,
+  // CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const CompromisosCard = () => {
   return (
@@ -56,16 +63,26 @@ const CompromisosCard = () => {
                     <Label className="text-balance">{data.subtitle}</Label>
                   </DialogHeader>
                   <DialogDescription>
-                    <div className="text-sm  text-pretty">{data.description}</div>
-                    <div className="flex justify-center items-center mt-5 mb-5">
-                      <Image
-                        alt="Imagen obra"
-                        height={500}
-                        width={500}
-                        src={data.Imagelocation}
-                        priority={true}
-                      />
+                    <div className="text-sm  text-pretty">
+                      {data.description}
                     </div>
+                    <Carousel className="flex justify-center items-center mt-5 mb-5">
+                      <CarouselContent>
+                        {data.Imagelocation.map((imagen, index) => (
+                          <>
+                            <CarouselItem key={index}>
+                              <Image
+                                alt="Imagen obra"
+                                height={500}
+                                width={500}
+                                src={`/imagenes/${imagen}`}
+                                priority={true}
+                              />
+                            </CarouselItem>
+                          </>
+                        ))}
+                      </CarouselContent>
+                    </Carousel>
                   </DialogDescription>
                   <DialogFooter>
                     <Button asChild>

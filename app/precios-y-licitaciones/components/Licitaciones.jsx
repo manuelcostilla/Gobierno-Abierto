@@ -66,12 +66,6 @@ export const AcordeonDeLicitaciones = ({ data }) => {
           2021
         </Button>
         <Button
-          onClick={() => handleShowObjects('2020')}
-          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2020' ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
-        >
-          2020
-        </Button>
-        <Button
           onClick={resetList}
           className={`mt-2 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-2 xs:py-2 lg:text-base ${selectedYear === null ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >

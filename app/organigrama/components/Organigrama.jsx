@@ -52,7 +52,7 @@ export function Organigrama () {
               alt="Imagen obra"
               height={800}
               width={800}
-              src="/imgOrg/OrgPlanificacion.jpg"
+              src="/ImgOrg/OrgPlanificacion.jpg"
             />
           </div>
         </DialogContent>

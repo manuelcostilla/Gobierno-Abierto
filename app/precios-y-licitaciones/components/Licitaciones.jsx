@@ -36,38 +36,38 @@ export const AcordeonDeLicitaciones = ({ data }) => {
   return (
     <>
       <div className="flex max-w-screen h-36 bg-blue-title justify-center items-center">
-        <h1 className="flex justify-center items-center text-center text-4xl font-sans text-white font-bold" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>
+        <h1 className="flex justify-center items-center text-center text-lg lg:text-3xl font-sans text-white font-bold" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>
           COMPRAS Y LICITACIONES
         </h1>
       </div>
-      <div className="m-5 flex justify-center xs:text-center xs:items-center xs:content-center xs:flex-wrap xs:text-xs xs:m-0 xs:p-0 xs:w-full font-sans">
+      <div className=" lg:m-10 flex flex-wrap justify-center text-xs  font-sans overflow-x-hidden">
         <Button
           onClick={() => handleShowObjects('2024')}
-          className={`mt-2 ml-16 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2024' ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
+          className={`mt-2 lg:ml-16 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2024' ? 'text-black bg-gray-300 text-sm lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           2024
         </Button>
         <Button
           onClick={() => handleShowObjects('2023')}
-          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2023' ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
+          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2023' ? 'text-black bg-gray-300 text-sm lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           2023
         </Button>
         <Button
           onClick={() => handleShowObjects('2022')}
-          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2022' ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
+          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2022' ? 'text-black bg-gray-300 text-sm lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           2022
         </Button>
         <Button
           onClick={() => handleShowObjects('2021')}
-          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2021' ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
+          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2021' ? 'text-black bg-gray-300 text-sm lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           2021
         </Button>
         <Button
           onClick={resetList}
-          className={`mt-2 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-2 xs:py-2 lg:text-base ${selectedYear === null ? 'text-black bg-gray-300 text-lg lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
+          className={`mt-2 mb-2 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-2 xs:py-2 lg:text-base ${selectedYear === null ? 'text-black bg-gray-300 text-sm lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
         >
           Mostrar todos
         </Button>

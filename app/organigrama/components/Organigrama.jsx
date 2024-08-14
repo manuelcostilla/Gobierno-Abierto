@@ -8,7 +8,7 @@ import Image from "next/image"
 export function Organigrama () {
   return (
     <>
-    <div className="flex justify-center overflow-x-hidden">
+    <div className="flex justify-center ">
     <div className="flex flex-col mt-10 mb-10">
       <Dialog>
         <DialogTrigger asChild className="bg-blue-title text-xs lg:text-lg w-[350px] lg:w-full">

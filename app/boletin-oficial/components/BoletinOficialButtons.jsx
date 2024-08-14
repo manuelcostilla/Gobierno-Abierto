@@ -32,7 +32,7 @@ function BoletinOficialButtons () {
         ))}
       </div>
 
-      <BoletinOficial data={pdfBox.filter((box) => box.año === selectedYear)} />
+      <BoletinOficial data={pdfBox.filter((box) => box.año === selectedYear).reverse()} />
     </>
   )
 }

@@ -4,7 +4,9 @@ import { licitaciones } from './data/InfoLicitaciones'
 const Licitaciones = () => {
   return (
     <>
-      <AcordeonDeLicitaciones data={licitaciones} />
+    <div className='overflow-x-hidden'>
+      <AcordeonDeLicitaciones data={licitaciones}/>
+      </div>
     </>
   )
 }

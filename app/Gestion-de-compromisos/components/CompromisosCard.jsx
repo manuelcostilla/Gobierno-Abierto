@@ -75,7 +75,7 @@ const CompromisosCard = () => {
                                 alt="Imagen obra"
                                 height={500}
                                 width={500}
-                                src={`/imagenes/${imagen}`}
+                                src={ imagen }
                                 priority={true}
                               />
                             </CarouselItem>

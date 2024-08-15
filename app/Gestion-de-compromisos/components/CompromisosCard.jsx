@@ -66,16 +66,16 @@ const CompromisosCard = () => {
                     <div className="text-sm  text-pretty">
                       {data.description}
                     </div>
-                    <Carousel className="flex justify-center items-center mt-5 mb-5">
-                      <CarouselContent>
+                    <Carousel className=" flex justify-center items-center h-[550px] w-[450px] max-w-[450px] ">
+                      <CarouselContent >
                         {data.Imagelocation.map((imagen, index) => (
                           <>
-                            <CarouselItem key={index}>
+                            <CarouselItem key={index} >
                               <Image
                                 alt="Imagen obra"
-                                height={500}
-                                width={500}
                                 src={ imagen }
+                                width={500}
+                                height={500}
                                 priority={true}
                               />
                             </CarouselItem>

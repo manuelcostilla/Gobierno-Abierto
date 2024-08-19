@@ -66,11 +66,11 @@ const CompromisosCard = () => {
                     <div className="text-xs lg:text-sm  text-pretty">
                       {data.description}
                     </div>
-                    <Carousel className=" flex justify-center items-center sm:h-[200px] md:!h-[180px]  lg:!h-[300px] w-[300px] lg:w-[450px] lg:max-w-[450px]">
+                    <Carousel className="border border-solid border-red-500 flex justify-center items-center sm:h-[200px] md:!h-[180px]  lg:!h-[300px] w-[300px] lg:w-[450px] lg:max-w-[450px]">
                       <CarouselContent >
                         {data.Imagelocation.map((imagen, index) => (
                           <>
-                            <CarouselItem key={index} className=" object-cover h-[180px] md:!h-[180px] lg:!h-[300px] w-[200px] lg:w-[300px]">
+                            <CarouselItem key={index} className="flex justify-center items-center border border-solid border-red-500 object-cover h-[180px] md:!h-[180px] lg:!h-[300px] lg:w-[300px]">
                               <Image
                                 alt="Imagen obra"
                                 src={ imagen }

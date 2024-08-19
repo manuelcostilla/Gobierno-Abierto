@@ -15,7 +15,7 @@ export const licitaciones = [{
   fecha: ' 7 de mayo de 2024 a las 10 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitacion-Publica-N°-11-23.pdf',
+  pdfUrl: '',
   botonTexto: 'Descargar'
 },
 {
@@ -37,7 +37,7 @@ export const licitaciones = [{
   fecha: '11 de julio de 2023 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitacion-Publica-N°-11-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2011-23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -59,7 +59,7 @@ export const licitaciones = [{
   fecha: '28 DE JUNIO de 2023 a las 9:30 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 10-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2010-23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -81,7 +81,7 @@ export const licitaciones = [{
   fecha: '28 de junio de 2023 a las 9:30 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 09-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2009-23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -103,7 +103,7 @@ export const licitaciones = [{
   fecha: '7 DE JUNIO de 2023 a las 9:30 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 09-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2008-23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -125,7 +125,7 @@ export const licitaciones = [{
   fecha: '7 DE JUNIO de 2023 a las 9:00 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 07-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2007-23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -147,7 +147,7 @@ export const licitaciones = [{
   fecha: '30 de mayo de 2023 a las 9:30 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 06-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2006-23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -169,7 +169,7 @@ export const licitaciones = [{
   fecha: '30 de mayo de 2023 a las 9:00 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 05-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2005-23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -191,7 +191,7 @@ export const licitaciones = [{
   fecha: '24 de mayo de 2023 a las 9:30 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 04-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2004-23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -213,7 +213,7 @@ export const licitaciones = [{
   fecha: '24 de mayo de 2023 a las 9:00 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 03-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -235,7 +235,7 @@ export const licitaciones = [{
   fecha: '23 de mayo de 2023 a las 9:00 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 02-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2002_23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -255,7 +255,7 @@ export const licitaciones = [{
   fecha: '17 de febrero de 2023 a las 9:00 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 01-23.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2001-23.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -275,7 +275,7 @@ export const licitaciones = [{
   fecha: '17 de enero de 2023 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 24-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2024-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -295,7 +295,7 @@ export const licitaciones = [{
   fecha: '17 de enero de 2023 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 23-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2023-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -313,7 +313,7 @@ export const licitaciones = [{
   fecha: '7 de diciembre de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 18-22_Segundo Llamado.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2018-22_Segundo%20Llamado.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -333,7 +333,7 @@ export const licitaciones = [{
   fecha: '22 de noviembre de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 22-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2022-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -353,7 +353,7 @@ export const licitaciones = [{
   fecha: '18 de noviembre de 2022 a las 10 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 21-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2021-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -373,7 +373,7 @@ export const licitaciones = [{
   fecha: '16 de noviembre de 2022 a las 9:30 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 20-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2020-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -393,7 +393,7 @@ export const licitaciones = [{
   fecha: '16 de noviembre de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 19-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2019-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -411,7 +411,7 @@ export const licitaciones = [{
   fecha: '22 de septiembre de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 18-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2018-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -429,7 +429,7 @@ export const licitaciones = [{
   fecha: '15 de septiembre de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 17-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2017-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -449,7 +449,7 @@ export const licitaciones = [{
   fecha: '7 de septiembre de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 16-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2016-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -469,7 +469,7 @@ export const licitaciones = [{
   fecha: '6 de septiembre de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 15-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2015-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -487,7 +487,7 @@ export const licitaciones = [{
   fecha: '25 de agosto de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 14-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2014-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -507,7 +507,7 @@ export const licitaciones = [{
   fecha: '11 de agosto de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: ' Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 13-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2013-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -527,7 +527,7 @@ export const licitaciones = [{
   fecha: '14 de julio de 2022 a las 11 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 12-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2012-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -547,7 +547,7 @@ export const licitaciones = [{
   fecha: '14 de julio de 2022 a las 10 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 11-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2011-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -567,7 +567,7 @@ export const licitaciones = [{
   fecha: '14 de julio de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 10-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2010-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -586,7 +586,7 @@ export const licitaciones = [{
   fecha: '14 de junio de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 09-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2009-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -606,7 +606,7 @@ export const licitaciones = [{
   fecha: '27 de abril de 2022 a las 10:30 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 09 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 08-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2008-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -626,7 +626,7 @@ export const licitaciones = [{
   fecha: '13 de abril de 2022 a las 10:30 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 07-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2007-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -646,7 +646,7 @@ export const licitaciones = [{
   fecha: '13 de abril de 2022 a las 10 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 06-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2006-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -666,7 +666,7 @@ export const licitaciones = [{
   fecha: '13 de abril de 2022 a las 9:30 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 05-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2005-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -688,7 +688,7 @@ export const licitaciones = [{
   fecha: ' 13 de abril de 2022 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 04-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2004-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -710,7 +710,7 @@ export const licitaciones = [{
   fecha: '24 de mayo de 2023 a las 9:00 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2023/Licitación Pública N° 03-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -732,7 +732,7 @@ export const licitaciones = [{
   fecha: '23 de marzo de 2022 a las 9:30 horas en el Municipio de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2022/Licitación Pública N° 02-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2002-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -754,7 +754,7 @@ export const licitaciones = [{
   fecha: '23 de marzo de 2022 a las 9 horas en el Municipio de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '../pdf/licitaciones_publicas/licitaciones_publicas_2021/Licitación Pública N° 01-22.pdf',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2001-22.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -776,7 +776,7 @@ export const licitaciones = [{
   fecha: '30 de diciembre de 2021 a las 11.30 horas, en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2022-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -798,7 +798,7 @@ export const licitaciones = [{
   fecha: '30 de diciembre de 2021 a las 11.30 horas, en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2021-21.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -820,7 +820,7 @@ export const licitaciones = [{
   fecha: '30 de diciembre de 2021 a las 11 horas, en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2020-21.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -842,7 +842,7 @@ export const licitaciones = [{
   fecha: '30 de diciembre de 2021 a las 10 horas, en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2019-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -864,7 +864,7 @@ export const licitaciones = [{
   fecha: '30 de diciembre de 2021 a las 9 horas, en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2018-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -886,7 +886,7 @@ export const licitaciones = [{
   fecha: '23 de diciembre de 2021 a las 9 horas, en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2017-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -908,7 +908,7 @@ export const licitaciones = [{
   fecha: '16 de diciembre de 2021 a las 9 horas, en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2016-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -930,7 +930,7 @@ export const licitaciones = [{
   fecha: '10 de diciembre de 2021 a las 09 horas, en el Municipio de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2015-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -952,7 +952,7 @@ export const licitaciones = [{
   fecha: '10 de diciembre de 2021 a las 09 horas, en el Municipio de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2014-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -974,7 +974,7 @@ export const licitaciones = [{
   fecha: '27 de octubre de 2021 a las 9 horas en Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2013-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -996,7 +996,7 @@ export const licitaciones = [{
   fecha: '19 de octubre de 2021 a las 9 horas En Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2012-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -1018,7 +1018,7 @@ export const licitaciones = [{
   fecha: '12 de noviembre de 2021 a las 9hs en el Municipio.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2011-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -1040,7 +1040,7 @@ export const licitaciones = [{
   fecha: '26 de mayo de 2021 a las 10 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2005-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -1062,7 +1062,7 @@ export const licitaciones = [{
   fecha: '26 de mayo de 2021 a las 11 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2004-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -1084,7 +1084,7 @@ export const licitaciones = [{
   fecha: '26 de mayo de 2021 a las 9 horas en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf',
   botonTexto: 'Descargar'
 },
 {
@@ -1106,7 +1106,7 @@ export const licitaciones = [{
   fecha: '22 de marzo de 2021 a las 10 hs en la Municipalidad de Baradero.',
   adquisicionPliego: 'Adquisición del Pliego:',
   adquisicion: 'Adquisición hasta 48 horas hábiles antes de la apertura.',
-  pdfUrl: '',
+  pdfUrl: 'https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2001-2021.pdf',
   botonTexto: 'Descargar'
 }
 ]

@@ -1,12 +1,9 @@
-import { AcordeonDeLicitaciones } from './components/Licitaciones'
-import { licitaciones } from './data/InfoLicitaciones'
-
+import React from 'react'
+import Main_licitaciones from './components/Main'
 const Licitaciones = () => {
   return (
     <>
-    <div className='overflow-x-hidden'>
-      <AcordeonDeLicitaciones data={licitaciones}/>
-      </div>
+    <Main_licitaciones />
     </>
   )
 }

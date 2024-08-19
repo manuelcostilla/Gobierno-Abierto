@@ -35,11 +35,6 @@ export const AcordeonDeLicitaciones = ({ data }) => {
 
   return (
     <>
-      <div className="flex max-w-screen h-36 bg-blue-title justify-center items-center">
-        <h1 className="flex justify-center items-center text-center text-lg lg:text-3xl font-sans text-white font-bold" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>
-          COMPRAS Y LICITACIONES
-        </h1>
-      </div>
       <div className=" lg:m-10 flex flex-wrap justify-center text-xs  font-sans overflow-x-hidden">
         <Button
           onClick={() => handleShowObjects('2024')}

@@ -70,7 +70,7 @@ const CompromisosCard = () => {
                       <CarouselContent >
                         {data.Imagelocation.map((imagen, index) => (
                           <>
-                            <CarouselItem key={index} >
+                            <CarouselItem key={index} className=" object-cover h-[300px] w-[300px]">
                               <Image
                                 alt="Imagen obra"
                                 src={ imagen }

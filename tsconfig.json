@@ -32,7 +32,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/presupuesto-publico/gastos/components/Grafico_gastos.tsx"  ],
   "exclude": [
     "node_modules"
   ]

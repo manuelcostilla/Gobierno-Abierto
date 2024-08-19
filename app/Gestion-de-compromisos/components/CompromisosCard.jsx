@@ -29,8 +29,8 @@ import {
 
 const CompromisosCard = () => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="flex flex-wrap justify-center self-center m-20 w-[1250px]">
+    <div className="flex justify-center items-center ">
+      <div className="flex flex-wrap justify-center self-center m-20 w-[1250px] ">
         {dataObra.map((data, index) => (
           <Card key={index} className="w-[250px]  m-5">
             <CardHeader className="flex items-center justify-center bg-blue-header">
@@ -60,17 +60,17 @@ const CompromisosCard = () => {
                 <DialogContent>
                   <DialogHeader>
                     <DialogTitle>{data.title}</DialogTitle>
-                    <Label className="text-balance">{data.subtitle}</Label>
+                    <Label className="text-balance text-sm ">{data.subtitle}</Label>
                   </DialogHeader>
                   <DialogDescription>
-                    <div className="text-sm  text-pretty">
+                    <div className="text-xs lg:text-sm  text-pretty">
                       {data.description}
                     </div>
-                    <Carousel className=" flex justify-center items-center h-[550px] w-[450px] max-w-[450px] ">
+                    <Carousel className=" flex justify-center items-center sm:h-[200px] md:!h-[180px]  lg:!h-[300px] w-[300px] lg:w-[450px] lg:max-w-[450px]">
                       <CarouselContent >
                         {data.Imagelocation.map((imagen, index) => (
                           <>
-                            <CarouselItem key={index} className=" object-cover h-[300px] w-[300px]">
+                            <CarouselItem key={index} className=" object-cover h-[180px] md:!h-[180px] lg:!h-[300px] w-[200px] lg:w-[300px]">
                               <Image
                                 alt="Imagen obra"
                                 src={ imagen }

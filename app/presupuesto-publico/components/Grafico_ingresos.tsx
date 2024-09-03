@@ -30,7 +30,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-export function Component () {
+export function GraficosIngresos () {
   return (
     <div className="flex justify-center items-center">
     <ChartContainer config={chartConfig} className="min-h-[200px] w-[850px] ">

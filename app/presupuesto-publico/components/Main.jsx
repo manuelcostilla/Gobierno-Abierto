@@ -1,16 +1,16 @@
-import React from "react"
-import { Banner } from "../../../components/banner"
-import { Button } from "@/components/ui/button"
-import { GraficoGastos } from "./Grafico_gastos"
-import { ChartColumn, ChartPie } from "lucide-react"
-import { GraficosIngresos } from "./Grafico_ingresos"
+import React from "react";
+import { Banner } from "../../../components/banner";
+import { Button } from "@/components/ui/button";
+import { GraficoGastos } from "./Grafico_gastos";
+import { ChartColumn, ChartPie } from "lucide-react";
+import { GraficosIngresos } from "./Grafico_ingresos";
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
   CardFooter,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
 const Main_presupuesto = () => {
   return (
@@ -35,23 +35,21 @@ const Main_presupuesto = () => {
             <ChartPie />
           </Button>
         </div>
-        <div className="flex justify-end items-center pr-5 pb-5 ">
-          <Card className="w-[500px] h-[350px]">
-            <CardHeader>
-              <CardTitle>Grafico gastos</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <GraficoGastos />
-            </CardContent>
-          </Card>
-        </div>
-        <div className="flex justify-end items-center pr-5 pt-5">
-          <Card className="w-[500px] h-[350px]">
+        <div className="flex justify-center items-center pr-5 pt-5">
+          <Card className="w-[800px] h-[550px] m-5">
             <CardHeader>
               <CardTitle>Grafico Ingresos</CardTitle>
             </CardHeader>
             <CardContent>
               <GraficosIngresos />
+            </CardContent>
+          </Card>
+          <Card className="w-[500px] h-[350px] m-5">
+            <CardHeader>
+              <CardTitle>Grafico gastos</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <GraficoGastos />
             </CardContent>
           </Card>
         </div>
@@ -72,7 +70,7 @@ const Main_presupuesto = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Main_presupuesto
+export default Main_presupuesto;

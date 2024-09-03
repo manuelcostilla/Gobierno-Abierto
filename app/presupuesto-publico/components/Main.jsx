@@ -25,7 +25,7 @@ const Main_presupuesto = () => {
           </ul>
         </div>
         <div className="flex justify-center items-center p-5">
-          <Button>2024</Button>
+          <Button>2023</Button>
           <Button>Gasto</Button>
           <Button>Presupuesto</Button>
           <Button>
@@ -59,14 +59,14 @@ const Main_presupuesto = () => {
           <Card >
             <CardHeader>
               <CardTitle>
-                R.A.F.A.M Situacion Economica Financiera Año 2024
+                R.A.F.A.M Situacion Economica Financiera Año 2023
               </CardTitle>
             </CardHeader>
             <CardContent>
               Secretaria de Hacienda y Finanzas publicas
             </CardContent>
             <CardFooter>
-              Situacion economico Financiera del 01/01/2024 al 30/06/2024
+              Situacion economico Financiera del 01/01/2023 al 30/06/2023
             </CardFooter>
           </Card>
         </div>

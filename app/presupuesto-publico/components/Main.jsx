@@ -66,7 +66,7 @@ const Main_presupuesto = () => {
               Secretaria de Hacienda y Finanzas publicas
             </CardContent>
             <CardFooter>
-              Situacion economico Financiera del 01/01/2023 al 30/06/2023
+              Situacion economico Financiera del 01/01/2023 al 30/06/2023 -
             </CardFooter>
           </Card>
         </div>

@@ -1,4 +1,4 @@
-export default function Banner ({ titulo }) {
+export function Banner ({ titulo }) {
   return (
     <>
       <div className="flex max-w-screen h-36 bg-blue-title justify-center items-center">

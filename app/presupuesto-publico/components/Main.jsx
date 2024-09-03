@@ -1,4 +1,3 @@
-import React from "react"
 import { Banner } from "../../../components/banner"
 import { Button } from "@/components/ui/button"
 import { GraficoGastos } from "./Grafico_gastos"
@@ -9,7 +8,6 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-  CardFooter,
 } from "@/components/ui/card"
 
 const Main_presupuesto = () => {
@@ -17,7 +15,7 @@ const Main_presupuesto = () => {
     <>
       <div>
         <Banner titulo="Presupuesto Publico" />
-        <div className="flex justify-center items-center pt-5">
+        <div className="flex justify-center items-center p-5">
           <ul className="flex flex-row pr-4">
             <li className="mr-5 ml-5">Año</li>
             <li className="mr-10 ml-16">Tipo de gasto</li>
@@ -35,8 +33,8 @@ const Main_presupuesto = () => {
             <ChartPie />
           </Button>
         </div>
-        <div className="flex justify-center items-center pr-5 pt-5">
-          <Card className="w-[800px] h-[550px] m-5">
+        <div className="flex justify-center items-center mb-5 pr-5 pt-5">
+          <Card className="w-[800px] h-[550px]">
             <CardHeader>
               <CardTitle>Grafico Ingresos</CardTitle>
             </CardHeader>
@@ -44,28 +42,15 @@ const Main_presupuesto = () => {
               <GraficosIngresos />
             </CardContent>
           </Card>
-          <Card className="w-[500px] h-[350px] m-5">
+        </div>
+        <div className="flex justify-center items-center m-5 ">
+          <Card className="w-[800px] h-[550px]">
             <CardHeader>
               <CardTitle>Grafico gastos</CardTitle>
             </CardHeader>
             <CardContent>
               <GraficoGastos />
             </CardContent>
-          </Card>
-        </div>
-        <div className="flex justify-start items-center pb-5 ">
-          <Card>
-            <CardHeader>
-              <CardTitle>
-                R.A.F.A.M Situacion Economica Financiera Año 2023
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              Secretaria de Hacienda y Finanzas publicas
-            </CardContent>
-            <CardFooter>
-              Situacion economico Financiera del 01/01/2023 al 30/06/2023 -
-            </CardFooter>
           </Card>
         </div>
       </div>

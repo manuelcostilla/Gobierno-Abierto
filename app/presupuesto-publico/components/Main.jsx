@@ -1,5 +1,5 @@
 import React from "react"
-import { Banner } from '@/components/Banner'
+import { Banner } from "../../../components/banner"
 import { Button } from "@/components/ui/button"
 import { GraficoGastos } from "./Grafico_gastos"
 import { ChartColumn, ChartPie } from "lucide-react"

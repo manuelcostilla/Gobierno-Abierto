@@ -1,4 +1,4 @@
-export function Banner ({ titulo }) {
+export const Banner = ({ titulo }) => {
   return (
     <>
       <div className="flex max-w-screen h-36 bg-blue-title justify-center items-center">

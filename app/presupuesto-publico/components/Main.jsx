@@ -1,5 +1,5 @@
 import React from "react"
-import Banner from "../../../components/Banner"
+import { Banner } from '@/components/Banner'
 import { Button } from "@/components/ui/button"
 import { GraficoGastos } from "./Grafico_gastos"
 import { ChartColumn, ChartPie } from "lucide-react"
@@ -17,21 +17,21 @@ const Main_presupuesto = () => {
     <>
       <div>
         <Banner titulo="Presupuesto Publico" />
-        <div className="flex justify-center items-center">
-          <ul className="flex flex-row">
-            <li>Año</li>
-            <li>Tipo de gasto</li>
-            <li>Tipo de grafico</li>
+        <div className="flex justify-center items-center pt-5">
+          <ul className="flex flex-row pr-4">
+            <li className="mr-5 ml-5">Año</li>
+            <li className="mr-10 ml-16">Tipo de gasto</li>
+            <li className="mr-5  ml-24">Tipo de grafico</li>
           </ul>
         </div>
         <div className="flex justify-center items-center p-5">
-          <Button>2023</Button>
-          <Button>Gasto</Button>
-          <Button>Presupuesto</Button>
-          <Button>
+          <Button className="mr-5 ml-5">2023</Button>
+          <Button className="mr-5 ml-5">Gasto</Button>
+          <Button className="mr-3 ml-3">Presupuesto</Button>
+          <Button className="mr-5 ml-5">
             <ChartColumn />
           </Button>
-          <Button>
+          <Button className="mr-5 ml-5">
             <ChartPie />
           </Button>
         </div>
@@ -56,7 +56,7 @@ const Main_presupuesto = () => {
           </Card>
         </div>
         <div className="flex justify-start items-center pb-5 ">
-          <Card >
+          <Card>
             <CardHeader>
               <CardTitle>
                 R.A.F.A.M Situacion Economica Financiera Año 2023

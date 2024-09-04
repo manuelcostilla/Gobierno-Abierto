@@ -5,7 +5,6 @@ import Link from "next/link"
 import Image from "next/image"
 import logo from "../../public/logo_gobiernoAbierto (1).svg"
 import { HeadernavBar } from "./components/Header-navBar"
-import { ModeToggle } from "../toggletheme"
 import {
   AiFillFacebook,
   AiFillInstagram,
@@ -53,16 +52,17 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="flex justify-between sm:justify-between items-center p-[50px] sm:w-auto">
-          <Link href="/">
-            <Image alt="" src={logo} height={100} width={277} />
+        <div className="flex justify-between sm:justify-between items-center sm:w-auto lg:border-b-4 lg:border-b-green-nav">
+          <Link href="/" className="ml-14 ">
+            <Image alt="" src={logo} height={400} width={400} />
           </Link>
-          <div className="flex justify-center sm:justify-start items-center p-[50px] sm:w-auto">
-          <ModeToggle />
-        </div>
+          <div className="">
+            <div className=" mt-20">
+            <HeadernavBar />
+            </div>
+          </div>
         </div>
       </header>
-      <HeadernavBar />
     </>
   )
 }

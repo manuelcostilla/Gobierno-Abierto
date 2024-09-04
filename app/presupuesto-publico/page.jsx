@@ -1,11 +1,12 @@
 import Main_presupuesto from './components/Main'
 
-const Presupuesto_publico = () => {
+
+function Presupuestopublico () {
   return (
     <>
-    <Main_presupuesto />
+      <Main_presupuesto />
     </>
   )
 }
 
-export default Presupuesto_publico
+export default Presupuestopublico

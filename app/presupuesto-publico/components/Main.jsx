@@ -1,4 +1,5 @@
-import { Banner } from "../../../components/banner"
+"use client"
+import BannerText from '../../../components/bannertext'
 import { Button } from "@/components/ui/button"
 import { GraficoGastos } from "./Grafico_gastos"
 import { ChartColumn, ChartPie } from "lucide-react"
@@ -9,12 +10,16 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { useState } from "react"
 
-const Main_presupuesto = () => {
+export default function Main_presupuesto () {
+  const [chart, setActivechart] = useState(false)
+
+
   return (
     <>
       <div>
-        <Banner titulo="Presupuesto Publico" />
+        <BannerText titulo="Presupuesto Publico" />
         <div className="flex justify-center items-center p-5">
           <ul className="flex flex-row pr-4">
             <li className="mr-5 ml-5">Año</li>
@@ -26,7 +31,7 @@ const Main_presupuesto = () => {
           <Button className="mr-5 ml-5">2023</Button>
           <Button className="mr-5 ml-5">Gasto</Button>
           <Button className="mr-3 ml-3">Presupuesto</Button>
-          <Button className="mr-5 ml-5">
+          <Button className="mr-5 ml-5" >
             <ChartColumn />
           </Button>
           <Button className="mr-5 ml-5">
@@ -34,12 +39,12 @@ const Main_presupuesto = () => {
           </Button>
         </div>
         <div className="flex justify-center items-center mb-5 pr-5 pt-5">
-          <Card className="w-[800px] h-[550px]">
+          <Card className="w-[850px] h-[550px]">
             <CardHeader>
               <CardTitle>Grafico Ingresos</CardTitle>
             </CardHeader>
             <CardContent>
-              <GraficosIngresos />
+              <GraficosIngresos chart={chart} setChart={setActivechart} />
             </CardContent>
           </Card>
         </div>
@@ -58,4 +63,3 @@ const Main_presupuesto = () => {
   )
 }
 
-export default Main_presupuesto

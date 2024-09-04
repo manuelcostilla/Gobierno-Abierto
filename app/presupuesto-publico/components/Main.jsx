@@ -39,7 +39,7 @@ export default function Main_presupuesto () {
           </Button>
         </div>
         <div className="flex justify-center items-center mb-5 pr-5 pt-5">
-          <Card className="w-[850px] h-[550px]">
+          <Card className="w-[800px] h-[550px]">
             <CardHeader>
               <CardTitle>Grafico Ingresos</CardTitle>
             </CardHeader>

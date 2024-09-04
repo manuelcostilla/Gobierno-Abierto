@@ -59,6 +59,8 @@ const config: Config = {
         'black-nav': '#909092',
         'blue-btn': '#4a8eff',
         'blue-title': '#00689c',
+        'blue-GobAb': '#007CB6',
+        'fuente-gris': '#666666',
         emergencia: '#BDBFC1',
         policia: '#00AFEF',
         bombero: '#Ed3237',

@@ -31,12 +31,12 @@ export const dataAtajos = [
     descripcion: 'En esta sección, se detallan los compromisos del municipio relacionados con obras públicas, incluyendo proyectos en curso y futuros. Los ciudadanos pueden seguir el avance de las obras, conocer los plazos y presupuestos, y verificar el cumplimiento de los compromisos, promoviendo la transparencia y el control sobre el uso de los recursos públicos.',
     link: '../GestionComprom',
   },
-  {
-    id: 5,
-    title: 'PRESUPUESTO PUBLICO',
-    img: 'presupuesto_publico',
-    alt: 'Presupuesto público',
-    descripcion: 'Esta sección ofrece detalles sobre ingresos y gastos del municipio, incluyendo documentos, gráficos y reportes para asegurar transparencia y rendición de cuentas.',
-    link: '../PresupPublico',
-  }
+  // {
+  //   id: 5,
+  //   title: 'PRESUPUESTO PUBLICO',
+  //   img: 'presupuesto_publico',
+  //   alt: 'Presupuesto público',
+  //   descripcion: 'Esta sección ofrece detalles sobre ingresos y gastos del municipio, incluyendo documentos, gráficos y reportes para asegurar transparencia y rendición de cuentas.',
+  //   link: '../PresupPublico',
+  // }
 ]

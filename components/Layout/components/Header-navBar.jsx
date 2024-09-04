@@ -186,17 +186,17 @@ export const HeadernavBar = () => {
             </div>
           )}
         </li>
-        <li className="relative" ref={compromisosRef}>
-          <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'
-            // className="text-black text-left lg:text-center w-full lg:w-full border-b border-gray-400 lg:border-b-0 lg:p-0 p-2 lg:hover:text-gray-700 px-4 lg:px-0"
-            // onClick={() => handleSubMenuClick('compromisos')}
-          >
-            <Link href="../Gestion-de-compromisos">GESTION DE COMPROMISOS<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+        {/* <li className="relative" ref={compromisosRef}>
+          </li><button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'
+             className="text-black text-left lg:text-center w-full lg:w-full border-b border-gray-400 lg:border-b-0 lg:p-0 p-2 lg:hover:text-gray-700 px-4 lg:px-0"
+             onClick={() => handleSubMenuClick('compromisos')}
+          > */}
+            {/* <Link href="../Gestion-de-compromisos">GESTION DE COMPROMISOS<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
           </button>
           {subMenus.compromisos && (
-            <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
+            <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav"> */}
               {/* Opciones del submenú de Precios y licitación */}
-              <ul className="py-0 lg:py-2">
+              {/* <ul className="py-0 lg:py-2">
                 <Link href="#">
                 <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Compromisos Asumidos</li>
                 </Link>
@@ -206,7 +206,7 @@ export const HeadernavBar = () => {
               </ul>
             </div>
           )}
-        </li>
+        </li> */}
         {/* <Link href="#">
           <li className="relative">
             <button className="text-black text-left lg:text-center w-full lg:w-full border-b border-gray-400 lg:border-b-0 lg:p-0 p-2 lg:hover:text-gray-700 px-4 lg:px-0">

@@ -4,50 +4,43 @@ import React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import logo from "../../public/logo_gobiernoAbierto (1).svg"
+import face from "../../public/iconos redes/fb.png"
+import twitter from "../../public/iconos redes/tw.png"
+import instagram from "../../public/iconos redes/ig.png"
+import youtube from "../../public/iconos redes/yt.png"
+import BaraderoGob from "../../public/iconos redes/baradero.gob.png"
 import { HeadernavBar } from "./components/Header-navBar"
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillTwitterSquare,
-  AiFillYoutube,
-} from "react-icons/ai"
+
 
 export const Header = () => {
   return (
     <>
       <header className="overflow-x-hidden">
         <div className="flex w-full justify-center item-center sm:flex sm:justify-end sm:items-center sm:w-full h-[40px] bg-blue-header">
-          <ul className="sm:p-[15px] font-sans sm:justify-start">
+          <ul className=" font-sans sm:justify-start">
             <li className="inline-block list-none sm:w-auto">
               <Link href="https://www.facebook.com/MunicipalidaddeBaradero/">
-                <AiFillFacebook
-                  size="25"
-                  className="text-white hover:text-slate-200"
-                />
+                <Image src={face} alt="facebook" width={12} height={15} className="text-white hover:text-slate-200 m-2 "/>
               </Link>
             </li>
             <li className="inline-block list-none sm:w-auto">
               <Link href="https://www.instagram.com/municipiodebaradero/">
-                <AiFillInstagram
-                  size="25"
-                  className="text-white hover:text-slate-200"
-                />
+                <Image src={instagram} width={21} height={20} className="text-white hover:text-slate-200 m-2 "/>
               </Link>
             </li>
             <li className="inline-block list-none sm:w-auto">
               <Link href="https://twitter.com/municipalidadba">
-                <AiFillTwitterSquare
-                  size="25"
-                  className="text-white hover:text-slate-200"
-                />
+                <Image src={twitter} width={23} height={20} className="text-white hover:text-slate-200 m-2 "/>
               </Link>
             </li>
             <li className="inline-block list-none sm:w-auto">
               <Link href="https://www.youtube.com/@municipalidadbaradero9936">
-                <AiFillYoutube
-                  size="25"
-                  className="text-white hover:text-slate-200"
-                />
+              <Image src={youtube} width={26} height={20} className="text-white hover:text-slate-200 m-2 "/>
+              </Link>
+            </li>
+            <li className="inline-block list-none sm:w-auto">
+              <Link href="https://baradero.gob.ar/">
+              <Image src={BaraderoGob} width={30} height={30} className="text-white hover:text-slate-200 m-2 "/>
               </Link>
             </li>
           </ul>

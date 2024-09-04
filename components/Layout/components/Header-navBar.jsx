@@ -69,7 +69,7 @@ export const HeadernavBar = () => {
     <div className="flex items-center bg-gray-nav w-full h-[60px] p-6 lg:hidden">
       <button onClick={handleNavToggle}><FaBars className="text-blue-header" size="25px"/></button>
     </div>
-    <nav className={`text-sm lg:flex lg:justify-evenly lg:items-center ${isNavOpen ? 'block' : 'hidden'} lg:w-full lg:h-[60px] bg-gray-nav lg:border-b-4 lg:border-b-green-nav w-full h-auto font-sans`}>
+    <nav className={`text-sm font-medium lg:flex lg:justify-evenly lg:items-center ${isNavOpen ? 'block' : 'hidden'} lg:w-full lg:h-[60px] bg-gray-nav pl-20 pr-20 w-full h-auto font-sans`}>
       <ul className="lg:flex lg:flex-row lg:space-x-8 flex flex-col">
       <Link href="/">
           <li className="relative">

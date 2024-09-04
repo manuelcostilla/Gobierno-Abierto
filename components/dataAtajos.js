@@ -23,20 +23,20 @@ export const dataAtajos = [
     descripcion: 'Aquí encontrarás detalles sobre las licitaciones y contratos del municipio. Incluye anuncios de licitaciones, contratos adjudicados, y detalles sobre proveedores y gastos. Esta sección asegura la transparencia al mostrar cómo se adjudican los contratos y se manejan las compras públicas.',
     link: '../ComprasLicitac',
   },
-  {
-    id: 4,
-    title: 'GESTIÓN DE COMPROMISOS',
-    img: 'gestion_compromisos',
-    alt: 'Gestión de compromisos',
-    descripcion: 'En esta sección, se detallan los compromisos del municipio relacionados con obras públicas, incluyendo proyectos en curso y futuros. Los ciudadanos pueden seguir el avance de las obras, conocer los plazos y presupuestos, y verificar el cumplimiento de los compromisos, promoviendo la transparencia y el control sobre el uso de los recursos públicos.',
-    link: '../GestionComprom',
-  },
   // {
-  //   id: 5,
-  //   title: 'PRESUPUESTO PUBLICO',
-  //   img: 'presupuesto_publico',
-  //   alt: 'Presupuesto público',
-  //   descripcion: 'Esta sección ofrece detalles sobre ingresos y gastos del municipio, incluyendo documentos, gráficos y reportes para asegurar transparencia y rendición de cuentas.',
-  //   link: '../PresupPublico',
-  // }
+  //   id: 4,
+  //   title: 'GESTIÓN DE COMPROMISOS',
+  //   img: 'gestion_compromisos',
+  //   alt: 'Gestión de compromisos',
+  //   descripcion: 'En esta sección, se detallan los compromisos del municipio relacionados con obras públicas, incluyendo proyectos en curso y futuros. Los ciudadanos pueden seguir el avance de las obras, conocer los plazos y presupuestos, y verificar el cumplimiento de los compromisos, promoviendo la transparencia y el control sobre el uso de los recursos públicos.',
+  //   link: '../GestionComprom',
+  // },
+  {
+    id: 5,
+    title: 'PRESUPUESTO PUBLICO',
+    img: 'presupuesto_publico',
+    alt: 'Presupuesto público',
+    descripcion: 'Esta sección ofrece detalles sobre ingresos y gastos del municipio, incluyendo documentos, gráficos y reportes para asegurar transparencia y rendición de cuentas.',
+    link: '../PresupPublico',
+  }
 ]

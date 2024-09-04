@@ -29,8 +29,8 @@ export const Atajos = () => {
                 <div className="p-4 m-6 flex">
                     <Image className="lg:w-[90px] lg:h-[90px]" src={images[atajo.img]} alt={atajo.alt} />
                 </div>
-                <div className=' w-full flex flex-col justify-center content-center items-center'>
-                    <p className='font-bold text-balance text-center mb-3'>{atajo.title}</p>
+                <div className=' w-full flex flex-col justify-center content-center'>
+                    <p className='text-lg font-bold mb-3'>{atajo.title}</p>
                     <p className='text-xs text-justify'>{atajo.descripcion}</p>
                 </div>
             </div>

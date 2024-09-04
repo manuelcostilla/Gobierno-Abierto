@@ -3,7 +3,7 @@ import Image from 'next/image'
 import bannerImg from '../public/banner/IMGrecortada.jpg'
 import imagenGraph from '../public/banner/RecGraph_1.png'
 
-export const banner = () => {
+export default function banner () {
   return (
     <div className='w-full h-auto relative'>
         <div className='w-full'>
@@ -26,4 +26,3 @@ export const banner = () => {
   )
 }
 
-export default banner

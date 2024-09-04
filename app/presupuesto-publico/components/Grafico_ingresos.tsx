@@ -1,6 +1,14 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  LabelList,
+  Pie,
+  PieChart,
+} from "recharts"
 
 import {
   ChartConfig,
@@ -51,61 +59,96 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-export function GraficosIngresos () {
+export function GraficosIngresos ({ chart, setChart }) {
   return (
     <div className="flex justify-center items-center">
-      <ChartContainer config={chartConfig} className="min-h-[200px] w-[850px] ">
-        <BarChart accessibilityLayer data={chartData}>
-          <CartesianGrid vertical={false} />
-          <XAxis
-            dataKey="month"
-            tickLine={false}
-            tickMargin={10}
-            axisLine={false}
-            tickFormatter={(value) => value}
-          />
-          <ChartTooltip content={<ChartTooltipContent />} />
-          <ChartLegend content={<ChartLegendContent />} />
-          <Bar
-            dataKey="coparticipacionimpuestos"
-            fill="var(--color-mobile)"
-            radius={4}
-          />
-          <Bar dataKey="tasas" fill="var(--color-desktop)" radius={4} />
-          <Bar dataKey="derechos" fill="var(--color-desktop)" radius={4} />
-          <Bar dataKey="alquileres" fill="var(--color-desktop)" radius={4} />
-          <Bar dataKey="multas" fill="var(--color-desktop)" radius={4} />
-          <Bar dataKey="notributarios" fill="var(--color-desktop)" radius={4} />
-          <Bar
-            dataKey="interesprestamos"
-            fill="var(--color-desktop)"
-            radius={4}
-          />
-          <Bar dataKey="admnacional" fill="var(--color-desktop)" radius={4} />
-          <Bar dataKey="totalgipm" fill="var(--color-desktop)" radius={4} />
-          <Bar
-            dataKey="transferenciacorriente"
-            fill="var(--color-desktop)"
-            radius={4}
-          />
-          <Bar dataKey="ventaactivos" fill="var(--color-desktop)" radius={4} />
-          <Bar
-            dataKey="contribucionmejoras"
-            fill="var(--color-desktop)"
-            radius={4}
-          />
-          <Bar
-            dataKey="recursospropiosdecapital"
-            fill="var(--color-desktop)"
-            radius={4}
-          />
-          <Bar
-            dataKey="totalsectorprivado"
-            fill="var(--color-desktop)"
-            radius={4}
-          />
-        </BarChart>
-      </ChartContainer>
+      {!chart
+        ? (
+        <ChartContainer
+          config={chartConfig}
+          className="min-h-[200px] w-[850px] "
+        >
+          <BarChart accessibilityLayer data={chartData}>
+            <CartesianGrid vertical={false} />
+            <XAxis
+              dataKey="month"
+              tickLine={false}
+              tickMargin={10}
+              axisLine={false}
+              tickFormatter={(value) => value}
+            />
+            <ChartTooltip content={<ChartTooltipContent />} />
+            <ChartLegend content={<ChartLegendContent />} />
+            <Bar
+              dataKey="coparticipacionimpuestos"
+              fill="var(--color-mobile)"
+              radius={4}
+            />
+            <Bar dataKey="tasas" fill="var(--color-desktop)" radius={4} />
+            <Bar dataKey="derechos" fill="var(--color-desktop)" radius={4} />
+            <Bar dataKey="alquileres" fill="var(--color-desktop)" radius={4} />
+            <Bar dataKey="multas" fill="var(--color-desktop)" radius={4} />
+            <Bar
+              dataKey="notributarios"
+              fill="var(--color-desktop)"
+              radius={4}
+            />
+            <Bar
+              dataKey="interesprestamos"
+              fill="var(--color-desktop)"
+              radius={4}
+            />
+            <Bar dataKey="admnacional" fill="var(--color-desktop)" radius={4} />
+            <Bar dataKey="totalgipm" fill="var(--color-desktop)" radius={4} />
+            <Bar
+              dataKey="transferenciacorriente"
+              fill="var(--color-desktop)"
+              radius={4}
+            />
+            <Bar
+              dataKey="ventaactivos"
+              fill="var(--color-desktop)"
+              radius={4}
+            />
+            <Bar
+              dataKey="contribucionmejoras"
+              fill="var(--color-desktop)"
+              radius={4}
+            />
+            <Bar
+              dataKey="recursospropiosdecapital"
+              fill="var(--color-desktop)"
+              radius={4}
+            />
+            <Bar
+              dataKey="totalsectorprivado"
+              fill="var(--color-desktop)"
+              radius={4}
+            />
+          </BarChart>
+        </ChartContainer>
+          )
+        : (
+        <ChartContainer
+          config={chartConfig}
+          className="mx-auto aspect-square max-h-[250px]"
+        >
+          <PieChart>
+            <ChartTooltip content={<ChartTooltipContent />} />
+            <Pie data={chartData} dataKey="month">
+              <LabelList
+                dataKey="month"
+                className="fill-background"
+                stroke="none"
+                fontSize={12}
+                formatter={(value: keyof typeof chartConfig) =>
+                  chartConfig[value]?.label
+                }
+              />
+            </Pie>
+          </PieChart>
+        </ChartContainer>
+          )}
     </div>
   )
 }

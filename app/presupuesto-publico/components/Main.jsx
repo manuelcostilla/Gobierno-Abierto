@@ -1,42 +1,57 @@
-import Link from 'next/link'
-import React from 'react'
-import { Button } from '@/components/ui/button'
+import { Banner } from "../../../components/banner"
+import { Button } from "@/components/ui/button"
+import { GraficoGastos } from "./Grafico_gastos"
+import { ChartColumn, ChartPie } from "lucide-react"
+import { GraficosIngresos } from "./Grafico_ingresos"
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
 const Main_presupuesto = () => {
   return (
     <>
-        <div className="flex h-36 w-full bg-blue-title justify-center items-center text-center">
-        <h1 className="text-4xl font-sans text-white font-bold" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>PRESUPUESTO PUBLICO</h1>
-      </div>
-      <div className="flex p-8 break-normal font-sans">
-        <p>Información de gastos en personal, no personales, bienes de consumo, bienes de personal, y otros gastos, realizados por el Municipio de Baradero.</p>
-      </div>
-      <div className="flex justify-evenly items-center m-3 mb-12 lg:m-3 font-sans flex-col lg:flex-row">
-        <div className='border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2'>
-          <h1 className='text-blue-header font-bold text-xl p-2 mb-2'>Presupuesto Municipal</h1>
-          <p className='mb-6 '>Información en gastos de personal, no personales, bienes de consumo, bienes de personal y otros gastos, realizados por el municipio de Baradero</p>
-          <Link href="/presupuesto-publico/gastos">
-            <Button color="primary" className="mx-2 bg-blue-500 hover:bg-blue-700 text-white rounded-lg font-bold py-2 px-4 w-[150px]">
-              Gastos
-            </Button>
-          </Link>
+      <div>
+        <Banner titulo="Presupuesto Publico" />
+        <div className="flex justify-center items-center p-5">
+          <ul className="flex flex-row pr-4">
+            <li className="mr-5 ml-5">Año</li>
+            <li className="mr-10 ml-16">Tipo de gasto</li>
+            <li className="mr-5  ml-24">Tipo de grafico</li>
+          </ul>
         </div>
-        <div className='border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans'>
-          <h1 className='text-blue-header font-bold text-xl p-2 mb-2'>Presupuesto Municipal</h1>
-          <p className='mb-6'>Información en gastos de personal, no personales, bienes de consumo, bienes de personal y otros gastos, realizados por el municipio de Baradero</p>
-          <Link href="/presupuesto-publico/ingresos">
-            <Button color="primary" className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]">
-              Ingresos
-            </Button>
-          </Link>
+        <div className="flex justify-center items-center p-5">
+          <Button className="mr-5 ml-5">2023</Button>
+          <Button className="mr-5 ml-5">Gasto</Button>
+          <Button className="mr-3 ml-3">Presupuesto</Button>
+          <Button className="mr-5 ml-5">
+            <ChartColumn />
+          </Button>
+          <Button className="mr-5 ml-5">
+            <ChartPie />
+          </Button>
         </div>
-        <div className='border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans'>
-          <h1 className='text-blue-header font-bold text-xl p-2 mb-2'>Presupuesto Municipal</h1>
-          <p className='mb-6'>Información en gastos de personal, no personales, bienes de consumo, bienes de personal y otros gastos, realizados por el municipio de Baradero</p>
-          <Link href="/presupuesto-publico/ingresos">
-            <Button color="primary" className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]">
-              Presupuesto
-            </Button>
-          </Link>
+        <div className="flex justify-center items-center mb-5 pr-5 pt-5">
+          <Card className="w-[800px] h-[550px]">
+            <CardHeader>
+              <CardTitle>Grafico Ingresos</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <GraficosIngresos />
+            </CardContent>
+          </Card>
+        </div>
+        <div className="flex justify-center items-center m-5 ">
+          <Card className="w-[800px] h-[550px]">
+            <CardHeader>
+              <CardTitle>Grafico gastos</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <GraficoGastos />
+            </CardContent>
+          </Card>
         </div>
       </div>
     </>

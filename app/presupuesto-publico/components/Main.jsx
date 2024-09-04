@@ -13,7 +13,7 @@ import {
 import { useState } from "react"
 
 export default function Main_presupuesto () {
-  const [chart, setActivechart] = useState(false)
+  const [chart, setActivechart] = useState(true)
 
 
   return (
@@ -31,10 +31,10 @@ export default function Main_presupuesto () {
           <Button className="mr-5 ml-5">2023</Button>
           <Button className="mr-5 ml-5">Gasto</Button>
           <Button className="mr-3 ml-3">Presupuesto</Button>
-          <Button className="mr-5 ml-5" >
+          <Button className="mr-5 ml-5"onClick={() => { setActivechart(true) }}>
             <ChartColumn />
           </Button>
-          <Button className="mr-5 ml-5">
+          <Button className="mr-5 ml-5" onClick={() => { setActivechart(false) }}>
             <ChartPie />
           </Button>
         </div>

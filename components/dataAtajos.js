@@ -1,7 +1,7 @@
 export const dataAtajos = [
   {
     id: 1,
-    title: 'MAPA DEL ESTADO MUNICIPAL',
+    title: 'ORGANIGRAMA MUNICIPAL',
     img: 'mapa_estado_municipal',
     alt: 'Mapa del estado municipal',
     descripcion: 'Es un diagrama que muestra la estructura jerárquica de funcional del gobierno local, indicando las áreas y sus relaciones. Es un aporte a la transparecia y un acercamiento a la ciudadanía a un gobierno abierto ya que permite conocer la estructura organizativa.',
@@ -13,7 +13,7 @@ export const dataAtajos = [
     img: 'boletin_oficial',
     alt: 'Boletín oficial',
     descripcion: 'En esta sección encontrarás las publicaciones oficiales del municipio, como ordenanzas, decretos y resoluciones. Aqui se difuncen las decisiones y acciones importantes del gobierno local para mantenerte informado y garantizar la trasnparencia.',
-    link: '../BoletinOficial',
+    link: '../boletin-oficial',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const dataAtajos = [
     img: 'compra_licitaciones',
     alt: 'Compras y licitaciones',
     descripcion: 'Aquí encontrarás detalles sobre las licitaciones y contratos del municipio. Incluye anuncios de licitaciones, contratos adjudicados, y detalles sobre proveedores y gastos. Esta sección asegura la transparencia al mostrar cómo se adjudican los contratos y se manejan las compras públicas.',
-    link: '../ComprasLicitac',
+    link: '../precios-y-licitaciones',
   },
   // {
   //   id: 4,
@@ -33,10 +33,10 @@ export const dataAtajos = [
   // },
   {
     id: 5,
-    title: 'PRESUPUESTO PUBLICO',
+    title: 'PRESUPUESTO PÚBLICO',
     img: 'presupuesto_publico',
     alt: 'Presupuesto público',
     descripcion: 'Esta sección ofrece detalles sobre ingresos y gastos del municipio, incluyendo documentos, gráficos y reportes para asegurar transparencia y rendición de cuentas.',
-    link: '../PresupPublico',
+    link: '../presupuesto-publico',
   }
 ]

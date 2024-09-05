@@ -90,12 +90,17 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                 <div className="word-wrap bg-gray-100 p-4 rounded-md">
                   <p><span className="font-bold">{item.tituloAcordeonAbierto}</span></p>
                   <p><span className="font-bold">{item.decreto} {item.numdecreto}</span></p>
+                  <p><span className="font-bold">{item.tipo}</span> {item.condicion}</p>
                   <p><span className="font-bold">{item.dias}</span> {item.motivo}</p>
                   <p><span className="font-bold">{item.presupuesto}</span> {item.plata}</p>
                   <p><span className="font-bold">{item.garantia}</span> {item.platagarantia}</p>
                   <p><span className="font-bold">{item.valorPliego}</span> {item.plataPliego}</p>
                   <p><span className="font-bold">{item.fechaAperturaSobre}</span> {item.fecha}</p>
                   <p><span className="font-bold">{item.adquisicionPliego}</span> {item.adquisicion}</p>
+                  <p><span className="font-bold">{item.obtencion}</span> <br />{item.url1} <br /> {item.url2} </p>
+                  <p><span className="font-bold">{item.requisitos}</span></p>
+                  <p><span className="font-bold">{item.capacidad}</span> {item.valor1}</p>
+                  <p><span className="font-bold">{item.superficie}</span> {item.valor2}</p>
                   <button
                     onClick={() => handleDownload(item.pdfUrl)}
                     className="flex justify-center items-center m-auto my-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"

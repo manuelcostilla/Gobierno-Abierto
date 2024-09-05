@@ -111,7 +111,7 @@ const chartConfig = {
   },
   tasasinteresesporprestamos: {
     label: "Total Intereses por prestamos",
-    color: "#EE1E52",
+    color: "#FFF212",
   },
   totaladmnacional: {
     label: "Total De administracion nacional",
@@ -119,7 +119,7 @@ const chartConfig = {
   },
   totalgipm: {
     label: "Total De gobiernos e institucional provinciales y municipales",
-    color: "#FFF212",
+    color: "#EE1E52",
   },
   transferenciacorriente: {
     label: "Total Transferencias corrientes",

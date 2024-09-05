@@ -16,56 +16,75 @@ import * as React from "react"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
 
 const chartData = [
   {
-    month: "Total Coparticipacion de impuestos",
+    nombre: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
     valor: 2049952360.0,
-    fill: "var(--color-coparticipacionimpuestos)"
-  },
-  { month: "Total Tasas", valor: 1221567000.0, fill: "var(--color-tasas)" },
-  { month: "Total Derechos", valor: 145010000.0, fill: "var(--color-derechos)" },
-  { month: "Total Alquileres", valor: 3840000.0, fill: "var(--color-alquileres)" },
-  { month: "Total Multas", valor: 62550000.0, fill: "var(--color-multas)" },
-  { month: "Total Ingresos No Tributarios", valor: 1581445400.0, fill: "var(--color-ingresosnotributarios)" },
-  { month: "Total Intereses por prestamos", valor: 2000000.0, fill: "var(--color-tasasinteresesporprestamos)" },
-  { month: "Total De administracion nacional", valor: 494741419.7, fill: "var(--color-totaladmnacional)" },
-  {
-    month: "Total De gobiernos e institucional provinciales y municipales",
-    valor: 762787123.47,
-    fill: "var(--color-totalgipm)"
+    fill: "var(--color-Ingresostributarios)",
   },
   {
-    month: "Total Transferencias corrientes",
+    nombre: "Total Ingresos No Tributarios",
+    valor: 1581445400.00,
+    fill: "var(--color-Ingresosnotributarios)",
+  },
+  {
+    nombre: "Total Rentas de la propiedad",
+    valor: 2000000.00,
+    fill: "var(--color-rentaspropiedad)",
+  },
+  {
+    nombre: "Total Transferencias Corrientes",
     valor: 1257528543.17,
+    fill: "var(--color-transferenciacorriente)",
   },
-  { month: "Total Venta de activos", valor: 240000000.0, fill: "var(--color-totalventasactivos)" },
-  { month: "Total Contribucion por mejoras", valor: 20351000.0, fill: "var(--color-totalcontribucionmejoras)" },
   {
-    month: "Total Recursos propios de capital",
-    valor: 260351000.0,
-    fill: "var(--color-totalrecursospropiosdecapital)"
+    nombre: "Total Recursos Propios de Capital",
+    valor: 260351000.00,
+    fill: "var(--color-recursospropiosdecapital)",
   },
-  { month: "Total Del sector privado", valor: 21490000.0, fill: "var(--color-totalprivados)" },
+  {
+    nombre: "Total Recuperacion de Prestamos de Largo Plazo",
+    valor: 21490000.00,
+    fill: "var(--color-recuperacionprestamoslargoplazo)",
+  },
+  {
+    nombre: "Total Disminucion de Otros Activos Financieros",
+    valor: 208561956.30,
+    fill: "var(--color-totaldisminucionotrosactivosfinancieros)",
+  },
 ]
 
 const chartConfig = {
-  totalcontribucionmejoras: {
-    label: "Total Del sector privado",
-    color: "#fc3a10 ",
+  Ingresostributarios: {
+    label: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
+    color: "#00517B"
   },
-  totalventasactivos: {
-    label: "totalrecursospropiosdecapital",
-    color: "#ecff00"
+  Ingresosnotributarios: {
+    label: "Total Ingresos No Tributarios",
+    color: "#007CB6"
   },
-  coparticipacionimpuestos: {
-    label: "Total Coparticipacion de impuestos",
-    color: " #2ae3db"
+  rentaspropiedad: {
+    label: "Total Rentas de la propiedad",
+    color: "#5294DE"
+  },
+  transferenciacorriente: {
+    label: "Total Transferencias Corrientes",
+    color: "#3EAF53"
+  },
+  recursospropiosdecapital: {
+    label: "Total Recursos Propios de Capital",
+    color: "#7FDE22"
+  },
+  recuperacionprestamoslargoplazo: {
+    label: "Total Recuperacion de Prestamos de Largo Plazo",
+    color: "#A4D180"
+  },
+  totaldisminucionotrosactivosfinancieros: {
+    label: "Total Disminucion de Otros Activos Financieros",
+    color: "#EE1E52"
   }
 } satisfies ChartConfig
 
@@ -81,7 +100,7 @@ export function GraficosIngresos ({ chart, setChart }) {
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
-              dataKey="month"
+              dataKey="nombre"
               tickLine={false}
               tickMargin={10}
               axisLine={false}
@@ -90,20 +109,16 @@ export function GraficosIngresos ({ chart, setChart }) {
             <ChartTooltip content={<ChartTooltipContent />} />
             <ChartLegend content={<ChartLegendContent />} />
 
-            <Bar dataKey="valor" fill="var(--color-desktop)" radius={4} />
+            <Bar dataKey="valor" radius={4} />
           </BarChart>
         </ChartContainer>
           )
         : (
-        <Card className="flex flex-col">
-          <CardHeader className="items-center pb-0">
-            <CardTitle>Grafico Ingresos</CardTitle>
-            <CardDescription>Grafico Ingresos 2023</CardDescription>
-          </CardHeader>
-          <CardContent className="flex-1 pb-0">
+        <Card className="flex flex-col h-[300px] w-[350px]">
+          <CardContent className="flex-1 pb-0 X">
             <ChartContainer
               config={chartConfig}
-              className="mx-auto aspect-square max-h-[250px]"
+              className="mx-auto aspect-square max-h-[350px]"
             >
               <PieChart>
                 <ChartTooltip
@@ -113,7 +128,7 @@ export function GraficosIngresos ({ chart, setChart }) {
                 <Pie
                   data={chartData}
                   dataKey="valor"
-                  nameKey="month"
+                  nameKey="nombre"
                   innerRadius={60}
                   strokeWidth={5}
                   fill="var(--color-desktop)"

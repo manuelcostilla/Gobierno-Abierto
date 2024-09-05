@@ -1,56 +1,63 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
-import Link from 'next/link'
+
 import Image from 'next/image'
 import escudo_baradero from '../../public/imagenes/Escudo_Municipio.png'
 import logo_baradero from '../../public/imagenes/logo_blanco.png'
-
+import Link from "next/link"
+import face from "../../public/iconos redes/fb.png"
+import twitter from "../../public/iconos redes/tw.png"
+import instagram from "../../public/iconos redes/ig.png"
+import youtube from "../../public/iconos redes/yt.png"
+import BaraderoGob from "../../public/iconos redes/baradero.gob.png"
 export const Footer = () => {
   return (
     <>
     <footer className="lg:flex lg:justify-between lg:p-[15px] bg-black-footer grid grid-cols-1 w-full overflow-x-hidden">
-        <div className="block lg:p-[10px] lg:ml-[110px] m-auto lg:m-0 lg:mt-0 mt-4">
-          <Image alt="" src={logo_baradero} height={79} width={247}/>
-          <p className="lg:mt-[10px] text-white mt-4">
-            Municipalidad Santiago del Baradero <br/> <br/>
-            Av. San Martin 905 <br/> <br/>
-            Baradero(B2942) <br/> <br/>
-            Buenos Aires, Argentina
-          </p>
+        <div>
+          <div className="block lg:p-[10px]  m-auto lg:mt-0 ml-8">
+            <Image alt="" src={logo_baradero} height={79} width={247}/>
+          </div>
+          <div className='flex justify-center items-center'>
+            <ul className=" font-sans sm:justify-start">
+              <li className="inline-block list-none sm:w-auto">
+                <Link href="https://www.facebook.com/MunicipalidaddeBaradero/">
+                  <Image src={face} alt="facebook" width={12} height={15} className="text-white hover:text-slate-200 mr-1"/>
+                </Link>
+              </li>
+              <li className="inline-block list-none sm:w-auto">
+                <Link href="https://www.instagram.com/municipiodebaradero/">
+                  <Image src={instagram} width={21} height={20} className="text-white hover:text-slate-200 mr-1"/>
+                </Link>
+              </li>
+              <li className="inline-block list-none sm:w-auto">
+                <Link href="https://twitter.com/municipalidadba">
+                  <Image src={twitter} width={23} height={20} className="text-white hover:text-slate-200 mr-1"/>
+                </Link>
+              </li>
+              <li className="inline-block list-none sm:w-auto">
+                <Link href="https://www.youtube.com/@municipalidadbaradero9936">
+                <Image src={youtube} width={26} height={20} className="text-white hover:text-slate-200 mr-2"/>
+                </Link>
+              </li>
+            </ul>
+            <li className="inline-block list-none sm:w-auto ">
+                <Link href="https://baradero.gob.ar/">
+                <Image src={BaraderoGob} width={40} height={50} className="text-white hover:text-slate-200 mb-1 mr-2"/>
+                </Link>
+            </li>
+          </div>
         </div>
-        <div className="lg:relative lg:left-[0px] m-auto lg:m-0 my-2 lg:my-0">
-          <Image alt="" src={escudo_baradero} height={225} width={150}/>
+        <div className='mr-6 '>
+            <div className="lg:mt-[10px] text-white mt-4 text-center">
+              <p className='m-2'>Municipalidad Santiago del Baradero</p>
+              <p className='m-2'>Av. San Martin 905</p>
+              <p className='m-2'>Baradero(B2942)</p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
         </div>
-        <div className="lg:flex lg:items-center lg:text-center m-auto lg:m-0 flex-col lg:flex-row">
-          <div>
-          <Link href="tel:911">
-            <h5 className="text-[40px] px-[20px] text-emergencia">911</h5>
-            <p className="text-white text-[18px] lg:relative lg:left-0 relative left-0">Emergencias</p>
-            </Link>
-          </div>
-          <div>
-          <Link href="tel:101">
-            <h5 className="text-[40px] px-[20px] text-policia">101</h5>
-            <p className="text-white text-[18px] lg:relative lg:left-0 relative left-[25px]">Policia</p>
-            </Link>
-          </div>
-          <div>
-          <Link href="tel:100">
-            <h5 className="text-[40px] px-[20px] text-bombero">100</h5>
-            <p className="text-white text-[18px] lg:relative lg:left-0 relative left-[14px]">Bomberos</p>
-            </Link>
-          </div>
-          <div>
-          <Link href="tel:107">
-            <h5 className="text-[40px] px-[20px] text-hospital">107</h5>
-            <p className="text-white text-[18px] lg:relative lg:left-0 relative left-[19px]">Hospital</p>
-            </Link>
-          </div>
-          <div className='lg:relative lg:top-[14px] mb-4 lg:mb-0'>
-            <Link href="tel:144">
-            <h5 className="text-[40px] px-[20px] text-genero">144</h5>
-            <p className="text-white text-[18px] lg:relative lg:left-0 relative left-[0px] text-center">Violencia de <br/> Genero</p>
-            </Link>
-          </div>
+        <div className=" mr-8">
+          <Image alt="" src={escudo_baradero} height={225} width={130}/>
         </div>
       </footer>
       </>

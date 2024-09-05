@@ -14,38 +14,48 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 
 const chartData = [
   {
-    nombre: "Subtotal Gastos por Area",
-    valor: 5024680266.73,
-    fill: "var(--color-subtotalgastosporarea)",
+    month: "De origen municipal",
+    valor: 236443909.94,
+    fill: "var(--color-deorigenmunicipal)",
   },
   {
-    nombre: "HCD",
-    valor: 127582089.96,
-    fill: "var(--color-hcd)",
+    month: "De origen provincial",
+    valor: 817161485.47,
+    fill: "var(--color-deorigenprovincial)",
   },
   {
-    nombre: "Servicio de la deuda",
-    valor: 228650322.00,
-    fill: "var(--color-serviciodeladeuda)",
+    month: "De origen Nacional",
+    valor: 628240864.06,
+    fill: "var(--color-deorigennacional)",
+  },
+  {
+    month: "Fuentes externas",
+    valor: 0.0,
+    fill: "var(--color-fuentesexternas)",
   },
 ]
 
 const chartConfig = {
-  subtotalgastosporarea: {
-    label: "Subtotal Gastos por Area",
+  deorigenmunicipal: {
+    label: "De origen municipal",
     color: "#00517B",
   },
-  hcd: {
-    label: "HCD",
+  deorigenprovincial: {
+    label: "De origen provincial",
     color: "#007CB6",
   },
-  serviciodeladeuda: {
-    label: "Servicio de la deuda",
+  deorigennacional: {
+    label: "De origen Nacional",
     color: "#5294DE",
   },
+  fuentesexternas: {
+    label: "Fuentes externas",
+    color: "#3EAF53",
+  },
+
 } satisfies ChartConfig
 
-export function Graficogastossubtotales ({ chart, setChart }) {
+export function GraficosIngresosProcedencia ({ chart, setChart }) {
   return (
     <div className="flex justify-center items-center">
       {chart
@@ -57,7 +67,7 @@ export function Graficogastossubtotales ({ chart, setChart }) {
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
-              dataKey="nombre"
+              dataKey="month"
               tickLine={false}
               tickMargin={10}
               axisLine={false}

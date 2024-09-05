@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button"
 import { GraficosIngresosProcedencia } from "./Grafico_ingresos_procedencia"
 import { ChartColumn, ChartPie } from "lucide-react"
 import { GraficosIngresos } from "./Grafico_ingresos"
+import { GastosPorArea } from "./gastos_por_area"
 import { Graficogastossubtotales } from "./Grafico_gastos"
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, } from "@/components/ui/card"
 import { useState } from "react"
-import Link from "next/link"
 
 export default function Main_presupuesto () {
   const [chart, setActivechart] = useState(true)
@@ -61,7 +61,7 @@ export default function Main_presupuesto () {
         <div className="flex justify-center items-center m-5 ">
           <Card className="w-[800px] h-[550px]">
             <CardHeader>
-              <CardTitle>Grafico Subtotal de los gastos</CardTitle>
+              <CardTitle>Grafico total de los gastos</CardTitle>
             </CardHeader>
             <CardContent>
               <Graficogastossubtotales
@@ -69,9 +69,19 @@ export default function Main_presupuesto () {
                 setChart={setActivechart}
               />
             </CardContent>
-            <CardFooter>
-              <Link href="./presupuesto-publico/gastos-por-area">Ver grafico de gastos por area</Link>
-            </CardFooter>
+          </Card>
+        </div>
+        <div className="flex justify-center items-center m-5 ">
+          <Card className="w-[800px] h-[550px]">
+            <CardHeader>
+              <CardTitle>Grafico Subtotal de los gastos por area</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <GastosPorArea
+                chart={chart}
+                setChart={setActivechart}
+              />
+            </CardContent>
           </Card>
         </div>
       </div>

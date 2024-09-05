@@ -54,7 +54,7 @@ export default function Main_presupuesto () {
               <CardTitle>Grafico gastos</CardTitle>
             </CardHeader>
             <CardContent>
-              <GraficoGastos />
+              <GraficoGastos chart={chart} setChart={setActivechart} />
             </CardContent>
           </Card>
         </div>

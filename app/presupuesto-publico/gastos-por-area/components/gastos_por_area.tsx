@@ -10,49 +10,86 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
+
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 
 const chartData = [
   {
-    nombre: "Subtotal Gastos por Area",
-    valor: 5024680266.73,
-    fill: "var(--color-subtotalgastosporarea)",
+    nombre: "Conduccion superior",
+    valor: 379653818.41,
+    fill: "var(--color-conduccionsuperior)",
   },
   {
-    nombre: "HCD",
-    valor: 127582089.96,
-    fill: "var(--color-hcd)",
+    nombre: "Secretaria de Gobierno",
+    valor: 1458223658.62,
+    fill: "var(--color-secgobierno)",
   },
   {
-    nombre: "Servicio de la deuda",
-    valor: 228650322.00,
-    fill: "var(--color-serviciodeladeuda)",
+    nombre: "Secretaria de Hacienda",
+    valor: 208311142.31,
+    fill: "var(--color-sechacienda)",
+  },
+  {
+    nombre: "Secretaria de Cultura, Educacion y Turismo",
+    valor: 551674046.42,
+    fill: "var(--color-secculturaeducacionturismo)",
+  },
+  {
+    nombre: "Secretaria de Obras y Servicios Publicos",
+    valor: 1907994791.88,
+    fill: "var(--color-secobrasyservpublicos)",
+  },
+  {
+    nombre: "Secretaria de Modernizacion y Gestion Publica",
+    valor: 168240719.4,
+    fill: "var(--color-secmodernizacionygestionpublica)",
+  },
+  {
+    nombre: "Secretaria de Desarrollo Humano",
+    valor: 350582089.96,
+    fill: "var(--color-secdesarrollohumano)",
   },
 ]
 
 const chartConfig = {
-  subtotalgastosporarea: {
-    label: "Subtotal Gastos por Area",
+  conduccionsuperior: {
+    label: "Conduccion superior",
     color: "#00517B",
   },
-  hcd: {
-    label: "HCD",
+  secgobierno: {
+    label: "Secretaria de Gobierno",
     color: "#007CB6",
   },
-  serviciodeladeuda: {
-    label: "Servicio de la deuda",
+  sechacienda: {
+    label: "Secretaria de Hacienda",
     color: "#5294DE",
+  },
+  secculturaeducacionturismo: {
+    label: "Secretaria de Cultura, Educacion y Turismo",
+    color: "#3EAF53",
+  },
+  secobrasyservpublicos: {
+    label: "Secretaria de Obras y Servicios Publicos",
+    color: "#7FDE22",
+  },
+  secmodernizacionygestionpublica: {
+    label: "Secretaria de Modernizacion y Gestion Publica",
+    color: "#A4D180",
+  },
+  secdesarrollohumano: {
+    label: "Secretaria de Desarrollo Humano",
+    color: "#EE1E52",
   },
 } satisfies ChartConfig
 
-export function Graficogastossubtotales ({ chart, setChart }) {
+export function GastosPorArea ({ chart, setChart }) {
   return (
     <div className="flex justify-center items-center">
       {chart
         ? (
         <ChartContainer
           config={chartConfig}
-         className="min-h-[200px] w-[100%]"
+          className="min-h-[200px] w-[100%] "
         >
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
@@ -65,6 +102,7 @@ export function Graficogastossubtotales ({ chart, setChart }) {
             />
             <ChartTooltip content={<ChartTooltipContent />} />
             <ChartLegend content={<ChartLegendContent />} />
+
             <Bar dataKey="valor" radius={4} />
           </BarChart>
         </ChartContainer>
@@ -84,9 +122,10 @@ export function Graficogastossubtotales ({ chart, setChart }) {
                 <Pie
                   data={chartData}
                   dataKey="valor"
-                  nameKey="month"
+                  nameKey="nombre"
                   innerRadius={60}
                   strokeWidth={5}
+                  fill="var(--color-desktop)"
                 ></Pie>
               </PieChart>
             </ChartContainer>

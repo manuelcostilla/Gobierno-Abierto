@@ -21,126 +21,71 @@ import {
 
 const chartData = [
   {
-    month: "Total Coparticipacion de impuestos",
+    nombre: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
     valor: 2049952360.0,
-    fill: "var(--color-coparticipacionimpuestos)",
-  },
-  { month: "Total Tasas", valor: 1221567000.0, fill: "var(--color-tasas)" },
-  {
-    month: "Total Derechos",
-    valor: 145010000.0,
-    fill: "var(--color-derechos)",
+    fill: "var(--color-Ingresostributarios)",
   },
   {
-    month: "Total Alquileres",
-    valor: 3840000.0,
-    fill: "var(--color-alquileres)",
-  },
-  { month: "Total Multas", valor: 62550000.0, fill: "var(--color-multas)" },
-  {
-    month: "Total Ingresos No Tributarios",
-    valor: 1581445400.0,
-    fill: "var(--color-ingresosnotributarios)",
+    nombre: "Total Ingresos No Tributarios",
+    valor: 1581445400.00,
+    fill: "var(--color-Ingresosnotributarios)",
   },
   {
-    month: "Total Intereses por prestamos",
-    valor: 2000000.0,
-    fill: "var(--color-tasasinteresesporprestamos)",
+    nombre: "Total Rentas de la propiedad",
+    valor: 2000000.00,
+    fill: "var(--color-rentaspropiedad)",
   },
   {
-    month: "Total De administracion nacional",
-    valor: 494741419.7,
-    fill: "var(--color-totaladmnacional)",
-  },
-  {
-    month: "Total De gobiernos e institucional provinciales y municipales",
-    valor: 762787123.47,
-    fill: "var(--color-totalgipm)",
-  },
-  {
-    month: "Total Transferencias corrientes",
+    nombre: "Total Transferencias Corrientes",
     valor: 1257528543.17,
     fill: "var(--color-transferenciacorriente)",
   },
   {
-    month: "Total Venta de activos",
-    valor: 240000000.0,
-    fill: "var(--color-totalventasactivos)",
+    nombre: "Total Recursos Propios de Capital",
+    valor: 260351000.00,
+    fill: "var(--color-recursospropiosdecapital)",
   },
   {
-    month: "Total Contribucion por mejoras",
-    valor: 20351000.0,
-    fill: "var(--color-totalcontribucionmejoras)",
+    nombre: "Total Recuperacion de Prestamos de Largo Plazo",
+    valor: 21490000.00,
+    fill: "var(--color-recuperacionprestamoslargoplazo)",
   },
   {
-    month: "Total Recursos propios de capital",
-    valor: 260351000.0,
-    fill: "var(--color-totalrecursospropiosdecapital)",
-  },
-  {
-    month: "Total Del sector privado",
-    valor: 21490000.0,
-    fill: "var(--color-totalprivados)",
+    nombre: "Total Disminucion de Otros Activos Financieros",
+    valor: 208561956.30,
+    fill: "var(--color-totaldisminucionotrosactivosfinancieros)",
   },
 ]
 
 const chartConfig = {
-  coparticipacionimpuestos: {
-    label: "Total Coparticipacion de impuestos",
-    color: "#00517B",
+  Ingresostributarios: {
+    label: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
+    color: "#00517B"
   },
-  tasas: {
-    label: "Total Tasas",
-    color: "#007CB6",
-  },
-  derechos: {
-    label: "Total Derechos",
-    color: "#5294DE",
-  },
-  alquileres: {
-    label: "Total Alquileres",
-    color: "#3EAF53",
-  },
-  multas: {
-    label: "Total Multas",
-    color: "#7FDE22",
-  },
-  ingresosnotributarios: {
+  Ingresosnotributarios: {
     label: "Total Ingresos No Tributarios",
-    color: "#A4D180",
+    color: "#007CB6"
   },
-  tasasinteresesporprestamos: {
-    label: "Total Intereses por prestamos",
-    color: "#FFF212",
-  },
-  totaladmnacional: {
-    label: "Total De administracion nacional",
-    color: "#F58634",
-  },
-  totalgipm: {
-    label: "Total De gobiernos e institucional provinciales y municipales",
-    color: "#EE1E52",
+  rentaspropiedad: {
+    label: "Total Rentas de la propiedad",
+    color: "#5294DE"
   },
   transferenciacorriente: {
-    label: "Total Transferencias corrientes",
-    color: "#4D4D4D",
+    label: "Total Transferencias Corrientes",
+    color: "#3EAF53"
   },
-  totalventasactivos: {
-    label: "Total Venta de activos",
-    color: "#666666",
+  recursospropiosdecapital: {
+    label: "Total Recursos Propios de Capital",
+    color: "#7FDE22"
   },
-  totalcontribucionmejoras: {
-    label: "Total Contribucion por mejoras",
-    color: "#B3B3B3",
+  recuperacionprestamoslargoplazo: {
+    label: "Total Recuperacion de Prestamos de Largo Plazo",
+    color: "#A4D180"
   },
-  totalrecursospropiosdecapital: {
-    label: "totalrecursospropiosdecapital",
-    color: "#0975bd",
-  },
-  totalprivados: {
-    label: "Total Del sector privado",
-    color: " #8bd0fe",
-  },
+  totaldisminucionotrosactivosfinancieros: {
+    label: "Total Disminucion de Otros Activos Financieros",
+    color: "#EE1E52"
+  }
 } satisfies ChartConfig
 
 export function GraficosIngresos ({ chart, setChart }) {
@@ -155,7 +100,7 @@ export function GraficosIngresos ({ chart, setChart }) {
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
-              dataKey="month"
+              dataKey="nombre"
               tickLine={false}
               tickMargin={10}
               axisLine={false}
@@ -183,7 +128,7 @@ export function GraficosIngresos ({ chart, setChart }) {
                 <Pie
                   data={chartData}
                   dataKey="valor"
-                  nameKey="month"
+                  nameKey="nombre"
                   innerRadius={60}
                   strokeWidth={5}
                   fill="var(--color-desktop)"

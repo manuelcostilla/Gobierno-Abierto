@@ -17,7 +17,7 @@ function Presupuestopublico2021 () {
     <>
       <div>
         <div className="flex justify-center items-center p-5">
-          <Button className="mr-5 ml-5">2022</Button>
+          <Button className="mr-5 ml-5">2021</Button>
           <Button
             className="mr-5 ml-5"
             onClick={() => {

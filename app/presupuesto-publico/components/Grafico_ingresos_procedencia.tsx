@@ -10,7 +10,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 const chartData = [
   {
@@ -55,36 +55,54 @@ const chartConfig = {
 
 } satisfies ChartConfig
 
+const CustomLegend = ({ config }: { config: ChartConfig }) => (
+  <div>
+    {Object.entries(config).map(([key, { label, color }]) => (
+      <div key={key} className="flex items-center">
+        <div className="w-12 h-5 mr-2" style={{ backgroundColor: color }}></div>
+        <span className=" text-balance">{label} </span>
+      </div>
+    ))}
+  </div>
+)
+
 export function GraficosIngresosProcedencia ({ chart, setChart }) {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center min-h-[200px] w-[800px] pt-20">
       {chart
         ? (
-        <ChartContainer
-          config={chartConfig}
-         className="min-h-[200px] w-[100%]"
-        >
-          <BarChart accessibilityLayer data={chartData}>
-            <CartesianGrid vertical={false} />
-            <XAxis
-              dataKey="month"
-              tickLine={false}
-              tickMargin={10}
-              axisLine={false}
-              tickFormatter={(value) => value}
-            />
-            <ChartTooltip content={<ChartTooltipContent />} />
-            <ChartLegend content={<ChartLegendContent />} />
-            <Bar dataKey="valor" radius={4} />
-          </BarChart>
-        </ChartContainer>
+          <Card>
+           <CardHeader>
+              <CardTitle>Grafico ingresos por procedencia</CardTitle>
+            </CardHeader>
+          <CardContent>
+            <ChartContainer
+              config={chartConfig}
+             className="min-h-[200px] h-[250px] w-[600px]"
+            >
+              <BarChart accessibilityLayer data={chartData}>
+                <CartesianGrid vertical={false} />
+                <XAxis axisLine={false} />
+                <ChartTooltip content={<ChartTooltipContent />} />
+                <ChartLegend content={<ChartLegendContent />} />
+                <Bar dataKey="valor" radius={4} />
+              </BarChart>
+            </ChartContainer>
+          </CardContent>
+          <CardFooter>
+            <CustomLegend config={chartConfig} />
+          </CardFooter>
+        </Card>
           )
         : (
-        <Card className="flex flex-col h-[300px] w-[350px]">
+        <Card>
+            <CardHeader>
+              <CardTitle>Grafico ingresos por procedencia</CardTitle>
+            </CardHeader>
           <CardContent className="flex-1 pb-0 X">
             <ChartContainer
               config={chartConfig}
-              className="mx-auto aspect-square max-h-[350px]"
+               className="mx-auto aspect-square max-h-[350px]"
             >
               <PieChart>
                 <ChartTooltip
@@ -101,7 +119,9 @@ export function GraficosIngresosProcedencia ({ chart, setChart }) {
               </PieChart>
             </ChartContainer>
           </CardContent>
-          <CardFooter className="flex-col gap-2 text-sm"></CardFooter>
+          <CardFooter>
+            <CustomLegend config={chartConfig} />
+          </CardFooter>
         </Card>
           )}
     </div>

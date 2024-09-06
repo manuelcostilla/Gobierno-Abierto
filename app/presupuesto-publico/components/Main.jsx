@@ -6,7 +6,6 @@ import { ChartColumn, ChartPie } from "lucide-react"
 import { GraficosIngresos } from "./Grafico_ingresos"
 import { GastosPorArea } from "./gastos_por_area"
 import { Graficogastossubtotales } from "./Grafico_gastos"
-import { Card, CardContent, CardHeader, CardTitle, } from "@/components/ui/card"
 import { useState } from "react"
 
 export default function Main_presupuesto () {
@@ -36,53 +35,27 @@ export default function Main_presupuesto () {
           </Button>
         </div>
         <div className="flex justify-center items-center mb-5 pr-5 pt-5">
-          <Card className="w-[800px] h-[550px]">
-            <CardHeader>
-              <CardTitle>Grafico Ingresos por rubro</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <GraficosIngresos chart={chart} setChart={setActivechart} />
-            </CardContent>
-          </Card>
+          <div className="w-[800px] h-[550px]">
+            <GraficosIngresos chart={chart} setChart={setActivechart} />
+          </div>
         </div>
-        <div className="flex justify-center items-center m-5 ">
-          <Card className="w-[800px] h-[550px]">
-            <CardHeader>
-              <CardTitle>Grafico ingresos por procedencia</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <GraficosIngresosProcedencia
-                chart={chart}
-                setChart={setActivechart}
-              />
-            </CardContent>
-          </Card>
+        <div className="flex justify-center items-center mb-5 pr-5 pt-5">
+          <div className="w-[800px] h-[550px]">
+            <GraficosIngresosProcedencia
+              chart={chart}
+              setChart={setActivechart}
+            />
+          </div>
         </div>
-        <div className="flex justify-center items-center m-5 ">
-          <Card className="w-[800px] h-[550px]">
-            <CardHeader>
-              <CardTitle>Grafico total de los gastos</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Graficogastossubtotales
-                chart={chart}
-                setChart={setActivechart}
-              />
-            </CardContent>
-          </Card>
+        <div className="flex justify-center items-center mb-5 pr-5 pt-5">
+          <div className="w-[800px] h-[550px]">
+            <Graficogastossubtotales chart={chart} setChart={setActivechart} />
+          </div>
         </div>
-        <div className="flex justify-center items-center m-5 ">
-          <Card className="w-[800px] h-[550px]">
-            <CardHeader>
-              <CardTitle>Grafico Subtotal de los gastos por area</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <GastosPorArea
-                chart={chart}
-                setChart={setActivechart}
-              />
-            </CardContent>
-          </Card>
+        <div className="flex justify-center items-center mb-5 pr-5 pt-5  pb-36">
+          <div className="w-[800px] h-[550px]">
+            <GastosPorArea chart={chart} setChart={setActivechart} />
+          </div>
         </div>
       </div>
     </>

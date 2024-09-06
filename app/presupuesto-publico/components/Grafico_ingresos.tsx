@@ -108,7 +108,7 @@ export function GraficosIngresos ({ chart, setChart }) {
       ? (
         <Card>
          <CardHeader>
-              <CardTitle>Grafico Ingresos por rubro</CardTitle>
+              <CardTitle>Grafico Ingresos por rubro en pesos</CardTitle>
             </CardHeader>
         <CardContent>
           <ChartContainer

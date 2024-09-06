@@ -73,7 +73,7 @@ export function GraficosIngresosProcedencia ({ chart, setChart }) {
         ? (
           <Card>
            <CardHeader>
-              <CardTitle>Grafico ingresos por procedencia</CardTitle>
+              <CardTitle>Grafico ingresos por procedencia en pesos</CardTitle>
             </CardHeader>
           <CardContent>
             <ChartContainer

@@ -24,37 +24,37 @@ import {
 const chartData = [
   {
     nombre: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
-    valor: 2049952360.0,
+    valor$: 2049952360.0,
     fill: "var(--color-Ingresostributarios)",
   },
   {
     nombre: "Total Ingresos No Tributarios",
-    valor: 1581445400.00,
+    valor$: 1581445400.00,
     fill: "var(--color-Ingresosnotributarios)",
   },
   {
     nombre: "Total Rentas de la propiedad",
-    valor: 2000000.00,
+    valor$: 2000000.00,
     fill: "var(--color-rentaspropiedad)",
   },
   {
     nombre: "Total Transferencias Corrientes",
-    valor: 1257528543.17,
+    valor$: 1257528543.17,
     fill: "var(--color-transferenciacorriente)",
   },
   {
     nombre: "Total Recursos Propios de Capital",
-    valor: 260351000.00,
+    valor$: 260351000.00,
     fill: "var(--color-recursospropiosdecapital)",
   },
   {
     nombre: "Total Recuperacion de Prestamos de Largo Plazo",
-    valor: 21490000.00,
+    valor$: 21490000.00,
     fill: "var(--color-recuperacionprestamoslargoplazo)",
   },
   {
     nombre: "Total Disminucion de Otros Activos Financieros",
-    valor: 208561956.30,
+    valor$: 208561956.30,
     fill: "var(--color-totaldisminucionotrosactivosfinancieros)",
   },
 ]
@@ -120,7 +120,7 @@ export function GraficosIngresos ({ chart, setChart }) {
               <XAxis axisLine={false} />
               <ChartTooltip content={<ChartTooltipContent />} />
               <ChartLegend content={<ChartLegendContent />} />
-              <Bar dataKey="valor" radius={4} />
+              <Bar dataKey="valor$" radius={4} />
             </BarChart>
           </ChartContainer>
         </CardContent>
@@ -141,13 +141,12 @@ export function GraficosIngresos ({ chart, setChart }) {
           >
             <PieChart>
               <ChartTooltip
-                cursor={false}
                 content={<ChartTooltipContent />}
               />
               <Pie
                 data={chartData}
-                dataKey="valor"
-                nameKey="month"
+                dataKey="valor$"
+                nameKey="nombre"
                 innerRadius={60}
                 strokeWidth={5}
               ></Pie>

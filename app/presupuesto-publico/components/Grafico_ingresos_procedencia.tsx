@@ -14,23 +14,23 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 
 const chartData = [
   {
-    month: "De origen municipal",
-    valor: 236443909.94,
+    nombre: "De origen municipal",
+    valor$: 236443909.94,
     fill: "var(--color-deorigenmunicipal)",
   },
   {
-    month: "De origen provincial",
-    valor: 817161485.47,
+    nombre: "De origen provincial",
+    valor$: 817161485.47,
     fill: "var(--color-deorigenprovincial)",
   },
   {
-    month: "De origen Nacional",
-    valor: 628240864.06,
+    nombre: "De origen Nacional",
+    valor$: 628240864.06,
     fill: "var(--color-deorigennacional)",
   },
   {
-    month: "Fuentes externas",
-    valor: 0.0,
+    nombre: "Fuentes externas",
+    valor$: 0.0,
     fill: "var(--color-fuentesexternas)",
   },
 ]
@@ -85,7 +85,7 @@ export function GraficosIngresosProcedencia ({ chart, setChart }) {
                 <XAxis axisLine={false} />
                 <ChartTooltip content={<ChartTooltipContent />} />
                 <ChartLegend content={<ChartLegendContent />} />
-                <Bar dataKey="valor" radius={4} />
+                <Bar dataKey="valor$" radius={4} />
               </BarChart>
             </ChartContainer>
           </CardContent>
@@ -111,8 +111,8 @@ export function GraficosIngresosProcedencia ({ chart, setChart }) {
                 />
                 <Pie
                   data={chartData}
-                  dataKey="valor"
-                  nameKey="month"
+                  dataKey="valor$"
+                  nameKey="nombre"
                   innerRadius={60}
                   strokeWidth={5}
                 ></Pie>

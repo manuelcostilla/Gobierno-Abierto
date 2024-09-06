@@ -16,37 +16,37 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const chartData = [
   {
     nombre: "Conduccion superior",
-    valor: 379653818.41,
+    valor$: 379653818.41,
     fill: "var(--color-conduccionsuperior)",
   },
   {
     nombre: "Secretaria de Gobierno",
-    valor: 1458223658.62,
+    valor$: 1458223658.62,
     fill: "var(--color-secgobierno)",
   },
   {
     nombre: "Secretaria de Hacienda",
-    valor: 208311142.31,
+    valor$: 208311142.31,
     fill: "var(--color-sechacienda)",
   },
   {
     nombre: "Secretaria de Cultura, Educacion y Turismo",
-    valor: 551674046.42,
+    valor$: 551674046.42,
     fill: "var(--color-secculturaeducacionturismo)",
   },
   {
     nombre: "Secretaria de Obras y Servicios Publicos",
-    valor: 1907994791.88,
+    valor$: 1907994791.88,
     fill: "var(--color-secobrasyservpublicos)",
   },
   {
     nombre: "Secretaria de Modernizacion y Gestion Publica",
-    valor: 168240719.4,
+    valor$: 168240719.4,
     fill: "var(--color-secmodernizacionygestionpublica)",
   },
   {
     nombre: "Secretaria de Desarrollo Humano",
-    valor: 350582089.96,
+    valor$: 350582089.96,
     fill: "var(--color-secdesarrollohumano)",
   },
 ]
@@ -121,7 +121,7 @@ export function GastosPorArea ({ chart, setChart }) {
                   }
                 />
                 <ChartLegend content={<ChartLegendContent />} />
-                <Bar dataKey="valor" radius={4} />
+                <Bar dataKey="valor$" radius={4} />
               </BarChart>
             </ChartContainer>
           </CardContent>
@@ -147,7 +147,7 @@ export function GastosPorArea ({ chart, setChart }) {
                 />
                 <Pie
                   data={chartData}
-                  dataKey="valor"
+                  dataKey="valor$"
                   nameKey="nombre"
                   innerRadius={60}
                   strokeWidth={5}

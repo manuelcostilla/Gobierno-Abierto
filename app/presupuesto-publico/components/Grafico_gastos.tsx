@@ -15,17 +15,17 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const chartData = [
   {
     nombre: "Total Gastos por Area",
-    valor: 5024680266.73,
+    valor$: 5024680266.73,
     fill: "var(--color-totalgastosporarea)",
   },
   {
     nombre: "HCD",
-    valor: 127582089.96,
+    valor$: 127582089.96,
     fill: "var(--color-hcd)",
   },
   {
     nombre: "Servicio de la deuda",
-    valor: 228650322.0,
+    valor$: 228650322.0,
     fill: "var(--color-serviciodeladeuda)",
   },
 ]
@@ -75,7 +75,7 @@ export function Graficogastossubtotales ({ chart, setChart }) {
                 <XAxis axisLine={false} />
                 <ChartTooltip content={<ChartTooltipContent />} />
                 <ChartLegend content={<ChartLegendContent />} />
-                <Bar dataKey="valor" radius={4} />
+                <Bar dataKey="valor$" radius={4} />
               </BarChart>
             </ChartContainer>
           </CardContent>
@@ -101,8 +101,8 @@ export function Graficogastossubtotales ({ chart, setChart }) {
                 />
                 <Pie
                   data={chartData}
-                  dataKey="valor"
-                  nameKey="month"
+                  dataKey="valor$"
+                  nameKey="nombre"
                   innerRadius={60}
                   strokeWidth={5}
                 ></Pie>

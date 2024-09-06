@@ -1,11 +1,11 @@
 "use client"
 import BannerText from "../../../components/bannertext"
 import { Button } from "@/components/ui/button"
-import { GraficosIngresosProcedencia } from "./grafico_ingresos_procedencia"
 import { ChartColumn, ChartPie } from "lucide-react"
 import { GraficosIngresos } from "./grafico_ingresos"
-import { GastosPorArea } from "./gastos_por_area"
+import { GraficosIngresosProcedencia } from "./grafico_ingresos_procedencia"
 import { Graficogastossubtotales } from "./grafico_gastos"
+import { GastosPorArea } from "./gastos_por_area"
 import { useState } from "react"
 
 export default function Main_presupuesto () {

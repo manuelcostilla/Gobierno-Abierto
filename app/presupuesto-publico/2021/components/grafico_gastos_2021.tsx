@@ -87,7 +87,7 @@ export function Graficogastostotales2021 ({ chart, setChart }) {
         : (
         <Card>
           <CardHeader>
-              <CardTitle>Grafico total de los gastos en pesos</CardTitle>
+              <CardTitle>Grafico total de los gastos en pesos 2021</CardTitle>
             </CardHeader>
           <CardContent className="flex-1 pb-0 X">
             <ChartContainer

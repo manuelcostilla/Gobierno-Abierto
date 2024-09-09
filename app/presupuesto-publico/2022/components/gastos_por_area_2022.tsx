@@ -16,37 +16,37 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const chartData = [
   {
     nombre: "Conduccion superior",
-    valor$: 379653818.41,
+    valor$: 211591005.88,
     fill: "var(--color-conduccionsuperior)",
   },
   {
     nombre: "Secretaria de Gobierno",
-    valor$: 1458223658.62,
+    valor$: 692064665.76,
     fill: "var(--color-secgobierno)",
   },
   {
     nombre: "Secretaria de Hacienda",
-    valor$: 208311142.31,
+    valor$: 105960797.17,
     fill: "var(--color-sechacienda)",
   },
   {
     nombre: "Secretaria de Cultura, Educacion y Turismo",
-    valor$: 551674046.42,
+    valor$: 241762073.96,
     fill: "var(--color-secculturaeducacionturismo)",
   },
   {
     nombre: "Secretaria de Obras y Servicios Publicos",
-    valor$: 1907994791.88,
+    valor$: 1037788513.01,
     fill: "var(--color-secobrasyservpublicos)",
   },
   {
     nombre: "Secretaria de Modernizacion y Gestion Publica",
-    valor$: 168240719.4,
+    valor$: 105612795.36,
     fill: "var(--color-secmodernizacionygestionpublica)",
   },
   {
     nombre: "Secretaria de Desarrollo Humano",
-    valor$: 350582089.96,
+    valor$: 201037056.86,
     fill: "var(--color-secdesarrollohumano)",
   },
 ]
@@ -102,7 +102,7 @@ export function GastosPorArea2022 ({ chart, setChart }) {
         ? (
         <Card>
            <CardHeader>
-              <CardTitle>Grafico Subtotal de los gastos por area en pesos</CardTitle>
+              <CardTitle>Grafico Subtotal de los gastos por area en pesos 2022</CardTitle>
             </CardHeader>
           <CardContent>
             <ChartContainer
@@ -133,7 +133,7 @@ export function GastosPorArea2022 ({ chart, setChart }) {
         : (
         <Card>
           <CardHeader>
-              <CardTitle>Grafico Subtotal de los gastos por area en pesos</CardTitle>
+              <CardTitle>Grafico Subtotal de los gastos por area en pesos 2022</CardTitle>
             </CardHeader>
           <CardContent className="flex-1 pb-0 X">
             <ChartContainer

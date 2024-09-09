@@ -15,32 +15,32 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const chartData = [
   {
     nombre: "Total Gastos por Area",
-    valor$: 5024680266.73,
+    valor$: 1295635585.78,
     fill: "var(--color-totalgastosporarea)",
   },
   {
     nombre: "HCD",
-    valor$: 127582089.96,
+    valor$: 33892723.41,
     fill: "var(--color-hcd)",
   },
   {
     nombre: "Servicio de la deuda",
-    valor$: 228650322.0,
+    valor$: 141408226.82,
     fill: "var(--color-serviciodeladeuda)",
   },
 ]
 
 const chartConfig = {
   totalgastosporarea: {
-    label: "Total Gastos por Area",
+    label: "Total Gastos por Area - 0",
     color: "#00517B",
   },
   hcd: {
-    label: "HCD",
+    label: "HCD - 1",
     color: "#007CB6",
   },
   serviciodeladeuda: {
-    label: "Servicio de la deuda",
+    label: "Servicio de la deuda - 2",
     color: "#5294DE",
   },
 } satisfies ChartConfig
@@ -63,7 +63,7 @@ export function Graficogastostotales2021 ({ chart, setChart }) {
         ? (
         <Card>
           <CardHeader>
-              <CardTitle>Grafico total de los gastos en pesos</CardTitle>
+              <CardTitle>Grafico total de los gastos en pesos 2021</CardTitle>
             </CardHeader>
           <CardContent>
             <ChartContainer

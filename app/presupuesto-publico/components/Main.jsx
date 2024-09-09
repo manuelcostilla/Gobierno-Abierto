@@ -2,9 +2,9 @@
 import BannerText from "../../../components/bannertext"
 import { Button } from "@/components/ui/button"
 import { ChartColumn, ChartPie } from "lucide-react"
-import { GraficosIngresos } from "../components/Grafico_ingresos"
-import { GraficosIngresosProcedencia } from "../components/Grafico_ingresos_procedencia"
-import { Graficogastossubtotales } from "../components/Grafico_gastos"
+import { GraficosIngresos } from "../components/grafico_ingresos"
+import { GraficosIngresosProcedencia } from "../components/grafico_ingresos_procedencia"
+import { Graficogastossubtotales } from "../components/grafico_gastos"
 import { GastosPorArea } from "../components/gastos_por_area"
 import { useState } from "react"
 

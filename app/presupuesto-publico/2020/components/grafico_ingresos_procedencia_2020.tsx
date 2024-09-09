@@ -21,42 +21,33 @@ import {
 const chartData = [
   {
     nombre: "De origen municipal",
-    valor$: 236443909.94,
+    valor$: 467450000.00,
     fill: "var(--color-deorigenmunicipal)",
   },
   {
     nombre: "De origen provincial",
-    valor$: 817161485.47,
+    valor$: 577681950.00,
     fill: "var(--color-deorigenprovincial)",
   },
   {
     nombre: "De origen Nacional",
-    valor$: 628240864.06,
+    valor$: 18146435.00,
     fill: "var(--color-deorigennacional)",
-  },
-  {
-    nombre: "Fuentes externas",
-    valor$: 0.0,
-    fill: "var(--color-fuentesexternas)",
   },
 ]
 
 const chartConfig = {
   deorigenmunicipal: {
-    label: "De origen municipal",
+    label: "De origen municipal - 0",
     color: "#00517B",
   },
   deorigenprovincial: {
-    label: "De origen provincial",
+    label: "De origen provincial - 1",
     color: "#007CB6",
   },
   deorigennacional: {
-    label: "De origen Nacional",
+    label: "De origen Nacional - 2",
     color: "#5294DE",
-  },
-  fuentesexternas: {
-    label: "Fuentes externas",
-    color: "#3EAF53",
   },
 } satisfies ChartConfig
 
@@ -78,7 +69,7 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
         ? (
         <Card>
           <CardHeader>
-            <CardTitle>Grafico ingresos por procedencia en pesos</CardTitle>
+            <CardTitle>Grafico ingresos por procedencia en pesos 2020</CardTitle>
           </CardHeader>
           <CardContent>
             <ChartContainer
@@ -102,7 +93,7 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
         : (
         <Card>
           <CardHeader>
-            <CardTitle>Grafico ingresos por procedencia</CardTitle>
+            <CardTitle>Grafico ingresos por procedencia 2020</CardTitle>
           </CardHeader>
           <CardContent className="flex-1 pb-0 X">
             <ChartContainer

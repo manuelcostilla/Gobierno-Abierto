@@ -16,37 +16,37 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const chartData = [
   {
     nombre: "Conduccion superior",
-    valor$: 379653818.41,
+    valor$: 391475921.46,
     fill: "var(--color-conduccionsuperior)",
   },
   {
     nombre: "Secretaria de Gobierno",
-    valor$: 1458223658.62,
+    valor$: 50116059.70,
     fill: "var(--color-secgobierno)",
   },
   {
     nombre: "Secretaria de Hacienda",
-    valor$: 208311142.31,
+    valor$: 51243753.20,
     fill: "var(--color-sechacienda)",
   },
   {
     nombre: "Secretaria de Cultura, Educacion y Turismo",
-    valor$: 551674046.42,
+    valor$: 124712825.57,
     fill: "var(--color-secculturaeducacionturismo)",
   },
   {
     nombre: "Secretaria de Obras y Servicios Publicos",
-    valor$: 1907994791.88,
+    valor$: 259124090.00,
     fill: "var(--color-secobrasyservpublicos)",
   },
   {
     nombre: "Secretaria de Modernizacion y Gestion Publica",
-    valor$: 168240719.4,
+    valor$: 28222401.43,
     fill: "var(--color-secmodernizacionygestionpublica)",
   },
   {
     nombre: "Secretaria de Desarrollo Humano",
-    valor$: 350582089.96,
+    valor$: 87369771.27,
     fill: "var(--color-secdesarrollohumano)",
   },
 ]
@@ -102,7 +102,7 @@ export function GastosPorArea2020 ({ chart, setChart }) {
         ? (
         <Card>
            <CardHeader>
-              <CardTitle>Grafico Subtotal de los gastos por area en pesos</CardTitle>
+              <CardTitle>Grafico Subtotal de los gastos por area en pesos 2020</CardTitle>
             </CardHeader>
           <CardContent>
             <ChartContainer
@@ -133,7 +133,7 @@ export function GastosPorArea2020 ({ chart, setChart }) {
         : (
         <Card>
           <CardHeader>
-              <CardTitle>Grafico Subtotal de los gastos por area en pesos</CardTitle>
+              <CardTitle>Grafico Subtotal de los gastos por area en pesos 2020</CardTitle>
             </CardHeader>
           <CardContent className="flex-1 pb-0 X">
             <ChartContainer

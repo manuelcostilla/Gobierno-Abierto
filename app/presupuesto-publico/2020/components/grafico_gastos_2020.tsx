@@ -21,32 +21,32 @@ import {
 const chartData = [
   {
     nombre: "Total Gastos por Area",
-    valor$: 5024680266.73,
+    valor$: 922264822.63,
     fill: "var(--color-totalgastosporarea)",
   },
   {
     nombre: "HCD",
-    valor$: 127582089.96,
+    valor$: 22139843.08,
     fill: "var(--color-hcd)",
   },
   {
     nombre: "Servicio de la deuda",
-    valor$: 228650322.0,
+    valor$: 48873719.29,
     fill: "var(--color-serviciodeladeuda)",
   },
 ]
 
 const chartConfig = {
   totalgastosporarea: {
-    label: "Total Gastos por Area",
+    label: "Total Gastos por Area - 0",
     color: "#00517B",
   },
   hcd: {
-    label: "HCD",
+    label: "HCD - 1",
     color: "#007CB6",
   },
   serviciodeladeuda: {
-    label: "Servicio de la deuda",
+    label: "Servicio de la deuda - 2",
     color: "#5294DE",
   },
 } satisfies ChartConfig
@@ -69,7 +69,7 @@ export function Graficogastostotales2020 ({ chart, setChart }) {
         ? (
         <Card>
           <CardHeader>
-            <CardTitle>Grafico total de los gastos en pesos</CardTitle>
+            <CardTitle>Grafico total de los gastos en pesos 2020</CardTitle>
           </CardHeader>
           <CardContent>
             <ChartContainer
@@ -93,7 +93,7 @@ export function Graficogastostotales2020 ({ chart, setChart }) {
         : (
         <Card>
           <CardHeader>
-            <CardTitle>Grafico total de los gastos en pesos</CardTitle>
+            <CardTitle>Grafico total de los gastos en pesos 2020</CardTitle>
           </CardHeader>
           <CardContent className="flex-1 pb-0 X">
             <ChartContainer

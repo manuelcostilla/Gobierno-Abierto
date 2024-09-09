@@ -24,69 +24,69 @@ import {
 const chartData = [
   {
     nombre: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
-    valor$: 2049952360.0,
+    valor$: 498270000.00,
     fill: "var(--color-Ingresostributarios)",
   },
   {
     nombre: "Total Ingresos No Tributarios",
-    valor$: 1581445400.0,
+    valor$: 460142500.00,
     fill: "var(--color-Ingresosnotributarios)",
   },
   {
     nombre: "Total Rentas de la propiedad",
-    valor$: 2000000.0,
+    valor$: 1500000.00,
     fill: "var(--color-rentaspropiedad)",
   },
   {
     nombre: "Total Transferencias Corrientes",
-    valor$: 1257528543.17,
+    valor$: 97558385.00,
     fill: "var(--color-transferenciacorriente)",
   },
   {
     nombre: "Total Recursos Propios de Capital",
-    valor$: 260351000.0,
+    valor$: 3356500.00,
     fill: "var(--color-recursospropiosdecapital)",
   },
   {
-    nombre: "Total Recuperacion de Prestamos de Largo Plazo",
-    valor$: 21490000.0,
-    fill: "var(--color-recuperacionprestamoslargoplazo)",
+    nombre: "Total Recuperación de préstamos de corto plazo",
+    valor$: 2000000.00,
+    fill: "var(--color-recuperacionprestamoscortoplazo)"
   },
   {
-    nombre: "Total Disminucion de Otros Activos Financieros",
-    valor$: 208561956.3,
-    fill: "var(--color-totaldisminucionotrosactivosfinancieros)",
+    nombre: "Total Recuperacion de Prestamos de Largo Plazo",
+    valor$: 451000.00,
+    fill: "var(--color-recuperacionprestamoslargoplazo)",
   },
 ]
 
 const chartConfig = {
   Ingresostributarios: {
-    label: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
+    label: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos) - 0",
     color: "#00517B",
   },
   Ingresosnotributarios: {
-    label: "Total Ingresos No Tributarios",
+    label: "Total Ingresos No Tributarios - 1",
     color: "#007CB6",
   },
   rentaspropiedad: {
-    label: "Total Rentas de la propiedad",
+    label: "Total Rentas de la propiedad - 2",
     color: "#5294DE",
   },
   transferenciacorriente: {
-    label: "Total Transferencias Corrientes",
+    label: "Total Transferencias Corrientes - 3",
     color: "#3EAF53",
   },
   recursospropiosdecapital: {
-    label: "Total Recursos Propios de Capital",
+    label: "Total Recursos Propios de Capital - 4",
     color: "#7FDE22",
   },
-  recuperacionprestamoslargoplazo: {
-    label: "Total Recuperacion de Prestamos de Largo Plazo",
-    color: "#A4D180",
+  recuperacionprestamoscortoplazo: {
+    label: "Total Recuperacion de Prestamos de Corto Plazo - 5",
+    color: "#7DFE99"
   },
-  totaldisminucionotrosactivosfinancieros: {
-    label: "Total Disminucion de Otros Activos Financieros",
-    color: "#EE1E52",
+  recuperacionprestamoslargoplazo: {
+    label: "Total Recuperacion de Prestamos de Largo Plazo - 6",
+    color: "#A4D180",
   },
 } satisfies ChartConfig
 
@@ -108,7 +108,7 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
         ? (
         <Card>
           <CardHeader>
-            <CardTitle>Grafico Ingresos por rubro en pesos</CardTitle>
+            <CardTitle>Grafico Ingresos por rubro en pesos 2020</CardTitle>
           </CardHeader>
           <CardContent>
             <ChartContainer
@@ -132,7 +132,7 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
         : (
         <Card>
           <CardHeader>
-            <CardTitle>Grafico Ingresos por rubro</CardTitle>
+            <CardTitle>Grafico Ingresos por rubro 2020</CardTitle>
           </CardHeader>
           <CardContent className="flex-1 pb-0 X">
             <ChartContainer

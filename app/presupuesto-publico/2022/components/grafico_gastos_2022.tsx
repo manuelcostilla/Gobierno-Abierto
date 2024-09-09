@@ -15,32 +15,32 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const chartData = [
   {
     nombre: "Total Gastos por Area",
-    valor$: 5024680266.73,
+    valor$: 2595516908,
     fill: "var(--color-totalgastosporarea)",
   },
   {
     nombre: "HCD",
-    valor$: 127582089.96,
+    valor$: 53956485.18,
     fill: "var(--color-hcd)",
   },
   {
     nombre: "Servicio de la deuda",
-    valor$: 228650322.0,
+    valor$: 241520424.62,
     fill: "var(--color-serviciodeladeuda)",
   },
 ]
 
 const chartConfig = {
   totalgastosporarea: {
-    label: "Total Gastos por Area",
+    label: "Total Gastos por Area - 0",
     color: "#00517B",
   },
   hcd: {
-    label: "HCD",
+    label: "HCD - 1",
     color: "#007CB6",
   },
   serviciodeladeuda: {
-    label: "Servicio de la deuda",
+    label: "Servicio de la deuda - 2",
     color: "#5294DE",
   },
 } satisfies ChartConfig

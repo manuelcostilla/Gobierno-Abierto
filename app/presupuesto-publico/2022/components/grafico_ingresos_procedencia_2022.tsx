@@ -15,23 +15,18 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const chartData = [
   {
     nombre: "De origen municipal",
-    valor$: 236443909.94,
+    valor$: 1217293302.82,
     fill: "var(--color-deorigenmunicipal)",
   },
   {
     nombre: "De origen provincial",
-    valor$: 817161485.47,
+    valor$: 1488842566.90,
     fill: "var(--color-deorigenprovincial)",
   },
   {
     nombre: "De origen Nacional",
-    valor$: 628240864.06,
+    valor$: 185157948.08,
     fill: "var(--color-deorigennacional)",
-  },
-  {
-    nombre: "Fuentes externas",
-    valor$: 0.0,
-    fill: "var(--color-fuentesexternas)",
   },
 ]
 
@@ -47,10 +42,6 @@ const chartConfig = {
   deorigennacional: {
     label: "De origen Nacional",
     color: "#5294DE",
-  },
-  fuentesexternas: {
-    label: "Fuentes externas",
-    color: "#3EAF53",
   },
 
 } satisfies ChartConfig
@@ -73,7 +64,7 @@ export function GraficosIngresosProcedencia2022 ({ chart, setChart }) {
         ? (
           <Card>
            <CardHeader>
-              <CardTitle>Grafico ingresos por procedencia en pesos</CardTitle>
+              <CardTitle>Grafico ingresos por procedencia en pesos 2022</CardTitle>
             </CardHeader>
           <CardContent>
             <ChartContainer
@@ -97,7 +88,7 @@ export function GraficosIngresosProcedencia2022 ({ chart, setChart }) {
         : (
         <Card>
             <CardHeader>
-              <CardTitle>Grafico ingresos por procedencia</CardTitle>
+              <CardTitle>Grafico ingresos por procedencia 2022</CardTitle>
             </CardHeader>
           <CardContent className="flex-1 pb-0 X">
             <ChartContainer

@@ -32,7 +32,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/presupuesto-publico/components/grafico_ingresos_procedencia.tsx", "app/presupuesto-publico/gastos-por-area/page.jsx"  ],
+, "app/presupuesto-publico/components/Grafico_ingresos_procedencia.tsx", "app/presupuesto-publico/gastos-por-area/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

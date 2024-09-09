@@ -5,7 +5,7 @@ import { ChartColumn, ChartPie } from "lucide-react"
 import { GraficosIngresos } from "./Grafico_ingresos"
 import { GraficosIngresosProcedencia } from "./Grafico_ingresos_procedencia"
 import { Graficogastossubtotales } from "./Grafico_gastos"
-import { GastosPorArea } from "./Gastos_por_area"
+import { GastosPorArea } from "./gastos_por_area"
 import { useState } from "react"
 
 export default function Main_presupuesto () {

@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-
+import Link from "next/link"
 import { Graficogastostotales2021 } from "./components/grafico_gastos_2021"
 import { GraficosIngresos2021 } from "./components/grafico_ingresos_2021"
 import { GraficosIngresosProcedencia2021 } from "./components/grafico_ingresos_procedencia_2021"
@@ -17,6 +17,8 @@ function Presupuestopublico2021 () {
     <>
       <div>
         <div className="flex justify-center items-center p-5">
+        <Link href="/presupuesto-publico/">
+        <Button>Inicio</Button></Link>
           <Button className="mr-5 ml-5">2021</Button>
           <Button
             className="mr-5 ml-5"

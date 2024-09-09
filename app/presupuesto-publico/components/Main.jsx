@@ -2,10 +2,10 @@
 import BannerText from "../../../components/bannertext"
 import { Button } from "@/components/ui/button"
 import { ChartColumn, ChartPie } from "lucide-react"
-import { GraficosIngresos } from "../components/grafico_ingresos"
-import { GraficosIngresosProcedencia } from "../components/grafico_ingresos_procedencia"
-import { Graficogastossubtotales } from "../components/grafico_gastos"
-import { GastosPorArea } from "../components/gastos_por_area"
+import { GraficosIngresos } from "./Grafico_ingresos"
+import { GraficosIngresosProcedencia } from "./Grafico_ingresos_procedencia"
+import { Graficogastossubtotales } from "./Grafico_gastos"
+import { GastosPorArea } from "./Gastos_por_area"
 import { useState } from "react"
 
 export default function Main_presupuesto () {

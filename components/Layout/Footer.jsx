@@ -13,9 +13,9 @@ import BaraderoGob from "../../public/iconos redes/baradero.gob.png"
 export const Footer = () => {
   return (
     <>
-    <footer className="lg:flex lg:justify-between lg:p-[15px]  bg-black-footer w-full overflow-x-hidden">
-        <div>
-          <div className="block lg:p-[10px]  m-auto lg:mt-0 ml-8">
+    <footer className="flex flex-col lg:flex-row lg:justify-between lg:p-[15px] bg-black-footer w-full overflow-x-hidden">
+        <div className=''>
+          <div className="flex justify-center p-[10px] m-auto lg:mt-0 lg:ml-8">
             <Image alt="" src={logo_baradero} height={79} width={247}/>
           </div>
           <div className='flex justify-center items-center'>
@@ -48,7 +48,7 @@ export const Footer = () => {
             </li>
           </div>
         </div>
-        <div className='mr-6 '>
+        <div className='text-center mt-4 lg:mt-0 lg:text-left lg:mr-6 text-white'>
             <div className="lg:mt-[10px] text-white mt-4 text-center">
               <p className='m-2'>Municipalidad Santiago del Baradero</p>
               <p className='m-2'>Av. San Martin 905</p>
@@ -56,7 +56,7 @@ export const Footer = () => {
               <p>Buenos Aires, Argentina</p>
             </div>
         </div>
-        <div className=" mr-8">
+        <div className="flex justify-center lg:justify-end mt-4 lg:mt-0 lg:mr-8">
           <Image alt="" src={escudo_baradero} height={225} width={130}/>
         </div>
       </footer>

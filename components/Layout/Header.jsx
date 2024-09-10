@@ -47,13 +47,13 @@ export const Header = () => {
               </Link>
             </li>
         </div>
-        <div className="flex justify-between sm:justify-between items-center sm:w-auto lg:border-b-4 lg:border-b-green-nav">
-          <Link href="/" className="ml-14">
-            <Image alt="" src={logo} className="lg:w-[400px] lg:h-[400px] xs:w-[100px] xs:h-[100px]"/>
+        <div className="flex flex-col md:flex-row justify-between items-center md:w-auto lg:border-b-4 lg:border-b-green-nav">
+          <Link href="/" className="mb-4 md:mb-0">
+            <Image alt="" src={logo} className="lg:w-[400px] lg:h-[400px] xs:w-[100px] xs:h-[100px]" />
           </Link>
-          <div className="">
-            <div className=" mt-20">
-            <HeadernavBar />
+          <div className="w-full sm:w-auto">
+            <div className="mt-4 sm:mt-0">
+              <HeadernavBar />
             </div>
           </div>
         </div>

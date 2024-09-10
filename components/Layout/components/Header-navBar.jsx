@@ -67,155 +67,120 @@ export const HeadernavBar = () => {
   return (
     <>
     <div className="flex items-center bg-gray-nav w-full h-[60px] p-6 lg:hidden">
-      <button onClick={handleNavToggle}><FaBars className="text-blue-header" size="25px"/></button>
-    </div>
-    <nav className={`text-sm font-medium lg:flex lg:justify-evenly lg:items-center ${isNavOpen ? 'block' : 'hidden'} lg:w-full lg:h-[60px] bg-gray-nav pl-20 pr-20 w-full h-auto font-sans`}>
-      <ul className="lg:flex lg:flex-row lg:space-x-8 flex flex-col">
-      <Link href="/">
-          <li className="relative">
-            <button className="text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out">
-              INICIO
-            </button>
-          </li>
-        </Link>
-        {/* INICIA SECCION ORGANIGRAMA BARRA DE NAVEGACIÓN */}
-        <li className="relative" ref={organigramaRef}>
-          <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'
-            // className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
-            // onClick={() => handleSubMenuClick('organigrama')}
-          >
-            <Link href="../organigrama">ORGANIGRAMA<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0 " /></Link>
-          </button>
-          {subMenus.organigrama && (
-            <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
-              {/* Opciones del submenú de Boletin oficial */}
-              <ul className="py-0 lg:py-2">
-                <Link href="#">
-                  <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Organigrama</li>
-                </Link>
-                <Link href="#">
-                  <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Nomina de Empleados</li>
-                </Link>
-                <Link href="#">
-                  <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />DDJJ de Funcionarios</li>
-                </Link>
-              </ul>
-            </div>
-          )}
-        </li>
-        {/* INICIA BOLETIN OFICIAL BARRA DE NAVEGACIÓN */}
-        <li className="relative" ref={boletinRef}>
-          <div className="flex justify-between">
-          <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'
-            // className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
-            // onClick={() => handleSubMenuClick('boletin')}
-          >
-           <Link href="../boletin-oficial">BOLETIN OFICIAL<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
-          </button>
-          </div>
-          {subMenus.boletin && (
-            <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
-              {/* Opciones del submenú de Precios y licitación */}
-              <ul className="py-0 lg:py-2">
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />HCD</li>
-                </Link>
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Ejecutivo Municipal</li>
-                </Link>
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />SIBOM</li>
-                </Link>
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Rendición de Cuentas</li>
-                </Link>
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Ordenanza con Prioridad</li>
-                </Link>
-              </ul>
-            </div>
-          )}
-        </li>
-        {/* INICIA COMPRAS Y LICITACIONES */}
-        <li className="relative" ref={licitacionesRef}>
-          <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'
-            // className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
-            // onClick={() => handleSubMenuClick('licitaciones')}
-          >
-            <Link href="../precios-y-licitaciones">COMPRAS Y LICITACIONES<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
-          </button>
-          {subMenus.licitaciones && (
-            <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
-              {/* Opciones del submenú de Precios y licitación */}
-              <ul className="py-0 lg:py-2">
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Concurso de Precios</li>
-                </Link>
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Licitaciones Publicas</li>
-                </Link>
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Licitaciones Privadas</li>
-                </Link>
-              </ul>
-            </div>
-          )}
-        </li>
-        {/* INICIA PRESUPUESTO PUBLICO */}
-        <li className="relative" ref={presupuestoRef}>
-          <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'
-            // className="text-black text-left lg:text-center w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700 px-4 lg:px-0"
-            // onClick={() => handleSubMenuClick('presupuesto')}
-          >
-            <Link href="../presupuesto-publico">PRESUPUESTO PUBLICO<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
-          </button>
-          {subMenus.presupuesto && (
-            <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
-              {/* Opciones del submenú de Precios y licitación */}
-              <ul className="py-0 lg:py-2">
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Presupuesto</li>
-                </Link>
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Ingreso</li>
-                </Link>
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Gastos</li>
-                </Link>
-              </ul>
-            </div>
-          )}
-        </li>
-        {/* <li className="relative" ref={compromisosRef}>
-          </li><button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'
-             className="text-black text-left lg:text-center w-full lg:w-full border-b border-gray-400 lg:border-b-0 lg:p-0 p-2 lg:hover:text-gray-700 px-4 lg:px-0"
-             onClick={() => handleSubMenuClick('compromisos')}
-          > */}
-            {/* <Link href="../Gestion-de-compromisos">GESTION DE COMPROMISOS<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
-          </button>
-          {subMenus.compromisos && (
-            <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav"> */}
-              {/* Opciones del submenú de Precios y licitación */}
-              {/* <ul className="py-0 lg:py-2">
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Compromisos Asumidos</li>
-                </Link>
-                <Link href="#">
-                <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 lg:hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Deudas Historicas</li>
-                </Link>
-              </ul>
-            </div>
-          )}
-        </li> */}
-        {/* <Link href="#">
-          <li className="relative">
-            <button className="text-black text-left lg:text-center w-full lg:w-full border-b border-gray-400 lg:border-b-0 lg:p-0 p-2 lg:hover:text-gray-700 px-4 lg:px-0">
-              Contacto
-            </button>
-          </li>
-        </Link> */}
-      </ul>
-    </nav>
+  <button onClick={handleNavToggle}><FaBars className="text-blue-header" size="25px" /></button>
+</div>
+
+<nav className={`text-sm font-medium lg:flex lg:justify-evenly lg:items-center ${isNavOpen ? 'block' : 'hidden'} lg:w-full lg:h-[60px] bg-gray-nav pl-6 pr-6 lg:pl-20 lg:pr-20 w-full h-auto font-sans`}>
+  <ul className="flex flex-col lg:flex-row lg:space-x-8">
+    <Link href="/">
+      <li className="relative">
+        <button className="text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out">
+          INICIO
+        </button>
+      </li>
+    </Link>
+
+    {/* INICIA SECCION ORGANIGRAMA BARRA DE NAVEGACIÓN */}
+    <li className="relative" ref={organigramaRef}>
+      <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
+        <Link href="../organigrama">ORGANIGRAMA<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+      </button>
+      {subMenus.organigrama && (
+        <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
+          <ul className="py-0 lg:py-2">
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Organigrama</li>
+            </Link>
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Nomina de Empleados</li>
+            </Link>
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />DDJJ de Funcionarios</li>
+            </Link>
+          </ul>
+        </div>
+      )}
+    </li>
+
+    {/* INICIA BOLETIN OFICIAL BARRA DE NAVEGACIÓN */}
+    <li className="relative" ref={boletinRef}>
+      <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
+        <Link href="../boletin-oficial">BOLETIN OFICIAL<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+      </button>
+      {subMenus.boletin && (
+        <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
+          <ul className="py-0 lg:py-2">
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />HCD</li>
+            </Link>
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Ejecutivo Municipal</li>
+            </Link>
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />SIBOM</li>
+            </Link>
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Rendición de Cuentas</li>
+            </Link>
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Ordenanza con Prioridad</li>
+            </Link>
+          </ul>
+        </div>
+      )}
+    </li>
+
+    {/* INICIA COMPRAS Y LICITACIONES */}
+    <li className="relative" ref={licitacionesRef}>
+      <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
+        <Link href="../precios-y-licitaciones">COMPRAS Y LICITACIONES<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+      </button>
+      {subMenus.licitaciones && (
+        <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
+          <ul className="py-0 lg:py-2">
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Concurso de Precios</li>
+            </Link>
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Licitaciones Publicas</li>
+            </Link>
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Licitaciones Privadas</li>
+            </Link>
+          </ul>
+        </div>
+      )}
+    </li>
+
+    {/* INICIA PRESUPUESTO PUBLICO */}
+    <li className="relative" ref={presupuestoRef}>
+      <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
+        <Link href="../presupuesto-publico">PRESUPUESTO PUBLICO<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+      </button>
+      {subMenus.presupuesto && (
+        <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
+          <ul className="py-0 lg:py-2">
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Presupuesto</li>
+            </Link>
+            <Link href="#">
+              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Pauta Publicitaria</li>
+            </Link>
+          </ul>
+        </div>
+      )}
+    </li>
+
+    {/* INICIA CONTACTO */}
+    <Link href="../contacto">
+      <li className="relative">
+        <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
+          CONTACTO
+        </button>
+      </li>
+    </Link>
+  </ul>
+</nav>
     </>
   )
 }

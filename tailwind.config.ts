@@ -22,7 +22,7 @@ const config: Config = {
         xs: "390px", // Breakpoint extra pequeño (añadido)
         sm: "640px", // Small devices (tablets)
         md: "768px", // Medium devices (landscape tablets)
-        lg: "1024px", // Large devices (laptops/desktops)
+        lg: "1050px", // Large devices (laptops/desktops)
         xl: "1280px", // Extra large devices (large laptops/desktops)
         "2xl": "1536px" // 2x extra large devices (monitors)
       },

@@ -67,11 +67,13 @@ export const HeadernavBar = () => {
   return (
     <>
     <div className="flex items-center bg-gray-nav w-full h-[60px] p-6 lg:hidden">
-  <button onClick={handleNavToggle}><FaBars className="text-blue-header" size="25px" /></button>
+  <button onClick={handleNavToggle}>
+    <FaBars className="text-blue-header" size="25px" />
+  </button>
 </div>
 
 <nav className={`text-sm font-medium lg:flex lg:justify-evenly lg:items-center ${isNavOpen ? 'block' : 'hidden'} lg:w-full lg:h-[60px] bg-gray-nav pl-6 pr-6 lg:pl-20 lg:pr-20 w-full h-auto font-sans`}>
-  <ul className="flex flex-col lg:flex-row lg:space-x-8">
+  <ul className={`flex-col lg:flex-row lg:space-x-8 ${isNavOpen ? 'flex' : 'hidden'} lg:flex lg:flex-row`}>
     <Link href="/">
       <li className="relative">
         <button className="text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out">
@@ -172,13 +174,13 @@ export const HeadernavBar = () => {
     </li>
 
     {/* INICIA CONTACTO */}
-    <Link href="../contacto">
+    {/* <Link href="../contacto">
       <li className="relative">
         <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
           CONTACTO
         </button>
       </li>
-    </Link>
+    </Link> */}
   </ul>
 </nav>
     </>

@@ -1,5 +1,4 @@
-import Main_presupuesto from './components/Main'
-
+import Main_presupuesto from "./components/Main"
 
 function Presupuestopublico () {
   return (

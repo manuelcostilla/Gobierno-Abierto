@@ -21,17 +21,17 @@ import {
 const chartData = [
   {
     nombre: "De origen municipal",
-    valor$: 467450000.00,
+    valor$: 467450000.0,
     fill: "var(--color-deorigenmunicipal)",
   },
   {
     nombre: "De origen provincial",
-    valor$: 577681950.00,
+    valor$: 577681950.0,
     fill: "var(--color-deorigenprovincial)",
   },
   {
     nombre: "De origen Nacional",
-    valor$: 18146435.00,
+    valor$: 18146435.0,
     fill: "var(--color-deorigennacional)",
   },
 ]
@@ -64,17 +64,19 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
 
 export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
   return (
-    <div className="flex justify-center items-center min-h-[200px] w-[800px] pt-20">
+    <div>
       {chart
         ? (
         <Card>
           <CardHeader>
-            <CardTitle>Grafico ingresos por procedencia en pesos 2020</CardTitle>
+            <CardTitle>
+              Grafico ingresos por procedencia en pesos 2020
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <ChartContainer
               config={chartConfig}
-              className="min-h-[200px] h-[250px] w-[600px]"
+              className="min-h-[200px] h-[250px] w-[350px] md:min-h-[200px] md:h-[250px] md:w-[600px] lg:min-h-[200px] lg:h-[250px] lg:w-[600px]"
             >
               <BarChart accessibilityLayer data={chartData}>
                 <CartesianGrid vertical={false} />
@@ -95,7 +97,7 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
           <CardHeader>
             <CardTitle>Grafico ingresos por procedencia 2020</CardTitle>
           </CardHeader>
-          <CardContent className="flex-1 pb-0 X">
+          <CardContent className="flex-1 pb-0">
             <ChartContainer
               config={chartConfig}
               className="mx-auto aspect-square max-h-[350px]"

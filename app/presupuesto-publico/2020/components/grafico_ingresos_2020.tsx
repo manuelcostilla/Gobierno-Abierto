@@ -24,44 +24,45 @@ import {
 const chartData = [
   {
     nombre: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
-    valor$: 498270000.00,
+    valor$: 498270000.0,
     fill: "var(--color-Ingresostributarios)",
   },
   {
     nombre: "Total Ingresos No Tributarios",
-    valor$: 460142500.00,
+    valor$: 460142500.0,
     fill: "var(--color-Ingresosnotributarios)",
   },
   {
     nombre: "Total Rentas de la propiedad",
-    valor$: 1500000.00,
+    valor$: 1500000.0,
     fill: "var(--color-rentaspropiedad)",
   },
   {
     nombre: "Total Transferencias Corrientes",
-    valor$: 97558385.00,
+    valor$: 97558385.0,
     fill: "var(--color-transferenciacorriente)",
   },
   {
     nombre: "Total Recursos Propios de Capital",
-    valor$: 3356500.00,
+    valor$: 3356500.0,
     fill: "var(--color-recursospropiosdecapital)",
   },
   {
     nombre: "Total Recuperación de préstamos de corto plazo",
-    valor$: 2000000.00,
-    fill: "var(--color-recuperacionprestamoscortoplazo)"
+    valor$: 2000000.0,
+    fill: "var(--color-recuperacionprestamoscortoplazo)",
   },
   {
     nombre: "Total Recuperacion de Prestamos de Largo Plazo",
-    valor$: 451000.00,
+    valor$: 451000.0,
     fill: "var(--color-recuperacionprestamoslargoplazo)",
   },
 ]
 
 const chartConfig = {
   Ingresostributarios: {
-    label: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos) - 0",
+    label:
+      "Total Ingresos Tributarios (Total Coparticipacion de Impuestos) - 0",
     color: "#00517B",
   },
   Ingresosnotributarios: {
@@ -82,7 +83,7 @@ const chartConfig = {
   },
   recuperacionprestamoscortoplazo: {
     label: "Total Recuperacion de Prestamos de Corto Plazo - 5",
-    color: "#7DFE99"
+    color: "#7DFE99",
   },
   recuperacionprestamoslargoplazo: {
     label: "Total Recuperacion de Prestamos de Largo Plazo - 6",
@@ -103,7 +104,7 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
 
 export function GraficosIngresos2020 ({ chart, setChart }) {
   return (
-    <div className="flex justify-center items-center min-h-[200px] w-[800px] ">
+    <div>
       {chart
         ? (
         <Card>
@@ -113,7 +114,7 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
           <CardContent>
             <ChartContainer
               config={chartConfig}
-              className="min-h-[200px] h-[250px] w-[600px]"
+              className="min-h-[200px] h-[250px] w-[350px] md:min-h-[200px] md:h-[250px] md:w-[600px] lg:min-h-[200px] lg:h-[250px] lg:w-[600px] "
             >
               <BarChart accessibilityLayer data={chartData}>
                 <CartesianGrid vertical={false} />
@@ -137,7 +138,7 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
           <CardContent className="flex-1 pb-0 X">
             <ChartContainer
               config={chartConfig}
-              className="mx-auto aspect-square max-h-[350px]"
+              className="mx-auto aspect-square max-h-[350px] "
             >
               <PieChart>
                 <ChartTooltip content={<ChartTooltipContent />} />

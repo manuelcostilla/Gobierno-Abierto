@@ -37,12 +37,12 @@ function Presupuestopublico2022 () {
             <ChartPie />
           </Button>
         </div>
-        <div className="flex justify-center items-center mb-5 pr-5 pt-5">
+        <div className="flex justify-center items-center pr-5 pt-5 pb-36">
           <div className="w-[800px] h-[550px]">
             <GraficosIngresos2020 chart={chart} setChart={setActivechart} />
           </div>
         </div>
-        <div className="flex justify-center items-center mb-5 pr-5 pt-5">
+        <div className="flex justify-center items-center p-5">
           <div className="w-[800px] h-[550px]">
             <GraficosIngresosProcedencia2020
               chart={chart}
@@ -50,12 +50,12 @@ function Presupuestopublico2022 () {
             />
           </div>
         </div>
-        <div className="flex justify-center items-center mb-5 pr-5 pt-5">
+        <div className="flex justify-center items-center p-5">
           <div className="w-[800px] h-[550px]">
             <Graficogastostotales2020 chart={chart} setChart={setActivechart} />
           </div>
         </div>
-        <div className="flex justify-center items-center mb-5 pr-5 pt-5  pb-36">
+        <div className="flex justify-center items-center mb-5 pr-5 pt-5 pb-36">
           <div className="w-[800px] h-[550px]">
             <GastosPorArea2020 chart={chart} setChart={setActivechart} />
           </div>

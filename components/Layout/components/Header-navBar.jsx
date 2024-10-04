@@ -68,7 +68,7 @@ export const HeadernavBar = () => {
     <>
     <div className="flex justify-end items-center w-full h-full p-6 lg:hidden">
   <button onClick={handleNavToggle}>
-    <FaBars className="mr-5" size="35px" />
+    <FaBars className="mr-5 hidden" size="35px" />
   </button>
 </div>
 

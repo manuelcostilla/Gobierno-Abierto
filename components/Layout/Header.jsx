@@ -47,9 +47,9 @@ export const Header = () => {
               </Link>
             </li>
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-center md:w-auto lg:border-b-4 lg:border-b-green-nav">
-          <Link href="/" className="mb-4 md:mb-0">
-            <Image alt="" src={logo} className="lg:w-[400px] lg:h-[400px] xs:w-[100px] xs:h-[100px]" />
+        <div className="flex  md:flex-row justify-between items-center content-center md:w-auto lg:border-b-4 lg:border-b-green-nav ">
+          <Link href="/" className=" md:mb-0">
+            <Image alt="" src={logo} className="w-[300px] h-[300px] xs:w-[300px] xs:h-[200px] sm:w-[300px] sm:h-[200px] md:w-[300px] md:h-[200px] lg:w-[300px] lg:h-[300px]" />
           </Link>
           <div className="w-full sm:w-auto">
             <div className="mt-4 sm:mt-0">

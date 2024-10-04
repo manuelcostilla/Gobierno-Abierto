@@ -66,9 +66,9 @@ export const HeadernavBar = () => {
 
   return (
     <>
-    <div className="flex items-center bg-gray-nav w-full h-[60px] p-6 lg:hidden">
+    <div className="flex justify-end items-center w-full h-full p-6 lg:hidden">
   <button onClick={handleNavToggle}>
-    <FaBars className="text-blue-header" size="25px" />
+    <FaBars className="mr-5" size="35px" />
   </button>
 </div>
 

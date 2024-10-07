@@ -1,11 +1,11 @@
-import { BoletinOficialTexto } from './components/BoletinOficialTexto'
 import BoletinOficialButtons from './components/BoletinOficialButtons'
+import { BannerText } from '../../components/bannertext'
 
 const PdfDownloader = () => {
   return (
     <>
     <div className='overflow-x-hidden'>
-      <BoletinOficialTexto />
+      <BannerText titulo="Boletín Oficial"/>
       <BoletinOficialButtons />
     </div>
     </>

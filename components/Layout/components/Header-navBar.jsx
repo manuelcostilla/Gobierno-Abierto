@@ -172,15 +172,6 @@ export const HeadernavBar = () => {
         </div>
       )}
     </li>
-
-    {/* INICIA CONTACTO */}
-    {/* <Link href="../contacto">
-      <li className="relative">
-        <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
-          CONTACTO
-        </button>
-      </li>
-    </Link> */}
   </ul>
 </nav>
     </>

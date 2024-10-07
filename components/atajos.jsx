@@ -30,7 +30,7 @@ export const Atajos = () => {
                 </div>
                 <div className='w-full flex flex-col justify-center items-center'>
                   <p className='text-lg font-bold mb-3 text-center break-words'>{atajo.title}</p>
-                  <p className='text-xs text-justify hidden lg:block'>{atajo.descripcion}</p> {/* Oculta la descripción en xs y sm */}
+                  <p className='text-xs text-balance hidden lg:block'>{atajo.descripcion}</p> {/* Oculta la descripción en xs y sm */}
                 </div>
               </div>
             </Link>

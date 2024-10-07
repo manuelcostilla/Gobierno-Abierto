@@ -1,5 +1,5 @@
 "use client"
-import BannerText from "../../../components/bannertext"
+import { BannerText } from "../../../components/bannertext"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ChartColumn, ChartPie } from "lucide-react"

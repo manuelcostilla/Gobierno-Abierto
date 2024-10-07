@@ -6,7 +6,7 @@ import { Graficogastostotales2020 } from "./components/grafico_gastos_2020"
 import { GraficosIngresos2020 } from "./components/grafico_ingresos_2020"
 import { GraficosIngresosProcedencia2020 } from "./components/grafico_ingresos_procedencia_2020"
 import { GastosPorArea2020 } from "./components/gastos_por_area_2020"
-
+import { BannerText } from "../../../components/bannertext"
 import { ChartColumn, ChartPie } from "lucide-react"
 import { useState } from "react"
 
@@ -16,9 +16,11 @@ function Presupuestopublico2022 () {
   return (
     <>
       <div>
+        <BannerText titulo="Presupuesto Público 2020" />
         <div className="flex justify-center items-center p-5">
-        <Link href="/presupuesto-publico/">
-        <Button>Inicio</Button></Link>
+          <Link href="/presupuesto-publico/">
+            <Button>Inicio</Button>
+          </Link>
           <Button className="mr-5 ml-5">2020</Button>
           <Button
             className="mr-5 ml-5"

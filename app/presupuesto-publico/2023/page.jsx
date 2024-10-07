@@ -15,10 +15,11 @@ export default function Presupuestopublico2023 () {
   return (
     <>
       <div>
-        <BannerText titulo="Presupuesto Publico" />
+        <BannerText titulo="Presupuesto Público 2023" />
         <div className="flex justify-center items-center p-5">
           <Link href="/presupuesto-publico/">
-          <Button>Inicio</Button></Link>
+            <Button>Inicio</Button>
+          </Link>
           <Button className="mr-5 ml-5">2023</Button>
           <Button
             className="mr-5 ml-5"
@@ -64,4 +65,3 @@ export default function Presupuestopublico2023 () {
     </>
   )
 }
-

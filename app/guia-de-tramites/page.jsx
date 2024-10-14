@@ -2,7 +2,7 @@ function GuiaDeTramites () {
   return (
     <>
       <div>
-        <p>guia de tramites</p>
+        <p>Explorar trámites por temas</p>
       </div>
     </>
   )

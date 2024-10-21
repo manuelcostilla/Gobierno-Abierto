@@ -1,4 +1,4 @@
-function BannerText ({ titulo }) {
+export function BannerText ({ titulo }) {
   return (
     <>
       <div className="flex max-w-screen h-36 bg-blue-title justify-center items-center text-center">
@@ -13,4 +13,3 @@ function BannerText ({ titulo }) {
   )
 }
 
-export default BannerText

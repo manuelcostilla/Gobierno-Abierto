@@ -1,0 +1,14 @@
+import { AcordeonDeLicitaciones } from "./components/Licitaciones"
+import { licitaciones } from "./data/InfoLicitaciones"
+
+const Licitacionesprivadas = () => {
+  return (
+    <>
+    <div className='overflow-x-hidden'>
+      <AcordeonDeLicitaciones data={licitaciones}/>
+      </div>
+    </>
+  )
+}
+
+export default Licitacionesprivadas

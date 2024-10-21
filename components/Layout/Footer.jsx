@@ -10,6 +10,8 @@ import twitter from "../../public/iconos redes/tw.png"
 import instagram from "../../public/iconos redes/ig.png"
 import youtube from "../../public/iconos redes/yt.png"
 import BaraderoGob from "../../public/iconos redes/baradero.gob.png"
+
+
 export const Footer = () => {
   return (
     <>

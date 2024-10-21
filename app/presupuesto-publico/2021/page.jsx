@@ -6,7 +6,7 @@ import { Graficogastostotales2021 } from "./components/grafico_gastos_2021"
 import { GraficosIngresos2021 } from "./components/grafico_ingresos_2021"
 import { GraficosIngresosProcedencia2021 } from "./components/grafico_ingresos_procedencia_2021"
 import { GastosPorArea2021 } from "./components/gastos_por_area_2021"
-
+import { BannerText } from "../../../components/bannertext"
 import { ChartColumn, ChartPie } from "lucide-react"
 import { useState } from "react"
 
@@ -16,9 +16,11 @@ function Presupuestopublico2021 () {
   return (
     <>
       <div>
+        <BannerText titulo="Presupuesto Público 2021" />
         <div className="flex justify-center items-center p-5">
-        <Link href="/presupuesto-publico/">
-        <Button>Inicio</Button></Link>
+          <Link href="/presupuesto-publico/">
+            <Button>Inicio</Button>
+          </Link>
           <Button className="mr-5 ml-5">2021</Button>
           <Button
             className="mr-5 ml-5"

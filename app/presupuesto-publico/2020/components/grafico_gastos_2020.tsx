@@ -64,7 +64,7 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
 
 export function Graficogastostotales2020 ({ chart, setChart }) {
   return (
-    <div className="flex justify-center items-center min-h-[200px] w-[800px] pt-20 ">
+    <div>
       {chart
         ? (
         <Card>
@@ -74,7 +74,7 @@ export function Graficogastostotales2020 ({ chart, setChart }) {
           <CardContent>
             <ChartContainer
               config={chartConfig}
-              className="min-h-[200px] h-[250px] w-[600px]"
+              className="min-h-[200px] h-[250px] w-[350px] md:min-h-[200px] md:h-[250px] md:w-[600px] lg:min-h-[200px] lg:h-[250px] lg:w-[600px] "
             >
               <BarChart accessibilityLayer data={chartData}>
                 <CartesianGrid vertical={false} />

@@ -23,7 +23,7 @@ export default function banner () {
         <h2 className='font-sans font-bold text-2xl sm:text-3xl lg:text-4xl mt-4 lg:mt-6 text-fuente-gris text-center lg:text-left'>
           Municipio de Baradero
         </h2>
-        <p className='font-sans font-medium mt-4 lg:mt-8 text-fuente-gris text-justify lg:text-left text-sm sm:text-base'>
+        <p className='font-sans font-medium mt-4 lg:mt-8 text-fuente-gris text-balance w-[80ch] lg:text-left text-sm sm:text-base'>
           Sitio web que proporciona fácil y transparente acceso a información pública, como presupuestos, decisiones y datos relevantes. Fomenta la participación ciudadana y la rendición de cuentas, permitiendo a los ciudadanos seguir y contribuir activamente en la gestión y toma de decisiones del municipio.
         </p>
       </div>

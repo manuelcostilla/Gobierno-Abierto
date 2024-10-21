@@ -1,6 +1,6 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart, } from "recharts"
+import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart } from "recharts"
 
 import {
   ChartConfig,
@@ -11,7 +11,13 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 const chartData = [
   {
@@ -21,12 +27,12 @@ const chartData = [
   },
   {
     nombre: "Secretaria de Gobierno",
-    valor$: 50116059.70,
+    valor$: 50116059.7,
     fill: "var(--color-secgobierno)",
   },
   {
     nombre: "Secretaria de Hacienda",
-    valor$: 51243753.20,
+    valor$: 51243753.2,
     fill: "var(--color-sechacienda)",
   },
   {
@@ -36,7 +42,7 @@ const chartData = [
   },
   {
     nombre: "Secretaria de Obras y Servicios Publicos",
-    valor$: 259124090.00,
+    valor$: 259124090.0,
     fill: "var(--color-secobrasyservpublicos)",
   },
   {
@@ -55,7 +61,6 @@ const chartConfig = {
   conduccionsuperior: {
     label: "Conduccion superior - 0",
     color: "#00517B",
-
   },
   secgobierno: {
     label: "Secretaria de Gobierno - 1",
@@ -94,32 +99,24 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
   </div>
 )
 
-
 export function GastosPorArea2020 ({ chart, setChart }) {
   return (
-    <div className="flex justify-center items-center min-h-[200px] w-[800px] pt-20">
+    <div>
       {chart
         ? (
         <Card>
-           <CardHeader>
-              <CardTitle>Grafico Subtotal de los gastos por area en pesos 2020</CardTitle>
-            </CardHeader>
+          <CardHeader>
+            <CardTitle>Grafico de los gastos por area en pesos 2020</CardTitle>
+          </CardHeader>
           <CardContent>
             <ChartContainer
               config={chartConfig}
-              className="min-h-[200px] h-[250px] w-[600px]"
+              className="min-h-[200px] h-[250px] w-[350px] md:min-h-[200px] md:h-[250px] md:w-[600px] lg:min-h-[200px] lg:h-[250px] lg:w-[600px] "
             >
               <BarChart accessibilityLayer data={chartData}>
                 <CartesianGrid vertical={false} />
-                <XAxis
-                  axisLine={false}
-                />
-                <ChartTooltip
-                  content={
-                    <ChartTooltipContent
-                    />
-                  }
-                />
+                <XAxis axisLine={false} />
+                <ChartTooltip content={<ChartTooltipContent />} />
                 <ChartLegend content={<ChartLegendContent />} />
                 <Bar dataKey="valor$" radius={4} />
               </BarChart>
@@ -133,8 +130,8 @@ export function GastosPorArea2020 ({ chart, setChart }) {
         : (
         <Card>
           <CardHeader>
-              <CardTitle>Grafico Subtotal de los gastos por area en pesos 2020</CardTitle>
-            </CardHeader>
+            <CardTitle>Grafico de los gastos por area en pesos 2020</CardTitle>
+          </CardHeader>
           <CardContent className="flex-1 pb-0 X">
             <ChartContainer
               config={chartConfig}

@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+  
     "paths": {
+      "@/components/*": ["components/*"],
       "@/*": [
-        "./*"
-      ]
+        "./*",
+      ],
     },
     "lib": [
       "dom",
@@ -32,7 +35,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/presupuesto-publico/2023/components/Grafico_ingresos_procedencia.tsx", "app/presupuesto-publico/gastos-por-area/page.jsx"  ],
+, "app/presupuesto-publico/2023/ingresos-2023/components/Grafico_ingresos_procedencia.tsx", "app/presupuesto-publico/gastos-por-area/page.jsx", "app/presupuesto-publico/2021/gastos-2021/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

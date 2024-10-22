@@ -78,7 +78,7 @@ function Contactos () {
                 className="text-gray-600"
                 target="_blank"
               >
-                San Martín 1063, Baradero
+                San Martín 905, Baradero
               </Link>
             </CardContent>
           </Card>

@@ -107,10 +107,7 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
     <div>
       {chart
         ? (
-        <Card>
-          <CardHeader>
-            <CardTitle>Grafico Ingresos por rubro en pesos 2020</CardTitle>
-          </CardHeader>
+        <div>
           <CardContent>
             <ChartContainer
               config={chartConfig}
@@ -128,7 +125,7 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
           <CardFooter>
             <CustomLegend config={chartConfig} />
           </CardFooter>
-        </Card>
+        </div>
           )
         : (
         <Card>

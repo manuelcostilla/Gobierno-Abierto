@@ -13,14 +13,6 @@ import {
 
 import * as React from "react"
 
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-
 const chartData = [
   {
     nombre: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
@@ -107,52 +99,41 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
     <div>
       {chart
         ? (
-        <div>
-          <CardContent>
-            <ChartContainer
-              config={chartConfig}
-              className="min-h-[200px] h-[250px] w-[350px] md:min-h-[200px] md:h-[250px] md:w-[600px] lg:min-h-[200px] lg:h-[250px] lg:w-[600px] "
-            >
-              <BarChart accessibilityLayer data={chartData}>
-                <CartesianGrid vertical={false} />
-                <XAxis axisLine={false} />
-                <ChartTooltip content={<ChartTooltipContent />} />
-                <ChartLegend content={<ChartLegendContent />} />
-                <Bar dataKey="valor$" radius={4} />
-              </BarChart>
-            </ChartContainer>
-          </CardContent>
-          <CardFooter>
-            <CustomLegend config={chartConfig} />
-          </CardFooter>
-        </div>
+        <>
+          <ChartContainer
+            config={chartConfig}
+            className="min-h-[200px] h-[250px] w-[350px] md:min-h-[200px] md:h-[250px] md:w-[600px] lg:min-h-[200px] lg:h-[250px] lg:w-[600px] "
+          >
+            <BarChart accessibilityLayer data={chartData}>
+              <CartesianGrid vertical={false} />
+              <XAxis axisLine={false} />
+              <ChartTooltip content={<ChartTooltipContent />} />
+              <ChartLegend content={<ChartLegendContent />} />
+              <Bar dataKey="valor$" radius={4} />
+            </BarChart>
+          </ChartContainer>
+          <CustomLegend config={chartConfig} />
+        </>
           )
         : (
-        <Card>
-          <CardHeader>
-            <CardTitle>Grafico Ingresos por rubro 2020</CardTitle>
-          </CardHeader>
-          <CardContent className="flex-1 pb-0 X">
-            <ChartContainer
-              config={chartConfig}
-              className="mx-auto aspect-square max-h-[350px] "
-            >
-              <PieChart>
-                <ChartTooltip content={<ChartTooltipContent />} />
-                <Pie
-                  data={chartData}
-                  dataKey="valor$"
-                  nameKey="nombre"
-                  innerRadius={60}
-                  strokeWidth={5}
-                ></Pie>
-              </PieChart>
-            </ChartContainer>
-          </CardContent>
-          <CardFooter>
-            <CustomLegend config={chartConfig} />
-          </CardFooter>
-        </Card>
+        <>
+          <ChartContainer
+            config={chartConfig}
+            className="mx-auto aspect-square max-h-[350px]"
+          >
+            <PieChart>
+              <ChartTooltip content={<ChartTooltipContent />} />
+              <Pie
+                data={chartData}
+                dataKey="valor$"
+                nameKey="nombre"
+                innerRadius={60}
+                strokeWidth={5}
+              ></Pie>
+            </PieChart>
+          </ChartContainer>
+          <CustomLegend config={chartConfig} />
+        </>
           )}
     </div>
   )

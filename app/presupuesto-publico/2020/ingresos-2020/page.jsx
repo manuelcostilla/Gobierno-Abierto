@@ -6,13 +6,14 @@
 
 import { GraficosIngresos2020 } from "./components/grafico_ingresos_2020"
 import { GraficosIngresosProcedencia2020 } from "./components/grafico_ingresos_procedencia_2020"
-
+import { BannerText } from "@/components/bannertext"
 import { CardContentPp } from "@/components/cardtemplate"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Ingresos2020 () {
   return (
     <>
+    <BannerText titulo="Ingresos"/>
       <div className="flex justify-center container">
         <div className="flex justify-start p-20">
           <Card>
@@ -22,14 +23,14 @@ export default function Ingresos2020 () {
             <CardContent className="flex justify-center items-center  pb-20 pt-20 ">
               <CardContentPp title="Total" content="$45.223.445" />
               <CardContentPp
-                title="Diferencia 2020 - 2019"
+                title="Diferencia 2020-2019"
                 content="$35.000.000"
               />
               <CardContentPp
-                title="Aumento % en el presupuesto"
+                title="Aumento porcentual"
                 content="25%"
               />
-              <CardContentPp title="Impuesto mas pagado" content="Abl" />
+              <CardContentPp title="Impuestos recaudados" content="Abl" />
             </CardContent>
             <CardContent>
               <Card>
@@ -49,14 +50,14 @@ export default function Ingresos2020 () {
             <CardContent className="flex justify-center items-center  pb-20 pt-20 ">
               <CardContentPp title="Total" content="$45.223.445" />
               <CardContentPp
-                title="Diferencia 2020 - 2019"
+                title="Diferencia 2020-2019"
                 content="$35.000.000"
               />
               <CardContentPp
-                title="Aumento % en el presupuesto"
+                title="Aumento porcentual"
                 content="25%"
               />
-              <CardContentPp title="Impuesto mas pagado" content="Abl" />
+              <CardContentPp title="Impuesto recaudados" content="Abl" />
             </CardContent>
             <Card>
               <CardContent>

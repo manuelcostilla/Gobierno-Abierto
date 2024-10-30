@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { BannerText } from "../../../components/bannertext"
+import { BannerText } from "@/components/bannertext"
 
 export default function Presupuestopublico2020 () {
   return (

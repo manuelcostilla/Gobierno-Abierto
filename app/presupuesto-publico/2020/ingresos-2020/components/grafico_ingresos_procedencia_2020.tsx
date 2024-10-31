@@ -1,6 +1,13 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  Pie,
+  PieChart,
+} from "recharts"
 
 import {
   ChartConfig,
@@ -63,7 +70,7 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
         <>
           <ChartContainer
             config={chartConfig}
-            className="min-h-[200px] h-[250px] w-[350px] md:min-h-[200px] md:h-[250px] md:w-[600px] lg:min-h-[200px] lg:h-[250px] lg:w-[600px]"
+            className="min-h-[200px] h-[250px] md:h-[250px]  lg:min-h-[200px] lg:h-[250px] w-full "
           >
             <BarChart accessibilityLayer data={chartData}>
               <CartesianGrid vertical={false} />
@@ -78,22 +85,25 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
           )
         : (
         <>
-          <ChartContainer
-            config={chartConfig}
-            className="mx-auto aspect-square max-h-[350px]"
-          >
-            <PieChart>
-              <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
-              <Pie
-                data={chartData}
-                dataKey="valor$"
-                nameKey="nombre"
-                innerRadius={60}
-                strokeWidth={5}
-              ></Pie>
-            </PieChart>
-          </ChartContainer>
-          <CustomLegend config={chartConfig} />
+            <ChartContainer
+              config={chartConfig}
+              className="mx-auto aspect-square max-h-[350px]  w-full"
+            >
+              <PieChart>
+                <ChartTooltip
+                  cursor={false}
+                  content={<ChartTooltipContent />}
+                />
+                <Pie
+                  data={chartData}
+                  dataKey="valor$"
+                  nameKey="nombre"
+                  innerRadius={60}
+                  strokeWidth={5}
+                ></Pie>
+              </PieChart>
+            </ChartContainer>
+            <CustomLegend config={chartConfig} />
         </>
           )}
     </div>

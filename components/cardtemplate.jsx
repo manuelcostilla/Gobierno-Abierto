@@ -4,13 +4,13 @@ export function CardContentPp ({ title, content }) {
   return (
     <>
       <Card className="m-2">
-        <CardHeader>
+        <CardHeader className=" bg-blue-header">
           <CardTitle className="flex justify-center items-center">
-            <p className="text-balance text-xl">{title}</p>
+            <p className="text-balance text-base text-white">{title}</p>
           </CardTitle>
         </CardHeader>
-        <CardContent className="flex justify-center items-center">
-          <p className="text-balance text-base">{content}</p>
+        <CardContent className="flex justify-center items-center pt-2">
+          <p className="text-balance text-2xl text-black ">{content}</p>
         </CardContent>
       </Card>
     </>

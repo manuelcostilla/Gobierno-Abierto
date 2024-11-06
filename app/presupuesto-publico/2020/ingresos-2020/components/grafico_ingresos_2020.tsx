@@ -1,6 +1,22 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+} from "recharts"
+
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card"
 
 import {
   ChartConfig,
@@ -12,14 +28,6 @@ import {
 } from "@/components/ui/chart"
 
 import * as React from "react"
-
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 
 const chartData = [
   {
@@ -64,6 +72,7 @@ const chartConfig = {
     label:
       "Total Ingresos Tributarios (Total Coparticipacion de Impuestos) - 0",
     color: "#00517B",
+
   },
   Ingresosnotributarios: {
     label: "Total Ingresos No Tributarios - 1",
@@ -96,7 +105,7 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
     {Object.entries(config).map(([key, { label, color }]) => (
       <div key={key} className="flex items-center">
         <div className="w-12 h-5 mr-2" style={{ backgroundColor: color }}></div>
-        <span className=" text-balance">{label} </span>
+        <span className=" text-balance">{label}</span>
       </div>
     ))}
   </div>
@@ -107,15 +116,9 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
     <div>
       {chart
         ? (
-        <Card>
-          <CardHeader>
-            <CardTitle>Grafico Ingresos por rubro en pesos 2020</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ChartContainer
-              config={chartConfig}
-              className="min-h-[200px] h-[250px] w-[350px] md:min-h-[200px] md:h-[250px] md:w-[600px] lg:min-h-[200px] lg:h-[250px] lg:w-[600px] "
-            >
+        <>
+          <ChartContainer config={chartConfig}>
+            <ResponsiveContainer width="100%" height="100%">
               <BarChart accessibilityLayer data={chartData}>
                 <CartesianGrid vertical={false} />
                 <XAxis axisLine={false} />
@@ -123,39 +126,53 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
                 <ChartLegend content={<ChartLegendContent />} />
                 <Bar dataKey="valor$" radius={4} />
               </BarChart>
-            </ChartContainer>
-          </CardContent>
-          <CardFooter>
-            <CustomLegend config={chartConfig} />
-          </CardFooter>
-        </Card>
+            </ResponsiveContainer>
+          </ChartContainer>
+          <CustomLegend config={chartConfig} />
+        </>
           )
         : (
-        <Card>
-          <CardHeader>
-            <CardTitle>Grafico Ingresos por rubro 2020</CardTitle>
-          </CardHeader>
-          <CardContent className="flex-1 pb-0 X">
-            <ChartContainer
-              config={chartConfig}
-              className="mx-auto aspect-square max-h-[350px] "
-            >
-              <PieChart>
-                <ChartTooltip content={<ChartTooltipContent />} />
-                <Pie
-                  data={chartData}
-                  dataKey="valor$"
-                  nameKey="nombre"
-                  innerRadius={60}
-                  strokeWidth={5}
-                ></Pie>
-              </PieChart>
-            </ChartContainer>
-          </CardContent>
-          <CardFooter>
-            <CustomLegend config={chartConfig} />
-          </CardFooter>
-        </Card>
+        <>
+          <div className="grid gap-4 md:grid-cols-7">
+            <Card className="col-span-4">
+              <CardHeader>
+                <CardTitle>Grafico 2020</CardTitle>
+                <CardDescription>
+                  Resumen de los ingresos del 2020
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="h-[350px]">
+                <ChartContainer
+                  config={chartConfig}
+                  className="mx-auto aspect-square w-[350px] "
+                >
+                  <ResponsiveContainer width="100%" height="100%">
+                    <PieChart>
+                      <ChartTooltip content={<ChartTooltipContent />} />
+                      <Pie
+                        data={chartData}
+                        dataKey="valor$"
+                        nameKey="nombre"
+                        innerRadius={60}
+                        strokeWidth={5}
+                      ></Pie>
+                    </PieChart>
+                  </ResponsiveContainer>
+                </ChartContainer>
+              </CardContent>
+            </Card>
+
+            <Card className="col-span-3">
+              <CardHeader>
+                <CardTitle>Detalles</CardTitle>
+                <CardDescription>Division en categorias</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <CustomLegend config={chartConfig} />
+              </CardContent>
+            </Card>
+          </div>
+        </>
           )}
     </div>
   )

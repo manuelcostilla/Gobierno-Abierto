@@ -1,4 +1,5 @@
 "use client"
+
 import { useState } from "react"
 import Image from "next/image"
 import {
@@ -7,11 +8,14 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+
 export function Organigrama () {
   const [openItem, setOpenItem] = useState(null)
+
   const handleAccordionChange = (value) => {
     setOpenItem(value === openItem ? null : value)
   }
+
   return (
     <>
       <div className="flex justify-center m-20 ">

@@ -3,10 +3,10 @@ import type { Config } from "tailwindcss"
 const config: Config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/**/*.{js,ts,jsx,tsx,mdx}'
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   prefix: "",
   theme: {
@@ -19,12 +19,12 @@ const config: Config = {
     },
     extend: {
       screens: {
-        xs: "390px", // Breakpoint extra pequeño (añadido)
-        sm: "640px", // Small devices (tablets)
-        md: "768px", // Medium devices (landscape tablets)
-        lg: "1050px", // Large devices (laptops/desktops)
-        xl: "1280px", // Extra large devices (large laptops/desktops)
-        "2xl": "1536px" // 2x extra large devices (monitors)
+        xs: "390px",
+        sm: "640px",
+        md: "768px",
+        lg: "1050px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -60,20 +60,20 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        'blue-header': '#0170b9',
-        'gray-nav': '#E6E6E6',
-        'green-nav': '#3eaf53',
-        'black-footer': '#333333',
-        'black-nav': '#909092',
-        'blue-btn': '#4a8eff',
-        'blue-title': '#00689c',
-        'blue-GobAb': '#007CB6',
-        'fuente-gris': '#666666',
-        emergencia: '#BDBFC1',
-        policia: '#00AFEF',
-        bombero: '#Ed3237',
-        hospital: '#00A859',
-        genero: '#A8518A'
+        "blue-header": "#0170b9",
+        "gray-nav": "#E6E6E6",
+        "green-nav": "#3eaf53",
+        "black-footer": "#333333",
+        "black-nav": "#909092",
+        "blue-btn": "#4a8eff",
+        "blue-title": "#00689c",
+        "blue-GobAb": "#007CB6",
+        "fuente-gris": "#666666",
+        emergencia: "#BDBFC1",
+        policia: "#00AFEF",
+        bombero: "#Ed3237",
+        hospital: "#00A859",
+        genero: "#A8518A",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -82,12 +82,20 @@ const config: Config = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)",
+          },
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+          from: {
+            height: "var(--radix-accordion-content-height)",
+          },
+          to: {
+            height: "0",
+          },
         },
       },
       animation: {
@@ -95,32 +103,30 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       gridTemplateColumns: {
-        main: 'repeat(3, minmax(0, 2fr))'
+        main: "repeat(3, minmax(0, 2fr))",
       },
       gridTemplateRows: {
-        'main-row': 'repeat(2, minmax(150px))'
+        "main-row": "repeat(2, minmax(150px))",
       },
       fontSize: {
-        xs: '.75rem',
-        sm: '.8125rem',
-        base: '1rem',
-        lg: '1.125rem',
-        xl: '1.25rem',
-        '2xl': '1.5rem',
-        '3xl': '1.875rem',
-        '4xl': '2.25rem',
-        '5xl': '3rem',
-        '6xl': '3.75rem',
-        '7xl': '4.5rem',
-        '8xl': '6rem',
-        '9xl': '8rem',
-        'custom-size': '2.5rem' // Tamaño personalizado
-      }
-    }
+        xs: ".75rem",
+        sm: ".8125rem",
+        base: "1rem",
+        lg: "1.125rem",
+        xl: "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem",
+        "5xl": "3rem",
+        "6xl": "3.75rem",
+        "7xl": "4.5rem",
+        "8xl": "6rem",
+        "9xl": "8rem",
+        "custom-size": "2.5rem",
+      },
+    },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-  ]
+  plugins: [require("tailwindcss-animate")],
 }
 
 export default config

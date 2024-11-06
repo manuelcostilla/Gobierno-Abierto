@@ -8,50 +8,43 @@ import { GraficosIngresos2020 } from "./components/grafico_ingresos_2020"
 // import { GraficosIngresosProcedencia2020 } from "./components/grafico_ingresos_procedencia_2020"
 import { BannerText } from "@/components/bannertext"
 import { CardContentPp } from "@/components/cardtemplate"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Ingresos2020 () {
   return (
     <>
       <BannerText titulo="Ingresos" />
-      <div className="conntainer mx-auto my-10 px-20 flex justify-center items-center">
-        <div className="flex justify-center w-full">
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-2xl">
-                Grafico Ingresos por rubro en pesos 2020
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="flex justify-center items-center">
-              <CardContentPp title="Total" content="$45.223.445" />
+      <main className="min-h-screen bg-background">
+        <div className="container mx-auto p-8">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-3xl font-bold tracking-tight">Ingresos 2020</h2>
+          </div>
+          <div className="space-y-8">
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Diferencia 2020-2019"
-                content="$35.000.000"
+                title="Total"
+                content="+20.1% vs. ultimo año"
+                value="$450,231,000.89"
               />
-              <CardContentPp title="Aumento porcentual" content="25%" />
-              <CardContentPp title="Impuestos recaudados" content="Abl" />
-            </CardContent>
-            <CardContent>
-              <Card>
-                <CardContent>
-                  <GraficosIngresos2020 />
-                </CardContent>
-              </Card>
-            </CardContent>
-            <CardContent>
-              <Card>
-                <CardContent className="flex justify-end">
-                  <div>
-                    <p>
-                      llfjfjjjkjklkskjkfkjfksjkljkskjskjsksakjsfjlksfjklfsjklsfkljsjklsfklj
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </CardContent>
-          </Card>
+              <CardContentPp
+                title="Mayor ingreso"
+                content="+20.1% desde el ultimo año"
+                value="ABL - 1,234.000"
+              />
+              <CardContentPp
+                title="Mayor crecimiento"
+                content="+19% desde el ultimo año"
+                value="573.000"
+              />
+              <CardContentPp
+                title="Mayor decrecimiento"
+                content="-20% desde el ultimo año"
+                value="1.200.000"
+              />
+            </div>
+            <GraficosIngresos2020 />
+          </div>
         </div>
-      </div>
+      </main>
     </>
   )
 }

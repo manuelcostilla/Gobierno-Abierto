@@ -1,144 +1,275 @@
-import { Button } from "@/components/ui/button"
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from "@/components/ui/dialog"
+"use client"
+import { useState } from "react"
 import Image from "next/image"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 export function Organigrama () {
+  const [openItem, setOpenItem] = useState(null)
+  const handleAccordionChange = (value) => {
+    setOpenItem(value === openItem ? null : value)
+  }
   return (
     <>
-    <div className="flex justify-center ">
-    <div className="flex flex-col mt-10 mb-10">
-      <Dialog>
-        <DialogTrigger asChild className="bg-blue-title text-xs lg:text-lg w-[350px] lg:w-full">
-          <Button variant="outline"className=" font-sans text-white font-bold"style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>CONDUCCIÓN SUPERIOR</Button>
-        </DialogTrigger>
-        <DialogContent className=" max-sm:max-h-[700] max-h-[1000px] max-w-[1000px]">
-          <div className="w-full h-full">
-            <Image
-              alt="Imagen obra"
-              height={800}
-              width={800}
-              src="/ImgOrg/OrgIntendencia.jpg"
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
-      <div className="grid gap-4 py-4 sm:max-w-[745px]  "></div>
-      <Dialog>
-        <DialogTrigger asChild className="bg-blue-title w-[350px] lg:w-full text-xs lg:text-lg">
-          <Button variant="outline" className="font-sans text-white font-bold"style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>SECRETARÍA GENERAL DE GOBIERNO</Button>
-        </DialogTrigger>
-        <DialogContent className=" max-sm:max-h-[700] max-h-[1000px] max-w-[1000px]">
-          <div className="w-full h-full">
-            <Image
-              alt="Imagen obra"
-              height={800}
-              width={800}
-              src="/ImgOrg/OrgGobierno.jpg"
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
-      <div className="grid gap-4 py-4 sm:max-w-[745px]  "></div>
-      <Dialog>
-        <DialogTrigger asChild className="bg-blue-title w-[350px] lg:w-full text-xs lg:text-lg">
-          <Button variant="outline" className="font-sans text-white font-bold"style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>SECRETARÍA DE PLANIFICACIÓN Y GESTIÓN PÚBLICA</Button>
-        </DialogTrigger>
-        <DialogContent className=" max-sm:max-h-[700] max-h-[1000px] max-w-[1000px]">
-          <div className="w-full h-full">
-            <Image
-              alt="Imagen obra"
-              height={800}
-              width={800}
-              src="/ImgOrg/OrgPlanificacion.jpg"
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
-      <div className="grid gap-4 py-4 sm:max-w-[745px]  "></div>
-      <Dialog>
-        <DialogTrigger asChild className="bg-blue-title w-[350px] lg:w-full text-xs lg:text-lg">
-          <Button variant="outline" className=" font-sans text-white font-bold"style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>SECRETARÍA DE OBRAS Y SERVICIOS PÚBLICOS</Button>
-        </DialogTrigger>
-        <DialogContent className=" max-sm:max-h-[700] max-h-[1000px] max-w-[1000px]">
-          <div className="w-full h-full">
-            <Image
-              alt="Imagen obra"
-              height={800}
-              width={800}
-              src="/ImgOrg/OrgServpublicos.jpg"
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
-      <div className="grid gap-4 py-4 sm:max-w-[745px]  "></div>
-      <Dialog>
-        <DialogTrigger asChild className="bg-blue-title w-[350px] lg:w-full text-xs lg:text-lg">
-          <Button variant="outline" className="font-sans text-white font-bold"style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>SECRETARÍA DE HACIENDA Y FINANZAS PÚBLICAS</Button>
-        </DialogTrigger>
-        <DialogContent className=" max-sm:max-h-[700] max-h-[1000px] max-w-[1000px]">
-          <div className="w-full h-full">
-            <Image
-              alt="Imagen obra"
-              height={800}
-              width={800}
-              src="/ImgOrg/OrgHacienda.jpg"
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
-      <div className="grid gap-4 py-4 sm:max-w-[745px]  "></div>
-      <Dialog>
-        <DialogTrigger asChild className="bg-blue-title w-[350px] lg:w-full text-xs lg:text-lg">
-          <Button variant="outline" className="font-sans text-white font-bold"style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>SECRETARÍA DE DESARROLLO SOCIAL</Button>
-        </DialogTrigger>
-        <DialogContent className=" max-sm:max-h-[700] max-h-[1000px] max-w-[1000px]">
-          <div className="w-full h-full">
-            <Image
-              alt="Imagen obra"
-              height={800}
-              width={800}
-              src="/ImgOrg/OrgSocial.jpg"
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
-      <div className="grid gap-4 py-4 sm:max-w-[745px]  "></div>
-      <Dialog>
-        <DialogTrigger asChild className="bg-blue-title w-[350px] lg:w-full text-xs lg:text-lg">
-          <Button variant="outline" className="font-sans text-white font-bold"style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>SECRETARÍA DE SALUD</Button>
-        </DialogTrigger>
-        <DialogContent className=" max-sm:max-h-[700] max-h-[1000px] max-w-[1000px]">
-          <div className="w-full h-full">
-            <Image
-              alt="Imagen obra"
-              height={800}
-              width={800}
-              src="/ImgOrg/OrgSalud.jpg"
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
-      <div className="grid gap-4 py-4 sm:max-w-[745px]  "></div>
-      <Dialog>
-        <DialogTrigger asChild className="flex text-balance bg-blue-title w-[350px] lg:w-full text-xs lg:text-lg">
-          <Button variant="outline" className="font-sans text-white font-bold"style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>SECRETARÍA DE CULTURA, EDUCACIÓN, COMUNICACIÓN Y DEPORTES</Button>
-        </DialogTrigger>
-        <DialogContent className=" max-sm:max-h-[700] max-h-[1000px] max-w-[1000px]">
-          <div className="w-full h-full">
-            <Image
-              alt="Imagen obra"
-              height={800}
-              width={800}
-              src="/ImgOrg/OrgCultura.jpg"
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
-      <div className="grid gap-4 py-4 sm:max-w-[745px]  "></div>
-      </div>
+      <div className="flex justify-center m-20 ">
+        <Accordion
+          type="single"
+          collapsible
+          className="w-full"
+          onValueChange={handleAccordionChange}
+        >
+          <AccordionItem value="item-1">
+            <AccordionTrigger>
+              <div className="flex flex-col items-start">
+                <p
+                  className={`${
+                    openItem === "item-1" ? "text-green-500" : "text-blue-500"
+                  } no-underline`}
+                >
+                  INTENDENCIA
+                </p>
+                <br />
+                <p>ESTEBAN DAMIÁN SANZIO | Intendente</p>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <Image
+                src=""
+                alt="Organigrama"
+                width={500}
+                height={300}
+              />
+              <br />
+              <a
+                href=""
+                download
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+              >
+                DESCARGAR.PDF
+              </a>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2">
+            <AccordionTrigger>
+              <div className="flex flex-col items-start">
+                <p
+                  className={`${
+                    openItem === "item-2" ? "text-green-500" : "text-blue-500"
+                  } no-underline`}
+                >
+                  SECRETARÍA DE GOBIERNO
+                </p>
+                <br />
+                <p>SILVANA NOEMÍ IOZZIA | Secretaria</p>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <Image
+                src=""
+                alt="Organigrama"
+                width={500}
+                height={300}
+              />
+              <br />
+              <a
+                href=""
+                download
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+              >
+                DESCARGAR.PDF
+              </a>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3">
+            <AccordionTrigger>
+              <div className="flex flex-col items-start">
+                <p
+                  className={`${
+                    openItem === "item-3" ? "text-green-500" : "text-blue-500"
+                  } no-underline`}
+                >
+                  SECRETARÍA DE PLANIFICACIÓN Y GESTIÓN PÚBLICA
+                </p>
+                <br />
+                <p>RODRIGO GARCIA OTERO | Secretario</p>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <Image
+                src=""
+                alt="Organigrama"
+                width={500}
+                height={300}
+              />
+              <br />
+              <a
+                href=""
+                download
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+              >
+                DESCARGAR.PDF
+              </a>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-4">
+            <AccordionTrigger>
+              <div className="flex flex-col items-start">
+                <p
+                  className={`${
+                    openItem === "item-4" ? "text-green-500" : "text-blue-500"
+                  } no-underline`}
+                >
+                  SECRETARÍA DE OBRAS Y SERVICIOS PÚBLICOS
+                </p>
+                <br />
+                <p>ARIEL JORGE SPRENGER | Secretario</p>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <Image
+                src=""
+                alt="Organigrama"
+                width={500}
+                height={300}
+              />
+              <br />
+              <a
+                href=""
+                download
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+              >
+                DESCARGAR.PDF
+              </a>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-5">
+            <AccordionTrigger>
+              <div className="flex flex-col items-start">
+                <p
+                  className={`${
+                    openItem === "item-5" ? "text-green-500" : "text-blue-500"
+                  } no-underline`}
+                >
+                  SECRETARÍA DE HACIENDA Y FINANZAS PÚBLICAS
+                </p>
+                <br />
+                <p>FEDERICO GABRIEL CATALDO | Secretario</p>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <Image
+                src=""
+                alt="Organigrama"
+                width={500}
+                height={300}
+              />
+              <br />
+              <a
+                href=""
+                download
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+              >
+                DESCARGAR.PDF
+              </a>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-6">
+            <AccordionTrigger>
+              <div className="flex flex-col items-start">
+                <p
+                  className={`${
+                    openItem === "item-6" ? "text-green-500" : "text-blue-500"
+                  } no-underline`}
+                >
+                  SECRETARÍA DE CULTURA, EDUCACIÓN, COMUNICACIÓN Y DEPORTES
+                </p>
+                <br />
+                <p>LUCIANA DEPAULI | Secretaria</p>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <Image
+                src=""
+                alt="Organigrama"
+                width={500}
+                height={300}
+              />
+              <br />
+              <a
+                href=""
+                download
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+              >
+                DESCARGAR.PDF
+              </a>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-7">
+            <AccordionTrigger>
+              <div className="flex flex-col items-start">
+                <p
+                  className={`${
+                    openItem === "item-7" ? "text-green-500" : "text-blue-500"
+                  } no-underline`}
+                >
+                  SECRETARÍA DE SALUD
+                </p>
+                <br />
+                <p>DARIO JOSÉ PUEDE | Secretario</p>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <Image
+                src=""
+                alt="Organigrama"
+                width={500}
+                height={300}
+              />
+              <br />
+              <a
+                href=""
+                download
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+              >
+                DESCARGAR.PDF
+              </a>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-8">
+            <AccordionTrigger>
+              <div className="flex flex-col items-start">
+                <p
+                  className={`${
+                    openItem === "item-8" ? "text-green-500" : "text-blue-500"
+                  } no-underline`}
+                >
+                  SECRETARÍA DE DESARROLLO SOCIAL
+                </p>
+                <br />
+                <p>SANTIAGO ERROZ | Secretario</p>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <Image
+                src=""
+                alt="Organigrama"
+                width={500}
+                height={300}
+              />
+              <br />
+              <a
+                href=""
+                download
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+              >
+                DESCARGAR.PDF
+              </a>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </>
   )

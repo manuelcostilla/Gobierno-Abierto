@@ -1,70 +1,36 @@
-"use client"
 
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Graficogastostotales2020 } from "./components/grafico_gastos_2020"
-import { GraficosIngresos2020 } from "./components/grafico_ingresos_2020"
-import { GraficosIngresosProcedencia2020 } from "./components/grafico_ingresos_procedencia_2020"
-import { GastosPorArea2020 } from "./components/gastos_por_area_2020"
-import { BannerText } from "../../../components/bannertext"
-import { ChartColumn, ChartPie } from "lucide-react"
-import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { BannerText } from "@/components/bannertext"
 
-function Presupuestopublico2022 () {
-  const [chart, setActivechart] = useState(true)
-
+export default function Presupuestopublico2020 () {
   return (
     <>
-      <div>
-        <BannerText titulo="Presupuesto Público 2020" />
-        <div className="flex justify-center items-center p-5">
-          <Link href="/presupuesto-publico/">
-            <Button>Inicio</Button>
-          </Link>
-          <Button className="mr-5 ml-5">2020</Button>
-          <Button
-            className="mr-5 ml-5"
-            onClick={() => {
-              setActivechart(true)
-            }}
-          >
-            <ChartColumn />
-          </Button>
-          <Button
-            className="mr-5 ml-5"
-            onClick={() => {
-              setActivechart(false)
-            }}
-          >
-            <ChartPie />
-          </Button>
-        </div>
-        <div className="flex justify-center items-center pr-5 pt-5 pb-36">
-          <div className="w-[800px] h-[550px]">
-            <GraficosIngresos2020 chart={chart} setChart={setActivechart} />
-          </div>
-        </div>
-        <div className="flex justify-center items-center p-5">
-          <div className="w-[800px] h-[550px]">
-            <GraficosIngresosProcedencia2020
-              chart={chart}
-              setChart={setActivechart}
-            />
-          </div>
-        </div>
-        <div className="flex justify-center items-center p-5">
-          <div className="w-[800px] h-[550px]">
-            <Graficogastostotales2020 chart={chart} setChart={setActivechart} />
-          </div>
-        </div>
-        <div className="flex justify-center items-center mb-5 pr-5 pt-5 pb-36">
-          <div className="w-[800px] h-[550px]">
-            <GastosPorArea2020 chart={chart} setChart={setActivechart} />
-          </div>
-        </div>
+      <BannerText titulo="Presupuesto Público 2020" />
+      <div className="flex justify-center items-center container pb-20 pt-20 ">
+        <Card className="mr-5">
+          <CardHeader>
+            <CardTitle>Gastos 2020</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Button asChild>
+              <Link href="./2020/gastos-2020">Ver mas info</Link>
+            </Button>
+          </CardContent>
+        </Card>
+        <Card className="ml-5">
+          <CardHeader>
+            <CardTitle>Ingresos 2020</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Button asChild>
+              <Link href="./2020/ingresos-2020">Ver mas info</Link>
+            </Button>
+          </CardContent>
+        </Card>
       </div>
     </>
   )
 }
 
-export default Presupuestopublico2022

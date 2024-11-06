@@ -1,6 +1,13 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  Pie,
+  PieChart,
+} from "recharts"
 
 import {
   ChartConfig,
@@ -10,13 +17,6 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 
 const chartData = [
   {
@@ -67,40 +67,27 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
     <div>
       {chart
         ? (
-        <Card>
-          <CardHeader>
-            <CardTitle>
-              Grafico ingresos por procedencia en pesos 2020
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ChartContainer
-              config={chartConfig}
-              className="min-h-[200px] h-[250px] w-[350px] md:min-h-[200px] md:h-[250px] md:w-[600px] lg:min-h-[200px] lg:h-[250px] lg:w-[600px]"
-            >
-              <BarChart accessibilityLayer data={chartData}>
-                <CartesianGrid vertical={false} />
-                <XAxis axisLine={false} />
-                <ChartTooltip content={<ChartTooltipContent />} />
-                <ChartLegend content={<ChartLegendContent />} />
-                <Bar dataKey="valor$" radius={4} />
-              </BarChart>
-            </ChartContainer>
-          </CardContent>
-          <CardFooter>
-            <CustomLegend config={chartConfig} />
-          </CardFooter>
-        </Card>
+        <>
+          <ChartContainer
+            config={chartConfig}
+            className="min-h-[200px] h-[250px] md:h-[250px]  lg:min-h-[200px] lg:h-[250px] w-full "
+          >
+            <BarChart accessibilityLayer data={chartData}>
+              <CartesianGrid vertical={false} />
+              <XAxis axisLine={false} />
+              <ChartTooltip content={<ChartTooltipContent />} />
+              <ChartLegend content={<ChartLegendContent />} />
+              <Bar dataKey="valor$" radius={4} />
+            </BarChart>
+          </ChartContainer>
+          <CustomLegend config={chartConfig} />
+        </>
           )
         : (
-        <Card>
-          <CardHeader>
-            <CardTitle>Grafico ingresos por procedencia 2020</CardTitle>
-          </CardHeader>
-          <CardContent className="flex-1 pb-0">
+        <>
             <ChartContainer
               config={chartConfig}
-              className="mx-auto aspect-square max-h-[350px]"
+              className="mx-auto aspect-square max-h-[350px]  w-full"
             >
               <PieChart>
                 <ChartTooltip
@@ -116,11 +103,8 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
                 ></Pie>
               </PieChart>
             </ChartContainer>
-          </CardContent>
-          <CardFooter>
             <CustomLegend config={chartConfig} />
-          </CardFooter>
-        </Card>
+        </>
           )}
     </div>
   )

@@ -47,13 +47,15 @@ export function Organigrama () {
                 height={300}
               />
               <br />
-              <a
-                href="/pdf/CONDUCCIONSUPERIOR.pdf"
-                download
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-              >
-                DESCARGAR.PDF
-              </a>
+              <div className="flex justify-center">
+                <a
+                  href="/pdf/CONDUCCIONSUPERIOR.pdf"
+                  download
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-500"
+                >
+                  DESCARGAR.PDF
+                </a>
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
@@ -61,7 +63,7 @@ export function Organigrama () {
               <div className="flex flex-col items-start">
                 <p
                   className={`${
-                    openItem === "item-2" ? "text-green-500" : "text-blue-500"
+                    openItem === "item-2" ? "text-green-500" : "text-blue-500 "
                   } no-underline`}
                 >
                   SECRETARÍA DE GOBIERNO
@@ -78,13 +80,15 @@ export function Organigrama () {
                 height={300}
               />
               <br />
-              <a
-                href="/pdf/SECRETARIADEGOBIERNO.pdf"
-                download
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-              >
-                DESCARGAR.PDF
-              </a>
+              <div className="flex justify-center">
+                <a
+                  href="/pdf/SECRETARIADEGOBIERNO.pdf"
+                  download
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-500"
+                >
+                  DESCARGAR.PDF
+                </a>
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
@@ -109,13 +113,15 @@ export function Organigrama () {
                 height={300}
               />
               <br />
-              <a
-                href="/pdf/SECRETARIADEPLANIFICACIONYGESTIONPUBLICA.pdf"
-                download
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-              >
-                DESCARGAR.PDF
-              </a>
+              <div className="flex justify-center">
+                <a
+                  href="/pdf/SECRETARIADEPLANIFICACIONYGESTIONPUBLICA.pdf"
+                  download
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-500"
+                >
+                  DESCARGAR.PDF
+                </a>
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
@@ -140,13 +146,15 @@ export function Organigrama () {
                 height={300}
               />
               <br />
-              <a
-                href="/pdf/SECRETARIADEOBRASYSERVICIOSPUBLICOS.pdf"
-                download
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-              >
-                DESCARGAR.PDF
-              </a>
+              <div className="flex justify-center">
+                <a
+                  href="/pdf/SECRETARIADEOBRASYSERVICIOSPUBLICOS.pdf"
+                  download
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-500"
+                >
+                  DESCARGAR.PDF
+                </a>
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
@@ -171,13 +179,15 @@ export function Organigrama () {
                 height={300}
               />
               <br />
-              <a
-                href="/pdf/SECRETARIADEHACIENDAYFINANZASPUBLICAS.pdf"
-                download
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-              >
-                DESCARGAR.PDF
-              </a>
+              <div className="flex justify-center">
+                <a
+                  href="/pdf/SECRETARIADEHACIENDAYFINANZASPUBLICAS.pdf"
+                  download
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-500"
+                >
+                  DESCARGAR.PDF
+                </a>
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-6">
@@ -202,13 +212,15 @@ export function Organigrama () {
                 height={300}
               />
               <br />
-              <a
-                href="/pdf/SECRETARIADECULTURAEDUCACIONCOMUNICACIONYDEPORTES.pdf"
-                download
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-              >
-                DESCARGAR.PDF
-              </a>
+              <div className="flex justify-center">
+                <a
+                  href="/pdf/SECRETARIADECULTURAEDUCACIONCOMUNICACIONYDEPORTES.pdf"
+                  download
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-500"
+                >
+                  DESCARGAR.PDF
+                </a>
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-7">
@@ -233,13 +245,15 @@ export function Organigrama () {
                 height={300}
               />
               <br />
-              <a
-                href="/pdf/SECRETARIADESALUD.pdf"
-                download
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-              >
-                DESCARGAR.PDF
-              </a>
+              <div className="flex justify-center">
+                <a
+                  href="/pdf/SECRETARIADESALUD.pdf"
+                  download
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-500"
+                >
+                  DESCARGAR.PDF
+                </a>
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-8">
@@ -264,13 +278,15 @@ export function Organigrama () {
                 height={300}
               />
               <br />
-              <a
-                href="/pdf/SECRETARIADEDESARROLLOSOCIAL.pdf"
-                download
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-              >
-                DESCARGAR.PDF
-              </a>
+              <div className="flex justify-center">
+                <a
+                  href="/pdf/SECRETARIADEDESARROLLOSOCIAL.pdf"
+                  download
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-500"
+                >
+                  DESCARGAR.PDF
+                </a>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

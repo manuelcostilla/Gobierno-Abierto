@@ -41,14 +41,14 @@ export function Organigrama () {
             </AccordionTrigger>
             <AccordionContent>
               <Image
-                src=""
-                alt="Organigrama"
-                width={500}
+                src="/imgorganigrama/CONDUCCIONSUPERIOR.jpg"
+                alt="CONDUCIÓN SUPERIOR"
+                width={1200}
                 height={300}
               />
               <br />
               <a
-                href=""
+                href="/pdf/CONDUCCIONSUPERIOR.pdf"
                 download
                 className="bg-blue-500 text-white px-4 py-2 rounded"
               >
@@ -72,14 +72,14 @@ export function Organigrama () {
             </AccordionTrigger>
             <AccordionContent>
               <Image
-                src=""
-                alt="Organigrama"
-                width={500}
+                src="/imgorganigrama/SECRETARIAGOBIERNO.jpg"
+                alt="SECRETARÍA DE GOBIERNO"
+                width={1200}
                 height={300}
               />
               <br />
               <a
-                href=""
+                href="/pdf/SECRETARIADEGOBIERNO.pdf"
                 download
                 className="bg-blue-500 text-white px-4 py-2 rounded"
               >
@@ -103,14 +103,14 @@ export function Organigrama () {
             </AccordionTrigger>
             <AccordionContent>
               <Image
-                src=""
-                alt="Organigrama"
-                width={500}
+                src="/imgorganigrama/SECRETARIAPLANIFICACION.jpg"
+                alt="SECRETARÍA DE PLANIFICACIÓN Y GESTIÓN PÚBLICA"
+                width={1200}
                 height={300}
               />
               <br />
               <a
-                href=""
+                href="/pdf/SECRETARIADEPLANIFICACIONYGESTIONPUBLICA.pdf"
                 download
                 className="bg-blue-500 text-white px-4 py-2 rounded"
               >
@@ -134,14 +134,14 @@ export function Organigrama () {
             </AccordionTrigger>
             <AccordionContent>
               <Image
-                src=""
-                alt="Organigrama"
-                width={500}
+                src="/imgorganigrama/SECRETARIAOBRASSERVICIOS.jpg"
+                alt="SECRETARÍA DE OBRAS Y SERVICIOS PÚBLICOS"
+                width={1200}
                 height={300}
               />
               <br />
               <a
-                href=""
+                href="/pdf/SECRETARIADEOBRASYSERVICIOSPUBLICOS.pdf"
                 download
                 className="bg-blue-500 text-white px-4 py-2 rounded"
               >
@@ -165,14 +165,14 @@ export function Organigrama () {
             </AccordionTrigger>
             <AccordionContent>
               <Image
-                src=""
-                alt="Organigrama"
-                width={500}
+                src="/imgorganigrama/SECRETARIAHACIENDA.jpg"
+                alt="SECRETARÍA DE HACIENDA Y FINANZAS PÚBLICAS"
+                width={1200}
                 height={300}
               />
               <br />
               <a
-                href=""
+                href="/pdf/SECRETARIADEHACIENDAYFINANZASPUBLICAS.pdf"
                 download
                 className="bg-blue-500 text-white px-4 py-2 rounded"
               >
@@ -196,14 +196,14 @@ export function Organigrama () {
             </AccordionTrigger>
             <AccordionContent>
               <Image
-                src=""
-                alt="Organigrama"
-                width={500}
+                src="/imgorganigrama/SECRETARIACULTURA.jpg"
+                alt="SECRETARÍA DE CULTURA, EDUCACIÓN, COMUNICACIÓN Y DEPORTES"
+                width={1200}
                 height={300}
               />
               <br />
               <a
-                href=""
+                href="/pdf/SECRETARIADECULTURAEDUCACIONCOMUNICACIONYDEPORTES.pdf"
                 download
                 className="bg-blue-500 text-white px-4 py-2 rounded"
               >
@@ -227,14 +227,14 @@ export function Organigrama () {
             </AccordionTrigger>
             <AccordionContent>
               <Image
-                src=""
-                alt="Organigrama"
-                width={500}
+                src="/imgorganigrama/SECRETARIASALUD.jpg"
+                alt="SECRETARÍA DE SALUD"
+                width={1200}
                 height={300}
               />
               <br />
               <a
-                href=""
+                href="/pdf/SECRETARIADESALUD.pdf"
                 download
                 className="bg-blue-500 text-white px-4 py-2 rounded"
               >
@@ -258,14 +258,14 @@ export function Organigrama () {
             </AccordionTrigger>
             <AccordionContent>
               <Image
-                src=""
-                alt="Organigrama"
-                width={500}
+                src="/imgorganigrama/SECRETARIADESOCIAL.jpg"
+                alt="SECRETARÍA DE DESARROLLO SOCIAL"
+                width={1200}
                 height={300}
               />
               <br />
               <a
-                href=""
+                href="/pdf/SECRETARIADEDESARROLLOSOCIAL.pdf"
                 download
                 className="bg-blue-500 text-white px-4 py-2 rounded"
               >

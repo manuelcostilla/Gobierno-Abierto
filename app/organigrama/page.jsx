@@ -4,7 +4,7 @@ import { BannerText } from "../../components/bannertext"
 const Mapa_Del_Estado = () => {
   return (
     <>
-      <BannerText titulo="Mapa del Estado Municipal de la Municipalidad de Baradero" />
+      <BannerText titulo="Mapa del Estado Municipal" />
       <Organigrama />
     </>
   )

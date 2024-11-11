@@ -72,7 +72,6 @@ const chartConfig = {
     label:
       "Total Ingresos Tributarios (Total Coparticipacion de Impuestos) - 0",
     color: "#00517B",
-
   },
   Ingresosnotributarios: {
     label: "Total Ingresos No Tributarios - 1",
@@ -117,18 +116,39 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
       {chart
         ? (
         <>
-          <ChartContainer config={chartConfig}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart accessibilityLayer data={chartData}>
-                <CartesianGrid vertical={false} />
-                <XAxis axisLine={false} />
-                <ChartTooltip content={<ChartTooltipContent />} />
-                <ChartLegend content={<ChartLegendContent />} />
-                <Bar dataKey="valor$" radius={4} />
-              </BarChart>
-            </ResponsiveContainer>
-          </ChartContainer>
-          <CustomLegend config={chartConfig} />
+          <div className="grid gap-4 md:grid-cols-7">
+            <Card className="col-span-4">
+              <CardHeader>
+                <CardTitle>Grafico 2020</CardTitle>
+                <CardDescription>
+                  Resumen de los ingresos del 2020
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="h-[350px]">
+                <ChartContainer config={chartConfig} className="w-[550px] ">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart accessibilityLayer data={chartData}>
+                      <CartesianGrid vertical={false} />
+                      <XAxis axisLine={false} />
+                      <ChartTooltip content={<ChartTooltipContent />} />
+                      <ChartLegend content={<ChartLegendContent />} />
+                      <Bar dataKey="valor$" radius={4} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </ChartContainer>
+                <p>información extraída del RAFAM</p>
+              </CardContent>
+            </Card>
+            <Card className="col-span-3">
+              <CardHeader>
+                <CardTitle>Detalles</CardTitle>
+                <CardDescription>Division en categorias</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <CustomLegend config={chartConfig} />
+              </CardContent>
+            </Card>
+          </div>
         </>
           )
         : (
@@ -159,6 +179,7 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
                     </PieChart>
                   </ResponsiveContainer>
                 </ChartContainer>
+                <p>información extraída del RAFAM</p>
               </CardContent>
             </Card>
 

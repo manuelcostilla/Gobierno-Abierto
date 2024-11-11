@@ -66,7 +66,7 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
   </div>
 )
 
-export function GraficosIngresosProcedencia ({ chart, setChart }) {
+export function GraficosIngresosProcedencia2023 ({ chart, setChart }) {
   return (
     <div className="flex justify-center items-center min-h-[200px] w-[800px] pt-20">
       {chart

@@ -1,77 +1,36 @@
-import Link from "next/link"
-import React from "react"
-import { Button } from "@/components/ui/button"
-
+import { SectionCard } from "@/components/intersectioncard"
+import { GeneralText } from "@/components/generaltext"
 const Main_presupuesto = () => {
   return (
     <>
-      <div className="flex justify-center items-center">
-        <p className=" pb-14 pt-10 text-balance text-base ">
-          Esta sección ofrece detalles sobre ingresos y gastos del municipio,
-          incluyendo documentos, gráficos y reportes para asegurar transparencia
-          y rendición de cuentas.
-        </p>
-      </div>
-      <div className="flex flex-wrap justify-center m-32 text-center">
-        <div className="">
-          <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">
-            <h1 className="text-blue-header font-bold text-xl p-2 mb-2">
-              Ejercicio 2023
-            </h1>
-            <Link href="/presupuesto-publico/2023">
-              <Button
-                color="primary"
-                className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]"
-              >
-                Ingresar
-              </Button>
-            </Link>
-          </div>
+      <div className=" container ">
+        <div className="w-[550px]">
+          <GeneralText
+            title="Presupuesto Publico"
+            text="Bienvenido a la sección de Presupuesto Público del Municipio de Baradero. Aquí podrás acceder a información transparente y detallada sobre la asignación y ejecución de los recursos públicos de nuestra comunidad."
+          />
         </div>
-        <div className="">
-          <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">
-            <h1 className="text-blue-header font-bold text-xl p-2 mb-2">
-              Ejercicio 2022
-            </h1>
-            <Link href="/presupuesto-publico/2022">
-              <Button
-                color="primary"
-                className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]"
-              >
-                Ingresar
-              </Button>
-            </Link>
-          </div>
-        </div>
-        <div className="">
-          <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">
-            <h1 className="text-blue-header font-bold text-xl p-2 mb-2">
-              Ejercicio 2021
-            </h1>
-            <Link href="/presupuesto-publico/2021">
-              <Button
-                color="primary"
-                className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]"
-              >
-                Ingresar
-              </Button>
-            </Link>
-          </div>
-        </div>
-        <div className="">
-          <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">
-            <h1 className="text-blue-header font-bold text-xl p-2 mb-2">
-              Ejercicio 2020
-            </h1>
-            <Link href="/presupuesto-publico/2020">
-              <Button
-                color="primary"
-                className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]"
-              >
-                Ingresar
-              </Button>
-            </Link>
-          </div>
+        <div className="flex flex-wrap justify-center m-32 text-center">
+          <SectionCard
+            titulo="Ejercicio 2023"
+            link="/presupuesto-publico/2023"
+            textlink="Ingresar"
+          />
+          <SectionCard
+            titulo="Ejercicio 2022"
+            link="/presupuesto-publico/2022"
+            textlink="Ingresar"
+          />
+          <SectionCard
+            titulo="Ejercicio 2021"
+            link="/presupuesto-publico/2021"
+            textlink="Ingresar"
+          />
+          <SectionCard
+            titulo="Ejercicio 2020"
+            link="/presupuesto-publico/2020"
+            textlink="Ingresar"
+          />
         </div>
       </div>
     </>

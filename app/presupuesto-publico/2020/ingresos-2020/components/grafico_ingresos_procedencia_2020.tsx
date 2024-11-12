@@ -7,7 +7,16 @@ import {
   XAxis,
   Pie,
   PieChart,
+  ResponsiveContainer,
 } from "recharts"
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 import {
   ChartConfig,
@@ -68,42 +77,83 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
       {chart
         ? (
         <>
-          <ChartContainer
-            config={chartConfig}
-            className="min-h-[200px] h-[250px] md:h-[250px]  lg:min-h-[200px] lg:h-[250px] w-full "
-          >
-            <BarChart accessibilityLayer data={chartData}>
-              <CartesianGrid vertical={false} />
-              <XAxis axisLine={false} />
-              <ChartTooltip content={<ChartTooltipContent />} />
-              <ChartLegend content={<ChartLegendContent />} />
-              <Bar dataKey="valor$" radius={4} />
-            </BarChart>
-          </ChartContainer>
-          <CustomLegend config={chartConfig} />
+          <div className="grid gap-4 md:grid-cols-7">
+            <Card className="col-span-4">
+              <CardHeader>
+                <CardTitle>Grafico de ingreso por procedencia 2020</CardTitle>
+                <CardDescription>
+                  Grafico organizado por su procedencia del año 2020
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="h-[350px]">
+                <ChartContainer config={chartConfig} className="w-[550px]">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart accessibilityLayer data={chartData}>
+                      <CartesianGrid vertical={false} />
+                      <XAxis axisLine={false} />
+                      <ChartTooltip content={<ChartTooltipContent />} />
+                      <ChartLegend content={<ChartLegendContent />} />
+                      <Bar dataKey="valor$" radius={4} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </ChartContainer>
+                <p> información extraída del RAFAM</p>
+              </CardContent>
+            </Card>
+            <Card className="col-span-3">
+              <CardHeader>
+                <CardTitle>Detalles</CardTitle>
+                <CardDescription>Division en categorias</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <CustomLegend config={chartConfig} />
+              </CardContent>
+            </Card>
+          </div>
         </>
           )
         : (
         <>
-            <ChartContainer
-              config={chartConfig}
-              className="mx-auto aspect-square max-h-[350px]  w-full"
-            >
-              <PieChart>
-                <ChartTooltip
-                  cursor={false}
-                  content={<ChartTooltipContent />}
-                />
-                <Pie
-                  data={chartData}
-                  dataKey="valor$"
-                  nameKey="nombre"
-                  innerRadius={60}
-                  strokeWidth={5}
-                ></Pie>
-              </PieChart>
-            </ChartContainer>
-            <CustomLegend config={chartConfig} />
+          <div className="grid gap-4 md:grid-cols-7">
+            <Card className="col-span-4">
+              <CardHeader>
+                <CardTitle>Grafico de ingreso por procedencia 2020</CardTitle>
+                <CardDescription>
+                  Grafico organizado por su procedencia del año 2020
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="h-[350px]">
+                <ChartContainer
+                  config={chartConfig}
+                  className="mx-auto aspect-square w-[350px] "
+                >
+                  <ResponsiveContainer width="100%" height="100%">
+                    <PieChart>
+                      <ChartTooltip content={<ChartTooltipContent />} />
+                      <Pie
+                        data={chartData}
+                        dataKey="valor$"
+                        nameKey="nombre"
+                        innerRadius={60}
+                        strokeWidth={5}
+                      ></Pie>
+                    </PieChart>
+                  </ResponsiveContainer>
+                </ChartContainer>
+                <p> información extraída del RAFAM</p>
+              </CardContent>
+            </Card>
+
+            <Card className="col-span-3">
+              <CardHeader>
+                <CardTitle>Detalles</CardTitle>
+                <CardDescription>Division en categorias</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <CustomLegend config={chartConfig} />
+              </CardContent>
+            </Card>
+          </div>
         </>
           )}
     </div>

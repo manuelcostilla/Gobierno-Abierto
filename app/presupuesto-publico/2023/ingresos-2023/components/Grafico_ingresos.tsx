@@ -1,6 +1,14 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+} from "recharts"
 
 import {
   ChartConfig,
@@ -16,9 +24,9 @@ import * as React from "react"
 import {
   Card,
   CardContent,
-  CardFooter,
   CardHeader,
-  CardTitle
+  CardTitle,
+  CardDescription,
 } from "@/components/ui/card"
 
 const chartData = [
@@ -29,12 +37,12 @@ const chartData = [
   },
   {
     nombre: "Total Ingresos No Tributarios",
-    valor$: 1581445400.00,
+    valor$: 1581445400.0,
     fill: "var(--color-Ingresosnotributarios)",
   },
   {
     nombre: "Total Rentas de la propiedad",
-    valor$: 2000000.00,
+    valor$: 2000000.0,
     fill: "var(--color-rentaspropiedad)",
   },
   {
@@ -44,17 +52,17 @@ const chartData = [
   },
   {
     nombre: "Total Recursos Propios de Capital",
-    valor$: 260351000.00,
+    valor$: 260351000.0,
     fill: "var(--color-recursospropiosdecapital)",
   },
   {
     nombre: "Total Recuperacion de Prestamos de Largo Plazo",
-    valor$: 21490000.00,
+    valor$: 21490000.0,
     fill: "var(--color-recuperacionprestamoslargoplazo)",
   },
   {
     nombre: "Total Disminucion de Otros Activos Financieros",
-    valor$: 208561956.30,
+    valor$: 208561956.3,
     fill: "var(--color-totaldisminucionotrosactivosfinancieros)",
   },
 ]
@@ -62,32 +70,32 @@ const chartData = [
 const chartConfig = {
   Ingresostributarios: {
     label: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
-    color: "#00517B"
+    color: "#00517B",
   },
   Ingresosnotributarios: {
     label: "Total Ingresos No Tributarios",
-    color: "#007CB6"
+    color: "#007CB6",
   },
   rentaspropiedad: {
     label: "Total Rentas de la propiedad",
-    color: "#5294DE"
+    color: "#5294DE",
   },
   transferenciacorriente: {
     label: "Total Transferencias Corrientes",
-    color: "#3EAF53"
+    color: "#3EAF53",
   },
   recursospropiosdecapital: {
     label: "Total Recursos Propios de Capital",
-    color: "#7FDE22"
+    color: "#7FDE22",
   },
   recuperacionprestamoslargoplazo: {
     label: "Total Recuperacion de Prestamos de Largo Plazo",
-    color: "#A4D180"
+    color: "#A4D180",
   },
   totaldisminucionotrosactivosfinancieros: {
     label: "Total Disminucion de Otros Activos Financieros",
-    color: "#EE1E52"
-  }
+    color: "#EE1E52",
+  },
 } satisfies ChartConfig
 
 const CustomLegend = ({ config }: { config: ChartConfig }) => (
@@ -101,62 +109,91 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
   </div>
 )
 
-export function GraficosIngresos ({ chart, setChart }) {
+export function GraficosIngresos2023 ({ chart, setChart }) {
   return (
-    <div className="flex justify-center items-center min-h-[200px] w-[800px] ">
-    {chart
-      ? (
-        <Card>
-         <CardHeader>
-              <CardTitle>Grafico Ingresos por rubro en pesos</CardTitle>
-            </CardHeader>
-        <CardContent>
-          <ChartContainer
-            config={chartConfig}
-           className="min-h-[200px] h-[250px] w-[600px]"
-          >
-            <BarChart accessibilityLayer data={chartData}>
-              <CartesianGrid vertical={false} />
-              <XAxis axisLine={false} />
-              <ChartTooltip content={<ChartTooltipContent />} />
-              <ChartLegend content={<ChartLegendContent />} />
-              <Bar dataKey="valor$" radius={4} />
-            </BarChart>
-          </ChartContainer>
-        </CardContent>
-        <CardFooter>
-          <CustomLegend config={chartConfig} />
-        </CardFooter>
-      </Card>
-        )
-      : (
-      <Card>
-          <CardHeader>
-              <CardTitle>Grafico Ingresos por rubro</CardTitle>
-            </CardHeader>
-        <CardContent className="flex-1 pb-0 X">
-          <ChartContainer
-            config={chartConfig}
-             className="mx-auto aspect-square max-h-[350px]"
-          >
-            <PieChart>
-              <ChartTooltip
-                content={<ChartTooltipContent />}
-              />
-              <Pie
-                data={chartData}
-                dataKey="valor$"
-                nameKey="nombre"
-                innerRadius={60}
-                strokeWidth={5}
-              ></Pie>
-            </PieChart>
-          </ChartContainer>
-        </CardContent>
-        <CardFooter>
-          <CustomLegend config={chartConfig} />
-        </CardFooter>
-      </Card>
-        )}
-  </div>)
+    <div>
+      {chart
+        ? (
+        <>
+          <div className="grid gap-4 md:grid-cols-7">
+            <Card className="col-span-4">
+              <CardHeader>
+                <CardTitle>Grafico 2020</CardTitle>
+                <CardDescription>
+                  Resumen de los ingresos del 2020
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="h-[350px]">
+                <ChartContainer config={chartConfig} className="w-[550px] ">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart accessibilityLayer data={chartData}>
+                      <CartesianGrid vertical={false} />
+                      <XAxis axisLine={false} />
+                      <ChartTooltip content={<ChartTooltipContent />} />
+                      <ChartLegend content={<ChartLegendContent />} />
+                      <Bar dataKey="valor$" radius={4} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </ChartContainer>
+                <p>información extraída del RAFAM</p>
+              </CardContent>
+            </Card>
+            <Card className="col-span-3">
+              <CardHeader>
+                <CardTitle>Detalles</CardTitle>
+                <CardDescription>Division en categorias</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <CustomLegend config={chartConfig} />
+              </CardContent>
+            </Card>
+          </div>
+        </>
+          )
+        : (
+        <>
+          <div className="grid gap-4 md:grid-cols-7">
+            <Card className="col-span-4">
+              <CardHeader>
+                <CardTitle>Grafico 2020</CardTitle>
+                <CardDescription>
+                  Resumen de los ingresos del 2020
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="h-[350px]">
+                <ChartContainer
+                  config={chartConfig}
+                  className="mx-auto aspect-square w-[350px] "
+                >
+                  <ResponsiveContainer width="100%" height="100%">
+                    <PieChart>
+                      <ChartTooltip content={<ChartTooltipContent />} />
+                      <Pie
+                        data={chartData}
+                        dataKey="valor$"
+                        nameKey="nombre"
+                        innerRadius={60}
+                        strokeWidth={5}
+                      ></Pie>
+                    </PieChart>
+                  </ResponsiveContainer>
+                </ChartContainer>
+                <p>información extraída del RAFAM</p>
+              </CardContent>
+            </Card>
+
+            <Card className="col-span-3">
+              <CardHeader>
+                <CardTitle>Detalles</CardTitle>
+                <CardDescription>Division en categorias</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <CustomLegend config={chartConfig} />
+              </CardContent>
+            </Card>
+          </div>
+        </>
+          )}
+    </div>
+  )
 }

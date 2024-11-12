@@ -1,76 +1,59 @@
-import Link from "next/link"
-import React from "react"
-import { Button } from "@/components/ui/button"
+import { SectionCard } from "@/components/intersectioncard"
+import { GeneralText } from "@/components/generaltext"
 
 const Main_presupuesto = () => {
   return (
     <>
-      <div className="flex justify-center items-center">
-        <p className=" pb-14 pt-10 text-balance text-base ">
-          Esta sección ofrece detalles sobre ingresos y gastos del municipio,
-          incluyendo documentos, gráficos y reportes para asegurar transparencia
-          y rendición de cuentas.
-        </p>
-      </div>
-      <div className="flex flex-wrap justify-center m-32 text-center">
-        <div className="">
-          <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">
-            <h1 className="text-blue-header font-bold text-xl p-2 mb-2">
-              Ejercicio 2023
-            </h1>
-            <Link href="/presupuesto-publico/2023">
-              <Button
-                color="primary"
-                className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]"
-              >
-                Ingresar
-              </Button>
-            </Link>
+      <div className="container mx-auto pt-8 p-20">
+        <div className="flex flex-col lg:flex-row justify-center items-start text-balance space-y-8 lg:space-y-0 lg:space-x-8">
+          <div className="w-full lg:w-1/3 flex justify-center">
+            <GeneralText
+              title="Presupuesto Publico"
+              text="Bienvenido a la sección de Presupuesto Público del Municipio de Baradero. Aquí podrás acceder a información transparente y detallada sobre la asignación y ejecución de los recursos públicos de nuestra comunidad."
+            />
+          </div>
+          <div className="w-full lg:w-1/3 flex justify-center">
+            <GeneralText
+              title="¿Qué es el Presupuesto Público?"
+              text="El presupuesto público es el documento que refleja las prioridades y necesidades de nuestra ciudad. A través de este, se establece cómo se recaudan y distribuyen los fondos para financiar los servicios y proyectos que benefician a todos los ciudadanos."
+            />
+          </div>
+          <div className="w-full lg:w-1/3 flex justify-center">
+            <GeneralText
+              title="Transparencia y Participación"
+              text="Nuestro compromiso con la transparencia implica que todos los ciudadanos tengan acceso a la información sobre el uso de los recursos públicos."
+            />
           </div>
         </div>
-        <div className="">
-          <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">
-            <h1 className="text-blue-header font-bold text-xl p-2 mb-2">
-              Ejercicio 2022
-            </h1>
-            <Link href="/presupuesto-publico/2022">
-              <Button
-                color="primary"
-                className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]"
-              >
-                Ingresar
-              </Button>
-            </Link>
+
+        <div className="flex flex-wrap justify-center items-center pt-20 m-5">
+          <div className="m-5">
+            <SectionCard
+              titulo="Ejercicio 2023"
+              link="/presupuesto-publico/2023"
+              textlink="Ingresar"
+            />
           </div>
-        </div>
-        <div className="">
-          <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">
-            <h1 className="text-blue-header font-bold text-xl p-2 mb-2">
-              Ejercicio 2021
-            </h1>
-            <Link href="/presupuesto-publico/2021">
-              <Button
-                color="primary"
-                className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]"
-              >
-                Ingresar
-              </Button>
-            </Link>
+          <div className="m-5">
+            <SectionCard
+              titulo="Ejercicio 2022"
+              link="/presupuesto-publico/2022"
+              textlink="Ingresar"
+            />
           </div>
-        </div>
-        <div className="">
-          <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">
-            <h1 className="text-blue-header font-bold text-xl p-2 mb-2">
-              Ejercicio 2020
-            </h1>
-            <Link href="/presupuesto-publico/2020">
-              <Button
-                color="primary"
-                className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]"
-              >
-                Ingresar
-              </Button>
-            </Link>
+          <div className="m-5">
+            <SectionCard
+              titulo="Ejercicio 2021"
+              link="/presupuesto-publico/2021"
+              textlink="Ingresar"
+            />
+          </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Ejercicio 2020"
+              link="/presupuesto-publico/2020"
+              textlink="Ingresar"
+            />
           </div>
         </div>
       </div>

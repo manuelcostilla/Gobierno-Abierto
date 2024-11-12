@@ -1,6 +1,14 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+} from "recharts"
 
 import {
   ChartConfig,
@@ -14,9 +22,9 @@ import {
 import {
   Card,
   CardContent,
-  CardFooter,
   CardHeader,
   CardTitle,
+  CardDescription,
 } from "@/components/ui/card"
 
 const chartData = [
@@ -104,59 +112,81 @@ export function GastosPorArea2020 ({ chart, setChart }) {
     <div>
       {chart
         ? (
-        <Card>
-          <CardHeader>
-            <CardTitle>Grafico de los gastos por area en pesos 2020</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ChartContainer
-              config={chartConfig}
-              className="min-h-[200px] h-[250px] w-[350px] md:min-h-[200px] md:h-[250px] md:w-[600px] lg:min-h-[200px] lg:h-[250px] lg:w-[600px] "
-            >
-              <BarChart accessibilityLayer data={chartData}>
-                <CartesianGrid vertical={false} />
-                <XAxis axisLine={false} />
-                <ChartTooltip content={<ChartTooltipContent />} />
-                <ChartLegend content={<ChartLegendContent />} />
-                <Bar dataKey="valor$" radius={4} />
-              </BarChart>
-            </ChartContainer>
-          </CardContent>
-          <CardFooter>
-            <CustomLegend config={chartConfig} />
-          </CardFooter>
-        </Card>
+        <div className="grid gap-4 md:grid-cols-7">
+          <Card className="col-span-4">
+            <CardHeader>
+              <CardTitle>Grafico gastos por area 2020</CardTitle>
+              <CardDescription>
+                Gastos organizados por area año 2020
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="h-[350px]">
+              <ChartContainer config={chartConfig} className="w-[550px] ">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart accessibilityLayer data={chartData}>
+                    <CartesianGrid vertical={false} />
+                    <XAxis axisLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <ChartLegend content={<ChartLegendContent />} />
+                    <Bar dataKey="valor$" radius={4} />
+                  </BarChart>
+                </ResponsiveContainer>
+              </ChartContainer>
+              <p> información extraída del RAFAM</p>
+            </CardContent>
+          </Card>
+          <Card className="col-span-3">
+            <CardHeader>
+              <CardTitle>Detalles</CardTitle>
+              <CardDescription>Division en categorias</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <CustomLegend config={chartConfig} />
+            </CardContent>
+          </Card>
+        </div>
           )
         : (
-        <Card>
-          <CardHeader>
-            <CardTitle>Grafico de los gastos por area en pesos 2020</CardTitle>
-          </CardHeader>
-          <CardContent className="flex-1 pb-0 X">
-            <ChartContainer
-              config={chartConfig}
-              className="mx-auto aspect-square max-h-[350px]"
-            >
-              <PieChart>
-                <ChartTooltip
-                  cursor={false}
-                  content={<ChartTooltipContent />}
-                />
-                <Pie
-                  data={chartData}
-                  dataKey="valor$"
-                  nameKey="nombre"
-                  innerRadius={60}
-                  strokeWidth={5}
-                  fill="var(--color-desktop)"
-                ></Pie>
-              </PieChart>
-            </ChartContainer>
-          </CardContent>
-          <CardFooter>
-            <CustomLegend config={chartConfig} />
-          </CardFooter>
-        </Card>
+        <div className="grid gap-4 md:grid-cols-7">
+          <Card className="col-span-4">
+            <CardHeader>
+              <CardTitle>Grafico gastos por area 2020</CardTitle>
+              <CardDescription>
+                Gastos organizados por area año 2020
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="h-[350px]">
+              <ChartContainer
+                config={chartConfig}
+                className="mx-auto aspect-square w-[350px] "
+              >
+                <ResponsiveContainer width="100%" height="100%">
+                  <PieChart>
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Pie
+                      data={chartData}
+                      dataKey="valor$"
+                      nameKey="nombre"
+                      innerRadius={60}
+                      strokeWidth={5}
+                    ></Pie>
+                  </PieChart>
+                </ResponsiveContainer>
+              </ChartContainer>
+              <p> información extraída del RAFAM</p>
+            </CardContent>
+          </Card>
+
+          <Card className="col-span-3">
+            <CardHeader>
+              <CardTitle>Detalles</CardTitle>
+              <CardDescription>Division en categorias</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <CustomLegend config={chartConfig} />
+            </CardContent>
+          </Card>
+        </div>
           )}
     </div>
   )

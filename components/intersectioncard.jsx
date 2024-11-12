@@ -11,7 +11,7 @@ export function SectionCard ({ titulo, link, textlink }) {
             {titulo}
           </CardTitle>
         </CardHeader>
-        <CardContent className="flex justify-center items-center">
+        <CardContent>
           <Button
             asChild
             color="primary"

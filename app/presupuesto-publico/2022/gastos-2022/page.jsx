@@ -14,7 +14,7 @@ export default function Gastos2020 () {
 
   return (
     <>
-      <BannerText titulo="Ingresos" />
+      <BannerText titulo="Gastos 2022" />
       <main className="min-h-screen bg-background">
         <div className="container mx-auto p-8 pt-20">
           <div className="flex items-center justify-between mb-8">

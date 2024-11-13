@@ -5,12 +5,12 @@ import { GeneralText } from "@/components/generaltext"
 export default function Presupuestopublico2023 () {
   return (
     <>
-      <BannerText titulo="Presupuesto Público 2023" />
+      <BannerText titulo="Ingresos y gastos 2023" />
       <div className="container mx-auto pt-8 p-20">
         <div className="flex flex-col lg:flex-row justify-center items-start text-balance space-y-8 lg:space-y-0 lg:space-x-8">
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
-              title="Ingresos y Gastos del Presupuesto Público"
+              title="Ingresos y Gastos"
               text="En esta sección, te ofrecemos un panorama claro y detallado sobre los ingresos y gastos del presupuesto público del Municipio de Baradero. Nuestro objetivo es garantizar la transparencia en la gestión financiera y promover la confianza de la ciudadanía en el uso de los recursos públicos."
             />
           </div>

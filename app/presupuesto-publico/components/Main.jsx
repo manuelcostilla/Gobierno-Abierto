@@ -14,7 +14,7 @@ const Main_presupuesto = () => {
           </div>
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
-              title="¿Qué es el Presupuesto Público?"
+              title="¿Qué es Presupuesto Público?"
               text="El presupuesto público es el documento que refleja las prioridades y necesidades de nuestra ciudad. A través de este, se establece cómo se recaudan y distribuyen los fondos para financiar los servicios y proyectos que benefician a todos los ciudadanos."
             />
           </div>

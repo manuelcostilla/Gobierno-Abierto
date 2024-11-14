@@ -11,7 +11,7 @@ const PdfDownloader = () => {
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
               title="Boletín Oficial"
-              text="Bienvenido a la sección del Boletín Oficial del Municipio de [Nombre del Municipio]. Aquí encontrarás información relevante y actualizada sobre las actividades, normativas y decisiones del gobierno municipal."
+              text="Bienvenido a la sección del Boletín Oficial del Municipio de Baradero. Aquí encontrarás información relevante y actualizada sobre las actividades, normativas y decisiones del gobierno municipal."
             />
           </div>
           <div className="w-full lg:w-1/3 flex justify-center">

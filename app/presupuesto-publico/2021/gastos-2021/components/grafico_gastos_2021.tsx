@@ -78,9 +78,9 @@ export function Graficogastostotales2021 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Grafico total de gastos 2021</CardTitle>
+              <CardTitle>Gráfico total de gastos 2021</CardTitle>
               <CardDescription>
-                Grafico total de gastos en pesos 2021
+              Gráfico total de gastos en pesos 2021
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -113,9 +113,9 @@ export function Graficogastostotales2021 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Grafico total de gastos 2021</CardTitle>
+              <CardTitle>Gráfico total de gastos 2021</CardTitle>
               <CardDescription>
-                Grafico total de gastos en pesos 2021
+              Gráfico total de gastos en pesos 2021
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">

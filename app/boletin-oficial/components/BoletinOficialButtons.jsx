@@ -19,7 +19,7 @@ function BoletinOficialButtons () {
       <div >
         <Card className="flex justify-center xs:text-xs xs:justify-center font-sans ">
           {añosUnicos.map((año) => (
-            <CardHeader key={año} className="w-full bg-blue-title">
+            <CardHeader key={año} className="w-full bg-blue-400">
               <CardTitle>
                 <Button
                   onClick={() => cambiarBox(año)}

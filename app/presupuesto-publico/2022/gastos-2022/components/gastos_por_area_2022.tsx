@@ -115,7 +115,7 @@ export function GastosPorArea2022 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Grafico gastos por area 2022</CardTitle>
+              <CardTitle>Gráfico gastos por area 2022</CardTitle>
               <CardDescription>
                 Gastos organizados por area año 2022
               </CardDescription>
@@ -150,7 +150,7 @@ export function GastosPorArea2022 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Grafico gastos por area 2022</CardTitle>
+              <CardTitle>Gráfico gastos por area 2022</CardTitle>
               <CardDescription>
                 Gastos organizados por area año 2022
               </CardDescription>

@@ -4,7 +4,7 @@ import { BannerText } from "../../components/bannertext"
 const Mapa_Del_Estado = () => {
   return (
     <>
-      <BannerText titulo="Mapa del Estado Municipal" />
+      <BannerText titulo="MAPA DEL ESTADO MUNICIPAL" />
       <Organigrama />
     </>
   )

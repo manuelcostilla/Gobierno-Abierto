@@ -6,7 +6,7 @@ import { BannerText } from "@/components/bannertext"
 const Main_licitaciones = () => {
   return (
     <>
-      <BannerText titulo="Compras y Licitaciones" />
+      <BannerText titulo="COMPRAS Y LICITACIONES" />
       <div className="flex justify-center items-center mr-10 ml-10">
         <div className="flex  items-center m-3 mb-12 pb-20 pt-20 lg:m-3 font-sans flex-col lg:flex-row">
           <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">

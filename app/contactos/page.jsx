@@ -6,7 +6,7 @@ import Link from "next/link"
 function Contactos () {
   return (
     <>
-      <BannerText titulo="Contactos Municipales" />
+      <BannerText titulo="CONTACTOS MUNICIPALES" />
       <div className="flex justify-center items-center pt-5">
         <p className=" text-balance text-xl">
           Estamos aquí para ayudarte. No dudes en ponerte en contacto con

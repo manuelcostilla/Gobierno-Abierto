@@ -78,9 +78,9 @@ export function Gastostotales2023 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Grafico total de gastos 2023</CardTitle>
+              <CardTitle>Gráfico total de gastos 2023</CardTitle>
               <CardDescription>
-                Grafico total de gastos en pesos 2023
+              Gráfico total de gastos en pesos 2023
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -113,9 +113,9 @@ export function Gastostotales2023 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Grafico total de gastos 2023</CardTitle>
+              <CardTitle>Gráfico total de gastos 2023</CardTitle>
               <CardDescription>
-                Grafico total de gastos en pesos 2023
+              Gráfico total de gastos en pesos 2023
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">

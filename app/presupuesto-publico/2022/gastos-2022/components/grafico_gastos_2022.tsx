@@ -32,7 +32,7 @@ const chartData = [
 
 const chartConfig = {
   totalgastosporarea: {
-    label: "Total Gastos por Area - 0",
+    label: "Total Gastos por area del ejecutivo - 0",
     color: "#00517B",
   },
   hcd: {

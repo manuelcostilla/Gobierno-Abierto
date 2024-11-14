@@ -150,9 +150,9 @@ export function GastosPorArea2022 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico gastos por area 2022</CardTitle>
+              <CardTitle>Gráfico gastos por area del ejecutivo 2022</CardTitle>
               <CardDescription>
-                Gastos organizados por area año 2022
+                Gastos organizados por area del ejecutivo año 2022
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">

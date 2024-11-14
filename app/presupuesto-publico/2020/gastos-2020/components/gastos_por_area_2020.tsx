@@ -115,9 +115,9 @@ export function GastosPorArea2020 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico gastos por area 2020</CardTitle>
+              <CardTitle>Gráfico gastos por area del ejecutivo 2020</CardTitle>
               <CardDescription>
-                Gastos organizados por area año 2020
+                Gastos organizados por area del ejecutivo año 2020
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -150,9 +150,9 @@ export function GastosPorArea2020 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico gastos por area 2020</CardTitle>
+              <CardTitle>Gráfico gastos por area del ejecutivo 2020</CardTitle>
               <CardDescription>
-                Gastos organizados por area año 2020
+                Gastos organizados por area del ejecutivo año 2020
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">

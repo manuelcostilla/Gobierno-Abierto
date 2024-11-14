@@ -6,13 +6,13 @@ export function GeneralText ({ text, title }) {
     <>
       <Card>
         <CardHeader className="bg-blue-500">
-          <CardTitle className="text-lg sm:text-xl lg:text-2xl mb-2 text-white">
+          <CardTitle className="text-lg mb-2 text-white">
             {title}
           </CardTitle>
         </CardHeader>
         <CardContent>
           <ScrollArea className="h-[200px]">
-            <p className="text-sm sm:text-base lg:text-lg mb-4 pt-2 text-justify">{text}</p>
+            <p className="text-sm mb-4 pt-2 text-justify">{text}</p>
           </ScrollArea>
         </CardContent>
       </Card>

@@ -42,7 +42,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
 
   return (
     <>
-      <Card className="flex flex-wrap justify-center text-xs  font-sans overflow-x-hidden w-full bg-blue-title">
+      <Card className="flex flex-wrap justify-center text-xs  font-sans overflow-x-hidden w-full bg-slate-50">
         <CardHeader>
           <CardTitle>
             <Button
@@ -98,7 +98,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
           </CardTitle>
         </CardHeader>
       </Card>
-      <Card>
+      <Card className="bg-slate-50">
         <ScrollArea className="flex justify-center w-full h-[550px]">
           {objects.map((item, index) => (
             <div key={index} className="pt-5 pb-5">

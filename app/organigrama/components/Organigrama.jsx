@@ -40,12 +40,13 @@ export function Organigrama () {
               </div>
             </AccordionTrigger>
             <AccordionContent>
+            <div className="flex justify-center">
               <Image
                 src="/imgorganigrama/CONDUCCIONSUPERIOR.jpg"
                 alt="CONDUCIÓN SUPERIOR"
                 width={1200}
                 height={300}
-              />
+              /></div>
               <br />
               <div className="flex justify-center">
                 <a
@@ -73,12 +74,13 @@ export function Organigrama () {
               </div>
             </AccordionTrigger>
             <AccordionContent>
+            <div className="flex justify-center">
               <Image
                 src="/imgorganigrama/SECRETARIAGOBIERNO.jpg"
                 alt="SECRETARÍA DE GOBIERNO"
                 width={1200}
                 height={300}
-              />
+              /></div>
               <br />
               <div className="flex justify-center">
                 <a
@@ -106,12 +108,13 @@ export function Organigrama () {
               </div>
             </AccordionTrigger>
             <AccordionContent>
+            <div className="flex justify-center">
               <Image
                 src="/imgorganigrama/SECRETARIAPLANIFICACION.jpg"
                 alt="SECRETARÍA DE PLANIFICACIÓN Y GESTIÓN PÚBLICA"
                 width={1200}
                 height={300}
-              />
+              /></div>
               <br />
               <div className="flex justify-center">
                 <a
@@ -139,12 +142,13 @@ export function Organigrama () {
               </div>
             </AccordionTrigger>
             <AccordionContent>
+            <div className="flex justify-center">
               <Image
                 src="/imgorganigrama/SECRETARIAOBRASSERVICIOS.jpg"
                 alt="SECRETARÍA DE OBRAS Y SERVICIOS PÚBLICOS"
-                width={1200}
+                width={800}
                 height={300}
-              />
+              /></div>
               <br />
               <div className="flex justify-center">
                 <a
@@ -172,12 +176,14 @@ export function Organigrama () {
               </div>
             </AccordionTrigger>
             <AccordionContent>
+            <div className="flex justify-center">
               <Image
                 src="/imgorganigrama/SECRETARIAHACIENDA.jpg"
                 alt="SECRETARÍA DE HACIENDA Y FINANZAS PÚBLICAS"
                 width={1200}
                 height={300}
               />
+              </div>
               <br />
               <div className="flex justify-center">
                 <a
@@ -205,12 +211,14 @@ export function Organigrama () {
               </div>
             </AccordionTrigger>
             <AccordionContent>
+              <div className="flex justify-center">
               <Image
                 src="/imgorganigrama/SECRETARIACULTURA.jpg"
                 alt="SECRETARÍA DE CULTURA, EDUCACIÓN, COMUNICACIÓN Y DEPORTES"
-                width={1200}
+                width={800}
                 height={300}
               />
+              </div>
               <br />
               <div className="flex justify-center">
                 <a
@@ -238,12 +246,14 @@ export function Organigrama () {
               </div>
             </AccordionTrigger>
             <AccordionContent>
+              <div className="flex justify-center">
               <Image
                 src="/imgorganigrama/SECRETARIASALUD.jpg"
                 alt="SECRETARÍA DE SALUD"
-                width={1200}
+                width={800}
                 height={300}
               />
+              </div>
               <br />
               <div className="flex justify-center">
                 <a
@@ -271,12 +281,13 @@ export function Organigrama () {
               </div>
             </AccordionTrigger>
             <AccordionContent>
+            <div className="flex justify-center">
               <Image
                 src="/imgorganigrama/SECRETARIADESOCIAL.jpg"
                 alt="SECRETARÍA DE DESARROLLO SOCIAL"
                 width={1200}
                 height={300}
-              />
+              /></div>
               <br />
               <div className="flex justify-center">
                 <a

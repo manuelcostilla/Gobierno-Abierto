@@ -5,7 +5,7 @@ export function GeneralText ({ text, title }) {
   return (
     <>
       <Card>
-        <CardHeader className="bg-blue-header">
+        <CardHeader className="bg-blue-title">
           <CardTitle className="text-lg sm:text-xl lg:text-2xl mb-2 text-white">
             {title}
           </CardTitle>

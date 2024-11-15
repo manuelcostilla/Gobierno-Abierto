@@ -44,7 +44,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
     <>
       <Card className="flex flex-wrap justify-center text-xs  font-sans overflow-x-hidden w-full bg-slate-50">
         <CardHeader>
-          <CardTitle>
+          <CardTitle className="w-full bg-slate-50">
             <Button
               onClick={() => handleShowObjects("2024")}
               className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
@@ -102,7 +102,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
         <ScrollArea className="flex justify-center w-full h-[550px]">
           {objects.map((item, index) => (
             <div key={index} className="pt-5 pb-5">
-              <Card className="flex w-[300px] lg:w-[700px]  m-auto font-sans text-base xs:text-xs">
+              <Card className="flex w-[300px] lg:w-[700px]  m-auto font-sans text-base xs:text-xs ">
                 <CardContent className="w-full flex items-center justify-between p-5 ">
                   <CardHeader className=" flex font-bold">
                     <CardTitle className="text-center lg:text-left">
@@ -110,7 +110,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                         onClick={() => toggleAccordion(index)}
                         className="transition-all duration-300 ease-in-out"
                       >
-                        <span className="inline-flex items-center">
+                        <span className="inline-flex items-center text-xl text-balance">
                           {openIndex === index
                             ? (
                             <BsFillArrowUpCircleFill className="text-blue-header mr-3" />
@@ -130,72 +130,148 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                   } overflow-hidden transition-all duration-300 ease-in-out`}
                 >
                   {openIndex === index && (
-                    <div className="word-wrap  p-4 rounded-md">
-                      <p>
-                        <span className="font-bold">
-                          {item.tituloAcordeonAbierto}
-                        </span>
-                      </p>
-                      <p>
-                        <span className="font-bold">
-                          {item.decreto} {item.numdecreto}
-                        </span>
-                      </p>
-                      <p>
-                        <span className="font-bold">{item.tipo}</span>{" "}
-                        {item.condicion}
-                      </p>
-                      <p>
-                        <span className="font-bold">{item.dias}</span>{" "}
-                        {item.motivo}
-                      </p>
-                      <p>
-                        <span className="font-bold">{item.presupuesto}</span>{" "}
-                        {item.plata}
-                      </p>
-                      <p>
-                        <span className="font-bold">{item.garantia}</span>{" "}
-                        {item.platagarantia}
-                      </p>
-                      <p>
-                        <span className="font-bold">{item.valorPliego}</span>{" "}
-                        {item.plataPliego}
-                      </p>
-                      <p>
-                        <span className="font-bold">
-                          {item.fechaAperturaSobre}
-                        </span>{" "}
-                        {item.fecha}
-                      </p>
-                      <p>
-                        <span className="font-bold">
-                          {item.adquisicionPliego}
-                        </span>{" "}
-                        {item.adquisicion}
-                      </p>
-                      <p>
-                        <span className="font-bold">{item.obtencion}</span>{" "}
-                        <br />
-                        {item.url1} <br /> {item.url2}{" "}
-                      </p>
-                      <p>
-                        <span className="font-bold">{item.requisitos}</span>
-                      </p>
-                      <p>
-                        <span className="font-bold">{item.capacidad}</span>{" "}
-                        {item.valor1}
-                      </p>
-                      <p>
-                        <span className="font-bold">{item.superficie}</span>{" "}
-                        {item.valor2}
-                      </p>
-                      <button
-                        onClick={() => handleDownload(item.pdfUrl)}
-                        className="flex justify-center items-center m-auto my-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
-                      >
-                        {item.botonTexto}
-                      </button>
-                    </div>
+                    <>
+                      <div className="pt-10 pb-5">
+                        <Card className="word-wrap pt-10  rounded-md">
+                          <CardContent className=" text-balance text-sm ">
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.tituloAcordeonAbierto}
+                                </span>
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.decreto} {item.numdecreto}
+                                </span>
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">{item.tipo}</span>
+                                {item.condicion}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">{item.dias}</span>
+                                {item.motivo}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.presupuesto}
+                                </span>
+                                {item.plata}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.garantia}
+                                </span>
+                                {item.platagarantia}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.valorPliego}
+                                </span>
+                                {item.plataPliego}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.fechaAperturaSobre}
+                                </span>
+                                {item.fecha}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.adquisicionPliego}
+                                </span>
+                                {item.adquisicion}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.obtencion}
+                                </span>
+                                <br />
+                                {item.url1} <br /> {item.url2}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.requisitos}
+                                </span>
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.capacidad}
+                                </span>
+                                {item.valor1}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.superficie}
+                                </span>
+                                {item.valor2}
+                              </p>
+                            </div>
+                            <CardFooter className="flex justify-center items-center">
+                              <CardContent>
+                                <div className="flex m-auto space-x-1">
+                                  <div>
+                                    <button
+                                      onClick={() =>
+                                        handleDownload(item.pdfUrl)
+                                      }
+                                      className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+                                    >
+                                      {item.botonTexto}
+                                    </button>
+                                  </div>
+                                  <div>
+                                    <button
+                                      onClick={() =>
+                                        handleDownload(item.pdfUrl)
+                                      }
+                                      className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+                                    >
+                                      {item.botonTexto}
+                                    </button>
+                                  </div>
+                                  <div>
+                                    <button
+                                      onClick={() =>
+                                        handleDownload(item.pdfUrl)
+                                      }
+                                      className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+                                    >
+                                      {item.botonTexto}
+                                    </button>
+                                  </div>
+                                </div>
+                              </CardContent>
+                            </CardFooter>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </>
                   )}
                 </CardContent>
               </Card>

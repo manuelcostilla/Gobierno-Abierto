@@ -16,14 +16,14 @@ function BoletinOficialButtons () {
 
   return (
     <>
-      <div >
-        <Card className="flex justify-center xs:text-xs xs:justify-center font-sans ">
+      <div>
+        <Card className="flex justify-center text-xs font-sans ">
           {añosUnicos.map((año) => (
-            <CardHeader key={año} className="w-full bg-blue-400">
+            <CardHeader key={año} className="w-full bg-slate-50">
               <CardTitle>
                 <Button
                   onClick={() => cambiarBox(año)}
-                  className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3  ${
+                  className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100  ${
                     selectedYear === año
                       ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
                       : ""

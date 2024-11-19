@@ -4,12 +4,12 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { Globe } from 'lucide-react'
 import logo from "../../public/logo_gobiernoAbierto (1).svg"
 import face from "../../public/iconos redes/fb.png"
 import twitter from "../../public/iconos redes/tw.png"
 import instagram from "../../public/iconos redes/ig.png"
 import youtube from "../../public/iconos redes/yt.png"
-import BaraderoGob from "../../public/iconos redes/baradero.gob.png"
 import { HeadernavBar } from "./components/Header-navBar"
 
 
@@ -43,7 +43,7 @@ export const Header = () => {
           </ul>
           <li className="inline-block list-none sm:w-auto ">
               <Link href="https://baradero.gob.ar/" target="_blank">
-              <Image src={BaraderoGob} width={40} height={50} className="text-white hover:text-slate-200 mb-1 mr-2"/>
+              <Globe height={25} width={25} color="white"/>
               </Link>
             </li>
         </div>

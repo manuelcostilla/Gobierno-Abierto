@@ -80,9 +80,9 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
           <div className="grid gap-4 md:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Grafico de ingreso por procedencia 2020</CardTitle>
+                <CardTitle>Gráfico de ingreso por procedencia 2020</CardTitle>
                 <CardDescription>
-                  Grafico organizado por su procedencia del año 2020
+                Gráfico organizado por su procedencia del año 2020
                 </CardDescription>
               </CardHeader>
               <CardContent className="h-[350px]">
@@ -117,9 +117,9 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
           <div className="grid gap-4 md:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Grafico de ingreso por procedencia 2020</CardTitle>
+                <CardTitle>Gráfico de ingreso por procedencia 2020</CardTitle>
                 <CardDescription>
-                  Grafico organizado por su procedencia del año 2020
+                Gráfico organizado por su procedencia del año 2020
                 </CardDescription>
               </CardHeader>
               <CardContent className="h-[350px]">

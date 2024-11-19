@@ -15,37 +15,37 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 
 const chartData = [
   {
-    nombre: "Conduccion superior",
+    nombre: "Conducción Superior",
     valor$: 129963366.31,
     fill: "var(--color-conduccionsuperior)",
   },
   {
-    nombre: "Secretaria de Gobierno",
+    nombre: "Secretaría de Gobierno",
     valor$: 437578320.44,
     fill: "var(--color-secgobierno)",
   },
   {
-    nombre: "Secretaria de Hacienda",
+    nombre: "Secretaría de Hacienda",
     valor$: 65339030.83,
     fill: "var(--color-sechacienda)",
   },
   {
-    nombre: "Secretaria de Cultura, Educacion y Turismo",
+    nombre: "Secretaría de Cultura, Educacion y Turismo",
     valor$: 147869173.50,
     fill: "var(--color-secculturaeducacionturismo)",
   },
   {
-    nombre: "Secretaria de Obras y Servicios Publicos",
+    nombre: "Secretaría de Obras y Servicios Publicos",
     valor$: 355765979.05,
     fill: "var(--color-secobrasyservpublicos)",
   },
   {
-    nombre: "Secretaria de Modernizacion y Gestion Publica",
+    nombre: "Secretaría de Modernizacion y Gestion Publica",
     valor$: 45932100.43,
     fill: "var(--color-secmodernizacionygestionpublica)",
   },
   {
-    nombre: "Secretaria de Desarrollo Humano",
+    nombre: "Secretaría de Desarrollo Humano",
     valor$: 113187615.22,
     fill: "var(--color-secdesarrollohumano)",
   },
@@ -53,32 +53,32 @@ const chartData = [
 
 const chartConfig = {
   conduccionsuperior: {
-    label: "Conduccion superior - 0",
+    label: "Conducción Superior - 0",
     color: "#00517B",
 
   },
   secgobierno: {
-    label: "Secretaria de Gobierno - 1",
+    label: "Secretaría de Gobierno - 1",
     color: "#007CB6",
   },
   sechacienda: {
-    label: "Secretaria de Hacienda - 2",
+    label: "Secretaría de Hacienda - 2",
     color: "#5294DE",
   },
   secculturaeducacionturismo: {
-    label: "Secretaria de Cultura, Educacion y Turismo -  3",
+    label: "Secretaría de Cultura, Educacion y Turismo -  3",
     color: "#3EAF53",
   },
   secobrasyservpublicos: {
-    label: "Secretaria de Obras y Servicios Publicos - 4",
+    label: "Secretaría de Obras y Servicios Publicos - 4",
     color: "#7FDE22",
   },
   secmodernizacionygestionpublica: {
-    label: "Secretaria de Modernizacion y Gestion Publica - 5",
+    label: "Secretaría de Modernizacion y Gestion Publica - 5",
     color: "#A4D180",
   },
   secdesarrollohumano: {
-    label: "Secretaria de Desarrollo Humano - 6",
+    label: "Secretaría de Desarrollo Humano - 6",
     color: "#EE1E52",
   },
 } satisfies ChartConfig
@@ -103,9 +103,9 @@ export function GastosPorArea2021 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Grafico gastos por area 2021</CardTitle>
+              <CardTitle>Gráfico gastos por area del ejecutivo 2021</CardTitle>
               <CardDescription>
-                Gastos organizados por area año 2021
+                Gastos organizados por area del ejecutivo año 2021
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -138,9 +138,9 @@ export function GastosPorArea2021 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Grafico gastos por area 2021</CardTitle>
+              <CardTitle>Gráfico gastos por area del ejecutivo 2021</CardTitle>
               <CardDescription>
-                Gastos organizados por area año 2021
+                Gastos organizados por area del ejecutivo año 2021
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">

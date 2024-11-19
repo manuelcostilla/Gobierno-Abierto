@@ -20,13 +20,9 @@ const images = {
 export const Atajos = () => {
   return (
     <>
-      <div className="hidden lg:w-[100px] lg:h-[10px] lg:bg-green-nav lg:absolute lg:top-[585px] lg:left-[100px]">
-        {/* Barra verde */}
-      </div>
-      <div className="flex justify-center items-center pt-28">
-        <h1 className="font-bold  text-4xl">ACCESOS DIRECTOS</h1>
-      </div>
-      <div className="flex flex-col lg:flex-row items-center mb-60 mt-44 justify-around font-sans font-semibold flex-wrap">
+      <div className="hidden lg:w-[100px] lg:h-[10px] lg:bg-green-nav lg:absolute lg:top-[585px] lg:left-[100px]"></div>
+
+      <div className="flex flex-col lg:flex-row items-center mb-60 mt-40 justify-around font-sans font-semibold flex-wrap">
         {dataAtajos.map((atajo) => (
           <Link key={atajo.id} href={atajo.link} className="m-6">
             <div className="flex flex-col lg:flex-row lg:w-[500px] lg:h-[200px] w-[300px] h-[300px] p-6 transition duration-300 ease-in-out transform hover:scale-105 rounded-lg shadow-gray-400 shadow-lg">
@@ -43,8 +39,7 @@ export const Atajos = () => {
                 </p>
                 <p className="text-xs text-justify hidden lg:block">
                   {atajo.descripcion}
-                </p>{" "}
-                {/* Oculta la descripción en xs y sm */}
+                </p>
               </div>
             </div>
           </Link>

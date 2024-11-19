@@ -6,7 +6,7 @@ export function GeneralText ({ text, title }) {
     <>
       <Card>
         <CardHeader className="bg-blue-500">
-          <CardTitle className="text-lg mb-2 text-white">
+          <CardTitle className="text-lg mb-2 text-white text-center">
             {title}
           </CardTitle>
         </CardHeader>

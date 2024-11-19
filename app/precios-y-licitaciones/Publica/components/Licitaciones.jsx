@@ -252,17 +252,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                                       }
                                       className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
                                     >
-                                      {item.botonTexto}
-                                    </button>
-                                  </div>
-                                  <div>
-                                    <button
-                                      onClick={() =>
-                                        handleDownload(item.pdfUrl)
-                                      }
-                                      className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
-                                    >
-                                      {item.botonTexto}
+                                      {item.botonTexto2}
                                     </button>
                                   </div>
                                 </div>

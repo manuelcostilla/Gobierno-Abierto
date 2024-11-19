@@ -10,8 +10,8 @@ const PdfDownloader = () => {
         <div className="flex flex-col lg:flex-row justify-center items-start text-balance space-y-8 lg:space-y-0 lg:space-x-8 pb-10">
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
-              title="Bienvenido"
-              text="Bienvenido a la sección del Boletín Oficial del Municipio de Baradero. Aquí encontrarás información relevante y actualizada sobre las actividades, normativas y decisiones del gobierno municipal."
+              title="Bienvenidos"
+              text="Bienvenidos a la sección del Boletín Oficial del Municipio de Baradero. Aquí encontrarás información relevante y actualizada sobre las actividades, normativas y decisiones del gobierno municipal."
             />
           </div>
           <div className="w-full lg:w-1/3 flex justify-center">

@@ -12,7 +12,7 @@ const Main_licitaciones = () => {
         <div className="flex flex-col lg:flex-row justify-center items-start text-balance space-y-8 lg:space-y-0 lg:space-x-8 pb-10 pt-10">
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
-              title="Bienvenido"
+              title="Bienvenidos"
               text="En esta sección, el Municipio de [Nombre del Municipio] pone a tu disposición toda la información relacionada con las licitaciones, tanto públicas como privadas. Nuestro compromiso con la transparencia y la participación ciudadana asegura que todos los procesos de contratación sean accesibles y claros."
             />
           </div>

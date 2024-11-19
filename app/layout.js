@@ -18,7 +18,7 @@ export default function RootLayout ({ children }) {
         <head>
           <link rel="icon" href="../LOGOS_icono-100x100.png" />
         </head>
-        <body className={inter.className} suppressHydrationWarning={true}>
+        <body className={inter.className}>
           <ThemeProvider
             attribute="class"
             defaultTheme="light"

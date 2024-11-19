@@ -6,13 +6,7 @@ import Link from "next/link"
 function Contactos () {
   return (
     <>
-      <BannerText titulo="Contactos Municipales" />
-      <div className="flex justify-center items-center pt-5">
-        <p className=" text-balance text-xl">
-          Estamos aquí para ayudarte. No dudes en ponerte en contacto con
-          nosotros para cualquier consulta o trámite que necesites realizar.
-        </p>
-      </div>
+      <BannerText titulo="CONTACTOS MUNICIPALES" />
       <div className=" container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <Card className=" bg-white m-5 text-black">
@@ -27,8 +21,8 @@ function Contactos () {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <a href="tel:+543329480020" className=" text-gray-600">
-                (03329) 48-0020
+              <a href="tel:+543329482900" className=" text-gray-600">
+                (03329) 482900
               </a>
             </CardContent>
           </Card>

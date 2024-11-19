@@ -1,14 +1,21 @@
-'use client'
-import { useState } from 'react'
-import { BsFileEarmarkPdfFill, BsFillArrowUpCircleFill } from 'react-icons/bs'
-import Direcciondecompras from './Direcciondecompras'
-import { ScrollArea } from '@/components/ui/scroll-area'
-import { Button } from '@/components/ui/button'
+"use client"
+import { useState } from "react"
+import { BsFileEarmarkPdfFill, BsFillArrowUpCircleFill } from "react-icons/bs"
+import Direcciondecompras from "./Direcciondecompras"
+import { ScrollArea } from "@/components/ui/scroll-area"
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card"
 
 export const AcordeonDeLicitaciones = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(null)
   const [objects, setObjects] = useState(data)
-  const [selectedYear, setSelectedYear] = useState(null) // Estado para guardar el año seleccionado
+  const [selectedYear, setSelectedYear] = useState(null)
 
   const toggleAccordion = (index) => {
     if (openIndex === index) {
@@ -19,103 +26,252 @@ export const AcordeonDeLicitaciones = ({ data }) => {
   }
 
   const handleDownload = (pdfUrl) => {
-    window.open(pdfUrl, '_blank')
+    window.open(pdfUrl, "_blank")
   }
 
   const handleShowObjects = (year) => {
     const filteredObjects = data.filter((obj) => obj.año === year)
     setObjects(filteredObjects)
-    setSelectedYear(year) // Actualiza el año seleccionado
+    setSelectedYear(year)
   }
 
   const resetList = () => {
-    setObjects(data) // Restablece a los objetos originales (data)
-    setSelectedYear(null) // Reinicia el año seleccionado
+    setObjects(data)
+    setSelectedYear(null)
   }
 
   return (
     <>
-      <div className=" lg:m-10 flex flex-wrap justify-center text-xs  font-sans overflow-x-hidden">
-        <Button
-          onClick={() => handleShowObjects('2024')}
-          className={`mt-2 lg:ml-16 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2024' ? 'text-black bg-gray-300 text-sm lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
-        >
-          2024
-        </Button>
-        <Button
-          onClick={() => handleShowObjects('2023')}
-          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2023' ? 'text-black bg-gray-300 text-sm lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
-        >
-          2023
-        </Button>
-        <Button
-          onClick={() => handleShowObjects('2022')}
-          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2022' ? 'text-black bg-gray-300 text-sm lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
-        >
-          2022
-        </Button>
-        <Button
-          onClick={() => handleShowObjects('2021')}
-          className={`mt-2 mr-4 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-1 xs:py-1 lg:text-base ${selectedYear === '2021' ? 'text-black bg-gray-300 text-sm lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
-        >
-          2021
-        </Button>
-        <Button
-          onClick={resetList}
-          className={`mt-2 mb-2 bg-blue-header hover:bg-blue-500 text-white font-bold py-4 px-4 border-dotted border-l border-r border-t border-gray-400 xs:px-2 xs:py-2 lg:text-base ${selectedYear === null ? 'text-black bg-gray-300 text-sm lg:text-base' : ''}`}style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}
-        >
-          Mostrar todos
-        </Button>
-      </div>
-
-      <ScrollArea className="flex flex-col w-full lg:w-[1250px] h-[500px] mb-10 m-auto p-10 border-dotted border border-gray-400 clip-your-needful-style min-h-60">
-        {objects.map((item, index) => (
-          <div className="" key={index}>
-            <div>
-              <button
-                onClick={() => toggleAccordion(index)}
-                className="transition-all duration-300 ease-in-out"
-              >
-                <span className="inline-flex items-center">
-                  {openIndex === index
-                    ? <BsFillArrowUpCircleFill className="text-blue-header mr-3" />
-                    : <BsFileEarmarkPdfFill className="text-blue-header mr-3" />
-                  }
-                  {item.titulo + item.año}
-                </span>
-              </button>
+      <Card className="flex flex-wrap justify-center text-xs  font-sans overflow-x-hidden w-full bg-slate-50">
+        <CardHeader>
+          <CardTitle className="w-full bg-slate-50">
+            <Button
+              onClick={() => handleShowObjects("2024")}
+              className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
+                selectedYear === "2024"
+                  ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
+                  : ""
+              }`}
+            >
+              2024
+            </Button>
+            <Button
+              onClick={() => handleShowObjects("2023")}
+              className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
+                selectedYear === "2023"
+                  ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
+                  : ""
+              }`}
+            >
+              2023
+            </Button>
+            <Button
+              onClick={() => handleShowObjects("2022")}
+              className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
+                selectedYear === "2022"
+                  ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
+                  : ""
+              }`}
+            >
+              2022
+            </Button>
+            <Button
+              onClick={() => handleShowObjects("2021")}
+              className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
+                selectedYear === "2021"
+                  ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
+                  : ""
+              }`}
+            >
+              2021
+            </Button>
+            <Button
+              onClick={resetList}
+              className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
+                selectedYear === null
+                  ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
+                  : ""
+              }`}
+            >
+              Mostrar todos
+            </Button>
+          </CardTitle>
+        </CardHeader>
+      </Card>
+      <Card className="bg-slate-50">
+        <ScrollArea className="flex justify-center w-full h-[550px]">
+          {objects.map((item, index) => (
+            <div key={index} className="pt-5 pb-5">
+              <Card className="flex w-[300px] lg:w-[700px]  m-auto font-sans text-base xs:text-xs ">
+                <CardContent className="w-full flex items-center justify-between p-5 ">
+                  <CardHeader className=" flex font-bold">
+                    <CardTitle className="text-center lg:text-left">
+                      <button
+                        onClick={() => toggleAccordion(index)}
+                        className="transition-all duration-300 ease-in-out"
+                      >
+                        <span className="inline-flex items-center text-xl text-balance">
+                          {openIndex === index
+                            ? (
+                            <BsFillArrowUpCircleFill className="text-blue-header mr-3" />
+                              )
+                            : (
+                            <BsFileEarmarkPdfFill className="text-blue-header mr-3" />
+                              )}
+                          {item.titulo + item.año}
+                        </span>
+                      </button>
+                    </CardTitle>
+                  </CardHeader>
+                </CardContent>
+                <CardContent
+                  className={`${
+                    openIndex === index ? "max-h-full" : "max-h-0"
+                  } overflow-hidden transition-all duration-300 ease-in-out`}
+                >
+                  {openIndex === index && (
+                    <>
+                      <div className="pt-10 pb-5">
+                        <Card className="word-wrap pt-10  rounded-md">
+                          <CardContent className=" text-balance text-sm ">
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.tituloAcordeonAbierto}
+                                </span>
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.decreto} {item.numdecreto}
+                                </span>
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">{item.tipo}</span>
+                                {item.condicion}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">{item.dias}</span>
+                                {item.motivo}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.presupuesto}
+                                </span>
+                                {item.plata}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.garantia}
+                                </span>
+                                {item.platagarantia}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.valorPliego}
+                                </span>
+                                {item.plataPliego}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.fechaAperturaSobre}
+                                </span>
+                                {item.fecha}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.adquisicionPliego}
+                                </span>
+                                {item.adquisicion}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.obtencion}
+                                </span>
+                                <br />
+                                {item.url1} <br /> {item.url2}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.requisitos}
+                                </span>
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.capacidad}
+                                </span>
+                                {item.valor1}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <span className="font-bold">
+                                  {item.superficie}
+                                </span>
+                                {item.valor2}
+                              </p>
+                            </div>
+                            <CardFooter className="flex justify-center items-center">
+                              <CardContent>
+                                <div className="flex m-auto space-x-1">
+                                  <div>
+                                    <button
+                                      onClick={() =>
+                                        handleDownload(item.pdfUrl)
+                                      }
+                                      className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+                                    >
+                                      {item.botonTexto}
+                                    </button>
+                                  </div>
+                                  <div>
+                                    <button
+                                      onClick={() =>
+                                        handleDownload(item.pdfUrl)
+                                      }
+                                      className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+                                    >
+                                      {item.botonTexto2}
+                                    </button>
+                                  </div>
+                                </div>
+                              </CardContent>
+                            </CardFooter>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </>
+                  )}
+                </CardContent>
+              </Card>
             </div>
-            <div className={`${openIndex === index ? 'max-h-full' : 'max-h-0'} overflow-hidden transition-all duration-300 ease-in-out`}>
-              {openIndex === index && (
-                <div className="word-wrap bg-gray-100 p-4 rounded-md">
-                  <p><span className="font-bold">{item.tituloAcordeonAbierto}</span></p>
-                  <p><span className="font-bold">{item.decreto} {item.numdecreto}</span></p>
-                  <p><span className="font-bold">{item.tipo}</span> {item.condicion}</p>
-                  <p><span className="font-bold">{item.dias}</span> {item.motivo}</p>
-                  <p><span className="font-bold">{item.presupuesto}</span> {item.plata}</p>
-                  <p><span className="font-bold">{item.garantia}</span> {item.platagarantia}</p>
-                  <p><span className="font-bold">{item.valorPliego}</span> {item.plataPliego}</p>
-                  <p><span className="font-bold">{item.fechaAperturaSobre}</span> {item.fecha}</p>
-                  <p><span className="font-bold">{item.adquisicionPliego}</span> {item.adquisicion}</p>
-                  <p><span className="font-bold">{item.obtencion}</span> <br />{item.url1} <br /> {item.url2} </p>
-                  <p><span className="font-bold">{item.requisitos}</span></p>
-                  <p><span className="font-bold">{item.capacidad}</span> {item.valor1}</p>
-                  <p><span className="font-bold">{item.superficie}</span> {item.valor2}</p>
-                  <button
-                    onClick={() => handleDownload(item.pdfUrl)}
-                    className="flex justify-center items-center m-auto my-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
-                  >
-                    {item.botonTexto}
-                  </button>
-                </div>
-              )}
-            </div>
-          </div>
-        ))}
-      </ScrollArea>
-      <div className="mt-10 border-2 border-gray-nav"></div>
-      <div className="flex items-center gap-4"></div>
-      <Direcciondecompras />
+          ))}
+        </ScrollArea>
+        <CardFooter className="pt-5">
+          <Direcciondecompras />
+        </CardFooter>
+      </Card>
     </>
   )
 }

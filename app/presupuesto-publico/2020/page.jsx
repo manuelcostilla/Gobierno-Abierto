@@ -10,7 +10,7 @@ export default function Presupuestopublico2020 () {
         <div className="flex flex-col lg:flex-row justify-center items-start text-balance space-y-8 lg:space-y-0 lg:space-x-8">
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
-              title="Ingresos y Gastos"
+              title="Bienvenidos"
               text="En esta sección, te ofrecemos un panorama claro y detallado sobre los ingresos y gastos del presupuesto público del Municipio de Baradero. Nuestro objetivo es garantizar la transparencia en la gestión financiera y promover la confianza de la ciudadanía en el uso de los recursos públicos."
             />
           </div>
@@ -22,7 +22,7 @@ export default function Presupuestopublico2020 () {
           </div>
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
-              title="gastos públicos"
+              title="Gastos públicos"
               text="Los gastos públicos representan la inversión del municipio en diversas áreas esenciales para el bienestar de los ciudadanos. Estos se distribuyen en inversión en infraestructura, mantenimiento de calles, suministro de agua, recolección de basura y servicios de salud; recursos destinados a escuelas y programas educativos; gastos en seguridad pública y protección civil; programas de apoyo a comunidades vulnerables y actividades culturales; y proyectos de desarrollo urbano y mejoras en la infraestructura."
             />
           </div>

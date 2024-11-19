@@ -28,7 +28,7 @@ import {
 
 const chartData = [
   {
-    nombre: "Total Gastos por Area",
+    nombre: "Total Gastos por area del ejecutivo",
     valor$: 922264822.63,
     fill: "var(--color-totalgastosporarea)",
   },
@@ -46,7 +46,7 @@ const chartData = [
 
 const chartConfig = {
   totalgastosporarea: {
-    label: "Total Gastos por Area - 0",
+    label: "Total Gastos por area del ejecutivo - 0",
     color: "#00517B",
   },
   hcd: {
@@ -113,9 +113,9 @@ export function Graficogastostotales2020 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Grafico total de gastos 2020</CardTitle>
+              <CardTitle>Gráfico total de gastos 2020</CardTitle>
               <CardDescription>
-                Grafico total de gastos en pesos 2020
+              Gráfico total de gastos en pesos 2020
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">

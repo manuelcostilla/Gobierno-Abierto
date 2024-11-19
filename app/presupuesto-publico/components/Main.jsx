@@ -8,8 +8,8 @@ const Main_presupuesto = () => {
         <div className="flex flex-col lg:flex-row justify-center items-start text-balance space-y-8 lg:space-y-0 lg:space-x-8">
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
-              title="Presupuesto Publico"
-              text="Bienvenido a la sección de Presupuesto Público del Municipio de Baradero. Aquí podrás acceder a información transparente y detallada sobre la asignación y ejecución de los recursos públicos de nuestra comunidad."
+              title="Bienvenidos"
+              text="Bienvenidos a la sección de Presupuesto Público del Municipio de Baradero. Aquí podrás acceder a información transparente y detallada sobre la asignación y ejecución de los recursos públicos de nuestra comunidad."
             />
           </div>
           <div className="w-full lg:w-1/3 flex justify-center">

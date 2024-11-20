@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "next/image"
-import test from "../public/banner/IMG.Banner.Baradero.jpg"
+import test from "../public/banner/IMG.Baradero.jpg"
 
 export default function banner () {
   return (
@@ -14,7 +14,7 @@ export default function banner () {
           <h2 className="font-sans font-bold text-2xl sm:text-3xl lg:text-4xl mt-4 lg:mt-6 text-fuente-gris text-balance">
             Municipio de Baradero
           </h2>
-          <p className="font-sans font-medium mt-4 lg:mt-8 text-fuente-gris text-balance w-full sm:w-[80ch] text-sm sm:text-base">
+          <p className="font-sans font-medium mt-4 lg:mt-8 text-fuente-gris text-justify w-full sm:w-[80ch] text-sm sm:text-base">
             Sitio web que proporciona fácil y transparente acceso a información
             pública, como presupuestos, decisiones y datos relevantes. Fomenta
             la participación ciudadana y la rendición de cuentas, permitiendo a

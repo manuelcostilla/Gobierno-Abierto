@@ -2,6 +2,7 @@ import { Card, CardContent, CardTitle, CardHeader } from "@/components/ui/card"
 import { BannerText } from "@/components/bannertext"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
 import Link from "next/link"
+import { Telefonosfijos } from "@/components/telefonosFijos"
 
 function Contactos () {
   return (
@@ -90,6 +91,7 @@ function Contactos () {
             </CardContent>
           </Card>
         </div>
+        <Telefonosfijos />
       </div>
     </>
   )

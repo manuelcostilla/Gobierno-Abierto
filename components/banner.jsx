@@ -5,7 +5,7 @@ import test from "../public/banner/IMG.Baradero.jpg"
 export default function banner () {
   return (
     <div className="container mx-auto px-4">
-      <div className="flex flex-col lg:flex-row items-center justify-between pt-10 gap-8">
+      <div className="flex flex-col lg:flex-row items-center justify-between pt-10 sm:gap-16">
         <div className=" lg:w-1/2 pr-5">
           <h1 className="text-[40px] sm:text-[50px] lg:text-[70px] text-blue-GobAb font-bold font-sans text-balance">
             GOBIERNO ABIERTO
@@ -23,8 +23,16 @@ export default function banner () {
           </p>
         </div>
 
-        <div className="image-section lg:w-1/2 mt-8 lg:mt-0 flex justify-center lg:justify-end sm:hidden md:hidden lg:block">
-          <Image src={test} alt="Banner" width={900} height={720} />
+        <div className="image-section lg:w-1/2 mt-8 pl-16 lg:mt-0 flex justify-center lg:justify-end sm:hidden md:hidden lg:block">
+          <Image
+            src={test}
+            alt="Banner"
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
         </div>
       </div>
     </div>

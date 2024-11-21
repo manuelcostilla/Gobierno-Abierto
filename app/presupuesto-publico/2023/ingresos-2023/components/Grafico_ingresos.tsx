@@ -31,7 +31,7 @@ import {
 
 const chartData = [
   {
-    nombre: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
+    nombre: "Total Ingresos Tributarios (Total Coparticipación de Impuestos)",
     valor$: 2049952360.0,
     fill: "var(--color-Ingresostributarios)",
   },
@@ -56,12 +56,12 @@ const chartData = [
     fill: "var(--color-recursospropiosdecapital)",
   },
   {
-    nombre: "Total Recuperacion de Prestamos de Largo Plazo",
+    nombre: "Total Recuperación de Préstamos de Largo Plazo",
     valor$: 21490000.0,
     fill: "var(--color-recuperacionprestamoslargoplazo)",
   },
   {
-    nombre: "Total Disminucion de Otros Activos Financieros",
+    nombre: "Total Disminución de Otros Activos Financieros",
     valor$: 208561956.3,
     fill: "var(--color-totaldisminucionotrosactivosfinancieros)",
   },
@@ -69,7 +69,7 @@ const chartData = [
 
 const chartConfig = {
   Ingresostributarios: {
-    label: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
+    label: "Total Ingresos Tributarios (Total Coparticipación de Impuestos)",
     color: "#00517B",
   },
   Ingresosnotributarios: {
@@ -89,11 +89,11 @@ const chartConfig = {
     color: "#7FDE22",
   },
   recuperacionprestamoslargoplazo: {
-    label: "Total Recuperacion de Prestamos de Largo Plazo",
+    label: "Total Recuperación de Préstamos de Largo Plazo",
     color: "#A4D180",
   },
   totaldisminucionotrosactivosfinancieros: {
-    label: "Total Disminucion de Otros Activos Financieros",
+    label: "Total Disminución de Otros Activos Financieros",
     color: "#EE1E52",
   },
 } satisfies ChartConfig
@@ -135,13 +135,13 @@ export function GraficosIngresos2023 ({ chart, setChart }) {
                     </BarChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>información extraída del RAFAM</p>
+                <p>Información extraída del RAFAM</p>
               </CardContent>
             </Card>
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />
@@ -178,14 +178,14 @@ export function GraficosIngresos2023 ({ chart, setChart }) {
                     </PieChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>información extraída del RAFAM</p>
+                <p>Información extraída del RAFAM</p>
               </CardContent>
             </Card>
 
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />

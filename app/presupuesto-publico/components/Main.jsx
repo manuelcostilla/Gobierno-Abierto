@@ -31,28 +31,28 @@ const Main_presupuesto = () => {
             <SectionCard
               titulo="Ejercicio 2023"
               link="/presupuesto-publico/2023"
-              textlink="Ingresar"
+              textlink="Ver más información"
             />
           </div>
           <div className="m-5">
             <SectionCard
               titulo="Ejercicio 2022"
               link="/presupuesto-publico/2022"
-              textlink="Ingresar"
+              textlink="Ver más información"
             />
           </div>
           <div className="m-5">
             <SectionCard
               titulo="Ejercicio 2021"
               link="/presupuesto-publico/2021"
-              textlink="Ingresar"
+              textlink="Ver más información"
             />
           </div>
           <div className="m-5">
             <SectionCard
               titulo="Ejercicio 2020"
               link="/presupuesto-publico/2020"
-              textlink="Ingresar"
+              textlink="Ver más información"
             />
           </div>
         </div>

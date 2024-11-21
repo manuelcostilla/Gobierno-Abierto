@@ -1,6 +1,14 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart, ResponsiveContainer } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+} from "recharts"
 
 import {
   ChartConfig,
@@ -10,7 +18,13 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card"
 
 const chartData = [
   {
@@ -28,7 +42,6 @@ const chartData = [
     valor$: 55831300.62,
     fill: "var(--color-deorigennacional)",
   },
-
 ]
 
 const chartConfig = {
@@ -44,8 +57,6 @@ const chartConfig = {
     label: "De origen Nacional - 2",
     color: "#5294DE",
   },
-
-
 } satisfies ChartConfig
 
 const CustomLegend = ({ config }: { config: ChartConfig }) => (
@@ -85,13 +96,13 @@ export function GraficosIngresosProcedencia2021 ({ chart, setChart }) {
                     </BarChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>información extraída del RAFAM</p>
+                <p>Información extraída del RAFAM</p>
               </CardContent>
             </Card>
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />
@@ -128,14 +139,14 @@ export function GraficosIngresosProcedencia2021 ({ chart, setChart }) {
                     </PieChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>información extraída del RAFAM</p>
+                <p>Información extraída del RAFAM</p>
               </CardContent>
             </Card>
 
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />

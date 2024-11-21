@@ -28,7 +28,7 @@ import {
 
 const chartData = [
   {
-    nombre: "Total Gastos por area del ejecutivo",
+    nombre: "Total Gastos por área del ejecutivo",
     valor$: 922264822.63,
     fill: "var(--color-totalgastosporarea)",
   },
@@ -46,7 +46,7 @@ const chartData = [
 
 const chartConfig = {
   totalgastosporarea: {
-    label: "Total Gastos por area del ejecutivo - 0",
+    label: "Total Gastos por área del ejecutivo - 0",
     color: "#00517B",
   },
   hcd: {
@@ -70,7 +70,7 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
   </div>
 )
 
-export function Graficogastostotales2020 ({ chart, setChart }) {
+export function GraficogastosTotales2020 ({ chart, setChart }) {
   return (
     <div>
       {chart
@@ -78,9 +78,9 @@ export function Graficogastostotales2020 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Grafico total de gastos 2020</CardTitle>
+              <CardTitle>Gráfico total de gastos 2020</CardTitle>
               <CardDescription>
-                Grafico total de gastos en pesos 2020
+                Gráfico total de gastos en pesos 2020
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -95,13 +95,13 @@ export function Graficogastostotales2020 ({ chart, setChart }) {
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />
@@ -136,14 +136,14 @@ export function Graficogastostotales2020 ({ chart, setChart }) {
                   </PieChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
 
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />

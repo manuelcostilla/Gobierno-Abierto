@@ -44,17 +44,17 @@ const chartData = [
     fill: "var(--color-sechacienda)",
   },
   {
-    nombre: "Secretaría de Cultura, Educacion y Turismo",
+    nombre: "Secretaría de Cultura, Educación y Turismo",
     valor$: 551674046.42,
-    fill: "var(--color-secculturaeducacionturismo)",
+    fill: "var(--color-secculturaeducacionyturismo)",
   },
   {
-    nombre: "Secretaría de Obras y Servicios Publicos",
+    nombre: "Secretaría de Obras y Servicios Públicos",
     valor$: 1907994791.88,
     fill: "var(--color-secobrasyservpublicos)",
   },
   {
-    nombre: "Secretaría de Modernizacion y Gestion Publica",
+    nombre: "Secretaría de Modernización y Gestión Pública",
     valor$: 168240719.4,
     fill: "var(--color-secmodernizacionygestionpublica)",
   },
@@ -78,16 +78,16 @@ const chartConfig = {
     label: "Secretaría de Hacienda - 2",
     color: "#5294DE",
   },
-  secculturaeducacionturismo: {
-    label: "Secretaría de Cultura, Educacion y Turismo -  3",
+  secculturaeducacionyturismo: {
+    label: "Secretaría de Cultura, Educación y Turismo - 3",
     color: "#3EAF53",
   },
   secobrasyservpublicos: {
-    label: "Secretaría de Obras y Servicios Publicos - 4",
+    label: "Secretaría de Obras y Servicios Públicos - 4",
     color: "#7FDE22",
   },
   secmodernizacionygestionpublica: {
-    label: "Secretaría de Modernizacion y Gestion Publica - 5",
+    label: "Secretaría de Modernización y Gestión Pública - 5",
     color: "#A4D180",
   },
   secdesarrollohumano: {
@@ -115,9 +115,9 @@ export function GastosPorArea2023 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico gastos por area 2023</CardTitle>
+              <CardTitle>Gráfico de gastos por área 2023</CardTitle>
               <CardDescription>
-                Gastos organizados por area año 2023
+                Gastos organizados por área año 2023
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -132,13 +132,13 @@ export function GastosPorArea2023 ({ chart, setChart }) {
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />
@@ -150,9 +150,11 @@ export function GastosPorArea2023 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico gastos por area del ejecutivo 2023</CardTitle>
+              <CardTitle>
+                Gráfico de gastos por área del ejecutivo 2023
+              </CardTitle>
               <CardDescription>
-                Gastos organizados por area del ejecutivo año 2023
+                Gastos organizados por área del ejecutivo año 2023
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -173,14 +175,14 @@ export function GastosPorArea2023 ({ chart, setChart }) {
                   </PieChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
 
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />

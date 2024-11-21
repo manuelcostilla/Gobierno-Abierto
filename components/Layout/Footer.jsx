@@ -86,7 +86,7 @@ export const Footer = () => {
         <div className="text-center mt-4 lg:mt-0 lg:text-left lg:mr-6 text-white">
           <div className="lg:mt-[10px] text-white mt-4 text-center">
             <p className="m-2">Municipalidad Santiago del Baradero</p>
-            <p className="m-2">Av. San Martin 905</p>
+            <p className="m-2">Av. San Martín 905</p>
             <p className="m-2">Baradero(B2942)</p>
             <p>Buenos Aires, Argentina</p>
           </div>

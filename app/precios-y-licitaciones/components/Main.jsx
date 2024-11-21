@@ -36,14 +36,14 @@ Si estás interesado en participar en alguna licitación, consulta la informaci�
         <div className="flex justify-center items-center pb-10">
           <SectionCard
             titulo="Licitaciones Publicas"
-            textlink="Ver mas información"
+            textlink="Ver más información"
             link="/precios-y-licitaciones/Publica"
           />
-          <SectionCard
+          {/* <SectionCard
             titulo="Licitaciones Privadas"
-            textlink="Ver mas información"
+            textlink="Ver más información"
             link="/precios-y-licitaciones/Privada"
-          />
+          /> */}
         </div>
       </div>
     </>

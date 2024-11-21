@@ -7,12 +7,10 @@ function Contactos () {
     <>
       <BannerText titulo="CONTACTOS MUNICIPALES" />
       <div className=" container mx-auto px-4 py-8">
-        <div className="flex justify-center items-center">
-          <GeneralText
-            title="bienvenido"
-            text="Nos importa tu opinión y estamos aquí para ayudarte. Si tienes consultas, sugerencias o necesitas información sobre los servicios municipales, no dudes en ponerte en contacto con nosotros."
-          />
-        </div>
+        <GeneralText
+          title="bienvenido"
+          text="Nos importa tu opinión y estamos aquí para ayudarte. Si tienes consultas, sugerencias o necesitas información sobre los servicios municipales, no dudes en ponerte en contacto con nosotros."
+        />
         <div className="flex justify-center items-center pt-10 pb-10">
           <SectionCard
             titulo="Baradero"

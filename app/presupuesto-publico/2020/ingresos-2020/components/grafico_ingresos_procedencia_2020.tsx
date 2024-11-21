@@ -110,7 +110,7 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
   </div>
 )
 
-export function GraficosIngresos2020 ({ chart, setChart }) {
+export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
   return (
     <div>
       {chart

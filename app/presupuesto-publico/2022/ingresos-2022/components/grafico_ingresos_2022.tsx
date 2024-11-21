@@ -136,13 +136,13 @@ export function GraficosIngresos2022 ({ chart, setChart }) {
                     </BarChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>información extraída del RAFAM</p>
+                <p>Información extraída del RAFAM</p>
               </CardContent>
             </Card>
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />
@@ -179,14 +179,14 @@ export function GraficosIngresos2022 ({ chart, setChart }) {
                     </PieChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>información extraída del RAFAM</p>
+                <p>Información extraída del RAFAM</p>
               </CardContent>
             </Card>
 
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />

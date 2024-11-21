@@ -1,6 +1,14 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart, ResponsiveContainer } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+} from "recharts"
 
 import {
   ChartConfig,
@@ -11,7 +19,13 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card"
 
 const chartData = [
   {
@@ -30,17 +44,17 @@ const chartData = [
     fill: "var(--color-sechacienda)",
   },
   {
-    nombre: "Secretaría de Cultura, Educacion y Turismo",
+    nombre: "Secretaría de Cultura, Educación y Turismo",
     valor$: 147869173.50,
     fill: "var(--color-secculturaeducacionturismo)",
   },
   {
-    nombre: "Secretaría de Obras y Servicios Publicos",
+    nombre: "Secretaría de Obras y Servicios Públicos",
     valor$: 355765979.05,
     fill: "var(--color-secobrasyservpublicos)",
   },
   {
-    nombre: "Secretaría de Modernizacion y Gestion Publica",
+    nombre: "Secretaría de Modernización y Gestión Pública",
     valor$: 45932100.43,
     fill: "var(--color-secmodernizacionygestionpublica)",
   },
@@ -66,15 +80,15 @@ const chartConfig = {
     color: "#5294DE",
   },
   secculturaeducacionturismo: {
-    label: "Secretaría de Cultura, Educacion y Turismo -  3",
+    label: "Secretaría de Cultura, Educación y Turismo -  3",
     color: "#3EAF53",
   },
   secobrasyservpublicos: {
-    label: "Secretaría de Obras y Servicios Publicos - 4",
+    label: "Secretaría de Obras y Servicios Públicos - 4",
     color: "#7FDE22",
   },
   secmodernizacionygestionpublica: {
-    label: "Secretaría de Modernizacion y Gestion Publica - 5",
+    label: "Secretaría de Modernización y Gestión Pública - 5",
     color: "#A4D180",
   },
   secdesarrollohumano: {
@@ -103,9 +117,9 @@ export function GastosPorArea2021 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico gastos por area del ejecutivo 2021</CardTitle>
+              <CardTitle>Gráfico de gastos por área del ejecutivo 2021</CardTitle>
               <CardDescription>
-                Gastos organizados por area del ejecutivo año 2021
+                Gastos organizados por área del ejecutivo año 2021
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -120,13 +134,13 @@ export function GastosPorArea2021 ({ chart, setChart }) {
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />
@@ -138,9 +152,9 @@ export function GastosPorArea2021 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico gastos por area del ejecutivo 2021</CardTitle>
+              <CardTitle>Gráfico de gastos por área del ejecutivo 2021</CardTitle>
               <CardDescription>
-                Gastos organizados por area del ejecutivo año 2021
+                Gastos organizados por área del ejecutivo año 2021
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -161,14 +175,14 @@ export function GastosPorArea2021 ({ chart, setChart }) {
                   </PieChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
 
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />

@@ -1,6 +1,14 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart, ResponsiveContainer } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+} from "recharts"
 
 import {
   ChartConfig,
@@ -10,11 +18,17 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 const chartData = [
   {
-    nombre: "Total Gastos por Area",
+    nombre: "Total Gastos por Área",
     valor$: 2595516908,
     fill: "var(--color-totalgastosporarea)",
   },
@@ -32,7 +46,7 @@ const chartData = [
 
 const chartConfig = {
   totalgastosporarea: {
-    label: "Total Gastos por area del ejecutivo - 0",
+    label: "Total Gastos por área del ejecutivo - 0",
     color: "#00517B",
   },
   hcd: {
@@ -66,7 +80,7 @@ export function Graficogastostotales2022 ({ chart, setChart }) {
             <CardHeader>
               <CardTitle>Gráfico total de gastos 2022</CardTitle>
               <CardDescription>
-              Gráfico total de gastos en pesos 2022
+                Gráfico total de gastos en pesos 2022
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -81,13 +95,13 @@ export function Graficogastostotales2022 ({ chart, setChart }) {
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />
@@ -101,7 +115,7 @@ export function Graficogastostotales2022 ({ chart, setChart }) {
             <CardHeader>
               <CardTitle>Gráfico total de gastos 2022</CardTitle>
               <CardDescription>
-              Gráfico total de gastos en pesos 2022
+                Gráfico total de gastos en pesos 2022
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -122,14 +136,14 @@ export function Graficogastostotales2022 ({ chart, setChart }) {
                   </PieChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
 
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />

@@ -8,7 +8,7 @@ import { GraficosIngresosProcedencia2023 } from "./components/Grafico_ingresos_p
 import { BannerText } from "@/components/bannertext"
 import { CardContentPp } from "@/components/cardtemplate"
 
-export default function Ingresos2021 () {
+export default function Ingresos2023 () {
   const [chart1, setActivechart1] = useState(true)
   const [chart2, setActivechart2] = useState(true)
 
@@ -24,22 +24,22 @@ export default function Ingresos2021 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="Total"
-                content="+20.1% vs. ultimo año"
+                content="+20.1% vs. último año"
                 value="$450,231,000.89"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content="+20.1% desde el ultimo año"
+                content="+20.1% desde el último año"
                 value="ABL - 1,234.000"
               />
               <CardContentPp
                 title="Mayor crecimiento"
-                content="+19% desde el ultimo año"
+                content="+19% desde el último año"
                 value="573.000"
               />
               <CardContentPp
                 title="Mayor decrecimiento"
-                content="-20% desde el ultimo año"
+                content="-20% desde el último año"
                 value="1.200.000"
               />
               <div className="flex flex-row justify-between">
@@ -74,22 +74,22 @@ export default function Ingresos2021 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="Total"
-                content="+20.1% vs. ultimo año"
+                content="+20.1% vs. último año"
                 value="$450,231,000.89"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content="+20.1% desde el ultimo año"
+                content="+20.1% desde el último año"
                 value="ABL - 1,234.000"
               />
               <CardContentPp
                 title="Mayor crecimiento"
-                content="+19% desde el ultimo año"
+                content="+19% desde el último año"
                 value="573.000"
               />
               <CardContentPp
                 title="Mayor decrecimiento"
-                content="-20% desde el ultimo año"
+                content="-20% desde el último año"
                 value="1.200.000"
               />
               <div className="flex flex-row justify-between">

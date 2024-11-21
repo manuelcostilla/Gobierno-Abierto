@@ -1,6 +1,14 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart, ResponsiveContainer } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+} from "recharts"
 
 import {
   ChartConfig,
@@ -10,7 +18,13 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card"
 
 const chartData = [
   {
@@ -24,7 +38,7 @@ const chartData = [
     fill: "var(--color-deorigenprovincial)",
   },
   {
-    nombre: "De origen Nacional",
+    nombre: "De origen nacional",
     valor$: 628240864.06,
     fill: "var(--color-deorigennacional)",
   },
@@ -45,14 +59,13 @@ const chartConfig = {
     color: "#007CB6",
   },
   deorigennacional: {
-    label: "De origen Nacional",
+    label: "De origen nacional",
     color: "#5294DE",
   },
   fuentesexternas: {
     label: "Fuentes externas",
     color: "#3EAF53",
   },
-
 } satisfies ChartConfig
 
 const CustomLegend = ({ config }: { config: ChartConfig }) => (
@@ -92,13 +105,13 @@ export function GraficosIngresosProcedencia2023 ({ chart, setChart }) {
                     </BarChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>información extraída del RAFAM</p>
+                <p>Información extraída del RAFAM</p>
               </CardContent>
             </Card>
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />
@@ -135,14 +148,14 @@ export function GraficosIngresosProcedencia2023 ({ chart, setChart }) {
                     </PieChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>información extraída del RAFAM</p>
+                <p>Información extraída del RAFAM</p>
               </CardContent>
             </Card>
 
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />

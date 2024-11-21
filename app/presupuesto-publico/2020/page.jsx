@@ -11,13 +11,13 @@ export default function Presupuestopublico2020 () {
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
               title="Bienvenidos"
-              text="En esta sección, te ofrecemos un panorama claro y detallado sobre los ingresos y gastos del presupuesto público del Municipio de Baradero. Nuestro objetivo es garantizar la transparencia en la gestión financiera y promover la confianza de la ciudadanía en el uso de los recursos públicos."
+              text="En esta sección te ofrecemos un panorama claro y detallado sobre los ingresos y gastos del presupuesto público del Municipio de Baradero. Nuestro objetivo es garantizar la transparencia en la gestión financiera y promover la confianza de la ciudadanía en el uso de los recursos públicos."
             />
           </div>
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
               title="Ingresos del Municipio"
-              text="Los ingresos municipales son los recursos que se obtienen para financiar los servicios y proyectos de la ciudad. Estos ingresos provienen de diversas fuentes que incluyen la recaudación de impuestos locales como el impuesto predial, el impuesto sobre la venta y otros tributos; fondos recibidos del gobierno estatal y federal destinados a proyectos específicos y a la operación de servicios; ingresos generados por infracciones y multas administrativas; y cobros por servicios públicos y tasas administrativas. Cada una de estas fuentes contribuye a la capacidad del municipio para llevar a cabo sus funciones y atender las necesidades de la comunidad."
+              text="Los ingresos municipales son los recursos que se obtienen para financiar los servicios y proyectos de la ciudad. Estos ingresos provienen de diversas fuentes, incluyendo la recaudación de impuestos locales como el impuesto predial, el impuesto sobre la venta y otros tributos; fondos recibidos del gobierno estatal y federal destinados a proyectos específicos y a la operación de servicios; ingresos generados por infracciones y multas administrativas; y cobros por servicios públicos y tasas administrativas. Cada una de estas fuentes contribuye a la capacidad del municipio para cumplir sus funciones y atender las necesidades de la comunidad."
             />
           </div>
           <div className="w-full lg:w-1/3 flex justify-center">
@@ -27,22 +27,22 @@ export default function Presupuestopublico2020 () {
             />
           </div>
         </div>
-        <div className="flex flex-wrap justify-center items-center container pb-20 pt-20 ">
+        <div className="flex flex-wrap justify-center items-center container pb-20 pt-20">
           <div className="m-5">
             <SectionCard
               titulo="Gastos 2020"
-              textlink="Ver mas información"
+              textlink="Ver más información"
               link="./2020/gastos-2020"
             />
           </div>
           <div className="m-5">
             <SectionCard
               titulo="Ingresos 2020"
-              textlink="Ver mas información"
+              textlink="Ver más información"
               link="./2020/ingresos-2020"
             />
           </div>
-          </div>
+        </div>
       </div>
     </>
   )

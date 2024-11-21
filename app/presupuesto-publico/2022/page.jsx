@@ -33,14 +33,14 @@ export default function Presupuestopublico2022 () {
           <div className="m-5">
             <SectionCard
               titulo="Gastos 2022"
-              textlink="Ver mas información"
+              textlink="Ver más información"
               link="./2022/gastos-2022"
             />
           </div>
           <div className="m-5">
             <SectionCard
               titulo="Ingresos 2022"
-              textlink="Ver mas información"
+              textlink="Ver más información"
               link="./2022/ingresos-2022"
             />
           </div>

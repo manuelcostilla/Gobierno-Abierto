@@ -18,28 +18,30 @@ export default function Gastos2020 () {
       <main className="min-h-screen bg-background">
         <div className="container mx-auto p-8 pt-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">Gastos por area 2022</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Gastos por totales 2022
+            </h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="Total"
-                content="+20.1% vs. ultimo año"
+                content="+20.1% vs. último año"
                 value="$450,231,000.89"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content="+20.1% desde el ultimo año"
+                content="+20.1% desde el último año"
                 value="ABL - 1,234.000"
               />
               <CardContentPp
                 title="Mayor crecimiento"
-                content="+19% desde el ultimo año"
+                content="+19% desde el último año"
                 value="573.000"
               />
               <CardContentPp
                 title="Mayor decrecimiento"
-                content="-20% desde el ultimo año"
+                content="-20% desde el último año"
                 value="1.200.000"
               />
               <div className="flex flex-row justify-between">
@@ -61,35 +63,36 @@ export default function Gastos2020 () {
                 </Button>
               </div>
             </div>
-            <GastosPorArea2022 chart={chart1} setChart={setActivechart1} />
+            <Graficogastostotales2022
+              chart={chart1}
+              setChart={setActivechart1}
+            />
           </div>
         </div>
         <div className="container mx-auto p-8 pb-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">
-             Gastos 2022
-            </h2>
+            <h2 className="text-3xl font-bold tracking-tight">Gastos por área del ejecutivo 2022</h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="Total"
-                content="+20.1% vs. ultimo año"
+                content="+20.1% vs. último año"
                 value="$450,231,000.89"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content="+20.1% desde el ultimo año"
+                content="+20.1% desde el último año"
                 value="ABL - 1,234.000"
               />
               <CardContentPp
                 title="Mayor crecimiento"
-                content="+19% desde el ultimo año"
+                content="+19% desde el último año"
                 value="573.000"
               />
               <CardContentPp
                 title="Mayor decrecimiento"
-                content="-20% desde el ultimo año"
+                content="-20% desde el último año"
                 value="1.200.000"
               />
               <div className="flex flex-row justify-between">
@@ -111,15 +114,10 @@ export default function Gastos2020 () {
                 </Button>
               </div>
             </div>
-            <Graficogastostotales2022
-              chart={chart2}
-              setChart={setActivechart2}
-            />
+            <GastosPorArea2022 chart={chart2} setChart={setActivechart2} />
           </div>
         </div>
       </main>
     </>
   )
 }
-
-

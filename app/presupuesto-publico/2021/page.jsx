@@ -4,7 +4,7 @@ import { BannerText } from "@/components/bannertext"
 import { SectionCard } from "@/components/intersectioncard"
 import { GeneralText } from "@/components/generaltext"
 
-export default function Presupuestopublico2021 () {
+export default function PresupuestoPublico2021 () {
   return (
     <>
       <BannerText titulo="Ingresos y gastos 2021" />
@@ -33,14 +33,14 @@ export default function Presupuestopublico2021 () {
           <div className="m-5">
             <SectionCard
               titulo="Gastos 2021"
-              textlink="Ver mas información"
+              textlink="Ver más información"
               link="./2021/gastos-2021"
             />
           </div>
           <div className="m-5">
             <SectionCard
               titulo="Ingresos 2021"
-              textlink="Ver mas información"
+              textlink="Ver más información"
               link="./2021/ingresos-2021"
             />
           </div>

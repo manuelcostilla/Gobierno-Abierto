@@ -28,7 +28,7 @@ import {
 
 const chartData = [
   {
-    nombre: "Total Gastos por Area",
+    nombre: "Total Gastos por Área",
     valor$: 5024680266.73,
     fill: "var(--color-totalgastosporarea)",
   },
@@ -46,7 +46,7 @@ const chartData = [
 
 const chartConfig = {
   totalgastosporarea: {
-    label: "Total Gastos por area del ejecutivo",
+    label: "Total Gastos por área del ejecutivo",
     color: "#00517B",
   },
   hcd: {
@@ -70,7 +70,7 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
   </div>
 )
 
-export function Gastostotales2023 ({ chart, setChart }) {
+export function GastosTotales2023 ({ chart, setChart }) {
   return (
     <div>
       {chart
@@ -80,7 +80,7 @@ export function Gastostotales2023 ({ chart, setChart }) {
             <CardHeader>
               <CardTitle>Gráfico total de gastos 2023</CardTitle>
               <CardDescription>
-              Gráfico total de gastos en pesos 2023
+                Gráfico total de gastos en pesos 2023
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -95,13 +95,13 @@ export function Gastostotales2023 ({ chart, setChart }) {
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />
@@ -115,7 +115,7 @@ export function Gastostotales2023 ({ chart, setChart }) {
             <CardHeader>
               <CardTitle>Gráfico total de gastos 2023</CardTitle>
               <CardDescription>
-              Gráfico total de gastos en pesos 2023
+                Gráfico total de gastos en pesos 2023
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[350px]">
@@ -136,14 +136,14 @@ export function Gastostotales2023 ({ chart, setChart }) {
                   </PieChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
 
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />

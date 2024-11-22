@@ -5,7 +5,7 @@ import test from "../public/banner/IMG.Baradero.jpg"
 export default function banner () {
   return (
     <div className="container mx-auto px-4">
-      <div className="flex flex-col lg:flex-row items-center justify-between pt-10 sm:gap-16">
+      <div className="flex flex-col lg:flex-row items-center justify-between pt-10 gap-24 m-5">
         <div className=" lg:w-1/2 pr-5">
           <h1 className="text-[40px] sm:text-[50px] lg:text-[70px] text-blue-GobAb font-bold font-sans text-balance">
             GOBIERNO ABIERTO

@@ -100,11 +100,18 @@ const chartConfig = {
 } satisfies ChartConfig
 
 const CustomLegend = ({ config }: { config: ChartConfig }) => (
-  <div>
+  <div className="flex flex-col gap-4 w-full">
     {Object.entries(config).map(([key, { label, color }]) => (
-      <div key={key} className="flex items-center">
-        <div className="w-12 h-5 mr-2" style={{ backgroundColor: color }}></div>
-        <span className=" text-balance">{label}</span>
+      <div
+        key={key}
+        className="flex items-center w-full bg-gray-50 p-4 rounded"
+      >
+        <div
+          className="w-6 h-6 rounded mr-4 flex-shrink-0"
+          style={{ backgroundColor: color }}
+        ></div>
+
+        <span className="flex-grow text-balance">{label}</span>
       </div>
     ))}
   </div>
@@ -179,7 +186,7 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
                     </PieChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>Información extraída del RAFAM</p>
+                <p className="m-5 pb-5"> Información extraída del RAFAM</p>
               </CardContent>
             </Card>
 

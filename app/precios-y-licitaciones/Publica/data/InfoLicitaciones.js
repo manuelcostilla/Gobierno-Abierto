@@ -75,31 +75,6 @@ export const licitaciones = [
     botonTexto2: "Cierre",
   },
   {
-    id: 4,
-    titulo: "Licitación Pública N° 04/",
-    año: "2021",
-    tituloAcordeonAbierto: " DECRETO 275",
-    // decreto: 'DECRETO',
-    // numdecreto: '275',
-    dias: "POR 2 DÍAS-",
-    motivo:
-      "Motivo:Ampliación de aulas Escuela secundaria n° 5 de la ciudad de Baradero.",
-    presupuesto: "Presupuesto oficial:",
-    plata: "$ 8.987.670,44.-",
-    garantia: "Garantía de oferta:",
-    platagarantia: "$ 893.876,70.-",
-    valorPliego: "",
-    plataPliego: "",
-    fechaAperturaSobre: "Fecha de apertura de sobres:",
-    fecha: "26 de mayo de 2021 a las 11 horas en la Municipalidad de Baradero.",
-    adquisicionPliego: "Adquisición del Pliego:",
-    adquisicion: "Adquisición hasta 48 horas hábiles antes de la apertura.",
-    pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2004-2021.pdf",
-    botonTexto: "Apertura",
-    botonTexto2: "Cierre",
-  },
-  {
     id: 5,
     titulo: "Licitación Pública N° 05/",
     año: "2021",
@@ -870,7 +845,7 @@ export const licitaciones = [
     adquisicion:
       "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2018-22.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2022/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2018-22_Segundo%20Llamado.pdf",
     botonTexto: "Apertura",
     botonTexto2: "Cierre",
   },
@@ -1332,7 +1307,7 @@ export const licitaciones = [
     adquisicion:
       "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2011-23.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitacion-Publica-N%C2%B0-11-23.pdf",
     botonTexto: "Apertura",
     botonTexto2: "Cierre",
   },
@@ -1473,7 +1448,8 @@ export const licitaciones = [
     valor1: " $1.477.750.000",
     superficie: "Acreditar Superficie Construída: ",
     valor2: "5.140 m2",
-    pdfUrl: "",
+    pdfUrl:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitacion-Publica-N%C2%B0-15-23.pdf",
     botonTexto: "Apertura",
     botonTexto2: "Cierre",
   },
@@ -1500,7 +1476,7 @@ export const licitaciones = [
     adquisicion:
       " Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas. Dirección de Compras. San Martín 905 – 2942 – Baradero-Pcia. Bs.As. ",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitacion-Publica-N%C2%B0-17-23.pdf",
     botonTexto: "Apertura",
     botonTexto2: "Cierre",
   },
@@ -1525,7 +1501,7 @@ export const licitaciones = [
     adquisicion:
       "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas. Dirección de Compras. San Martín 905 – 2942 – Baradero-Pcia. Bs.As. ",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitacion-Publica-N%C2%B0-15-23.pdf",
     botonTexto: "Apertura",
     botonTexto2: "Cierre",
   },
@@ -1551,7 +1527,7 @@ export const licitaciones = [
     adquisicion:
       "Adquisición y consultas en oficina de Compras .-Dirección de Compras-San Martín 905 – 2942 – Baradero-Pcia. Bs.As. Horario: de 8 a 12 hs. Tel 03329-482900 | int 219 – compras@baradero.gob.ar ",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitacion-Publica-15-23-PRORROGA-2.pdf",
     botonTexto: "Apertura",
     botonTexto2: "Cierre",
   },
@@ -1604,7 +1580,7 @@ export const licitaciones = [
     adquisicion:
       "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitacion-Publica-N%C2%B0-18-23.pdf",
     botonTexto: "Apertura",
     botonTexto2: "Cierre",
   },
@@ -1659,28 +1635,6 @@ export const licitaciones = [
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2023/Licitacion-Publica-N%C2%B0-20-23.pdf",
     botonTexto: "Apertura",
-  },
-  {
-    id: 66,
-    titulo: "Licitación Pública N° 2/",
-    año: "2024",
-    tituloAcordeonAbierto: "EXPTE 4009-20-000527/S – DECRETO 259",
-    decreto: "Decreto",
-    numdecreto: "259",
-    dias: "POR 2 DÍAS-",
-    motivo:
-      "Motivo: Obra: PUESTA EN VALOR DE AULAS EN LA UNIDAD ACADÉMICA EDIFICIO HISTÓRICO DE LA ESCUELA NORMAL SUPERIOR MARCOS SASTRE de la ciudad de Baradero.",
-    presupuesto: "Presupuesto oficial:",
-    plata: "$ 132.033.160,06.-",
-    garantia: "Garantía de oferta:",
-    platagarantia: "$ 1.320.331,60.-",
-    fechaAperturaSobre: "Fecha de apertura de sobres:",
-    fecha: " 7 de mayo de 2024 a las 10 horas en la Municipalidad de Baradero.",
-    adquisicionPliego: "Adquisición del Pliego:",
-    adquisicion:
-      "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
-    pdfUrl: "",
-    botonTexto: "Apertura",
     botonTexto2: "Cierre",
   },
   {
@@ -1702,7 +1656,8 @@ export const licitaciones = [
     adquisicionPliego: "Adquisición del Pliego:",
     adquisicion:
       "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
-    pdfUrl: "",
+    pdfUrl:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones%20publicas%202024/Licitacion-Publica-N%C2%B0-2-2024.pdf",
     botonTexto: "Apertura",
     botonTexto2: "Cierre",
   },
@@ -1728,7 +1683,8 @@ export const licitaciones = [
     adquisicionPliego: "Adquisición del Pliego:",
     adquisicion:
       "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas. Dirección de Compras. San Martín 905 – 2942 – Baradero-Pcia. Bs.As.  Horario: de 8 a 12 hs. Teléfono: 03329-482900 | interno 219  E-mail: compras@baradero.gob.ar ",
-    pdfUrl: "",
+    pdfUrl:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones%20publicas%202024/Licitacion-Publica-N%C2%B0-3-2024.pdf",
     botonTexto: "Apertura",
     botonTexto2: "Cierre",
   },

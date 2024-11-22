@@ -1,3 +1,5 @@
+
+
 export const dataAtajos = [
   {
     id: 1,
@@ -12,7 +14,7 @@ export const dataAtajos = [
     title: 'BOLETÍN OFICIAL',
     img: 'boletin_oficial',
     alt: 'Boletín oficial',
-    descripcion: 'En esta sección encontrarás las publicaciones oficiales del municipio, como ordenanzas, decretos y resoluciones. Aqui se difuncen las decisiones y acciones importantes del gobierno local para mantenerte informado y garantizar la trasnparencia.',
+    descripcion: 'En esta sección encontrarás las publicaciones oficiales del municipio, como ordenanzas, decretos y resoluciones. Aqui se difunden las decisiones y acciones importantes del gobierno local para mantenerte informado y garantizar la trasnparencia.',
     link: '../boletin-oficial',
   },
   {
@@ -58,7 +60,7 @@ export const dataAtajos = [
   {
     id: 8,
     title: 'CONTACTOS',
-    img: 'presupuesto_publico',
+    img: 'bookUser',
     alt: 'CONTACTOS',
     descripcion: 'Sección donde encontra todos los contactos pertinentes al Municipio de Baradero',
     link: '../contactos',

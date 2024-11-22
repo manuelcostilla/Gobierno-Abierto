@@ -1,8 +1,7 @@
-import Link from "next/link"
 import React from "react"
-import { Button } from "@/components/ui/button"
 import { BannerText } from "@/components/bannertext"
 import { GeneralText } from "@/components/generaltext"
+import { SectionCard } from "@/components/intersectioncard"
 
 const Main_licitaciones = () => {
   return (
@@ -13,7 +12,7 @@ const Main_licitaciones = () => {
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
               title="Bienvenidos"
-              text="En esta sección, el Municipio de [Nombre del Municipio] pone a tu disposición toda la información relacionada con las licitaciones, tanto públicas como privadas. Nuestro compromiso con la transparencia y la participación ciudadana asegura que todos los procesos de contratación sean accesibles y claros."
+              text="En esta sección, el Municipio de Baradero pone a tu disposición toda la información relacionada con las licitaciones, tanto públicas como privadas. Nuestro compromiso con la transparencia y la participación ciudadana asegura que todos los procesos de contratación sean accesibles y claros."
             />
           </div>
           <div className="w-full lg:w-1/3 flex justify-center">
@@ -34,37 +33,17 @@ Si estás interesado en participar en alguna licitación, consulta la informaci�
             />
           </div>
         </div>
-        <div className="flex justify-center items-center">
-          <div className="flex  items-center m-3 mb-12 pb-20 pt-20 lg:m-3 font-sans flex-col lg:flex-row">
-            <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">
-              <h1 className="text-blue-header font-bold text-xl p-2 mb-2">
-                Licitaciones Publicas
-              </h1>
-              <Link href="/precios-y-licitaciones/Publica">
-                <Button
-                  color="primary"
-                  className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]"
-                >
-                  Ingresar
-                </Button>
-              </Link>
-            </div>
-          </div>
-          <div className="flex  items-center m-3 mb-12 pb-20 pt-20 lg:m-3 font-sans flex-col lg:flex-row">
-            <div className="border-solid border-2 border-blue-header rounded-lg p-10 mx-4 lg:m-2 xs:m-2 font-sans">
-              <h1 className="text-blue-header font-bold text-xl p-2 mb-2">
-                Licitaciones Privadas
-              </h1>
-              <Link href="/precios-y-licitaciones/Privada">
-                <Button
-                  color="primary"
-                  className="mx-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 w-[150px]"
-                >
-                  Ingresar
-                </Button>
-              </Link>
-            </div>
-          </div>
+        <div className="flex justify-center items-center pb-10">
+          <SectionCard
+            titulo="Licitaciones Publicas"
+            textlink="Ver más información"
+            link="/precios-y-licitaciones/Publica"
+          />
+          {/* <SectionCard
+            titulo="Licitaciones Privadas"
+            textlink="Ver más información"
+            link="/precios-y-licitaciones/Privada"
+          /> */}
         </div>
       </div>
     </>

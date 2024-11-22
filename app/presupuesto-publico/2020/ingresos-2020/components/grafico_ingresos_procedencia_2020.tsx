@@ -12,10 +12,10 @@ import {
 
 import {
   Card,
-  CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
+  CardDescription,
+  CardContent,
 } from "@/components/ui/card"
 
 import {
@@ -27,45 +27,91 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 
+import * as React from "react"
+
 const chartData = [
   {
-    nombre: "De origen municipal",
-    valor$: 467450000.0,
-    fill: "var(--color-deorigenmunicipal)",
+    nombre: "Total Ingresos Tributarios (Total Coparticipación de Impuestos)",
+    valor$: 498270000.0,
+    fill: "var(--color-Ingresostributarios)",
   },
   {
-    nombre: "De origen provincial",
-    valor$: 577681950.0,
-    fill: "var(--color-deorigenprovincial)",
+    nombre: "Total Ingresos No Tributarios",
+    valor$: 460142500.0,
+    fill: "var(--color-Ingresosnotributarios)",
   },
   {
-    nombre: "De origen Nacional",
-    valor$: 18146435.0,
-    fill: "var(--color-deorigennacional)",
+    nombre: "Total Rentas de la propiedad",
+    valor$: 1500000.0,
+    fill: "var(--color-rentaspropiedad)",
+  },
+  {
+    nombre: "Total Transferencias Corrientes",
+    valor$: 97558385.0,
+    fill: "var(--color-transferenciacorriente)",
+  },
+  {
+    nombre: "Total Recursos Propios de Capital",
+    valor$: 3356500.0,
+    fill: "var(--color-recursospropiosdecapital)",
+  },
+  {
+    nombre: "Total Recuperación de préstamos de corto plazo",
+    valor$: 2000000.0,
+    fill: "var(--color-recuperacionprestamoscortoplazo)",
+  },
+  {
+    nombre: "Total Recuperación de Préstamos de Largo Plazo",
+    valor$: 451000.0,
+    fill: "var(--color-recuperacionprestamoslargoplazo)",
   },
 ]
 
 const chartConfig = {
-  deorigenmunicipal: {
-    label: "De origen municipal - 0",
+  Ingresostributarios: {
+    label:
+      "Total Ingresos Tributarios (Total Coparticipación de Impuestos) - 0",
     color: "#00517B",
   },
-  deorigenprovincial: {
-    label: "De origen provincial - 1",
+  Ingresosnotributarios: {
+    label: "Total Ingresos No Tributarios - 1",
     color: "#007CB6",
   },
-  deorigennacional: {
-    label: "De origen Nacional - 2",
+  rentaspropiedad: {
+    label: "Total Rentas de la propiedad - 2",
     color: "#5294DE",
+  },
+  transferenciacorriente: {
+    label: "Total Transferencias Corrientes - 3",
+    color: "#3EAF53",
+  },
+  recursospropiosdecapital: {
+    label: "Total Recursos Propios de Capital - 4",
+    color: "#7FDE22",
+  },
+  recuperacionprestamoscortoplazo: {
+    label: "Total Recuperación de Préstamos de Corto Plazo - 5",
+    color: "#7DFE99",
+  },
+  recuperacionprestamoslargoplazo: {
+    label: "Total Recuperación de Préstamos de Largo Plazo - 6",
+    color: "#A4D180",
   },
 } satisfies ChartConfig
 
 const CustomLegend = ({ config }: { config: ChartConfig }) => (
-  <div>
+  <div className="flex flex-col gap-4 w-full">
     {Object.entries(config).map(([key, { label, color }]) => (
-      <div key={key} className="flex items-center">
-        <div className="w-12 h-5 mr-2" style={{ backgroundColor: color }}></div>
-        <span className=" text-balance">{label} </span>
+      <div
+        key={key}
+        className="flex items-center w-full bg-gray-50 p-4 rounded"
+      >
+        <div
+          className="w-6 h-6 rounded mr-4 flex-shrink-0"
+          style={{ backgroundColor: color }}
+        ></div>
+
+        <span className="flex-grow text-balance">{label}</span>
       </div>
     ))}
   </div>
@@ -80,13 +126,13 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
           <div className="grid gap-4 md:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Gráfico de ingreso por procedencia 2020</CardTitle>
+                <CardTitle>Gráfico 2020</CardTitle>
                 <CardDescription>
-                Gráfico organizado por su procedencia del año 2020
+                  Resumen de los ingresos del 2020
                 </CardDescription>
               </CardHeader>
               <CardContent className="h-[350px]">
-                <ChartContainer config={chartConfig} className="w-[550px]">
+                <ChartContainer config={chartConfig} className="w-[550px] ">
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart accessibilityLayer data={chartData}>
                       <CartesianGrid vertical={false} />
@@ -97,13 +143,13 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
                     </BarChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p> información extraída del RAFAM</p>
+                <p>información extraída del RAFAM</p>
               </CardContent>
             </Card>
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />
@@ -117,9 +163,9 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
           <div className="grid gap-4 md:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Gráfico de ingreso por procedencia 2020</CardTitle>
+                <CardTitle>Gráfico 2020</CardTitle>
                 <CardDescription>
-                Gráfico organizado por su procedencia del año 2020
+                  Resumen de los ingresos del 2020
                 </CardDescription>
               </CardHeader>
               <CardContent className="h-[350px]">
@@ -140,14 +186,14 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
                     </PieChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p> información extraída del RAFAM</p>
+                <p className="m-5 pb-5"> Información extraída del RAFAM</p>
               </CardContent>
             </Card>
 
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />

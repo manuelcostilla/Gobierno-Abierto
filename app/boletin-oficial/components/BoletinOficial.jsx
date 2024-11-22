@@ -12,7 +12,7 @@ export const BoletinOficial = ({ data }) => {
               <Card className="flex w-[300px] lg:w-[700px] lg:h-[80px] m-auto font-sans text-base xs:text-xs">
                 <CardContent className="w-full flex items-center justify-between p-5 ">
                   <CardHeader className=" flex font-bold">
-                    <CardTitle className="text-center lg:text-left">
+                    <CardTitle className="text-center text-base lg:text-left">
                       <p>{data.texto}</p>
                     </CardTitle>
                   </CardHeader>

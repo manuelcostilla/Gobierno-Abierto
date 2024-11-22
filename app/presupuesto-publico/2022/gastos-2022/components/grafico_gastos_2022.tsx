@@ -1,6 +1,14 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart, ResponsiveContainer } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+} from "recharts"
 
 import {
   ChartConfig,
@@ -10,11 +18,17 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 const chartData = [
   {
-    nombre: "Total Gastos por Area",
+    nombre: "Total Gastos por Área",
     valor$: 2595516908,
     fill: "var(--color-totalgastosporarea)",
   },
@@ -32,7 +46,7 @@ const chartData = [
 
 const chartConfig = {
   totalgastosporarea: {
-    label: "Total Gastos por area del ejecutivo - 0",
+    label: "Total Gastos por área del ejecutivo - 0",
     color: "#00517B",
   },
   hcd: {
@@ -46,16 +60,22 @@ const chartConfig = {
 } satisfies ChartConfig
 
 const CustomLegend = ({ config }: { config: ChartConfig }) => (
-  <div>
+  <div className="flex flex-col gap-4 w-full">
     {Object.entries(config).map(([key, { label, color }]) => (
-      <div key={key} className="flex items-center">
-        <div className="w-12 h-5 mr-2" style={{ backgroundColor: color }}></div>
-        <span className=" text-balance">{label} </span>
+      <div
+        key={key}
+        className="flex items-center w-full bg-gray-50 p-4 rounded"
+      >
+        <div
+          className="w-6 h-6 rounded mr-4 flex-shrink-0"
+          style={{ backgroundColor: color }}
+        ></div>
+
+        <span className="flex-grow text-balance">{label}</span>
       </div>
     ))}
   </div>
 )
-
 export function Graficogastostotales2022 ({ chart, setChart }) {
   return (
     <div>
@@ -66,11 +86,14 @@ export function Graficogastostotales2022 ({ chart, setChart }) {
             <CardHeader>
               <CardTitle>Gráfico total de gastos 2022</CardTitle>
               <CardDescription>
-              Gráfico total de gastos en pesos 2022
+                Gráfico total de gastos en pesos 2022
               </CardDescription>
             </CardHeader>
-            <CardContent className="h-[350px]">
-              <ChartContainer config={chartConfig} className="w-[550px] ">
+            <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">
+              <ChartContainer
+                config={chartConfig}
+                className="w-full h-[300px] md:h-[350px] lg:h-[400px]"
+              >
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart accessibilityLayer data={chartData}>
                     <CartesianGrid vertical={false} />
@@ -81,13 +104,13 @@ export function Graficogastostotales2022 ({ chart, setChart }) {
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />
@@ -101,13 +124,13 @@ export function Graficogastostotales2022 ({ chart, setChart }) {
             <CardHeader>
               <CardTitle>Gráfico total de gastos 2022</CardTitle>
               <CardDescription>
-              Gráfico total de gastos en pesos 2022
+                Gráfico total de gastos en pesos 2022
               </CardDescription>
             </CardHeader>
-            <CardContent className="h-[350px]">
+            <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">
               <ChartContainer
                 config={chartConfig}
-                className="mx-auto aspect-square w-[350px] "
+                className="mx-auto aspect-square w-full h-[300px] md:h-[350px] lg:h-[400px]"
               >
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
@@ -122,14 +145,14 @@ export function Graficogastostotales2022 ({ chart, setChart }) {
                   </PieChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p className="m-5 pb-5"> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
 
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />

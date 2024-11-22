@@ -12,7 +12,7 @@ export function GeneralText ({ text, title }) {
         </CardHeader>
         <CardContent>
           <ScrollArea className="h-[200px]">
-            <p className="text-sm mb-4 pt-2 text-justify">{text}</p>
+            <p className="text-sm mb-4 pt-2 text-justify m-5">{text}</p>
           </ScrollArea>
         </CardContent>
       </Card>

@@ -31,7 +31,7 @@ import * as React from "react"
 
 const chartData = [
   {
-    nombre: "Total Ingresos Tributarios (Total Coparticipacion de Impuestos)",
+    nombre: "Total Ingresos Tributarios (Total Coparticipación de Impuestos)",
     valor$: 498270000.0,
     fill: "var(--color-Ingresostributarios)",
   },
@@ -61,7 +61,7 @@ const chartData = [
     fill: "var(--color-recuperacionprestamoscortoplazo)",
   },
   {
-    nombre: "Total Recuperacion de Prestamos de Largo Plazo",
+    nombre: "Total Recuperación de Préstamos de Largo Plazo",
     valor$: 451000.0,
     fill: "var(--color-recuperacionprestamoslargoplazo)",
   },
@@ -70,7 +70,7 @@ const chartData = [
 const chartConfig = {
   Ingresostributarios: {
     label:
-      "Total Ingresos Tributarios (Total Coparticipacion de Impuestos) - 0",
+      "Total Ingresos Tributarios (Total Coparticipación de Impuestos) - 0",
     color: "#00517B",
   },
   Ingresosnotributarios: {
@@ -90,21 +90,28 @@ const chartConfig = {
     color: "#7FDE22",
   },
   recuperacionprestamoscortoplazo: {
-    label: "Total Recuperacion de Prestamos de Corto Plazo - 5",
+    label: "Total Recuperación de Préstamos de Corto Plazo - 5",
     color: "#7DFE99",
   },
   recuperacionprestamoslargoplazo: {
-    label: "Total Recuperacion de Prestamos de Largo Plazo - 6",
+    label: "Total Recuperación de Préstamos de Largo Plazo - 6",
     color: "#A4D180",
   },
 } satisfies ChartConfig
 
 const CustomLegend = ({ config }: { config: ChartConfig }) => (
-  <div>
+  <div className="flex flex-col gap-4 w-full">
     {Object.entries(config).map(([key, { label, color }]) => (
-      <div key={key} className="flex items-center">
-        <div className="w-12 h-5 mr-2" style={{ backgroundColor: color }}></div>
-        <span className=" text-balance">{label}</span>
+      <div
+        key={key}
+        className="flex items-center w-full bg-gray-50 p-4 rounded"
+      >
+        <div
+          className="w-6 h-6 rounded mr-4 flex-shrink-0"
+          style={{ backgroundColor: color }}
+        ></div>
+
+        <span className="flex-grow text-balance">{label}</span>
       </div>
     ))}
   </div>
@@ -136,13 +143,13 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
                     </BarChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>información extraída del RAFAM</p>
+                <p>Información extraída del RAFAM</p>
               </CardContent>
             </Card>
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />
@@ -179,14 +186,14 @@ export function GraficosIngresos2020 ({ chart, setChart }) {
                     </PieChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p>información extraída del RAFAM</p>
+                <p className="m-5 pb-5"> Información extraída del RAFAM</p>
               </CardContent>
             </Card>
 
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Detalles</CardTitle>
-                <CardDescription>Division en categorias</CardDescription>
+                <CardDescription>División en categorías</CardDescription>
               </CardHeader>
               <CardContent>
                 <CustomLegend config={chartConfig} />

@@ -97,17 +97,30 @@ const chartConfig = {
 } satisfies ChartConfig
 
 const CustomLegend = ({ config }: { config: ChartConfig }) => (
-  <div>
+  <div className="flex flex-col gap-4 w-full">
     {Object.entries(config).map(([key, { label, color }]) => (
-      <div key={key} className="flex items-center">
-        <div className="w-12 h-5 mr-2" style={{ backgroundColor: color }}></div>
-        <span className=" text-balance">{label} </span>
+      <div
+        key={key}
+        className="flex items-center w-full bg-gray-50 p-4 rounded"
+      >
+        <div
+          className="w-6 h-6 rounded mr-4 flex-shrink-0"
+          style={{ backgroundColor: color }}
+        ></div>
+
+        <span className="flex-grow text-balance">{label}</span>
       </div>
     ))}
   </div>
 )
 
-export function GastosPorArea2022 ({ chart, setChart }) {
+export function GastosPorArea2022 ({
+  chart,
+  setChart,
+}: {
+  chart: boolean;
+  setChart: (chart: boolean) => void;
+}) {
   return (
     <div>
       {chart
@@ -115,15 +128,18 @@ export function GastosPorArea2022 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico gastos por area 2022</CardTitle>
+              <CardTitle>Gráfico gastos por área 2022</CardTitle>
               <CardDescription>
-                Gastos organizados por area año 2022
+                Gastos organizados por área año 2022
               </CardDescription>
             </CardHeader>
-            <CardContent className="h-[350px]">
-              <ChartContainer config={chartConfig} className="w-[550px] ">
+            <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">
+              <ChartContainer
+                config={chartConfig}
+                className="w-full h-[300px] md:h-[350px] lg:h-[400px]"
+              >
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart accessibilityLayer data={chartData}>
+                  <BarChart data={chartData}>
                     <CartesianGrid vertical={false} />
                     <XAxis axisLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
@@ -132,13 +148,13 @@ export function GastosPorArea2022 ({ chart, setChart }) {
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p>Información extraída del RAFAM</p>
             </CardContent>
           </Card>
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />
@@ -150,15 +166,15 @@ export function GastosPorArea2022 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico gastos por area del ejecutivo 2022</CardTitle>
+              <CardTitle>Gráfico gastos por área del ejecutivo 2022</CardTitle>
               <CardDescription>
-                Gastos organizados por area del ejecutivo año 2022
+                Gastos organizados por área del ejecutivo año 2022
               </CardDescription>
             </CardHeader>
-            <CardContent className="h-[350px]">
+            <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">
               <ChartContainer
                 config={chartConfig}
-                className="mx-auto aspect-square w-[350px] "
+                className="mx-auto aspect-square w-full h-[300px] md:h-[350px] lg:h-[400px] "
               >
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
@@ -173,14 +189,14 @@ export function GastosPorArea2022 ({ chart, setChart }) {
                   </PieChart>
                 </ResponsiveContainer>
               </ChartContainer>
-              <p> información extraída del RAFAM</p>
+              <p className="m-5 pb-5"> Información extraída del RAFAM</p>
             </CardContent>
           </Card>
 
           <Card className="col-span-3">
             <CardHeader>
               <CardTitle>Detalles</CardTitle>
-              <CardDescription>Division en categorias</CardDescription>
+              <CardDescription>División en categorías</CardDescription>
             </CardHeader>
             <CardContent>
               <CustomLegend config={chartConfig} />

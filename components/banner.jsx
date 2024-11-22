@@ -30,7 +30,7 @@ export default function banner () {
             sizes="100vw"
             style={{
               width: "100%",
-              height: "auto",
+              height: "auto"
             }}
           />
         </div>

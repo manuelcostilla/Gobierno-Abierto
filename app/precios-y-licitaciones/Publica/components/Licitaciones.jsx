@@ -18,11 +18,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
   const [selectedYear, setSelectedYear] = useState(null)
 
   const toggleAccordion = (index) => {
-    if (openIndex === index) {
-      setOpenIndex(null)
-    } else {
-      setOpenIndex(index)
-    }
+    setOpenIndex(openIndex === index ? null : index)
   }
 
   const handleDownload = (pdfUrl) => {
@@ -30,8 +26,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
   }
 
   const handleShowObjects = (year) => {
-    const filteredObjects = data.filter((obj) => obj.año === year)
-    setObjects(filteredObjects)
+    setObjects(data.filter((obj) => obj.año === year))
     setSelectedYear(year)
   }
 
@@ -42,55 +37,29 @@ export const AcordeonDeLicitaciones = ({ data }) => {
 
   return (
     <>
-      <Card className="flex flex-wrap justify-center text-xs  font-sans overflow-x-hidden w-full bg-slate-50">
+      {/* Filtros por año */}
+      <Card className="w-full bg-slate-50 p-4">
         <CardHeader>
-          <CardTitle className="w-full bg-slate-50">
-            <Button
-              onClick={() => handleShowObjects("2024")}
-              className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
-                selectedYear === "2024"
-                  ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
-                  : ""
-              }`}
-            >
-              2024
-            </Button>
-            <Button
-              onClick={() => handleShowObjects("2023")}
-              className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
-                selectedYear === "2023"
-                  ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
-                  : ""
-              }`}
-            >
-              2023
-            </Button>
-            <Button
-              onClick={() => handleShowObjects("2022")}
-              className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
-                selectedYear === "2022"
-                  ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
-                  : ""
-              }`}
-            >
-              2022
-            </Button>
-            <Button
-              onClick={() => handleShowObjects("2021")}
-              className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
-                selectedYear === "2021"
-                  ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
-                  : ""
-              }`}
-            >
-              2021
-            </Button>
+          <CardTitle className="flex flex-wrap justify-center gap-4">
+            {["2024", "2023", "2022", "2021"].map((year) => (
+              <Button
+                key={year}
+                onClick={() => handleShowObjects(year)}
+                className={`text-sm md:text-base ${
+                  selectedYear === year
+                    ? "bg-green-600 text-white hover:bg-green-700"
+                    : "bg-white text-black hover:bg-slate-100"
+                }`}
+              >
+                {year}
+              </Button>
+            ))}
             <Button
               onClick={resetList}
-              className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 p-3 ${
+              className={`text-sm md:text-base ${
                 selectedYear === null
-                  ? "text-white  border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
-                  : ""
+                  ? "bg-green-600 text-white hover:bg-green-700"
+                  : "bg-white text-black hover:bg-slate-100"
               }`}
             >
               Mostrar todos
@@ -98,174 +67,77 @@ export const AcordeonDeLicitaciones = ({ data }) => {
           </CardTitle>
         </CardHeader>
       </Card>
-      <Card className="bg-slate-50">
-        <ScrollArea className="flex justify-center w-full h-[550px]">
+
+      {/* Contenido del acordeón */}
+      <Card className="bg-slate-50 p-4">
+        <ScrollArea className="max-h-[550px] overflow-y-auto">
           {objects.map((item, index) => (
-            <div key={index} className="pt-5 pb-5">
-              <Card className="flex w-[300px] lg:w-[700px]  m-auto font-sans text-base xs:text-xs ">
-                <CardContent className="w-full flex items-center justify-between p-5 ">
-                  <CardHeader className=" flex font-bold">
-                    <CardTitle className="text-center lg:text-left">
-                      <button
-                        onClick={() => toggleAccordion(index)}
-                        className="transition-all duration-300 ease-in-out"
-                      >
-                        <span className="inline-flex items-center text-xl text-balance">
-                          {openIndex === index
-                            ? (
-                            <BsFillArrowUpCircleFill className="text-blue-header mr-3" />
-                              )
-                            : (
-                            <BsFileEarmarkPdfFill className="text-blue-header mr-3" />
-                              )}
-                          {item.titulo + item.año}
-                        </span>
-                      </button>
-                    </CardTitle>
-                  </CardHeader>
-                </CardContent>
-                <CardContent
-                  className={`${
-                    openIndex === index ? "max-h-full" : "max-h-0"
-                  } overflow-hidden transition-all duration-300 ease-in-out`}
+            <Card
+              key={index}
+              className="w-full max-w-[600px] m-auto mb-5 border border-slate-300 rounded-lg"
+            >
+              <CardContent className="p-4">
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  className="flex items-center w-full text-left text-base font-semibold transition duration-300 hover:text-blue-600"
                 >
-                  {openIndex === index && (
-                    <>
-                      <div className="pt-10 pb-5">
-                        <Card className="word-wrap pt-10  rounded-md">
-                          <CardContent className=" text-balance text-sm ">
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.tituloAcordeonAbierto}
-                                </span>
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.decreto} {item.numdecreto}
-                                </span>
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">{item.tipo}</span>
-                                {item.condicion}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">{item.dias}</span>
-                                {item.motivo}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.presupuesto}
-                                </span>
-                                {item.plata}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.garantia}
-                                </span>
-                                {item.platagarantia}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.valorPliego}
-                                </span>
-                                {item.plataPliego}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.fechaAperturaSobre}
-                                </span>
-                                {item.fecha}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.adquisicionPliego}
-                                </span>
-                                {item.adquisicion}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.obtencion}
-                                </span>
-                                <br />
-                                {item.url1} <br /> {item.url2}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.requisitos}
-                                </span>
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.capacidad}
-                                </span>
-                                {item.valor1}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <span className="font-bold">
-                                  {item.superficie}
-                                </span>
-                                {item.valor2}
-                              </p>
-                            </div>
-                            <CardFooter className="flex justify-center items-center">
-                              <CardContent>
-                                <div className="flex m-auto space-x-1">
-                                  <div>
-                                    <button
-                                      onClick={() =>
-                                        handleDownload(item.pdfUrl)
-                                      }
-                                      className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
-                                    >
-                                      {item.botonTexto}
-                                    </button>
-                                  </div>
-                                  <div>
-                                    <button
-                                      onClick={() =>
-                                        handleDownload(item.pdfUrl)
-                                      }
-                                      className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
-                                    >
-                                      {item.botonTexto2}
-                                    </button>
-                                  </div>
-                                </div>
-                              </CardContent>
-                            </CardFooter>
-                          </CardContent>
-                        </Card>
-                      </div>
-                    </>
-                  )}
+                  {openIndex === index
+                    ? (
+                    <BsFillArrowUpCircleFill className="mr-2 text-blue-500" />
+                      )
+                    : (
+                    <BsFileEarmarkPdfFill className="mr-2 text-blue-500" />
+                      )}
+                  {item.titulo} ({item.año})
+                </button>
+              </CardContent>
+
+              {openIndex === index && (
+                <CardContent className="transition-all duration-300 ease-in-out p-4 text-sm bg-white">
+                  <p className="mb-2 font-bold">{item.tituloAcordeonAbierto}</p>
+                  <p className="m-2">
+                    {item.decreto} {item.numdecreto}
+                  </p>
+                  <p className="m-2">
+                    {item.tipo} {item.condicion}
+                  </p>
+                  <p className="m-2">
+                    {item.dias} {item.motivo}
+                  </p>
+                  <p className="m-2">
+                    {item.presupuesto} {item.plata}
+                  </p>
+                  <p className="m-2">
+                    {item.garantia} {item.platagarantia}
+                  </p>
+                  <p className="m-2">
+                    {item.valorPliego} {item.plataPliego}
+                  </p>
+                  <p className="m-2">
+                    {item.fechaAperturaSobre} {item.fecha}
+                  </p>
+                  <p className="m-2">
+                    {item.adquisicionPliego} {item.adquisicion}
+                  </p>
+                  <p className="m-2">{item.obtencion}</p>
+
+                  <div className="flex justify-center gap-4 mt-4">
+                    <Button
+                      onClick={() => handleDownload(item.pdfUrl)}
+                      className="bg-blue-500 hover:bg-blue-600 text-white"
+                    >
+                      {item.botonTexto}
+                    </Button>
+                    <Button
+                      onClick={() => handleDownload(item.pdfUrl)}
+                      className="bg-blue-500 hover:bg-blue-600 text-white"
+                    >
+                      {item.botonTexto2}
+                    </Button>
+                  </div>
                 </CardContent>
-              </Card>
-            </div>
+              )}
+            </Card>
           ))}
         </ScrollArea>
         <CardFooter className="pt-5">

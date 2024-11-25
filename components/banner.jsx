@@ -23,7 +23,10 @@ export default function banner () {
           </p>
         </div>
 
-        <div className="lg:w-1/2 mt-8 pl-16 lg:block hidden md:flex md:flex-col items-center justify-center ">
+        <div className="
+        mt-8 pl-16  hidden items-center justify-center
+        lg:w-1/2 lg:block
+        md:flex md:flex-col">
           <Image
             src={test}
             alt="Banner"

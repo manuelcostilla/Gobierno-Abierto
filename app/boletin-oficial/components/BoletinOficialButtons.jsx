@@ -41,7 +41,7 @@ function BoletinOficialButtons () {
                       : ""
                   }`}
                 >
-                  <p>Año {año}</p>
+                  <p>{año}</p>
                 </Button>
               ))}
               <Button

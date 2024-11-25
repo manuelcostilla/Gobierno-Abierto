@@ -9,7 +9,7 @@ export const BoletinOficial = ({ data }) => {
         <ScrollArea className="flex justify-center w-full h-[500px]">
           {data.map((data, index) => (
             <div key={index} className="pt-5 pb-5">
-              <Card className="flex w-[300px] lg:w-[700px] lg:h-[80px] m-auto font-sans text-base xs:text-xs">
+              <Card className="flex w-[250px] lg:w-[700px] lg:h-[80px] m-auto font-sans text-base text-balance xs:text-xs">
                 <CardContent className="w-full flex items-center justify-between p-5 ">
                   <CardHeader className=" flex font-bold">
                     <CardTitle className="text-center text-base lg:text-left">

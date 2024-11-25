@@ -23,14 +23,17 @@ export default function banner () {
           </p>
         </div>
 
-        <div className="image-section lg:w-1/2 mt-8 pl-16 lg:mt-0 flex justify-center lg:justify-end sm:hidden md:hidden lg:block">
+        <div className="
+        mt-8 pl-16  hidden items-center justify-center
+        lg:w-1/2 lg:block
+        md:flex md:flex-col">
           <Image
             src={test}
             alt="Banner"
             sizes="100vw"
             style={{
               width: "100%",
-              height: "auto"
+              height: "auto",
             }}
           />
         </div>

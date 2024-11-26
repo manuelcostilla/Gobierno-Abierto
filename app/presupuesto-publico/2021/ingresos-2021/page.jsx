@@ -23,24 +23,24 @@ export default function Ingresos2021 () {
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+                title="TOTAL"
+                content="+38.34% vs. último año"
+                value="$1,470,936,536.01"
               />
               <CardContentPp
-                title="Mayor ingreso"
-                content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                title="Mayor Ingreso"
+                content="$804,505,175.01 Provincial"
+                value="39.26% vs. último año"
               />
               <CardContentPp
-                title="Mayor crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content="$37,684,865.62 Nacional"
+                value="207% vs. último año"
               />
               <CardContentPp
-                title="Mayor decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                title="Menor Variación"
+                content="$143,150,060.38 Municipal"
+                value="30% vs. último año"
               />
               <div className="flex flex-row justify-between">
                 <Button

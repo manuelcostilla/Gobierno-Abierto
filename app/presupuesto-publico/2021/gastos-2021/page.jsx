@@ -25,24 +25,24 @@ export default function Gastos2020 () {
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+                title="TOTAL"
+                content="48% vs. último año"
+                value="$1,470,936,536.01"
               />
               <CardContentPp
-                title="Mayor Ingreso"
-                content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                title="Mayor Gasto"
+                content=" $1,295,635,585.78 Áreas del ejecutivo"
+                value="40% vs. último año"
               />
               <CardContentPp
-                title="Mayor Crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content="$92,534,507.53 Servicio de la deuda"
+                value="189.33% vs. último año"
               />
               <CardContentPp
-                title="Mayor Decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                title="Menor Variación"
+                content="$373,370,763.15 Áreas del ejecutivo"
+                value="40.48% vs. último año"
               />
               <div className="flex flex-row justify-between">
                 <Button

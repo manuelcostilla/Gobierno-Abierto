@@ -86,9 +86,9 @@ export function GraficosIngresosProcedencia2021 ({ chart, setChart }) {
           <div className="grid gap-4 md:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Gráfico 2020</CardTitle>
+                <CardTitle>Gráfico ingresos por procedencia 2021</CardTitle>
                 <CardDescription>
-                  Resumen de los ingresos del 2020
+                Resumen de los ingresos del 2021 por procedencia
                 </CardDescription>
               </CardHeader>
               <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">
@@ -126,9 +126,9 @@ export function GraficosIngresosProcedencia2021 ({ chart, setChart }) {
           <div className="grid gap-4 md:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Gráfico 2020</CardTitle>
+                <CardTitle>Gráfico ingresos por procedencia 2021</CardTitle>
                 <CardDescription>
-                  Resumen de los ingresos del 2020
+                Resumen de los ingresos del 2021 por procedencia
                 </CardDescription>
               </CardHeader>
               <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">

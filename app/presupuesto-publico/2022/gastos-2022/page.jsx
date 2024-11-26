@@ -31,17 +31,17 @@ export default function Gastos2020 () {
               />
               <CardContentPp
                 title="Mayor Gasto"
-                content="$ 2.595.516.908,00 Áreas del ejecutivo"
+                content="$2.595.516.908,00 Áreas del ejecutivo"
                 value="100% vs. último año"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content="$ 1.299.881.322,22 Áreas del ejecutivo"
+                content="$1.299.881.322,22 Áreas del ejecutivo"
                 value="100% vs. último año "
               />
               <CardContentPp
                 title="Menor Variación"
-                content="$ 53.956.485,18 HCD"
+                content=" $20,063,761.77 HCD"
                 value="59% vs. último año"
               />
               <div className="flex flex-row justify-between">
@@ -71,7 +71,9 @@ export default function Gastos2020 () {
         </div>
         <div className="container mx-auto p-8 pb-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">Gastos por área del ejecutivo 2022</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Gastos por área del ejecutivo 2022
+            </h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">

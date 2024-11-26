@@ -122,9 +122,9 @@ export function GastosPorArea2023 ({ chart, setChart }) {
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico de gastos por área 2023</CardTitle>
+              <CardTitle>Gráfico de gastos por área del ejecutivo 2023</CardTitle>
               <CardDescription>
-                Gastos organizados por área año 2023
+              Gastos organizados por área del ejecutivo año 2023
               </CardDescription>
             </CardHeader>
             <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">

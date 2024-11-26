@@ -61,7 +61,10 @@ export default function Ingresos2023 () {
                 </Button>
               </div>
             </div>
-            <GraficosIngresos2023 chart={chart1} setChart={setActivechart1} />
+            <GraficosIngresosProcedencia2023
+              chart={chart1}
+              setChart={setActivechart1}
+            />
           </div>
         </div>
         <div className="container mx-auto p-8 pb-20">
@@ -111,10 +114,7 @@ export default function Ingresos2023 () {
                 </Button>
               </div>
             </div>
-            <GraficosIngresosProcedencia2023
-              chart={chart2}
-              setChart={setActivechart2}
-            />
+            <GraficosIngresos2023 chart={chart2} setChart={setActivechart2} />
           </div>
         </div>
       </main>

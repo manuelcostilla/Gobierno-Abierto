@@ -135,9 +135,9 @@ export function GraficosIngresos2021 ({ chart, setChart }) {
           <div className="grid gap-4 md:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Gráfico 2021</CardTitle>
+                <CardTitle>Gráfico ingresos por origen 2021</CardTitle>
                 <CardDescription>
-                  Resumen de los ingresos del 2021
+                  Resumen de los ingresos del 2021 por origen
                 </CardDescription>
               </CardHeader>
               <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">
@@ -175,9 +175,9 @@ export function GraficosIngresos2021 ({ chart, setChart }) {
           <div className="grid gap-4 md:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Gráfico 2021</CardTitle>
+                <CardTitle>Gráfico ingresos por origen 2021</CardTitle>
                 <CardDescription>
-                  Resumen de los ingresos del 2021
+                  Resumen de los ingresos del 2021 por origen
                 </CardDescription>
               </CardHeader>
               <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">

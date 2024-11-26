@@ -128,9 +128,11 @@ export function GastosPorArea2022 ({
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">
             <CardHeader>
-              <CardTitle>Gráfico gastos por área 2022</CardTitle>
+              <CardTitle>
+                Gráfico de gastos por área del ejecutivo 2022
+              </CardTitle>
               <CardDescription>
-                Gastos organizados por área año 2022
+                Gastos organizados por área del ejecutivo año 2022
               </CardDescription>
             </CardHeader>
             <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">

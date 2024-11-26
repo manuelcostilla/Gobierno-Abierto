@@ -19,7 +19,7 @@ export default function Gastos2023 () {
         <div className="container mx-auto p-8 pt-20">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold tracking-tight">
-              Gastos por área 2023
+              Gastos totales 2023
             </h2>
           </div>
           <div className="space-y-8">

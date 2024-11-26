@@ -18,7 +18,9 @@ export default function Ingresos2022 () {
       <main className="min-h-screen bg-background">
         <div className="container mx-auto p-8 pt-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">Ingresos 2022</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Ingresos por procedencia 2022
+            </h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -61,13 +63,16 @@ export default function Ingresos2022 () {
                 </Button>
               </div>
             </div>
-            <GraficosIngresos2022 chart={chart1} setChart={setActivechart1} />
+            <GraficosIngresosProcedencia2022
+              chart={chart1}
+              setChart={setActivechart1}
+            />
           </div>
         </div>
         <div className="container mx-auto p-8 pb-20">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold tracking-tight">
-              Ingresos por procedencia 2022
+              ingresos del 2022 por origen
             </h2>
           </div>
           <div className="space-y-8">
@@ -111,10 +116,7 @@ export default function Ingresos2022 () {
                 </Button>
               </div>
             </div>
-            <GraficosIngresosProcedencia2022
-              chart={chart2}
-              setChart={setActivechart2}
-            />
+            <GraficosIngresos2022 chart={chart2} setChart={setActivechart2} />
           </div>
         </div>
       </main>

@@ -29,12 +29,12 @@ import {
 const chartData = [
   {
     nombre: "De origen municipal",
-    valor$: 236443909.94,
+    valor$: 1928324909.94,
     fill: "var(--color-deorigenmunicipal)",
   },
   {
     nombre: "De origen provincial",
-    valor$: 817161485.47,
+    valor$: 2824763485.47,
     fill: "var(--color-deorigenprovincial)",
   },
   {
@@ -95,9 +95,9 @@ export function GraficosIngresosProcedencia2023 ({ chart, setChart }) {
           <div className="grid gap-4 md:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Gráfico 2020</CardTitle>
+                <CardTitle>Gráfico ingresos por procedencia 2023</CardTitle>
                 <CardDescription>
-                  Resumen de los ingresos del 2020
+                  Resumen de los ingresos del 2023 por procedencia
                 </CardDescription>
               </CardHeader>
               <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">
@@ -135,9 +135,9 @@ export function GraficosIngresosProcedencia2023 ({ chart, setChart }) {
           <div className="grid gap-4 md:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Gráfico 2020</CardTitle>
+                <CardTitle>Gráfico ingresos por procedencia 2023</CardTitle>
                 <CardDescription>
-                  Resumen de los ingresos del 2020
+                  Resumen de los ingresos del 2023 por procedencia
                 </CardDescription>
               </CardHeader>
               <CardContent className="w-full h-auto max-w-[350px] md:max-w-[600px] lg:max-w-none mx-auto">

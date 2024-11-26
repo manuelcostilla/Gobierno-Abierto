@@ -26,23 +26,23 @@ export default function Gastos2023 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+                content="86.13% vs. último año"
+                value="$5,380,912,678.69"
               />
               <CardContentPp
-                title="Mayor ingreso"
-                content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                title="Mayor Gasto"
+                content="$5,024,680,266.73 Áreas del ejecutivo"
+                value="93.59% vs. último año"
               />
               <CardContentPp
-                title="Mayor crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content="$73,625,604.78 HCD "
+                value="136.45% vs. último año"
               />
               <CardContentPp
                 title="Mayor decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                content="-$12,870,102.62 Servicio de la Deuda"
+                value="-5.33% vs. último año"
               />
               <div className="flex flex-row justify-between">
                 <Button

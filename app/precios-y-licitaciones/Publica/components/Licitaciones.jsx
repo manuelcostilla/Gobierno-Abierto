@@ -102,13 +102,16 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                     {item.tipo} {item.condicion}
                   </p>
                   <p className="m-2">
-                    {item.dias} {item.motivo}
+                    {item.expediente}
+                  </p>
+                  <p className="m-2">
+                    {item.motivo}
                   </p>
                   <p className="m-2">
                     {item.presupuesto} {item.plata}
                   </p>
                   <p className="m-2">
-                    {item.garantia} {item.platagarantia}
+                    {item.adjudicada} {item.firma}
                   </p>
                   <p className="m-2">
                     {item.valorPliego} {item.plataPliego}

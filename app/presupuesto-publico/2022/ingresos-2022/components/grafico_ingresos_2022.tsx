@@ -47,7 +47,7 @@ const chartData = [
   },
   {
     nombre: "Total Transferencias Corrientes",
-    valor$: 55521418.51,
+    valor$: 555214618.51,
     fill: "var(--color-transferenciacorriente)",
   },
   {

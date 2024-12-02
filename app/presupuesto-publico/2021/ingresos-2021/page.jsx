@@ -24,23 +24,23 @@ export default function Ingresos2021 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="+38.34% vs. último año"
+                content="+38.34% vs. 2020"
                 value="$1,470,936,536.01"
               />
               <CardContentPp
                 title="Mayor Ingreso"
                 content="$804,505,175.01 Provincial"
-                value="39.26% vs. último año"
+                value="39.26% vs. 2020"
               />
               <CardContentPp
                 title="Mayor Variación"
                 content="$37,684,865.62 Nacional"
-                value="207% vs. último año"
+                value="207% vs. 2020"
               />
               <CardContentPp
                 title="Menor Variación"
                 content="$143,150,060.38 Municipal"
-                value="30% vs. último año"
+                value="30% vs. 2020"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -76,24 +76,24 @@ export default function Ingresos2021 () {
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+                title="TOTAL"
+                content="+38,34% vs. 2020"
+                value=" $1.470.936.536,01"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                content="$701.641.317,01 "
+                value="40,82% vs. 2020"
               />
               <CardContentPp
-                title="Mayor crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content="$9.549.000,00  Total disminucion de otros activos financieros"
+                value="2117,29% vs. 2020"
               />
               <CardContentPp
-                title="Mayor decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                title="Menor Variación"
+                content="$102.999.060,38  total ingresos no tributarios"
+                value="22,38% vs. 2020"
               />
               <div className="flex flex-row justify-between">
                 <Button

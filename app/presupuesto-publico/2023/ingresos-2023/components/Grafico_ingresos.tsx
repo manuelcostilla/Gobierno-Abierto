@@ -69,31 +69,31 @@ const chartData = [
 
 const chartConfig = {
   Ingresostributarios: {
-    label: "Total Ingresos Tributarios (Total Coparticipación de Impuestos)",
+    label: "Total Ingresos Tributarios (Total Coparticipación de Impuestos) - 0",
     color: "#00517B",
   },
   Ingresosnotributarios: {
-    label: "Total Ingresos No Tributarios",
+    label: "Total Ingresos No Tributarios - 1",
     color: "#007CB6",
   },
   rentaspropiedad: {
-    label: "Total Rentas de la propiedad",
+    label: "Total Rentas de la propiedad - 2",
     color: "#5294DE",
   },
   transferenciacorriente: {
-    label: "Total Transferencias Corrientes",
+    label: "Total Transferencias Corrientes - 3",
     color: "#3EAF53",
   },
   recursospropiosdecapital: {
-    label: "Total Recursos Propios de Capital",
+    label: "Total Recursos Propios de Capital - 4",
     color: "#7FDE22",
   },
   recuperacionprestamoslargoplazo: {
-    label: "Total Recuperación de Préstamos de Largo Plazo",
+    label: "Total Recuperación de Préstamos de Largo Plazo - 5",
     color: "#A4D180",
   },
   totaldisminucionotrosactivosfinancieros: {
-    label: "Total Disminución de Otros Activos Financieros",
+    label: "Total Disminución de Otros Activos Financieros - 6",
     color: "#EE1E52",
   },
 } satisfies ChartConfig

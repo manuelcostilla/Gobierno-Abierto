@@ -26,23 +26,23 @@ export default function Gastos2020 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="97% vs. último año "
+                content="97% vs. 2021"
                 value="$2.890.993.817,80"
               />
               <CardContentPp
                 title="Mayor Gasto"
                 content="$2.595.516.908,00 Áreas del ejecutivo"
-                value="100% vs. último año"
+                value="100% vs. 2021"
               />
               <CardContentPp
                 title="Mayor Variación"
                 content="$1.299.881.322,22 Áreas del ejecutivo"
-                value="100% vs. último año "
+                value="100% vs. 2021"
               />
               <CardContentPp
                 title="Menor Variación"
                 content=" $20,063,761.77 HCD"
-                value="59% vs. último año"
+                value="59% vs. 2021"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -78,24 +78,24 @@ export default function Gastos2020 () {
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+                title="TOTAL"
+                content="100,35% vs. 2021"
+                value="$2.595.816.908,00"
               />
               <CardContentPp
-                title="Mayor ingreso"
-                content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                title="Mayor Gasto"
+                content="$1.037.788.513,01 Secretaría de Obras y Servicios Públicos"
+                value="191,71% vs. 2021"
               />
               <CardContentPp
-                title="Mayor crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content="$682.022.533,96  Secretaría de Obras y Servicios Públicos"
+                value="191,71% vs. 2021"
               />
               <CardContentPp
-                title="Mayor decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                title="Menor Variación"
+                content="$254.486.345,32 Secretaría de Gobierno"
+                value="58,16% vs. 2021"
               />
               <div className="flex flex-row justify-between">
                 <Button

@@ -25,24 +25,24 @@ export default function Gastos2023 () {
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Total"
-                content="86.13% vs. último año"
+                title="TOTAL"
+                content="86.13% vs. 2022"
                 value="$5,380,912,678.69"
               />
               <CardContentPp
                 title="Mayor Gasto"
                 content="$5,024,680,266.73 Áreas del ejecutivo"
-                value="93.59% vs. último año"
+                value="93.59% vs. 2022"
               />
               <CardContentPp
                 title="Mayor Variación"
                 content="$73,625,604.78 HCD "
-                value="136.45% vs. último año"
+                value="136.45% vs. 2022"
               />
               <CardContentPp
                 title="Mayor decrecimiento"
                 content="-$12,870,102.62 Servicio de la Deuda"
-                value="-5.33% vs. último año"
+                value="-5.33% vs. 2022"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -75,24 +75,24 @@ export default function Gastos2023 () {
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+                title="TOTAL"
+                content="93,57% vs. 2022"
+                value="$5.024.680.267,00"
               />
               <CardContentPp
-                title="Mayor ingreso"
+                title="Mayor Gasto"
                 content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                value="136.45% vs. 2022"
               />
               <CardContentPp
-                title="Mayor crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content="$309.911.972,46 Secretaría de Cultura, Educación y Turismo"
+                value="128,19% vs. 2022"
               />
               <CardContentPp
-                title="Mayor decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                title="Menor Variación"
+                content="$62.627.924,04 Secretaría de Modernización y Gestión Pública"
+                value="59,30% vs. 2022"
               />
               <div className="flex flex-row justify-between">
                 <Button

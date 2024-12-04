@@ -22,25 +22,25 @@ export default function Ingresos2023 () {
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-              <CardContentPp
+            <CardContentPp
                 title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+                content="+86.12% vs. 2022"
+                value="$5,381,329,259.47 "
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                content=" $2,824,763,485.47 Provincial"
+                value="89.73% vs. 2022"
               />
               <CardContentPp
-                title="Mayor crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content=" $ 443,082,915.98 Nacional"
+                value="239.30% vs. 2022"
               />
               <CardContentPp
-                title="Mayor decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                title="Menor Variación"
+                content="$711,031,607.12 Municipal"
+                value="58.41% vs. 2022"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -77,23 +77,23 @@ export default function Ingresos2023 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="Total"
-                content="+86.12% vs. último año"
-                value="$5,381,329,259.47 "
+                content="+86.12% vs. 2022"
+                value="$ 5.381.329.259,47"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content=" $2,824,763,485.47 Provincial"
-                value="89.73% vs. último año"
+                content="$2.049.952.360,00 Total ingresos tributarios"
+                value="89.73% vs. 2022"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content=" $ 443,082,915.98 Nacional"
-                value="239.30% vs. último año"
+                content="$1.880.000,00 Total rentas de la propiedad"
+                value="1566,67% vs. 2022"
               />
               <CardContentPp
                 title="Menor Variación"
-                content="$711,031,607.12 Municipal"
-                value="58.41% vs. último año"
+                content="$6.490.000,00  Municipal Total recuperacion de prestamos de largo plazo"
+                value="43,27% vs. 2022"
               />
               <div className="flex flex-row justify-between">
                 <Button

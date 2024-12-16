@@ -18,29 +18,32 @@ export default function Gastos2020 () {
       <main className="min-h-screen bg-background">
         <div className="container mx-auto p-8 pt-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight"> Gastos totales 2020</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              {" "}
+              Gastos totales 2020
+            </h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+                title="TOTAL"
+                content="30,57% vs. 2019"
+                value=" $1.295.635.585,78"
               />
               <CardContentPp
-                title="Mayor ingreso"
-                content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                title="Mayor Gasto"
+                content="$437.578.320,44 Secretaría de Gobierno"
+                value="773,13% vs. 2019"
               />
               <CardContentPp
-                title="Mayor crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content="$387.462.260,74  Secretaría de Gobierno"
+                value="773,13% vs. 2019"
               />
               <CardContentPp
-                title="Mayor decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                title="Mayor Decrecimiento"
+                content="-$261.512.555,15  Conducción Superior"
+                value="-66,80% vs. 2019"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -61,36 +64,39 @@ export default function Gastos2020 () {
                 </Button>
               </div>
             </div>
-            <GraficogastosTotales2020 chart={chart1} setChart={setActivechart1} />
+            <GraficogastosTotales2020
+              chart={chart1}
+              setChart={setActivechart1}
+            />
           </div>
         </div>
         <div className="container mx-auto p-8 pb-20">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold tracking-tight">
-            Gastos por Área del ejecutivo 2020
+              Gastos por Área del ejecutivo 2020
             </h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-              <CardContentPp
-                title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+            <CardContentPp
+                title="TOTAL"
+                content="30,57% vs. 2019"
+                value=" $1.295.635.585,78"
               />
               <CardContentPp
-                title="Mayor ingreso"
-                content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                title="Mayor Gasto"
+                content="$437.578.320,44 Secretaría de Gobierno"
+                value="773,13% vs. 2019"
               />
               <CardContentPp
-                title="Mayor crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content="$387.462.260,74  Secretaría de Gobierno"
+                value="773,13% vs. 2019"
               />
               <CardContentPp
-                title="Mayor decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                title="Mayor Decrecimiento"
+                content="-$261.512.555,15  Conducción Superior"
+                value="-66,80% vs. 2019"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -111,10 +117,7 @@ export default function Gastos2020 () {
                 </Button>
               </div>
             </div>
-            <GastosPorArea2020
-              chart={chart2}
-              setChart={setActivechart2}
-            />
+            <GastosPorArea2020 chart={chart2} setChart={setActivechart2} />
           </div>
         </div>
       </main>

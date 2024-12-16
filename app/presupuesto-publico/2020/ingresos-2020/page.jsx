@@ -18,29 +18,31 @@ export default function Ingresos2020 () {
       <main className="min-h-screen bg-background">
         <div className="container mx-auto p-8 pt-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">Ingresos por procedencia 2020</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Ingresos por procedencia 2020
+            </h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+                title="TOTAL"
+                content="+38,34% vs. 2019"
+                value=" $1.470.936.536,01"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                content="$701.641.317,01 "
+                value="40,82% vs. 2019"
               />
               <CardContentPp
-                title="Mayor crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content="$9.549.000,00  Total disminucion de otros activos financieros"
+                value="2117,29% vs. 2019"
               />
               <CardContentPp
-                title="Mayor decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                title="Menor Variación"
+                content="$102.999.060,38  total ingresos no tributarios"
+                value="22,38% vs. 2019"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -76,24 +78,24 @@ export default function Ingresos2020 () {
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Total"
-                content="+20.1% vs. último año"
-                value="$450,231,000.89"
+                title="TOTAL"
+                content="+38,34% vs. 2019"
+                value=" $1.470.936.536,01"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content="+20.1% desde el último año"
-                value="ABL - 1,234.000"
+                content="$701.641.317,01 "
+                value="40,82% vs. 2019"
               />
               <CardContentPp
-                title="Mayor crecimiento"
-                content="+19% desde el último año"
-                value="573.000"
+                title="Mayor Variación"
+                content="$9.549.000,00  Total disminucion de otros activos financieros"
+                value="2117,29% vs. 2019"
               />
               <CardContentPp
-                title="Mayor decrecimiento"
-                content="-20% desde el último año"
-                value="1.200.000"
+                title="Menor Variación"
+                content="$102.999.060,38  total ingresos no tributarios"
+                value="22,38% vs. 2019"
               />
               <div className="flex flex-row justify-between">
                 <Button

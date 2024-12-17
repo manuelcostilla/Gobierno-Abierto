@@ -8,8 +8,10 @@ export function CardContentPp ({ title, content, value }) {
           <CardTitle className="text-sm font-medium ">{title}</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">{value}</div>
-          <p className="text-sm">{content}</p>
+          <div className=" text-balance text-center">
+            <span className="text-2xl font-bold">{value}</span>
+            <p className="text-sm">{content}</p>
+          </div>
         </CardContent>
       </Card>
     </>

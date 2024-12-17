@@ -2,10 +2,11 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
 export const BoletinOficial = ({ data }) => {
   return (
     <>
-      <div className="flex justify-center ">
+      <div className="flex justify-center">
         <ScrollArea className="flex justify-center w-full h-[500px]">
           {data.map((data, index) => (
             <div key={index} className="pt-5 pb-5">

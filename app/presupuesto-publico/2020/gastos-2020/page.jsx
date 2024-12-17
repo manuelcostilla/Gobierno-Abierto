@@ -19,7 +19,6 @@ export default function Gastos2020 () {
         <div className="container mx-auto p-8 pt-20">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold tracking-tight">
-              {" "}
               Gastos totales 2020
             </h2>
           </div>
@@ -27,23 +26,23 @@ export default function Gastos2020 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="30,57% vs. 2019"
-                value=" $1.295.635.585,78"
+                content="111.47% vs. 2019"
+                value="$992,264,822.63"
               />
               <CardContentPp
                 title="Mayor Gasto"
-                content="$437.578.320,44 Secretaría de Gobierno"
-                value="773,13% vs. 2019"
+                content="$391,475,921.46 Conducción Superior"
+                value="1050.63% vs. 2019"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content="$387.462.260,74  Secretaría de Gobierno"
-                value="773,13% vs. 2019"
+                content="$391,475,921.46 Conducción Superior"
+                value="1050.63% vs. 2019"
               />
               <CardContentPp
                 title="Mayor Decrecimiento"
-                content="-$261.512.555,15  Conducción Superior"
-                value="-66,80% vs. 2019"
+                content="-$50,116,059.70 Conducción Superior"
+                value="-83.57% vs. 2019"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -78,25 +77,25 @@ export default function Gastos2020 () {
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <CardContentPp
+              <CardContentPp
                 title="TOTAL"
-                content="30,57% vs. 2019"
-                value=" $1.295.635.585,78"
+                content="111.47% vs. 2019"
+                value="$992,264,822.63"
               />
               <CardContentPp
                 title="Mayor Gasto"
-                content="$437.578.320,44 Secretaría de Gobierno"
-                value="773,13% vs. 2019"
+                content="$391,475,921.46 Conducción Superior"
+                value="1050.63% vs. 2019"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content="$387.462.260,74  Secretaría de Gobierno"
-                value="773,13% vs. 2019"
+                content="$391,475,921.46 Conducción Superior"
+                value="1050.63% vs. 2019"
               />
               <CardContentPp
                 title="Mayor Decrecimiento"
-                content="-$261.512.555,15  Conducción Superior"
-                value="-66,80% vs. 2019"
+                content="-$50,116,059.70 Conducción Superior"
+                value="-83.57% vs. 2019"
               />
               <div className="flex flex-row justify-between">
                 <Button

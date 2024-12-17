@@ -26,23 +26,23 @@ export default function Gastos2020 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="111.47% vs. 2019"
-                value="$992,264,822.63"
+                content="30.47% vs. 2019"
+                value="$993,278,385.00"
               />
               <CardContentPp
                 title="Mayor Gasto"
-                content="$391,475,921.46 Conducción Superior"
-                value="1050.63% vs. 2019"
+                content="$22,139,843.08"
+                value="37.58% vs. 2019"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content="$391,475,921.46 Conducción Superior"
-                value="1050.63% vs. 2019"
+                content="$22,139,843.08 HCD"
+                value="37.58% vs. 2019"
               />
               <CardContentPp
-                title="Mayor Decrecimiento"
-                content="-$50,116,059.70 Conducción Superior"
-                value="-83.57% vs. 2019"
+                title="Menor Variación"
+                content="$922,264,822.63 Total Areas del Ejecutivo"
+                value="23.76% vs. 2019"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -79,7 +79,7 @@ export default function Gastos2020 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="111.47% vs. 2019"
+                content="33.15% vs. 2019"
                 value="$992,264,822.63"
               />
               <CardContentPp

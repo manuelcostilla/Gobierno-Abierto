@@ -5,7 +5,7 @@ import { GeneralText } from "@/components/generaltext"
 function archivosDelPresupuesto () {
   return (
     <>
-      <BannerText titulo="Archivos del Presupuesto Publico" />
+      <BannerText titulo="Archivos del Presupuesto PÚBLICO" />
       <div className="container mx-auto mt-10 mb-10">
         <div className="flex flex-col lg:flex-row justify-center items-start text-balance space-y-8 lg:space-y-0 lg:space-x-8 pb-10">
           <div className="w-full lg:w-1/3 flex justify-center">

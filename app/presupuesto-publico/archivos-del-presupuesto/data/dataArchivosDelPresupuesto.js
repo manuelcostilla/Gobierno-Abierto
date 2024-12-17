@@ -4,7 +4,7 @@ export const archivosDelPresupuestoPdf = [
   {
     id: 1,
     año: "2019",
-    nombre: "Gastos por estructura Programatica",
+    nombre: "Gastos por estructura programática",
     link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024%2F2019%2FGastos%20x%20Est%20Prog%202019.pdf",
   },
   {
@@ -31,7 +31,7 @@ export const archivosDelPresupuestoPdf = [
   {
     id: 5,
     año: "2020",
-    nombre: "Gastos por estructura Programatica",
+    nombre: "Gastos por estructura programática",
     link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024%2F2020%2FGastos%20por%20jurisdiccion%2C%20estructura%2C%20fuente%202020.pdf",
   },
   {
@@ -58,7 +58,7 @@ export const archivosDelPresupuestoPdf = [
   {
     id: 9,
     año: "2021",
-    nombre: "Gastos por estructura Programatica",
+    nombre: "Gastos por estructura programática",
     link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024%2F2021%2FGastos%20por%20jurisdiccion%2C%20estructura%2C%20fuente%202021.pdf",
   },
   {
@@ -85,7 +85,7 @@ export const archivosDelPresupuestoPdf = [
   {
     id: 13,
     año: "2022",
-    nombre: "Gastos por estructura Programatica",
+    nombre: "Gastos por estructura programática",
     link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024%2F2022%2FGastos%20por%20Estructura%20Progr%C3%A1matica%20-%20%C3%81reas%202022.pdf",
   },
   {
@@ -112,7 +112,7 @@ export const archivosDelPresupuestoPdf = [
   {
     id: 17,
     año: "2023",
-    nombre: "Gastos por estructura Programatica",
+    nombre: "Gastos por estructura programática",
     link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024%2F2023%2FGastos%20por%20jurisdiccion%2C%20estructura%2C%20fuente%202023.pdf",
   },
   {

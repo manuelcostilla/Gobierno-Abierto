@@ -26,23 +26,23 @@ export default function Ingresos2020 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="+38,34% vs. 2019"
-                value=" $1.470.936.536,01"
+                content="+42.68% vs. 2019"
+                value="$1,063,278,085.00"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content="$701.641.317,01 "
-                value="40,82% vs. 2019"
+                content="$577,681,650.00 Provincial"
+                value="43.10% vs. 2019"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content="$9.549.000,00  Total disminucion de otros activos financieros"
-                value="2117,29% vs. 2019"
+                content="$467,450,000.00 Municipal"
+                value="45.66% vs. 2019"
               />
               <CardContentPp
-                title="Menor Variación"
-                content="$102.999.060,38  total ingresos no tributarios"
-                value="22,38% vs. 2019"
+                title="Mayor Decrecimiento"
+                content="$18,146,435.00 Nacional"
+                value="-11.94% vs. 2019"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -79,23 +79,23 @@ export default function Ingresos2020 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="+38,34% vs. 2019"
-                value=" $1.470.936.536,01"
+                content="+42.68% vs. 2019"
+                value="$1,063,278,385.00"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content="$701.641.317,01 "
-                value="40,82% vs. 2019"
+                content=" $498,270,000.00 Total ingresos tributarios"
+                value="53.41% vs. 2019"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content="$9.549.000,00  Total disminucion de otros activos financieros"
-                value="2117,29% vs. 2019"
+                content="$2,000,000.00 Total recuperacion de prestamos de largo plazo"
+                value="173.97% vs. 2019"
               />
               <CardContentPp
-                title="Menor Variación"
-                content="$102.999.060,38  total ingresos no tributarios"
-                value="22,38% vs. 2019"
+                title="Mayor Decrecimiento"
+                content="$451,000.00 total ingresos no tributarios"
+                value="-97.62% vs. 2019"
               />
               <div className="flex flex-row justify-between">
                 <Button

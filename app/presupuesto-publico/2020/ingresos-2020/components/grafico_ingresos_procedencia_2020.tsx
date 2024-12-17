@@ -149,8 +149,8 @@ export function GraficosIngresosProcedencia2020 ({ chart, setChart }) {
                     </PieChart>
                   </ResponsiveContainer>
                 </ChartContainer>
-                <p className="m-5 pb-5"> Información extraída del RAFAM</p>
               </CardContent>
+              <p className="m-5 pb-5"> Información extraída del RAFAM</p>
             </Card>
 
             <Card className="col-span-3">

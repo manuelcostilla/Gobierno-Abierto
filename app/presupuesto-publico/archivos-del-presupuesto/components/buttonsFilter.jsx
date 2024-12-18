@@ -13,7 +13,7 @@ export function ArchivosDelPresupuestoButtons () {
     setSelectedYear(año)
   }
 
-  const mostrarTodosBoletines = () => {
+  const mostrarTodosArchivos = () => {
     setSelectedYear("todos")
   }
 
@@ -46,14 +46,14 @@ export function ArchivosDelPresupuestoButtons () {
                 </Button>
               ))}
               <Button
-                onClick={mostrarTodosBoletines}
+                onClick={mostrarTodosArchivos}
                 className={`text-base lg:text-lg mt-2 m-2 lg:m-5 text-black bg-white hover:bg-slate-100 ${
                   selectedYear === "todos"
                     ? "text-white border-blue-400 text-base lg:text-lg bg-green-600 hover:bg-green-700 font-semibold"
                     : ""
                 }`}
               >
-                <p>Mostrar todos los boletines</p>
+                <p>Mostrar todos los archivos</p>
               </Button>
             </CardTitle>
           </CardHeader>

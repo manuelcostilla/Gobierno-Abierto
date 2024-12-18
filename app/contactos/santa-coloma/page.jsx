@@ -16,8 +16,8 @@ function Contactos () {
     {
       icon: <MapPin />,
       title: "Dirección",
-      link: "Calle s/n, B2761 Santa Coloma, Provincia de Buenos Aireshttps://www.google.es/maps/place/Delegacion+Municipal+Santa+Coloma/@-34.0590595,-59.5612547,21z/data=!4m6!3m5!1s0x95bbc980bd9cca7f:0x1babb9e4a5c9a8d7!8m2!3d-34.0590501!4d-59.5611837!16s%2Fg%2F11ffv16hqd?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D",
-      text: "********, Santa Coloma, Provincia de Buenos Aires",
+      link: "https://www.google.com/maps/place/Delegacion+Municipal+Santa+Coloma/@-34.0590479,-59.5624345,18z/data=!3m1!4b1!4m6!3m5!1s0x95bbc980bd9cca7f:0x1babb9e4a5c9a8d7!8m2!3d-34.0590501!4d-59.5611837!16s%2Fg%2F11ffv16hqd?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      text: "Calle Ceibo entre Ombú y Libertad, B2761 Santa Coloma, Provincia de Buenos Aires",
       label: "Dirección",
     },
     {

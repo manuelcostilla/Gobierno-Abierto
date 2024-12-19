@@ -1,6 +1,6 @@
 export const Organigrama = [{
   id: 1,
-  titulo: 'Secretaría de Gobierno',
+  titulo: 'Secretaría General de Gobierno',
   descripcion: 'La Secretaría de Gobierno es el área encargada de coordinar y supervisar las políticas públicas del municipio. Además, se encarga de la administración de los recursos humanos y materiales del municipio.',
   img: '/images/organigrama/secretaria_gobierno.jpg',
 },

@@ -12,25 +12,31 @@ export const licitaciones = [
     firma:
       "ADJUDICADA a la firma OSCAR SCORZA EQUIPOS Y SERVICIOS S.R.L., $12.935.500 (Decreto Nº 213/2021).",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2001-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%2094.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20213.pdf",
+    botonTextoCierre: "Cierre",
   },
-  {
-    id: 2,
-    titulo: "Licitación Pública N° 02/",
-    año: "2021",
-    tituloAcordeonAbierto: " DECRETO 170",
-    expediente: "expediente Nº 4009-20-11668/2021 “D”",
-    motivo:
-      "Motivo: obra “RECONSTRUCCION TRAMO RUTA NACIONAL Nº 9 - ACCESO ALSINA – PARTIDO DE BARADERO”.",
-    presupuesto: "Presupuesto oficial:",
-    plata: " $ 69.999.235,60.-",
-    firma:
-      "PREADJUDICADA a la firma INGENIERO ALBERTO REANA S.A., $76.814.130,86 (Decreto Nº332/2021).",
-    pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
-    botonTexto: "Apertura",
-  },
+  // {
+  //   id: 2,
+  //   titulo: "Licitación Pública N° 02/",
+  //   año: "2021",
+  //   tituloAcordeonAbierto: " DECRETO 170",
+  //   expediente: "expediente Nº 4009-20-11668/2021 “D”",
+  //   motivo:
+  //     "Motivo: obra “RECONSTRUCCION TRAMO RUTA NACIONAL Nº 9 - ACCESO ALSINA – PARTIDO DE BARADERO”.",
+  //   presupuesto: "Presupuesto oficial:",
+  //   plata: " $ 69.999.235,60.-",
+  //   firma:
+  //     "PREADJUDICADA a la firma INGENIERO ALBERTO REANA S.A., $76.814.130,86 (Decreto Nº332/2021).",
+  //   pdfUrl:
+  //     "",
+  //   botonTexto: "Apertura",
+  //   pdfUrlCierre:
+  //     "",
+  //   botonTextoCierre: "Cierre",
+  // },
   {
     id: 3,
     titulo: "Licitación Pública N° 03/",
@@ -44,8 +50,11 @@ export const licitaciones = [
     firma:
       "ADJUDICADA a la firma MONTAJES NORBA S.A., $43.979.226,47 (Decreto Nº 362/2021).",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20228.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20362%20p1.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 4,
@@ -60,8 +69,11 @@ export const licitaciones = [
     firma:
       "ADJUDICADA a la firma ESCA CONSTRUCCIONES S.R.L., $8.002.313,65 (Decreto Nº 369/2021).",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas 2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20229.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20369.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 5,
@@ -76,91 +88,97 @@ export const licitaciones = [
     firma:
       "ADJUDICADA a la firma SERVICIOS Y CONSTRUCCIONES ARQUIMAQ S.R.L., $18.290.953,12 (Decreto Nº 363/2021).",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20233.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20363.pdf",
+    botonTextoCierre: "Cierre",
   },
-  {
-    id: 6,
-    titulo: "Licitación Pública N° 06/",
-    año: "2021",
-    tituloAcordeonAbierto: " DECRETO 266",
-    expediente: "expediente Nº 4009-20-12244/2021 “D”",
-    motivo:
-      "Motivo: Obra Carpeta Asfáltica y Cordón Cuneta Barrio Fonavi de la ciudad de Baradero",
-    presupuesto: "Presupuesto oficial:",
-    plata: " $ 32.792.375,45 - Apertura 9 de junio de 2021.",
-    firma:
-      "ADJUDICADA a la firma ALEQUI S.A., $34.890.802,48 (Decreto Nº 471/2021).",
-    pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N C2 B0%2003-2021.pdf",
-    botonTexto: "Apertura",
-  },
-  {
-    id: 7,
-    titulo: "Licitación Pública N° 07/",
-    año: "2021",
-    tituloAcordeonAbierto: " DECRETO 359",
-    expediente: "expediente Nº 4009-20-12374/2021 “D”",
-    motivo: "Motivo: Para la compra de dos camiones compactadores diesel",
-    presupuesto: "Presupuesto oficial:",
-    plata: " $ 3.388.000,00 - Apertura 12 de julio de 2021.",
-    firma:
-      "ADJUDICADA a la firma OSCAR SCORZA EQUIPOS Y SERVICIOS S.R.L., $23.903.400 (Decreto Nº 465/2021).",
-    pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
-    botonTexto: "Apertura",
-  },
-  {
-    id: 8,
-    titulo: "Licitación Pública N° 08/",
-    año: "2021",
-    tituloAcordeonAbierto: " DECRETO 549",
-    expediente: "expediente Nº 4009-20-012190/2021 “S”",
-    motivo:
-      "Motivo: Para la concesión de la Unidad Turística Nº 2 “Balneario Municipal Sur” de la ciudad de Baradero,",
-    presupuesto: "Presupuesto oficial:",
-    plata:
-      "Canon de Pesos $ 5.000.000,00 – Apertura 23 de septiembre de 2021, a la hora 09:00.",
-    firma:
-      "ADJUDICADA a la firma SEJEDUEZE S.A., por el plazo de diecisiete (17) años contados ($5.000.000) y a partir del sexto año (incluido) un canon anual equivalente a 12.000 litros de gasoil común (Decreto Nº 721/2021).",
-    pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
-    botonTexto: "Apertura",
-  },
-  {
-    id: 9,
-    titulo: "Licitación Pública N° 09/",
-    año: "2021",
-    tituloAcordeonAbierto: " DECRETO 550",
-    expediente: "expediente Nº 4009-20-012191/2021 “S”",
-    motivo:
-      "Motivo: Para la concesión de la Unidad Turística Nº 1 “Balneario Municipal Norte” de la ciudad de Baradero, con un Presupuesto Oficial",
-    presupuesto: "Presupuesto oficial:",
-    plata:
-      "Canon de Pesos $ 7.500.000,00 – Apertura 23 de septiembre de 2021, a la hora 10:00.",
-    firma:
-      "ADJUDICADA al SINDICATO DE OBREROS Y EMPLEADOS DE REFINERIA DE MAIZ (SOERM), ejecutará obras en el precio concesionado por un valor de pesos OCHO MILLONES QUINIENTOS MIL ($8.500.000) y a partir del segundo año (incluido) un canon anual equivalente a 17.000 litros de gasoil común (Decreto Nº 649/2021).",
-    pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
-    botonTexto: "Apertura",
-  },
-  {
-    id: 10,
-    titulo: "Licitación Pública N° 10/",
-    año: "2021",
-    tituloAcordeonAbierto: " DECRETO 551",
-    expediente: "expediente Nº 4009-20-12745/2021 “D”",
-    motivo:
-      "Motivo: para la Obra: “REPARACIÓN DE CUBIERTA, FILTRACIONES Y DESAGÜES PLUVIALES COMPLETOS, REPARACIÓN DE MOLDURAS Y CORNISAS. REFACCIONES GENERALES EN AULA BIBLIOTECA DE LA ESCUELA PRIMARIA Nº 1 “GRAL. DON JOSÉ DE SAN MARTÍN” de la ciudad de Baradero",
-    presupuesto: "Presupuesto oficial:",
-    plata:
-      " $ 9.404.411,56 - Apertura 24 de septiembre de 2021, a la hora 9:00.",
-    firma:
-      "ADJUDICADA a la empresa STRICKING S.R.L. $9.871.716,35 (Decreto Nº 653/2021).",
-    pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
-    botonTexto: "Apertura",
-  },
+  // {
+  //   id: 6,
+  //   titulo: "Licitación Pública N° 06/",
+  //   año: "2021",
+  //   tituloAcordeonAbierto: " DECRETO 266",
+  //   expediente: "expediente Nº 4009-20-12244/2021 “D”",
+  //   motivo:
+  //     "Motivo: Obra Carpeta Asfáltica y Cordón Cuneta Barrio Fonavi de la ciudad de Baradero",
+  //   presupuesto: "Presupuesto oficial:",
+  //   plata: " $ 32.792.375,45 - Apertura 9 de junio de 2021.",
+  //   firma:
+  //     "ADJUDICADA a la firma ALEQUI S.A., $34.890.802,48 (Decreto Nº 471/2021).",
+  //   pdfUrl:
+  //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20233.pdf",
+  //   botonTexto: "Apertura",
+  //   pdfUrlCierre:
+  //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20363.pdf",
+  //   botonTextoCierre: "Cierre",
+  // },
+  // {
+  //   id: 7,
+  //   titulo: "Licitación Pública N° 07/",
+  //   año: "2021",
+  //   tituloAcordeonAbierto: " DECRETO 359",
+  //   expediente: "expediente Nº 4009-20-12374/2021 “D”",
+  //   motivo: "Motivo: Para la compra de dos camiones compactadores diesel",
+  //   presupuesto: "Presupuesto oficial:",
+  //   plata: " $ 3.388.000,00 - Apertura 12 de julio de 2021.",
+  //   firma:
+  //     "ADJUDICADA a la firma OSCAR SCORZA EQUIPOS Y SERVICIOS S.R.L., $23.903.400 (Decreto Nº 465/2021).",
+  //   pdfUrl:
+  //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+  //   botonTexto: "Apertura",
+  // },
+  // {
+  //   id: 8,
+  //   titulo: "Licitación Pública N° 08/",
+  //   año: "2021",
+  //   tituloAcordeonAbierto: " DECRETO 549",
+  //   expediente: "expediente Nº 4009-20-012190/2021 “S”",
+  //   motivo:
+  //     "Motivo: Para la concesión de la Unidad Turística Nº 2 “Balneario Municipal Sur” de la ciudad de Baradero,",
+  //   presupuesto: "Presupuesto oficial:",
+  //   plata:
+  //     "Canon de Pesos $ 5.000.000,00 – Apertura 23 de septiembre de 2021, a la hora 09:00.",
+  //   firma:
+  //     "ADJUDICADA a la firma SEJEDUEZE S.A., por el plazo de diecisiete (17) años contados ($5.000.000) y a partir del sexto año (incluido) un canon anual equivalente a 12.000 litros de gasoil común (Decreto Nº 721/2021).",
+  //   pdfUrl:
+  //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+  //   botonTexto: "Apertura",
+  // },
+  // {
+  //   id: 9,
+  //   titulo: "Licitación Pública N° 09/",
+  //   año: "2021",
+  //   tituloAcordeonAbierto: " DECRETO 550",
+  //   expediente: "expediente Nº 4009-20-012191/2021 “S”",
+  //   motivo:
+  //     "Motivo: Para la concesión de la Unidad Turística Nº 1 “Balneario Municipal Norte” de la ciudad de Baradero, con un Presupuesto Oficial",
+  //   presupuesto: "Presupuesto oficial:",
+  //   plata:
+  //     "Canon de Pesos $ 7.500.000,00 – Apertura 23 de septiembre de 2021, a la hora 10:00.",
+  //   firma:
+  //     "ADJUDICADA al SINDICATO DE OBREROS Y EMPLEADOS DE REFINERIA DE MAIZ (SOERM), ejecutará obras en el precio concesionado por un valor de pesos OCHO MILLONES QUINIENTOS MIL ($8.500.000) y a partir del segundo año (incluido) un canon anual equivalente a 17.000 litros de gasoil común (Decreto Nº 649/2021).",
+  //   pdfUrl:
+  //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+  //   botonTexto: "Apertura",
+  // },
+  // {
+  //   id: 10,
+  //   titulo: "Licitación Pública N° 10/",
+  //   año: "2021",
+  //   tituloAcordeonAbierto: " DECRETO 551",
+  //   expediente: "expediente Nº 4009-20-12745/2021 “D”",
+  //   motivo:
+  //     "Motivo: para la Obra: “REPARACIÓN DE CUBIERTA, FILTRACIONES Y DESAGÜES PLUVIALES COMPLETOS, REPARACIÓN DE MOLDURAS Y CORNISAS. REFACCIONES GENERALES EN AULA BIBLIOTECA DE LA ESCUELA PRIMARIA Nº 1 “GRAL. DON JOSÉ DE SAN MARTÍN” de la ciudad de Baradero",
+  //   presupuesto: "Presupuesto oficial:",
+  //   plata:
+  //     " $ 9.404.411,56 - Apertura 24 de septiembre de 2021, a la hora 9:00.",
+  //   firma:
+  //     "ADJUDICADA a la empresa STRICKING S.R.L. $9.871.716,35 (Decreto Nº 653/2021).",
+  //   pdfUrl:
+  //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+  //   botonTexto: "Apertura",
+  // },
   {
     id: 11,
     titulo: "Licitación Pública N° 11/",
@@ -175,8 +193,11 @@ export const licitaciones = [
     firma:
       "ADJUDICADA MONTAJES NORBA S.A. $63.779.884,00 (Decreto Nº 807/2021).",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20671.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20807.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 12,
@@ -192,8 +213,17 @@ export const licitaciones = [
     firma:
       "ADJUDICADA ALEQUI S.A. $64.493.745,00 - por los ítems (Decreto Nº 844/2021)",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20589.pdf",
     botonTexto: "Apertura",
+    pdfUrl2:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20637.pdf",
+    botonTexto2: "2do Lllamado",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20844%20p1.pdf",
+    botonTextoCierre: "Cierre",
+    pdfUrlCierre2:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20844%20p2.pdf",
+    botonTextoCierre2: "Cierre 2da hoja",
   },
   {
     id: 13,
@@ -208,8 +238,11 @@ export const licitaciones = [
     firma:
       "ADJUDICADA DELTA CONSTRUCTORA S.A. $36.078.662,73 (Decreto Nº 852/2021).",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20634.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20852.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 14,
@@ -225,8 +258,14 @@ export const licitaciones = [
     firma:
       "ADJUDICADA AGUAS CORLETTI S.R.L. $13.474.061,45 (Decreto Nº 118/2022).",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20737.pdf",
     botonTexto: "Apertura",
+    pdfUrl2:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%207.pdf",
+    botonTexto2: "2do Lllamado",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20118.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 15,
@@ -242,8 +281,14 @@ export const licitaciones = [
     firma:
       "ADJUDICADA a la empresa STRICKING S.R.L. $13.794.841,14 (Decreto Nº 68/2022).",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20738.pdf",
     botonTexto: "Apertura",
+    pdfUrl2:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%205.pdf",
+    botonTexto2: "2do Lllamado",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%2068.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 16,
@@ -258,8 +303,11 @@ export const licitaciones = [
       " $ 23.328.565,85 - Apertura 16 de diciembre de 2021, a la hora 9:00.",
     firma: "ADJUDICADA: GUIGIVAN S.R.L. $20.014.852,61 (Decreto Nº 858/2021)",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20764.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20858.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 17,
@@ -275,8 +323,11 @@ export const licitaciones = [
     firma:
       "ADJUDICADA: INGENIERO ALBERTO REANO S.A., $204.251.970,18 (Decreto Nº 867/2021)",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20781.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20867.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 18,
@@ -292,8 +343,11 @@ export const licitaciones = [
     firma:
       "ADJUDICADA: O.R. HIJOS CONTRUCCIONES S.A. $9.739.730 (Decreto Nº 17/2022)",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20783.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%2017.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 19,
@@ -309,8 +363,11 @@ export const licitaciones = [
     firma:
       "ADJUDICADA: MONTAJES NORBA S.A. $8.754.597,99 (Decreto Nº 18/2022).",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20786.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%2018.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 20,
@@ -326,8 +383,11 @@ export const licitaciones = [
     firma:
       "ADJUDICADA a la firma ESCA CONSTRUCCIONES S.R.L., $61.440.968,01 (Decreto Nº 83/2022)",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20791.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%2083.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 21,
@@ -343,8 +403,14 @@ export const licitaciones = [
     firma:
       "PREADJUDICADA a la empresa SERVICIOS EMISER S.A. $199.570.798,47 (Decreto Nº 29/2022)",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20792.pdf",
     botonTexto: "Apertura",
+    pdfUrlPreadjudicacion:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%2029.pdf",
+    botonTextoPreadjudicacion: "Preadjudicación",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20379.pdf",
+    botonTextoCierre: "Cierre",
   },
   {
     id: 22,
@@ -360,8 +426,11 @@ export const licitaciones = [
     firma:
       "ADJUDICADA a la empresa STRICKING S.R.L. $8.565.593,49 (Decreto Nº 119/2022).",
     pdfUrl:
-      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20825.pdf",
     botonTexto: "Apertura",
+    pdfUrlCierre:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20119.pdf",
+    botonTextoCierre: "Cierre",
   },
   // arranca 2022
   {

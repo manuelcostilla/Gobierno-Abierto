@@ -132,10 +132,28 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                       {item.botonTexto}
                     </Button>
                     <Button
-                      onClick={() => handleDownload(item.pdfUrl)}
+                      onClick={() => handleDownload(item.pdfUrl2)}
                       className="bg-blue-500 hover:bg-blue-600 text-white"
                     >
                       {item.botonTexto2}
+                    </Button>
+                    <Button
+                      onClick={() => handleDownload(item.pdfUrlPreadjudicacion)}
+                      className="bg-blue-500 hover:bg-blue-600 text-white"
+                    >
+                      {item.botonTextoPreadjudicacion}
+                    </Button>
+                    <Button
+                      onClick={() => handleDownload(item.pdfUrlCierre)}
+                      className="bg-blue-500 hover:bg-blue-600 text-white"
+                    >
+                      {item.botonTextoCierre}
+                    </Button>
+                    <Button
+                      onClick={() => handleDownload(item.pdfUrlCierre)}
+                      className="bg-blue-500 hover:bg-blue-600 text-white"
+                    >
+                      {item.botonTextoCierre2}
                     </Button>
                   </div>
                 </CardContent>

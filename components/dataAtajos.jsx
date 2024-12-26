@@ -6,7 +6,7 @@ export const dataAtajos = [
     title: 'ORGANIGRAMA MUNICIPAL',
     img: 'mapa_estado_municipal',
     alt: 'Mapa del estado municipal',
-    descripcion: 'Es un diagrama que muestra la estructura jerárquica de funcional del gobierno local, indicando las áreas y sus relaciones. Es un aporte a la transparecia y un acercamiento a la ciudadanía a un gobierno abierto ya que permite conocer la estructura organizativa.',
+    descripcion: 'Es un diagrama que muestra la estructura jerárquica de funcional del gobierno local, indicando las áreas y sus relaciones. Es un aporte a la transparencia y un acercamiento a la ciudadanía a un gobierno abierto ya que permite conocer la estructura organizativa.',
     link: '../organigrama',
   },
   {
@@ -14,7 +14,7 @@ export const dataAtajos = [
     title: 'BOLETÍN OFICIAL',
     img: 'boletin_oficial',
     alt: 'Boletín oficial',
-    descripcion: 'En esta sección encontrarás las publicaciones oficiales del municipio, como ordenanzas, decretos y resoluciones. Aqui se difunden las decisiones y acciones importantes del gobierno local para mantenerte informado y garantizar la trasnparencia.',
+    descripcion: 'En esta sección encontrarás las publicaciones oficiales del municipio, como ordenanzas, decretos y resoluciones. Aqui se difunden las decisiones y acciones importantes del gobierno local para mantenerte informado y garantizar la transparencia.',
     link: '../boletin-oficial',
   },
   {

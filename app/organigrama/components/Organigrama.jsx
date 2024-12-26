@@ -67,7 +67,7 @@ export function Organigrama () {
                     openItem === "item-2" ? "text-green-500" : "text-blue-500 "
                   } no-underline`}
                 >
-                  SECRETARÍA DE GOBIERNO
+                  SECRETARÍA DE GENERAL DE GOBIERNO
                 </p>
                 <br />
                 <p>SILVANA NOEMÍ IOZZIA | Secretaria</p>

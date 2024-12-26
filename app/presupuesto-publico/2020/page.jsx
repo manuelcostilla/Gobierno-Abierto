@@ -17,7 +17,7 @@ export default function Presupuestopublico2020 () {
           <div className="w-full lg:w-1/3 flex justify-center">
             <GeneralText
               title="Ingresos del Municipio"
-              text="Los ingresos municipales son los recursos que se obtienen para financiar los servicios y proyectos de la ciudad. Estos ingresos provienen de diversas fuentes, incluyendo la recaudación de impuestos locales como el impuesto predial, el impuesto sobre la venta y otros tributos; fondos recibidos del gobierno estatal y federal destinados a proyectos específicos y a la operación de servicios; ingresos generados por infracciones y multas administrativas; y cobros por servicios públicos y tasas administrativas. Cada una de estas fuentes contribuye a la capacidad del municipio para cumplir sus funciones y atender las necesidades de la comunidad."
+              text="Los ingresos municipales son los recursos que se obtienen para financiar los servicios y proyectos de la ciudad. Estos ingresos provienen de diversas fuentes, incluyendo la recaudación de la recaudación de impuestos y tasas locales; fondos recibidos del gobierno Provincial y Nacional destinados a proyectos específicos y a la operación de servicios; ingresos generados por infracciones y multas administrativas; y cobros por servicios públicos y tasas administrativas. Cada una de estas fuentes contribuye a la capacidad del municipio para cumplir sus funciones y atender las necesidades de la comunidad."
             />
           </div>
           <div className="w-full lg:w-1/3 flex justify-center">

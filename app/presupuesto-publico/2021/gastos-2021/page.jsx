@@ -92,7 +92,7 @@ export default function Gastos2020 () {
               />
               <CardContentPp
                 title="Mayor Decrecimiento"
-                content="-$261.512.555,15  Conducción Superior"
+                content="$261.512.555,15  Conducción Superior"
                 value="-66,80% vs. 2020"
               />
               <div className="flex flex-row justify-between">

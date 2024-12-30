@@ -26,12 +26,12 @@ export default function Ingresos2022 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="+96% vs. 2021"
-                value=" $2,891,293,817.80"
+                content="96% vs. 2021"
+                value="$2,891,293,817.80"
               />
               <CardContentPp
                 title="Mayor Ingreso"
-                content=" $1,488,842,566.90 Provincial"
+                content="$1,488,842,566.90 Provincial"
                 value="85% vs. 2021"
               />
               <CardContentPp
@@ -41,7 +41,7 @@ export default function Ingresos2022 () {
               />
               <CardContentPp
                 title="Menor Variación"
-                content=" $ 684,337,391.89 Provincial"
+                content="$684,337,391.89 Provincial"
                 value="85% vs. 2021"
               />
               <div className="flex flex-row justify-between">

@@ -29,15 +29,8 @@ const Main_presupuesto = () => {
         <div className="flex flex-wrap justify-center items-center pt-20 m-5">
           <div className="m-5">
             <SectionCard
-              titulo="Ejercicio 2023"
-              link="/presupuesto-publico/2023"
-              textlink="Ver más información"
-            />
-          </div>
-          <div className="m-5">
-            <SectionCard
-              titulo="Ejercicio 2022"
-              link="/presupuesto-publico/2022"
+              titulo="Ejercicio 2020"
+              link="/presupuesto-publico/2020"
               textlink="Ver más información"
             />
           </div>
@@ -50,8 +43,22 @@ const Main_presupuesto = () => {
           </div>
           <div className="m-5">
             <SectionCard
-              titulo="Ejercicio 2020"
-              link="/presupuesto-publico/2020"
+              titulo="Ejercicio 2022"
+              link="/presupuesto-publico/2022"
+              textlink="Ver más información"
+            />
+          </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Ejercicio 2023"
+              link="/presupuesto-publico/2023"
+              textlink="Ver más información"
+            />
+          </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Ejercicio 2024"
+              link="/presupuesto-publico/2024"
               textlink="Ver más información"
             />
           </div>

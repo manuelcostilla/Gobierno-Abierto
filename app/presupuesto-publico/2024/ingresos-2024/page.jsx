@@ -3,46 +3,44 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ChartColumn, ChartPie } from "lucide-react"
+import { GraficosIngresos2024 } from "./components/Grafico_ingresos"
+import { GraficosIngresosProcedencia2024 } from "./components/Grafico_ingresos_procedencia"
 import { BannerText } from "@/components/bannertext"
-import { GastosPorArea2020 } from "./components/gastos_por_area_2020"
-import { GraficogastosTotales2020 } from "./components/grafico_gastos_2020"
 import { CardContentPp } from "@/components/cardtemplate"
 
-export default function Gastos2020 () {
+export default function Ingresos2024 () {
   const [chart1, setActivechart1] = useState(true)
   const [chart2, setActivechart2] = useState(true)
 
   return (
     <>
-      <BannerText titulo="Gastos 2020" />
+      <BannerText titulo="Ingresos 2024" />
       <main className="min-h-screen bg-background">
         <div className="container mx-auto p-8 pt-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">
-              Gastos totales 2020
-            </h2>
+            <h2 className="text-3xl font-bold tracking-tight">Ingresos por procedencia 2024</h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-              <CardContentPp
-                title="TOTAL"
-                content="30.47% vs. 2019"
-                value="$993,278,385.00"
+            <CardContentPp
+                title="Total"
+                content="165,71% vs. 2023"
+                value=" $14.298.719.832,01"
               />
               <CardContentPp
-                title="Mayor Gasto"
-                content="$22,139,843.08"
-                value="37.58% vs. 2019"
+                title="Mayor ingreso"
+                content="$6.897.058.311,08 Provincial"
+                value="144,16% vs. 2023"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content="$22,139,843.08 HCD"
-                value="37.58% vs. 2019"
+                content="$2.240.171.520,93 Nacional"
+                value="256,58% vs. 2023"
               />
               <CardContentPp
                 title="Menor Variación"
-                content="$922,264,822.63 Total Areas del Ejecutivo"
-                value="23.76% vs. 2019"
+                content="$6.897.058.311,08 Provincial"
+                value="144,16% vs. 2023"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -63,7 +61,7 @@ export default function Gastos2020 () {
                 </Button>
               </div>
             </div>
-            <GraficogastosTotales2020
+            <GraficosIngresosProcedencia2024
               chart={chart1}
               setChart={setActivechart1}
             />
@@ -72,30 +70,30 @@ export default function Gastos2020 () {
         <div className="container mx-auto p-8 pb-20">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold tracking-tight">
-              Gastos por Área del ejecutivo 2020
+              Ingresos por origen 2024
             </h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="33.15% vs. 2019"
-                value="$992,264,822.63"
+                content="165,71% vs. 2023"
+                value="$14.298.719.832,01"
               />
               <CardContentPp
-                title="Mayor Gasto"
-                content="$391,475,921.46 Conducción Superior"
-                value="1050.63% vs. 2019"
+                title="Mayor Ingreso"
+                content="$5.741.300.000,00 Total ingresos tributarios"
+                value="180,07% vs. 2023"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content="$391,475,921.46 Conducción Superior"
-                value="1050.63% vs. 2019"
+                content="$82.500.000,00 Total recuperacion de prestamos de largo plazo"
+                value="283,90% vs. 2023"
               />
               <CardContentPp
                 title="Mayor Decrecimiento"
-                content="$50,116,059.70 Conducción Superior"
-                value="-83.57% vs. 2019"
+                content="$879.081.938,00 Total transferencia corriente"
+                value="-30,09% vs. 2023"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -116,7 +114,7 @@ export default function Gastos2020 () {
                 </Button>
               </div>
             </div>
-            <GastosPorArea2020 chart={chart2} setChart={setActivechart2} />
+            <GraficosIngresos2024 chart={chart2} setChart={setActivechart2} />
           </div>
         </div>
       </main>

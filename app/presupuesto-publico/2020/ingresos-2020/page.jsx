@@ -26,7 +26,7 @@ export default function Ingresos2020 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="+42.68% vs. 2019"
+                content="42.68% vs. 2019"
                 value="$1,063,278,085.00"
               />
               <CardContentPp
@@ -79,12 +79,12 @@ export default function Ingresos2020 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="+42.68% vs. 2019"
+                content="42.68% vs. 2019"
                 value="$1,063,278,385.00"
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content=" $498,270,000.00 Total ingresos tributarios"
+                content="$498,270,000.00 Total ingresos tributarios"
                 value="53.41% vs. 2019"
               />
               <CardContentPp

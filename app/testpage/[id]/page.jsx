@@ -1,4 +1,5 @@
 import { secretarias } from "../data/data"
+
 import {
   Dialog,
   DialogContent,
@@ -22,6 +23,7 @@ export default function SecretariaPage ({ params }) {
 
   return (
     <>
+
       <content>
         <div className="relative">
           {secretaria.imagen && (

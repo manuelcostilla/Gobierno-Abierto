@@ -102,7 +102,7 @@ export const secretarias = [
         descripcion: "",
       },
     ],
-    icon: <Landmark height={150} width={150} color="#007CB6" />,
+    icon: <Landmark height={100} width={100} color="#007CB6" />,
     imagen: "/prueba.jpg",
     cvfoto: "/prueba-cv.jpg",
   },
@@ -113,7 +113,7 @@ export const secretarias = [
     descripcion:
       "Actúa como el órgano coordinador entre el Intendente y las distintas secretarías. Su responsabilidad incluye la gestión administrativa y legal del municipio, así como la supervisión del cumplimiento normativo. Además, facilita la comunicación institucional y la implementación de decisiones ejecutivas.",
     dependencias: [""],
-    icon: <Briefcase height={150} width={150} color="#007CB6" />,
+    icon: <Briefcase height={100} width={100} color="#007CB6" />,
     imagen: "",
     cvfoto: "",
   },
@@ -124,7 +124,7 @@ export const secretarias = [
     descripcion:
       "Su función principal es diseñar, planificar y evaluar políticas públicas a corto, mediano y largo plazo. Coordina proyectos estratégicos para optimizar la eficiencia y modernización de la gestión pública, promoviendo la innovación y el uso responsable de los recursos.",
     dependencias: [""],
-    icon: <Laptop height={150} width={150} color="#007CB6" />,
+    icon: <Laptop height={100} width={100} color="#007CB6" />,
     imagen: "",
     cvfoto: "",
   },
@@ -135,7 +135,7 @@ export const secretarias = [
     descripcion:
       "Encargada de la planificación, ejecución y mantenimiento de las infraestructuras y servicios públicos municipales, como redes de agua, cloacas, pavimentación, alumbrado y espacios verdes. También garantiza la prestación de servicios esenciales para el bienestar de la comunidad.",
     dependencias: [""],
-    icon: <Hammer height={150} width={150} color="#007CB6" />,
+    icon: <Hammer height={100} width={100} color="#007CB6" />,
     imagen: "",
     cvfoto: "",
   },
@@ -146,7 +146,7 @@ export const secretarias = [
     descripcion:
       "Gestiona los recursos económicos del municipio. Sus funciones incluyen la elaboración del presupuesto anual, el control de ingresos y egresos, la administración tributaria y el cumplimiento de las normativas financieras para asegurar una gestión eficiente y transparente.",
     dependencias: [""],
-    icon: <ChartArea height={150} width={150} color="#007CB6" />,
+    icon: <ChartArea height={100} width={100} color="#007CB6" />,
     imagen: "",
     cvfoto: "",
   },
@@ -157,7 +157,7 @@ export const secretarias = [
     descripcion:
       "Fomenta la vida cultural, educativa y deportiva del municipio. Promueve programas de acceso a la educación, actividades recreativas y eventos culturales, al tiempo que gestiona la comunicación institucional para mantener informada a la comunidad.",
     dependencias: [""],
-    icon: <Users height={150} width={150} color="#007CB6" />,
+    icon: <Users height={100} width={100} color="#007CB6" />,
     imagen: "",
     cvfoto: "",
   },
@@ -168,7 +168,7 @@ export const secretarias = [
     descripcion:
       "Responsable de garantizar el acceso a servicios de salud pública de calidad. Administra centros de atención médica, campañas de prevención y programas de promoción de la salud, priorizando el bienestar físico y mental de la población.",
     dependencias: [""],
-    icon: <Cross height={150} width={150} color="#007CB6" />,
+    icon: <Cross height={100} width={100} color="#007CB6" />,
     imagen: "",
     cvfoto: "",
   },
@@ -179,7 +179,7 @@ export const secretarias = [
     descripcion:
       "Su objetivo principal es promover la inclusión social y la igualdad de oportunidades. Desarrolla programas de asistencia, apoyo a grupos vulnerables y políticas de integración, abordando problemáticas como la pobreza, la violencia de género y la protección infantil.",
     dependencias: [""],
-    icon: <Handshake height={150} width={150} color="#007CB6" />,
+    icon: <Handshake height={100} width={100} color="#007CB6" />,
     imagen: "",
     cvfoto: "",
   },

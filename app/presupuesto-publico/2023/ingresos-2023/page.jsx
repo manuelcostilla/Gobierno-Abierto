@@ -23,18 +23,18 @@ export default function Ingresos2023 () {
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <CardContentPp
-                title="Total"
-                content="+86.12% vs. 2022"
+                title="TOTAL"
+                content="86.12% vs. 2022"
                 value="$5,381,329,259.47 "
               />
               <CardContentPp
                 title="Mayor ingreso"
-                content=" $2,824,763,485.47 Provincial"
+                content="$2,824,763,485.47 Provincial"
                 value="89.73% vs. 2022"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content=" $ 443,082,915.98 Nacional"
+                content="$443,082,915.98 Nacional"
                 value="239.30% vs. 2022"
               />
               <CardContentPp
@@ -76,9 +76,9 @@ export default function Ingresos2023 () {
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
-                title="Total"
-                content="+86.12% vs. 2022"
-                value="$ 5.381.329.259,47"
+                title="TOTAL"
+                content="86.12% vs. 2022"
+                value="$5.381.329.259,47"
               />
               <CardContentPp
                 title="Mayor ingreso"
@@ -92,7 +92,7 @@ export default function Ingresos2023 () {
               />
               <CardContentPp
                 title="Menor Variación"
-                content="$6.490.000,00  Municipal Total recuperacion de prestamos de largo plazo"
+                content="$6.490.000,00 Municipal Total recuperacion de prestamos de largo plazo"
                 value="43,27% vs. 2022"
               />
               <div className="flex flex-row justify-between">

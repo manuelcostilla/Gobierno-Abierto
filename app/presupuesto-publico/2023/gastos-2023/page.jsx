@@ -40,8 +40,8 @@ export default function Gastos2023 () {
                 value="136.45% vs. 2022"
               />
               <CardContentPp
-                title="Mayor decrecimiento"
-                content="-$12,870,102.62 Servicio de la Deuda"
+                title="Mayor Decrecimiento"
+                content="$12,870,102.62 Servicio de la Deuda"
                 value="-5.33% vs. 2022"
               />
               <div className="flex flex-row justify-between">
@@ -81,7 +81,7 @@ export default function Gastos2023 () {
               />
               <CardContentPp
                 title="Mayor Gasto"
-                content="+20.1% desde el último año"
+                content="20.1% desde el último año"
                 value="136.45% vs. 2022"
               />
               <CardContentPp

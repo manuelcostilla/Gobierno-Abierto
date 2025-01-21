@@ -7,6 +7,8 @@ import { BannerText } from "@/components/bannertext"
 import { GastosPorArea2020 } from "./components/gastos_por_area_2020"
 import { GraficogastosTotales2020 } from "./components/grafico_gastos_2020"
 import { CardContentPp } from "@/components/cardtemplate"
+import { Subgraficos } from "./components/subgrafico_gastos_por_area_2020"
+import { dataSubGraficos } from "../../data/dataSubGraficos"
 
 export default function Gastos2020 () {
   const [chart1, setActivechart1] = useState(true)
@@ -15,6 +17,7 @@ export default function Gastos2020 () {
   return (
     <>
       <BannerText titulo="Gastos 2020" />
+
       <main className="min-h-screen bg-background">
         <div className="container mx-auto p-8 pt-20">
           <div className="flex items-center justify-between mb-8">
@@ -117,6 +120,36 @@ export default function Gastos2020 () {
               </div>
             </div>
             <GastosPorArea2020 chart={chart2} setChart={setActivechart2} />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-20 mb-10">
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosIngresos2020[0].graficoIngresosTributarios
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+               titulo="Grafico Ingresos tributarios 2020"
+              description="Grafico de los mayores ingresos tributados"
+            />
+
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosIngresos2020[0]
+                  .graficoIngresosNoTributarios2020
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Grafico Ingresos no tributado 2020"
+              description="Grafico de los mayores ingresos no tributados"
+            />
+
+            <Subgraficos
+              ChartData={dataSubGraficos[0].graficosIngresos2020[0].graficoTasas2020}
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Grafico tasas 2020"
+              description="Grafico de las tasas principales 2020"
+            />
           </div>
         </div>
       </main>

@@ -7,6 +7,8 @@ import { BannerText } from "@/components/bannertext"
 import { GastosPorArea2023 } from "./components/gastos_por_area"
 import { GastosTotales2023 } from "./components/Grafico_gastos"
 import { CardContentPp } from "@/components/cardtemplate"
+import { Subgraficos } from "../../components/subgraficos"
+import { dataSubGraficos } from "../../data/dataSubGraficos"
 
 export default function Gastos2023 () {
   const [chart1, setActivechart1] = useState(true)
@@ -114,6 +116,88 @@ export default function Gastos2023 () {
               </div>
             </div>
             <GastosPorArea2023 chart={chart2} setChart={setActivechart2} />
+          </div>
+          <div className="flex justify-center items-center mt-10">
+            <h1 className="text-3xl font-bold tracking-tight">
+              Subdivisión de gráficos 2023
+            </h1>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-20 mb-10">
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2023[0].conduccionSuperior
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos conducción superior 2023"
+              description=""
+            />
+
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2023[0].secGeneralDeGobierno
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria general de gobierno 2023"
+              description=""
+            />
+
+            <Subgraficos
+              ChartData={dataSubGraficos[0].graficosGastos2023[0].secDeHacienda}
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de hacienda 2023"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2023[0].serviciosDeLaDeuda
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos servicios de la deuda 2023"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2023[0]
+                  .secDeCulturaEducacionTurismo
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de cultura, educación y turismo 2023"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2023[0]
+                  .secDeObrasServiciosPublicos
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de obras y servicios públicos 2023"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2023[0]
+                  .secModernizacionGestionPublica
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de modernización y gestión pública 2023"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2023[0].secDeDesarrolloHumano
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de desarrollo humano 2023"
+              description=""
+            />
           </div>
         </div>
       </main>

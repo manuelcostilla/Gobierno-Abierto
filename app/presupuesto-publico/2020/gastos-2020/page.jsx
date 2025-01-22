@@ -7,7 +7,7 @@ import { BannerText } from "@/components/bannertext"
 import { GastosPorArea2020 } from "./components/gastos_por_area_2020"
 import { GraficogastosTotales2020 } from "./components/grafico_gastos_2020"
 import { CardContentPp } from "@/components/cardtemplate"
-import { Subgraficos } from "./components/subgrafico_gastos_por_area_2020"
+import { Subgraficos } from "../../components/subgraficos"
 import { dataSubGraficos } from "../../data/dataSubGraficos"
 
 export default function Gastos2020 () {
@@ -121,34 +121,86 @@ export default function Gastos2020 () {
             </div>
             <GastosPorArea2020 chart={chart2} setChart={setActivechart2} />
           </div>
+          <div className="flex justify-center items-center mt-10">
+            <h1 className="text-3xl font-bold tracking-tight">
+              Subdivisión de gráficos 2020
+            </h1>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-20 mb-10">
             <Subgraficos
               ChartData={
-                dataSubGraficos[0].graficosIngresos2020[0].graficoIngresosTributarios
+                dataSubGraficos[0].graficosGastos2020[0].conduccionSuperior
               }
               chart={chart2}
               setChart={setActivechart2}
-               titulo="Grafico Ingresos tributarios 2020"
-              description="Grafico de los mayores ingresos tributados"
+              titulo="Gráfico gastos conducción superior 2020"
+              description="Grafico de los gastos en la conducción superior en el año 2020"
             />
 
             <Subgraficos
               ChartData={
-                dataSubGraficos[0].graficosIngresos2020[0]
-                  .graficoIngresosNoTributarios2020
+                dataSubGraficos[0].graficosGastos2020[0].secGeneralDeGobierno
               }
               chart={chart2}
               setChart={setActivechart2}
-              titulo="Grafico Ingresos no tributado 2020"
-              description="Grafico de los mayores ingresos no tributados"
+              titulo="Gráfico gastos secretaria general de gobierno 2020"
+              description=""
             />
 
             <Subgraficos
-              ChartData={dataSubGraficos[0].graficosIngresos2020[0].graficoTasas2020}
+              ChartData={dataSubGraficos[0].graficosGastos2020[0].secDeHacienda}
               chart={chart2}
               setChart={setActivechart2}
-              titulo="Grafico tasas 2020"
-              description="Grafico de las tasas principales 2020"
+              titulo="Gráfico gastos secretaria de hacienda 2020"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0].serviciosDeLaDeuda
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos servicios de la deuda 2020"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0]
+                  .secDeCulturaEducacionTurismo
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de cultura, educación y turismo 2020"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0]
+                  .secDeObrasServiciosPublicos
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de obras y servicios públicos 2020"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0]
+                  .secModernizacionGestionPublica
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de modernización y gestión pública 2020"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0].secDeDesarrolloHumano
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de desarrollo humano 2020"
+              description=""
             />
           </div>
         </div>

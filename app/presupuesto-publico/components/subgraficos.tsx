@@ -68,6 +68,23 @@ export function Subgraficos ({
   const chartData = generateChartData(ChartData)
   const chartConfig = generateChartConfig(ChartData)
 
+  const CustomLegend = () => (
+    <ul className="flex flex-col  justify-center  mt-4">
+      {chartData.map((entry, index) => (
+        <li
+          key={`legend-${index}`}
+          className="flex items-center text-sm text-balance pt-2 pb-2"
+        >
+          <span
+            className="block w-3 h-3 rounded-full p-2 mr-5"
+            style={{ backgroundColor: entry.fill }}
+          ></span>
+          <span>{entry.nombre}</span>
+        </li>
+      ))}
+    </ul>
+  )
+
   return (
     <div>
       {chart
@@ -75,10 +92,10 @@ export function Subgraficos ({
         <div>
           <Card>
             <CardHeader>
-              <CardTitle>
-                {titulo}
-              </CardTitle>
-              <CardDescription>{description}</CardDescription>
+              <CardTitle className="text-balance">{titulo}</CardTitle>
+              <CardDescription className="text-balance">
+                {description}
+              </CardDescription>
             </CardHeader>
             <CardContent className="w-full h-auto max-w-[200px] md:max-w-[250px] lg:max-w-[300px] mx-auto">
               <ChartContainer
@@ -88,13 +105,19 @@ export function Subgraficos ({
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart accessibilityLayer data={chartData}>
                     <CartesianGrid vertical={false} />
-                    <XAxis axisLine={false} />
+                    <XAxis
+                      dataKey="nombre"
+                      tickLine={false}
+                      axisLine={false}
+                      tickFormatter={(value) => value.slice(0, 2)}
+                    />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <ChartLegend content={<ChartLegendContent />} />
                     <Bar dataKey="valor$" radius={4} />
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
+              <CustomLegend />
               <p>Información extraída del RAFAM</p>
             </CardContent>
           </Card>

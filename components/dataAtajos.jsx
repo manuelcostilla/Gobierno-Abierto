@@ -41,22 +41,6 @@ export const dataAtajos = [
     descripcion: 'Esta sección ofrece detalles sobre ingresos y gastos del municipio, incluyendo documentos, gráficos y reportes para asegurar transparencia y rendición de cuentas.',
     link: '../presupuesto-publico',
   },
-  // {
-  //   id: 6,
-  //   title: 'GUIA MUNICIPAL',
-  //   img: 'presupuesto_publico',
-  //   alt: 'Guia municipal',
-  //   descripcion: 'guia municipal',
-  //   link: '../guia-municipal',
-  // },
-  // {
-  //   id: 7,
-  //   title: 'GUIA DE TRAMITES',
-  //   img: 'presupuesto_publico',
-  //   alt: 'Guia de tramites',
-  //   descripcion: 'guia de tramites',
-  //   link: '../guia-de-tramites',
-  // },
   {
     id: 8,
     title: 'CONTACTOS',

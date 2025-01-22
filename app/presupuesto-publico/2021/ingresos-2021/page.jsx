@@ -28,7 +28,11 @@ export default function Ingresos2021 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
+
                 content="+38.34% vs. 2021"
+
+               
+
                 value="$1,470,936,536.01"
               />
               <CardContentPp
@@ -81,7 +85,11 @@ export default function Ingresos2021 () {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
+
                 content="+38,34% vs. 2021"
+
+               
+
                 value=" $1.470.936.536,01"
               />
               <CardContentPp

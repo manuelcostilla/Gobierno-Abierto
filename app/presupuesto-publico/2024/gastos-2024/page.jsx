@@ -3,50 +3,46 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ChartColumn, ChartPie } from "lucide-react"
-import { GraficosIngresos2023 } from "./components/Grafico_ingresos"
-import { GraficosIngresosProcedencia2023 } from "./components/Grafico_ingresos_procedencia"
 import { BannerText } from "@/components/bannertext"
+import { GastosPorArea2024 } from "./components/gastos_por_area"
+import { GastosTotales2024 } from "./components/Grafico_gastos"
 import { CardContentPp } from "@/components/cardtemplate"
-import { Subgraficos } from "../../components/subgraficos"
-import { dataSubGraficos } from "../../data/dataSubGraficos"
 
-export default function Ingresos2023 () {
+export default function Gastos2024 () {
   const [chart1, setActivechart1] = useState(true)
   const [chart2, setActivechart2] = useState(true)
 
   return (
     <>
-      <BannerText titulo="Ingresos 2023" />
+      <BannerText titulo="Gastos 2024" />
       <main className="min-h-screen bg-background">
         <div className="container mx-auto p-8 pt-20">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold tracking-tight">
-              Ingresos por procedencia 2023
+              Gastos totales 2024
             </h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-
-            <CardContentPp
+              <CardContentPp
                 title="TOTAL"
-                content="86.12% vs. 2022"
-
-                value="$5,381,329,259.47 "
+                content="86.13% vs. 2023"
+                value="$14.298.719.832,01 "
               />
               <CardContentPp
-                title="Mayor ingreso"
-                content="$2,824,763,485.47 Provincial"
-                value="89.73% vs. 2022"
+                title="Mayor Gasto"
+                content="$13.301.517.927,21 Áreas del ejecutivo"
+                value="164,72% vs. 2023"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content="$443,082,915.98 Nacional"
-                value="239.30% vs. 2022"
+                content="$686.940.223,79 Servicio de la Deuda"
+                value="200,43% vs. 2023"
               />
               <CardContentPp
                 title="Menor Variación"
-                content="$711,031,607.12 Municipal"
-                value="58.41% vs. 2022"
+                content="$310.261.681,01 Servicio de la Deuda"
+                value="142,39% vs. 2022"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -67,39 +63,36 @@ export default function Ingresos2023 () {
                 </Button>
               </div>
             </div>
-            <GraficosIngresosProcedencia2023
-              chart={chart1}
-              setChart={setActivechart1}
-            />
+            <GastosTotales2024 chart={chart1} setChart={setActivechart1} />
           </div>
         </div>
         <div className="container mx-auto p-8 pb-20">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold tracking-tight">
-              Ingresos por origen 2023
+              Gastos por área del ejecutivo 2024
             </h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <CardContentPp
                 title="TOTAL"
-                content="86.12% vs. 2022"
-                value="$5.381.329.259,47"
+                content="164,72% vs. 2023"
+                value="$13.301.517.927,21"
               />
               <CardContentPp
-                title="Mayor ingreso"
-                content="$2.049.952.360,00 Total ingresos tributarios"
-                value="89.73% vs. 2022"
+                title="Mayor Gasto"
+                content="$4.712.467.550,25 Secretaría de Obras y Servicios Públicos"
+                value="146,99% vs. 2022"
               />
               <CardContentPp
                 title="Mayor Variación"
-                content="$1.880.000,00 Total rentas de la propiedad"
-                value="1566,67% vs. 2022"
+                content="$4.663.818.981,51 Secretaría de Gobierno"
+                value="219,83% vs. 2023"
               />
               <CardContentPp
                 title="Menor Variación"
-                content="$6.490.000,00 Municipal Total recuperacion de prestamos de largo plazo"
-                value="43,27% vs. 2022"
+                content="$551.495.130,06 Conducción Superior"
+                value="45,26% vs. 2023"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -120,44 +113,7 @@ export default function Ingresos2023 () {
                 </Button>
               </div>
             </div>
-            <GraficosIngresos2023 chart={chart2} setChart={setActivechart2} />
-          </div>
-          <div className="flex justify-center items-center mt-10">
-            <h1 className="text-3xl font-bold tracking-tight">
-              Subdivisión de gráficos 2023
-            </h1>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-20 mb-10">
-            <Subgraficos
-              ChartData={
-                dataSubGraficos[0].graficosIngresos2023[0]
-                  .graficoIngresosTributarios
-              }
-              chart={chart2}
-              setChart={setActivechart2}
-              titulo="Gráfico Ingresos Tributarios 2023"
-              description=""
-            />
-
-            <Subgraficos
-              ChartData={
-                dataSubGraficos[0].graficosIngresos2023[0]
-                  .graficoIngresosNoTributarios
-              }
-              chart={chart2}
-              setChart={setActivechart2}
-              titulo="Gráfico Ingresos no Tributarios 2023"
-              description=""
-            />
-            <Subgraficos
-              ChartData={
-                dataSubGraficos[0].graficosIngresos2023[0].graficoTasas
-              }
-              chart={chart2}
-              setChart={setActivechart2}
-              titulo="Gráfico Tasas 2023"
-              description=""
-            />
+            <GastosPorArea2024 chart={chart2} setChart={setActivechart2} />
           </div>
         </div>
       </main>

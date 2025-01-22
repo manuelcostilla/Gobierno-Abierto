@@ -7,6 +7,8 @@ import { BannerText } from "@/components/bannertext"
 import { GastosPorArea2021 } from "./components/gastos_por_area_2021"
 import { Graficogastostotales2021 } from "./components/grafico_gastos_2021"
 import { CardContentPp } from "@/components/cardtemplate"
+import { Subgraficos } from "../../components/subgraficos"
+import { dataSubGraficos } from "../../data/dataSubGraficos"
 
 export default function Gastos2020 () {
   const [chart1, setActivechart1] = useState(true)
@@ -71,7 +73,9 @@ export default function Gastos2020 () {
         </div>
         <div className="container mx-auto p-8 pb-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">Gráfico de gastos por área del ejecutivo 2021</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Gráfico de gastos por área del ejecutivo 2021
+            </h2>
           </div>
           <div className="space-y-8">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -115,6 +119,88 @@ export default function Gastos2020 () {
               </div>
             </div>
             <GastosPorArea2021 chart={chart2} setChart={setActivechart2} />
+          </div>
+          <div className="flex justify-center items-center mt-10">
+            <h1 className="text-3xl font-bold tracking-tight">
+              Subdivisión de gráficos 2021
+            </h1>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-20 mb-10">
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2021[0].conduccionSuperior
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos conducción superior 2021"
+              description=""
+            />
+
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2021[0].secGeneralDeGobierno
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria general de gobierno 2021"
+              description=""
+            />
+
+            <Subgraficos
+              ChartData={dataSubGraficos[0].graficosGastos2021[0].secDeHacienda}
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de hacienda 2021"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2021[0].serviciosDeLaDeuda
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos servicios de la deuda 2021"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2021[0]
+                  .secDeCulturaEducacionTurismo
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de cultura, educación y turismo 2021"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2021[0]
+                  .secDeObrasServiciosPublicos
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de obras y servicios públicos 2021"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2021[0]
+                  .secModernizacionGestionPublica
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de modernización y gestión pública 2021"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2021[0].secDeDesarrolloHumano
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de desarrollo humano 2021"
+              description=""
+            />
           </div>
         </div>
       </main>

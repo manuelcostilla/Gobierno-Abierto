@@ -17,7 +17,7 @@ function Contactos () {
     },
     {
       icon: <MapPin />,
-      title: "Dirección",
+      title: "Dirección Palacio Municipal",
       link: "https://www.google.es/maps/place/Delegacion+Municipal+Alsina/@-33.9093616,-59.393731,17z/data=!3m1!4b1!4m6!3m5!1s0x95bbb59c0f492ca1:0xc5f42b302a6b0a8f!8m2!3d-33.9093661!4d-59.3911561!16s%2Fg%2F11gyxd69hx?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D",
       text: " San martin 295, Alsina, Provincia de Buenos Aires",
       label: "Dirección",
@@ -33,25 +33,25 @@ function Contactos () {
   const dataTelefonia = [
     {
       id: 1,
-      telefono: "494024",
+      telefono: "(3329) 494024",
       localidad: "ALSINA",
       sector: "Delegación",
     },
     {
       id: 2,
-      telefono: "494048",
+      telefono: "+54 (3329) 494048",
       localidad: "ALSINA",
       sector: "Jardín de Infantes",
     },
     {
       id: 3,
-      telefono: "494095",
+      telefono: "+54 (3329) 494095",
       localidad: "ALSINA",
       sector: "Sala 1Auxilio",
     },
     {
       id: 4,
-      telefono: "494020",
+      telefono: "+54 (3329) 494020",
       localidad: "ALSINA",
       sector: "C. Medico",
     },

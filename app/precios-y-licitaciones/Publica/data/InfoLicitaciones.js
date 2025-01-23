@@ -4,7 +4,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 01/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 94",
-    expediente: "expediente 4009-20-11759/2021 “S”",
+    Expediente: "Expediente 4009-20-11759/2021 “S”",
     motivo:
       "Motivo: Compra de una motoniveladora Peso operativo 13000 kg-Potencia 140 a 150 HP.",
     presupuesto: "Presupuesto oficial:",
@@ -23,7 +23,7 @@ export const licitaciones = [
   //   titulo: "Licitación Pública N° 02/",
   //   año: "2021",
   //   tituloAcordeonAbierto: " DECRETO 170",
-  //   expediente: "expediente Nº 4009-20-11668/2021 “D”",
+  //   Expediente: "Expediente Nº 4009-20-11668/2021 “D”",
   //   motivo:
   //     "Motivo: obra “RECONSTRUCCION TRAMO RUTA NACIONAL Nº 9 - ACCESO ALSINA – PARTIDO DE BARADERO”.",
   //   presupuesto: "Presupuesto oficial:",
@@ -42,7 +42,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 03/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 228",
-    expediente: "expediente Nº 4009-20-12131/2021 “D”",
+    Expediente: "Expediente Nº 4009-20-12131/2021 “D”",
     motivo:
       "Motivo: obra Cloacas Barrios Igualdad, 2 de Setiembre y Sindicatos de la ciudad de Baradero -",
     presupuesto: "Presupuesto oficial:",
@@ -61,7 +61,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 04/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 229",
-    expediente: "expediente Nº 4009-20-12189/2021 “D”",
+    Expediente: "Expediente Nº 4009-20-12189/2021 “D”",
     motivo:
       "Motivo: obra ampliación dos aulas en la Escuela Secundaria Nº 5 de la ciudad de Baradero -",
     presupuesto: "Presupuesto oficial:",
@@ -80,7 +80,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 05/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 233",
-    expediente: "expediente Nº 4009-20-12168 letra “S”",
+    Expediente: "Expediente Nº 4009-20-12168 letra “S”",
     motivo:
       "Motivo: Obra de Cloacas Barrios Tobares y Don Pedro de la ciudad de Baradero -",
     presupuesto: "Presupuesto oficial:",
@@ -99,7 +99,7 @@ export const licitaciones = [
   //   titulo: "Licitación Pública N° 06/",
   //   año: "2021",
   //   tituloAcordeonAbierto: " DECRETO 266",
-  //   expediente: "expediente Nº 4009-20-12244/2021 “D”",
+  //   Expediente: "Expediente Nº 4009-20-12244/2021 “D”",
   //   motivo:
   //     "Motivo: Obra Carpeta Asfáltica y Cordón Cuneta Barrio Fonavi de la ciudad de Baradero",
   //   presupuesto: "Presupuesto oficial:",
@@ -118,7 +118,7 @@ export const licitaciones = [
   //   titulo: "Licitación Pública N° 07/",
   //   año: "2021",
   //   tituloAcordeonAbierto: " DECRETO 359",
-  //   expediente: "expediente Nº 4009-20-12374/2021 “D”",
+  //   Expediente: "Expediente Nº 4009-20-12374/2021 “D”",
   //   motivo: "Motivo: Para la compra de dos camiones compactadores diesel",
   //   presupuesto: "Presupuesto oficial:",
   //   plata: " $ 3.388.000,00 - Apertura 12 de julio de 2021.",
@@ -133,7 +133,7 @@ export const licitaciones = [
   //   titulo: "Licitación Pública N° 08/",
   //   año: "2021",
   //   tituloAcordeonAbierto: " DECRETO 549",
-  //   expediente: "expediente Nº 4009-20-012190/2021 “S”",
+  //   Expediente: "Expediente Nº 4009-20-012190/2021 “S”",
   //   motivo:
   //     "Motivo: Para la concesión de la Unidad Turística Nº 2 “Balneario Municipal Sur” de la ciudad de Baradero,",
   //   presupuesto: "Presupuesto oficial:",
@@ -150,7 +150,7 @@ export const licitaciones = [
   //   titulo: "Licitación Pública N° 09/",
   //   año: "2021",
   //   tituloAcordeonAbierto: " DECRETO 550",
-  //   expediente: "expediente Nº 4009-20-012191/2021 “S”",
+  //   Expediente: "Expediente Nº 4009-20-012191/2021 “S”",
   //   motivo:
   //     "Motivo: Para la concesión de la Unidad Turística Nº 1 “Balneario Municipal Norte” de la ciudad de Baradero, con un Presupuesto Oficial",
   //   presupuesto: "Presupuesto oficial:",
@@ -167,7 +167,7 @@ export const licitaciones = [
   //   titulo: "Licitación Pública N° 10/",
   //   año: "2021",
   //   tituloAcordeonAbierto: " DECRETO 551",
-  //   expediente: "expediente Nº 4009-20-12745/2021 “D”",
+  //   Expediente: "Expediente Nº 4009-20-12745/2021 “D”",
   //   motivo:
   //     "Motivo: para la Obra: “REPARACIÓN DE CUBIERTA, FILTRACIONES Y DESAGÜES PLUVIALES COMPLETOS, REPARACIÓN DE MOLDURAS Y CORNISAS. REFACCIONES GENERALES EN AULA BIBLIOTECA DE LA ESCUELA PRIMARIA Nº 1 “GRAL. DON JOSÉ DE SAN MARTÍN” de la ciudad de Baradero",
   //   presupuesto: "Presupuesto oficial:",
@@ -184,7 +184,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 11/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 671",
-    expediente: "expediente Nº 4009-20-13003/2021 “D”",
+    Expediente: "Expediente Nº 4009-20-13003/2021 “D”",
     motivo:
       "Motivo: para la Obra “Cloacas Barrio Belgrano y Barrio Las Margaritas” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -204,7 +204,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 12/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 589",
-    expediente: "expediente Nº 4009-20-20-12392/21 “D”",
+    Expediente: "Expediente Nº 4009-20-20-12392/21 “D”",
     motivo:
       "Motivo: para la Obra Cordón Cuneta y Pavimentación de la calle ROCA – segunda etapa de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -224,7 +224,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 13/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 634",
-    expediente: "expediente Nº 4009-20-13006/2021 “D”",
+    Expediente: "Expediente Nº 4009-20-13006/2021 “D”",
     motivo:
       "Motivo: para la Obra “Construcción de un CENTRO DE DESARROLLO INFANTIL en la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -243,7 +243,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 14/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 737",
-    expediente: "expediente Nº 4009-20-13002/2021 “D”",
+    Expediente: "Expediente Nº 4009-20-13002/2021 “D”",
     motivo:
       "Motivo: para la Obra construcción “Pozo Nº 17” ubicado en calle Jesús Callejas y Ruta Pcial. Nº 41 de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -263,7 +263,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 15/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 737",
-    expediente: "expediente Nº 4009-20-13002/2021 “D”",
+    Expediente: "Expediente Nº 4009-20-13002/2021 “D”",
     motivo:
       "Motivo: para la Obra reparación Cubiertas Varias de la Escuela de Educación Técnica Nº 1 “Batalla de la Vuelta de Obligado” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -283,7 +283,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 16/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 764",
-    expediente: "expediente Nº 4009-20-13312/2021 “D”",
+    Expediente: "Expediente Nº 4009-20-13312/2021 “D”",
     motivo:
       "Motivo: para la Obra “Cloacas Barrio Las Campanillas” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -302,7 +302,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 17/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 781",
-    expediente: "expediente Nº 4009-20-12470/2021 “D”,",
+    Expediente: "Expediente Nº 4009-20-12470/2021 “D”,",
     motivo:
       "Motivo: para la Obra “Asfalto Costanera Sur” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -322,7 +322,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 18/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 783",
-    expediente: "expediente Nº 4009-20-13328/2021 “D”",
+    Expediente: "Expediente Nº 4009-20-13328/2021 “D”",
     motivo:
       "Motivo: para la Obra Refacción cubiertas y desagües patio del Establecimiento Jardín de Infantes Nº 908 de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -342,7 +342,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 19/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 786",
-    expediente: "expediente Nº 4009-20-12614/2021 “S”",
+    Expediente: "Expediente Nº 4009-20-12614/2021 “S”",
     motivo:
       "Motivo: para la Obra Renovación total de la cubierta del Jardín de Infantes Nº 903 “Rosario Vera Peñaloza” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -362,7 +362,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 20/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 791",
-    expediente: "expediente Nº 4009-20-12393/2021 “D” Alcance 1",
+    Expediente: "Expediente Nº 4009-20-12393/2021 “D” Alcance 1",
     motivo:
       "Motivo: para la Obra EEST Nº 1 “Batalla de la Vuelta de Obligado” Etapa 1 Construcción de 2 Aulas y Galería de Conexión de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -382,7 +382,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 21/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 792",
-    expediente: "expediente Nº 4009-20-13411/2021 “S”",
+    Expediente: "Expediente Nº 4009-20-13411/2021 “S”",
     motivo:
       "Motivo: para la Obra ENTUBAMIENTO calle PRINGLES” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -402,7 +402,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 22/",
     año: "2021",
     tituloAcordeonAbierto: " DECRETO 825",
-    expediente: "expediente Nº 4009-20-13259/2021 “D”",
+    Expediente: "Expediente Nº 4009-20-13259/2021 “D”",
     motivo:
       "Motivo: para la Obra Estación de Bombeo Cloacal Juan XXIII de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -425,7 +425,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 01/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 121",
-    expediente: "expediente 4009-20-13839/2022 “S”",
+    Expediente: "Expediente 4009-20-13839/2022 “S”",
     motivo: "Motivo:compra de una motoniveladora y camión con caja volcadora",
     presupuesto: "Presupuesto oficial:",
     plata: " $ 50.000.000,00 - Apertura 23 de marzo de 2022, a la hora 09:00.",
@@ -443,7 +443,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 02/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 122",
-    expediente: "expediente Nº 4009-20-13800/2022 “D”",
+    Expediente: "Expediente Nº 4009-20-13800/2022 “D”",
     motivo:
       "Motivo: adquisición de 3.400 toneladas de escoria de alto horno 10/30",
     presupuesto: "Presupuesto oficial:",
@@ -462,7 +462,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 03/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 123",
-    expediente: "expediente Nº 4009-20-13800/2022 “D” Alcance 1",
+    Expediente: "Expediente Nº 4009-20-13800/2022 “D” Alcance 1",
     motivo:
       "Motivo: obra “ESTABILIZADO EN CAMINO CONEXIÓN R.P. Nº 41 – CAMINO ALSINA” – Compra de aditivo iónico para estabilizado de caminos, del Partido de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -481,7 +481,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 04/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 163",
-    expediente: "expediente Nº 4009-20- 13828/2022 “D”",
+    Expediente: "Expediente Nº 4009-20- 13828/2022 “D”",
     motivo:
       "Motivo: compra de medicamentos, materiales descartables y sueros para la farmacia del Hospital Municipal “Dr. Lino Piñeiro” de la ciudad de Baradero, por un período de seis (6) meses-",
     presupuesto: "Presupuesto oficial:",
@@ -500,7 +500,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 05/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 166",
-    expediente: "expediente Nº 4009-20- 13861/2022 “S”",
+    Expediente: "Expediente Nº 4009-20- 13861/2022 “S”",
     motivo:
       "Motivo: obra “Conexiones Domiciliarias de Agua Potable e Instalaciones intra-lote de Agua Potable y Cloaca – Barrio La Igualdad” de la ciudad de Baradero, en el marco del Proyecto de Obras Tempranas (POT)",
     presupuesto: "Presupuesto oficial:",
@@ -519,7 +519,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 06/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 167",
-    expediente: "expediente Nº 4009-20- 11054/2022 “S” cuerpo 1",
+    Expediente: "Expediente Nº 4009-20- 11054/2022 “S” cuerpo 1",
     motivo:
       "Motivo: obra “CONSTRUCCIÓN 11 VIVIENDAS loteo en la localidad de IRENEO PORTELA – Partido de BARADERO”",
     presupuesto: "Presupuesto oficial:",
@@ -538,7 +538,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 07/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 168",
-    expediente: "expediente Nº 4009-20- 11055/2022 “S”",
+    Expediente: "Expediente Nº 4009-20- 11055/2022 “S”",
     motivo:
       "Motivo: obra “CONSTRUCCIÓN 17 VIVIENDAS loteo en la localidad de SANTA COLOMA – Partido de BARADERO”",
     presupuesto: "Presupuesto oficial:",
@@ -557,7 +557,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 08/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 209",
-    expediente: "expediente Nº 4009-20-14162/2022 “D”",
+    Expediente: "Expediente Nº 4009-20-14162/2022 “D”",
     motivo:
       "Motivo: para la obra: SUM DE LA COMUNIDAD (Casa Refugio para Mujeres y Diversidades)",
     presupuesto: "Presupuesto oficial:",
@@ -576,7 +576,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 09/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 315",
-    expediente: "expediente Nº 4009-20-14381/2022 “S”",
+    Expediente: "Expediente Nº 4009-20-14381/2022 “S”",
     motivo:
       "Motivo: para la Obra: “Conexiones Domiciliarias de Agua Potable e Instalaciones intra-lote de Agua Potable y Cloaca – Barrios TOBARES Y DON PEDRO”",
     presupuesto: "Presupuesto oficial:",
@@ -595,7 +595,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 10/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 389",
-    expediente: "expediente Nº 4009-20-14405/2022 “S”",
+    Expediente: "Expediente Nº 4009-20-14405/2022 “S”",
     motivo:
       "Motivo: para la obra “Completamiento Carpeta Asfáltica Barrio Pompeya y Toyota” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -614,7 +614,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 11/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 390",
-    expediente: "expediente Nº 4009-20-14475/2022 “S”",
+    Expediente: "Expediente Nº 4009-20-14475/2022 “S”",
     motivo:
       "Motivo: para la obra “Dársena Avenida San Martin y Avenida del Trabajo” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -632,7 +632,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 12/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 391",
-    expediente: "expediente Nº 4009-20-14507/2022 “S”",
+    Expediente: "Expediente Nº 4009-20-14507/2022 “S”",
     motivo:
       "Motivo: para la obra “Ampliación del Sistema de Monitoreo Urbano” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -650,7 +650,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 13/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 474",
-    expediente: "expediente Nº 4009-20-14605/2022 “D”",
+    Expediente: "Expediente Nº 4009-20-14605/2022 “D”",
     motivo:
       "Motivo: para la obra “Completamiento Carpeta Asfáltica Barrio BERNABE” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -669,7 +669,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 14/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 519",
-    expediente: "expediente Nº 4009-20-14680/2022 “S”",
+    Expediente: "Expediente Nº 4009-20-14680/2022 “S”",
     motivo:
       "Motivo: obra construcción del Centro de Desarrollo Infantil II en el Partido de Baradero (Alsina)",
     presupuesto: "Presupuesto oficial:",
@@ -688,7 +688,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 15/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 543",
-    expediente: "expediente Nº 4009-20-14825 letra “D” del año 2022",
+    Expediente: "Expediente Nº 4009-20-14825 letra “D” del año 2022",
     motivo:
       "Motivo: Obra Construcción de Comedor, Cocina y Refacciones – Etapa 1 de la Escuela Primaria Nº 14 “José Hernández de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -708,7 +708,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 16/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 562",
-    expediente: "expediente Nº 4009-20-14792 letra “D” del año 2022",
+    Expediente: "Expediente Nº 4009-20-14792 letra “D” del año 2022",
     motivo:
       "Motivo: Obra Pozo Nº 4 ubicado en calle GODOY CRUZ entre Hernandarias y J. V González de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -727,7 +727,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 17/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 590",
-    expediente: "expediente Nº 4009-20-14757 letra “S” del año 2022 Alcance 1",
+    Expediente: "Expediente Nº 4009-20-14757 letra “S” del año 2022 Alcance 1",
     motivo:
       "Motivo: “conclusión de veinticinco (25) viviendas Barrio Bonini” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -747,7 +747,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 18/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 628",
-    expediente: "expediente Nº 4009-20-14831 letra “S” del año 2022 Alcance 1",
+    Expediente: "Expediente Nº 4009-20-14831 letra “S” del año 2022 Alcance 1",
     motivo:
       "Motivo: “Carpeta Asfáltica Barrio “Las Margaritas” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -767,7 +767,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 19/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 730",
-    expediente: "expediente Nº 4009-20-15153 letra “S” del año 2022 Alcance 1",
+    Expediente: "Expediente Nº 4009-20-15153 letra “S” del año 2022 Alcance 1",
     motivo:
       "Motivo: AMPLIACION UN AULA Y REFACCION DE SANITARIOS en el Jardín de Infantes Municipal “Paula Albarracín de Sarmiento” de la localidad de Alsina Partido de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -786,7 +786,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 20/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 731",
-    expediente: "expediente Nº 4009-20-15155 letra “S” del año 2022 Alcance 1",
+    Expediente: "Expediente Nº 4009-20-15155 letra “S” del año 2022 Alcance 1",
     motivo:
       "Motivo: AMPLIACION Jardín de Infantes Municipal Nº 4 “Presidente Irigoyen” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -806,7 +806,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 21/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 755",
-    expediente: "expediente Nº 4009-20-15208 letra “D” del año 2022",
+    Expediente: "Expediente Nº 4009-20-15208 letra “D” del año 2022",
     motivo:
       "Motivo: Compra de Materiales para obra “MEJORAMIENTO RED VIAL URBANA BARRIO LA IGUALDAD, 2 DE SEPTIEMBRE y SINDICATOS” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -825,7 +825,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 22/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 770",
-    expediente: "expediente Nº 4009-20-15202 letra “D” del año 2022",
+    Expediente: "Expediente Nº 4009-20-15202 letra “D” del año 2022",
     motivo:
       "Motivo: “RECAMBIO RED DE AGUA BARADERO – ETAPA 1” de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -844,7 +844,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 23/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 944",
-    expediente: "expediente Nº 4009-20-15576 letra “S” del año 2022",
+    Expediente: "Expediente Nº 4009-20-15576 letra “S” del año 2022",
     motivo:
       "Motivo: Obra Construcción de un nuevo edificio “Etapa I” JIRIMM Nº 6 Gerónimo Cossi de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -863,7 +863,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 24/",
     año: "2022",
     tituloAcordeonAbierto: " DECRETO 945",
-    expediente: "expediente Nº 4009-20-15577 letra “S” del año 2022",
+    Expediente: "Expediente Nº 4009-20-15577 letra “S” del año 2022",
     motivo:
       "Motivo: Obra Construcción de un nuevo edificio “Etapa I” JARDIN DE INFANTES Nº 907 Juana Manso de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -883,7 +883,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 01/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 9",
-    expediente: "expediente 4009-20-15599/2022 “S”",
+    Expediente: "Expediente 4009-20-15599/2022 “S”",
     motivo:
       "Motivo: Obra: “Renovación Integral, Puesta en Valor y Acondicionamiento Térmico – Etapa 3 (a, b, c) de la Escuela Primaria Nº 1 “Gral. Don José de San Martín”",
     presupuesto: "Presupuesto oficial:",
@@ -903,7 +903,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 02/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 309",
-    expediente: "expediente 4009-20-16347/2022 “S”",
+    Expediente: "Expediente 4009-20-16347/2022 “S”",
     motivo:
       "Motivo: Obra: “RENOVACIÓN INTEGRAL, REFORMAS Y ACONDICIONAMIENTO ELÉCTRICO Y TÉRMICO – ETAPA 1” en el Centro Educativo Complementario (CEC) Nº 801 “El Puente” de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -923,7 +923,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 03/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 320",
-    expediente: "expediente 4009-20-16278/2023 “S”",
+    Expediente: "Expediente 4009-20-16278/2023 “S”",
     motivo:
       "Motivo: para el Proyecto Obras Tempranas: Desarrollo de Equipamiento Público en Barrios Populares Igualdad, 2 de Septiembre y Sindicatos” y Puesta en valor de la Plaza de la Mujer “de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -941,7 +941,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 04/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 321",
-    expediente: "expediente 4009-20-16268/2023 “S”",
+    Expediente: "Expediente 4009-20-16268/2023 “S”",
     motivo:
       "Motivo: para el Proyecto Obras Tempranas: Desarrollo de Red Eléctrica y Alumbrado Público en Barrios Populares Igualdad, 2 de Septiembre y Sindicatos de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -959,7 +959,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 05/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 325",
-    expediente: "expediente 4009-20-16379/2023 “S”",
+    Expediente: "Expediente 4009-20-16379/2023 “S”",
     motivo:
       "Motivo: Obra construcción de una Centro Ambiental en la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -978,7 +978,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 06/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 326",
-    expediente: "expediente 4009-20-16390/2023 “S”",
+    Expediente: "Expediente 4009-20-16390/2023 “S”",
     motivo:
       "Motivo: para la Obra: Construcción Mercado Fijo de Alimentos Bonaerenses en la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -996,7 +996,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 07/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 344",
-    expediente: "expediente 4009-20-16422/2023 “D”",
+    Expediente: "Expediente 4009-20-16422/2023 “D”",
     motivo:
       "Motivo: para la Obra: “CLOACAS BARRIO SECTOR NORTE 1” de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1014,7 +1014,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 08/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 345",
-    expediente: "expediente 4009-20-16423/2023 “D”",
+    Expediente: "Expediente 4009-20-16423/2023 “D”",
     motivo:
       "Motivo: para la Obra: “CLOACAS BARRIO SECTOR NORTE 2” de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1033,7 +1033,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 09/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 403",
-    expediente: "expediente 4009-20-16257/2023 “D”",
+    Expediente: "Expediente 4009-20-16257/2023 “D”",
     motivo:
       "Motivo: para la Obra: “ASFALTO COSTANERA SUR Etapa 2” de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1052,7 +1052,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 10/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 404",
-    expediente: "expediente 4009-20-16474/2023 “D”",
+    Expediente: "Expediente 4009-20-16474/2023 “D”",
     motivo:
       "Motivo: para la Obra: “COMPLETAMIENTO CARPETA ASFALTICA BARRIO BERNABE 2da. Etapa” de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1071,7 +1071,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 11/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 478",
-    expediente: "expediente 4009-20-16646/2023 “D”",
+    Expediente: "Expediente 4009-20-16646/2023 “D”",
     motivo:
       "Motivo: para la Obra: “CARPETA ASFALTICA BARRIO “LAS MARGARITAS” 2da. Etapa”.",
     presupuesto: "Presupuesto oficial:",
@@ -1090,7 +1090,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 12/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 570",
-    expediente: "expediente 4009-20-16852/2023 “S”",
+    Expediente: "Expediente 4009-20-16852/2023 “S”",
     motivo:
       "Motivo: para la Obra: REFACCIÓN DE SANITARIOS de la EEST Nº 1 “Batalla de la Vuelta de Obligado” de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1108,7 +1108,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 13/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 571",
-    expediente: "expediente 4009-20-16853/2023 “S”",
+    Expediente: "Expediente 4009-20-16853/2023 “S”",
     motivo:
       "Motivo: para la Obra: RECONSTRUCCIÓN TOTAL DEL SISTEMA DE ENERGÍA DE GENERACIÓN AISLADA FOTOVOLTAICA de la Escuela Primaria Nº 27 Paraje islas Los Laureles distrito Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1127,8 +1127,8 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 14/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 576",
-    expediente:
-      "expediente 4009-20-16367 letra “S” del año 2023 Alcance 1) y Cpos 1 y 2",
+    Expediente:
+      "Expediente 4009-20-16367 letra “S” del año 2023 Alcance 1) y Cpos 1 y 2",
     motivo:
       "Motivo: Proyecto Obras Tempranas: Desagües pluviales, red vial, red peatonal en Barrios Populares (PEG) La Igualdad, 2 de Septiembre y Sindicatos de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1148,8 +1148,8 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 15/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 757",
-    expediente:
-      "expediente 4009-20-16412/2023 letra “S” (Decreto 757/2023 modif. 868 y 909/2023)",
+    Expediente:
+      "Expediente 4009-20-16412/2023 letra “S” (Decreto 757/2023 modif. 868 y 909/2023)",
     motivo:
       "Motivo: para la obra construcción de un “Centro de Robótica, Automatización y Sensores” de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1169,7 +1169,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 16/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 799",
-    expediente: "expediente 4009-20-17173 letra “S” del año 2023 y Cuerpo 1",
+    Expediente: "Expediente 4009-20-17173 letra “S” del año 2023 y Cuerpo 1",
     motivo:
       "Motivo: para la Obra: PUESTA EN VALOR AULAS – EDIFICIO HISTORICO “1ª Etapa” en la UNIDAD ACADÉMICA DE LA ESCUELA NORMAL SUPERIOR “MARCOS SASTRE” de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1187,7 +1187,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 17/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 820",
-    expediente: "expediente 4009-20-17302 letra “S” del año 2023",
+    Expediente: "Expediente 4009-20-17302 letra “S” del año 2023",
     motivo:
       "Motivo: para la Obra: AMPLIACION Y REFACCION del CENTRO UNIVERSITARIO de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1206,7 +1206,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 18/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 1092",
-    expediente: "expediente N° 4009-20-17634 letra “S” del año 2023 Alcance 4)",
+    Expediente: "Expediente N° 4009-20-17634 letra “S” del año 2023 Alcance 4)",
     motivo: "Motivo: para la compra de un (1) VEHÍCULO TIPO MINIBÚS 0 Km.",
     presupuesto: "Presupuesto oficial:",
     plata: " $ 24.115.000 - Apertura 09 de enero de 2024 a las 09:00 Hs.",
@@ -1223,7 +1223,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 19/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 1093",
-    expediente: "expediente Nº 4009-20-17634 letra “S” del año 2023 Alcance 1)",
+    Expediente: "Expediente Nº 4009-20-17634 letra “S” del año 2023 Alcance 1)",
     motivo:
       "Motivo: para la Obra: CONSTRUCCIÓN DE UNA PISTA DE PATINAJE DE HORMIGÓN (SKATEPARK) en el predio ubicado en la intersección de las calles Emilio Samyn y Avda. Almirante Brown de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1241,7 +1241,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 20/",
     año: "2023",
     tituloAcordeonAbierto: " DECRETO 1094",
-    expediente: "expediente Nº 4009-20-17634 letra “S” del año 2023 Alcance 2)",
+    Expediente: "Expediente Nº 4009-20-17634 letra “S” del año 2023 Alcance 2)",
     motivo:
       "Motivo: para la Obra: CONSTRUCCIÓN DE UNA SENDA PEATONAL E ILUMINACIÓN en la intersección de las calles Emilio Samyn y Avda. Almirante Brown de la ciudad de Baradero.",
     presupuesto: "Presupuesto oficial:",
@@ -1260,7 +1260,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 01/",
     año: "2024",
     tituloAcordeonAbierto: " DECRETO 149",
-    expediente: "expediente 4009-20-17876/2023 “D”",
+    Expediente: "Expediente 4009-20-17876/2023 “D”",
     motivo:
       "Motivo: Obra “POZO Nº 4” ubicado en calle GODOY CRUZ entre Hernandarias y J. V. González de la ciudad de Baradero",
     presupuesto: "Presupuesto oficial:",
@@ -1279,7 +1279,7 @@ export const licitaciones = [
     titulo: "Licitación Pública N° 02/",
     año: "2024",
     tituloAcordeonAbierto: " DECRETO 259",
-    expediente: "expediente 4009-20-000527/2024 “S”",
+    Expediente: "Expediente 4009-20-000527/2024 “S”",
     motivo:
       "Motivo: Obra: PUESTA EN VALOR DE AULAS en la UNIDAD ACADÉMICA – EDIFICIO HISTORICO - DE LA ESCUELA NORMAL SUPERIOR “MARCOS SASTRE” de la ciudad de Baradero–",
     presupuesto: "Presupuesto oficial:",

@@ -7,6 +7,8 @@ import { BannerText } from "@/components/bannertext"
 import { GastosPorArea2024 } from "./components/gastos_por_area"
 import { GastosTotales2024 } from "./components/Grafico_gastos"
 import { CardContentPp } from "@/components/cardtemplate"
+import { Subgraficos } from "../../components/subgraficos"
+import { dataSubGraficos } from "../../data/dataSubGraficos"
 
 export default function Gastos2024 () {
   const [chart1, setActivechart1] = useState(true)
@@ -42,7 +44,7 @@ export default function Gastos2024 () {
               <CardContentPp
                 title="Menor Variación"
                 content="$310.261.681,01 Servicio de la Deuda"
-                value="142,39% vs. 2022"
+                value="142,39% vs. 2023"
               />
               <div className="flex flex-row justify-between">
                 <Button
@@ -82,7 +84,7 @@ export default function Gastos2024 () {
               <CardContentPp
                 title="Mayor Gasto"
                 content="$4.712.467.550,25 Secretaría de Obras y Servicios Públicos"
-                value="146,99% vs. 2022"
+                value="146,99% vs. 2023"
               />
               <CardContentPp
                 title="Mayor Variación"
@@ -114,6 +116,88 @@ export default function Gastos2024 () {
               </div>
             </div>
             <GastosPorArea2024 chart={chart2} setChart={setActivechart2} />
+          </div>
+          <div className="flex justify-center items-center mt-10">
+            <h1 className="text-3xl font-bold tracking-tight">
+              Subdivisión de gráficos 2024
+            </h1>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-20 mb-10">
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0].conduccionSuperior
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos conducción superior 2024"
+              description="Grafico de los gastos en la conducción superior en el año 2024"
+            />
+
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0].secGeneralDeGobierno
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria general de gobierno 2024"
+              description=""
+            />
+
+            <Subgraficos
+              ChartData={dataSubGraficos[0].graficosGastos2020[0].secDeHacienda}
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de hacienda 2024"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0].serviciosDeLaDeuda
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos servicios de la deuda 2024"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0]
+                  .secDeCulturaEducacionTurismo
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de cultura, educación y turismo 2024"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0]
+                  .secDeObrasServiciosPublicos
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de obras y servicios públicos 2024"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0]
+                  .secModernizacionGestionPublica
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de modernización y gestión pública 2024"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosGastos2020[0].secDeDesarrolloHumano
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico gastos secretaria de desarrollo humano 2024"
+              description=""
+            />
           </div>
         </div>
       </main>

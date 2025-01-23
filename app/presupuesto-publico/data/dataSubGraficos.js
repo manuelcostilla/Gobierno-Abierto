@@ -600,6 +600,126 @@ export const dataSubGraficos = [
         ],
       },
     ],
+    graficosIngresos2025: [
+      {
+        graficoIngresosTributarios: [
+          {
+            id: 1,
+            nombre: "Coparticipación Pcial. de Impuesto Ley 10.559",
+            valor: 9544235376,
+          },
+          {
+            id: 2,
+            nombre: "Inmobiliario - Rural - ley 13010/03  descentralizacion",
+            valor: 453849600,
+          },
+          {
+            id: 3,
+            nombre: "Otras Participaciones ley 9226/11969",
+            valor: 291168000,
+          },
+          {
+            id: 4,
+            nombre: "Fondo Fort Recursos Municipales Ley 13850",
+            valor: 547950000,
+          },
+          {
+            id: 5,
+            nombre: "Fondo Municipal de Inclusión Social",
+            valor: 266568900,
+          },
+          {
+            id: 6,
+            nombre: "RA Inmobiliario Rural Mantenimiento y obras viales",
+            valor: 106000000,
+          },
+          {
+            id: 7,
+            nombre: "Otros",
+            valor: 627808017,
+          },
+        ],
+        graficoIngresosNoTributarios: [
+          {
+            id: 1,
+            nombre: "Tasas",
+            valor: 6888517068,
+          },
+          {
+            id: 2,
+            nombre: "Derechos",
+            valor: 459650000,
+          },
+          {
+            id: 3,
+            nombre: "Alquileres",
+            valor: 10000000,
+          },
+          {
+            id: 4,
+            nombre: "Multas",
+            valor: 485100000,
+          },
+          {
+            id: 5,
+            nombre: "Otros",
+            valor: 860500000,
+          },
+        ],
+        graficoTasas: [
+          {
+            id: 1,
+            nombre: "Alumbrado, barrido y limpieza",
+            valor: 1208517068,
+          },
+          {
+            id: 2,
+            nombre: "Conservación y mejorado de la red vial municipal",
+            valor: 639000000,
+          },
+          {
+            id: 3,
+            nombre: "Inspección de seguridad e higiene",
+            valor: 2070000000,
+          },
+          {
+            id: 4,
+            nombre: "RA-Becas FOMUEPER",
+            valor: 390000000,
+          },
+          {
+            id: 5,
+            nombre: "Impuesto Automotor",
+            valor: 220000000,
+          },
+          {
+            id: 6,
+            nombre: "Servicios Asistenciales",
+            valor: 273000000,
+          },
+          {
+            id: 7,
+            nombre: "RA-Fondo deportivo (FODE)",
+            valor: 130000000,
+          },
+          {
+            id: 8,
+            nombre: "RA-Fondo de Seguridad (FOSE)",
+            valor: 305000000,
+          },
+          {
+            id: 9,
+            nombre: "Otras tasas",
+            valor: 1055300000,
+          },
+          {
+            id: 10,
+            nombre: "OTROS",
+            valor: 597700000,
+          },
+        ],
+      },
+    ],
     graficosGastos2020: [
       {
         conduccionSuperior: [
@@ -1254,6 +1374,167 @@ export const dataSubGraficos = [
             id: 3,
             nombre: "Desarrollo de Políticas de Familia",
             valor: 198999325.17,
+          },
+        ],
+      },
+    ],
+    graficosGastos2024: [
+      {
+        conduccionSuperior: [
+          {
+            id: 1,
+            nombre: "Desarrollo de Políticas Centrales",
+            valor: 247294490.75,
+          },
+          {
+            id: 2,
+            nombre: "Administración de Justicia Municipal",
+            valor: 65293252.33,
+          },
+          {
+            id: 3,
+            nombre: "Prestación de Servicios en Delegaciones",
+            valor: 238907386.98,
+          },
+        ],
+        secGeneralDeGobierno: [
+          {
+            id: 1,
+            nombre: "Administración y Gestión Políticas de Gobierno",
+            valor: 338699179.59,
+          },
+          {
+            id: 2,
+            nombre: "Seguridad Ciudadana",
+            valor: 432383699.2,
+          },
+          {
+            id: 3,
+            nombre: "Desarrollo Económico Sustentable",
+            valor: 361647042.14,
+          },
+          {
+            id: 4,
+            nombre: "Desarrollo de la Economía Popular y Solidaria",
+            valor: 45054291.21,
+          },
+        ],
+        secDeHacienda: [
+          {
+            id: 1,
+            nombre:
+              "Planificación y Coordinación de la Administración Financiera Municipal",
+            valor: 458340528.28,
+          },
+          {
+            id: 2,
+            nombre: "Ingresos Públicos",
+            valor: 113367041.47,
+          },
+        ],
+        serviciosDeLaDeuda: [
+          {
+            id: 1,
+            nombre: "Intereses y Gastos de la Deuda",
+            valor: 820971.95,
+          },
+          {
+            id: 2,
+            nombre: "Deuda Flotante",
+            valor: 600000000,
+          },
+          {
+            id: 3,
+            nombre: "Deuda Consolidada",
+            valor: 86119251.84,
+          },
+        ],
+        secDeCulturaEducacionTurismo: [
+          {
+            id: 1,
+            nombre: "Administración y Gestión de la Secretaría",
+            valor: 286721443.57,
+          },
+          {
+            id: 2,
+            nombre: "Desarrollo de Actividades Culturales",
+            valor: 344022215.05,
+          },
+          {
+            id: 3,
+            nombre: "Desarrollo de Actividades Educativas",
+            valor: 378260000,
+          },
+          {
+            id: 4,
+            nombre: "Desarrollo de Actividades Deportiva",
+            valor: 286388233.34,
+          },
+        ],
+        secDeObrasServiciosPublicos: [
+          {
+            id: 1,
+            nombre: "Coordinación y Gestión de Servicios",
+            valor: 1246292559.22,
+          },
+          {
+            id: 2,
+            nombre: "Sub Secretaría Servicios Públicos",
+            valor: 593646000,
+          },
+          {
+            id: 3,
+            nombre: "Obras Públicas",
+            valor: 1694367707.16,
+          },
+          {
+            id: 4,
+            nombre: "Obras de Integración Socio Urbana",
+            valor: 1178161283.87,
+          },
+        ],
+        secModernizacionGestionPublica: [
+          {
+            id: 1,
+            nombre: "Sub Secretaría Legal y Técnica",
+            valor: 155165562.06,
+          },
+          {
+            id: 2,
+            nombre: "Modernización e Innovación Pública",
+            valor: 167459623.08,
+          },
+          {
+            id: 3,
+            nombre: "Sub Secretaría de Planificacón Urbana y Hábitat",
+            valor: 115032603.29,
+          },
+          {
+            id: 4,
+            nombre: "Centro Local de Innovación y Cultura (CLIC)",
+            valor: 15927812.71,
+          },
+        ],
+        secDeDesarrolloHumano: [
+          {
+            id: 1,
+            nombre: "Administración y Gestión Políticas Desarrollo Humano",
+            valor: 446368245.15,
+          },
+          {
+            id: 2,
+            nombre: "Desarrollo Políticas Sociales",
+            valor: 69571880,
+          },
+          {
+            id: 3,
+            nombre: "Desarrollo de Políticas de Familia",
+            valor: 516737070.01,
+          },
+          {
+            id: 4,
+            nombre: "Unidad de Gestión en Políticas de Género",
+            valor: 20374007.38,
           },
         ],
       },

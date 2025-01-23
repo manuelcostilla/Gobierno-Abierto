@@ -85,7 +85,7 @@ export const HeadernavBar = () => {
     {/* INICIA SECCION ORGANIGRAMA BARRA DE NAVEGACIÓN */}
     <li className="relative" ref={organigramaRef}>
       <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
-        <Link href="../organigrama">ORGANIGRAMA<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+        <Link href="/organigrama">ORGANIGRAMA<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
       </button>
       {subMenus.organigrama && (
         <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
@@ -107,7 +107,7 @@ export const HeadernavBar = () => {
     {/* INICIA BOLETIN OFICIAL BARRA DE NAVEGACIÓN */}
     <li className="relative" ref={boletinRef}>
       <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
-        <Link href="../boletin-oficial">BOLETIN OFICIAL<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+        <Link href="/boletin-oficial">BOLETIN OFICIAL<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
       </button>
       {subMenus.boletin && (
         <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
@@ -135,7 +135,7 @@ export const HeadernavBar = () => {
     {/* INICIA COMPRAS Y LICITACIONES */}
     <li className="relative" ref={licitacionesRef}>
       <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
-        <Link href="../precios-y-licitaciones">COMPRAS Y LICITACIONES<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+        <Link href="/precios-y-licitaciones">COMPRAS Y LICITACIONES<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
       </button>
       {subMenus.licitaciones && (
         <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
@@ -157,7 +157,7 @@ export const HeadernavBar = () => {
     {/* INICIA PRESUPUESTO PUBLICO */}
     <li className="relative" ref={presupuestoRef}>
       <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
-        <Link href="../presupuesto-publico">PRESUPUESTO PUBLICO<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+        <Link href="/presupuesto-publico">PRESUPUESTO PUBLICO<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
       </button>
       {subMenus.presupuesto && (
         <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">

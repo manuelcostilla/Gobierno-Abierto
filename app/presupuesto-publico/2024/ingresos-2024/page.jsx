@@ -7,6 +7,8 @@ import { GraficosIngresos2024 } from "./components/Grafico_ingresos"
 import { GraficosIngresosProcedencia2024 } from "./components/Grafico_ingresos_procedencia"
 import { BannerText } from "@/components/bannertext"
 import { CardContentPp } from "@/components/cardtemplate"
+import { Subgraficos } from "../../components/subgraficos"
+import { dataSubGraficos } from "../../data/dataSubGraficos"
 
 export default function Ingresos2024 () {
   const [chart1, setActivechart1] = useState(true)
@@ -115,6 +117,43 @@ export default function Ingresos2024 () {
               </div>
             </div>
             <GraficosIngresos2024 chart={chart2} setChart={setActivechart2} />
+          </div>
+          <div className="flex justify-center items-center mt-10">
+            <h1 className="text-3xl font-bold tracking-tight">
+              Subdivisión de gráficos 2024
+            </h1>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-20 mb-10">
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosIngresos2024[0]
+                  .graficoIngresosTributarios
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico Ingresos Tributarios 2024"
+              description=""
+            />
+
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosIngresos2024[0]
+                  .graficoIngresosNoTributarios
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico Ingresos no Tributarios 2024"
+              description=""
+            />
+            <Subgraficos
+              ChartData={
+                dataSubGraficos[0].graficosIngresos2024[0].graficoTasas
+              }
+              chart={chart2}
+              setChart={setActivechart2}
+              titulo="Gráfico Tasas 2024"
+              description=""
+            />
           </div>
         </div>
       </main>

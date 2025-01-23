@@ -10,7 +10,7 @@ import { CardContentPp } from "@/components/cardtemplate"
 import { Subgraficos } from "../../components/subgraficos"
 import { dataSubGraficos } from "../../data/dataSubGraficos"
 
-export default function Gastos2020 () {
+export default function Gastos2021 () {
   const [chart1, setActivechart1] = useState(true)
   const [chart2, setActivechart2] = useState(true)
 

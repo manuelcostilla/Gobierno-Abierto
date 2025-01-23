@@ -101,7 +101,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                   <p className="m-2">
                     {item.tipo} {item.condicion}
                   </p>
-                  <p className="m-2">{item.expediente}</p>
+                  <p className="m-2">{item.Expediente}</p>
                   <p className="m-2">{item.motivo}</p>
                   <p className="m-2">
                     {item.presupuesto} {item.plata}

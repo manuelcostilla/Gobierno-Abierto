@@ -15,7 +15,7 @@ function Contactos () {
     },
     {
       icon: <MapPin />,
-      title: "Dirección Palacio Municipal",
+      title: "Dirección Delegación Municipal",
       link: "https://www.google.es/maps/place/Delegacion+Municipal+Ireneo+Portela/@-33.9816676,-59.6713328,20.21z/data=!4m6!3m5!1s0x95bbd3a39c521b0d:0x12f6aeae94e2083a!8m2!3d-33.9816287!4d-59.6710886!16s%2Fg%2F11gslq9n61?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D",
       text: "primera colonia 360, Ireneo Portela, Provincia de Buenos Aires",
       label: "Dirección",

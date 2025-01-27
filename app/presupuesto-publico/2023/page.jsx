@@ -53,7 +53,7 @@ export default function PresupuestoPublico2023 () {
             <SectionCard
               titulo="Rendición de cuentas 2023"
               textlink="Ver más información"
-              link=""
+              link="./2023/rendicion-de-cuentas-2023"
             />
           </div>
         </div>

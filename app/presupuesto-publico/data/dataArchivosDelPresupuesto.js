@@ -28,36 +28,76 @@ export const archivosDelPresupuestoPdf = [
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/situacion%20economica%20financiera%202023/Memoria-Anual_Situacion-Economico-Financiera_2023.pdf",
           },
         ],
+        situacion2024: [
+          {
+            id: 1,
+            año: 2024,
+            nombre: "Situacion Economico Financiera al 31-03-24",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2024/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202024/Estado-de-Ejecucion-por-Finalidad-y-Funcion-31-03.pdf",
+          },
+          {
+            id: 2,
+            año: 2024,
+            nombre: "Situacion Economico Financiera al 31-06-24",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2024/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202024/Estado-de-Ejecucion-por-Finalidad-y-Funcion-30-06.pdf",
+          },
+          {
+            id: 3,
+            año: 2024,
+            nombre: "Situacion Economico Financiera al 30-09-24",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2024/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202024/Estado-de-Ejecucion-por-Finalidad-y-Funcion-30-09.pdf",
+          },
+        ],
       },
     ],
   },
   {
-    estadodeEjecucionporFinalidadyFuncion2023: [
+    estadodeEjecucionporFinalidadyFuncion: [
       {
-        situacion2023: [
+        ejecucion2023: [
           {
             id: 1,
             año: 2023,
-            nombre: "Situacion Economico Financiera al 31-03-23",
-            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/situacion%20economica%20financiera%202023/Situacion-Economico-Financiera-al-31-03-23.pdf",
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 31-03-23",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202023/Estado-de-Ejecucion-por-Finalidad-y-Funcion-31-03-23.pdf",
           },
           {
             id: 2,
             año: 2023,
-            nombre: "Situacion Economico Financiera al 31-06-23",
-            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/situacion%20economica%20financiera%202023/Situacion-Economico-Financiera-al-31-06-23.pdf",
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 31 06 23",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202023/Estado-de-Ejecucion-por-Finalidad-y-Funcion-31-06-23.pdf",
           },
           {
             id: 3,
             año: 2023,
-            nombre: "Situacion Economico Financiera al 30-09-23",
-            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/situacion%20economica%20financiera%202023/Situacion-Economico-Financiera-al-30-09-23.pdf",
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 30-09-23",
+            link: " https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202023/Estado-de-Ejecucion-por-Finalidad-y-Funcion-30-09-23.pdf",
           },
           {
             id: 4,
             año: 2023,
-            nombre: "Memoria Anual Situacion Economico Financiera 2023",
-            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/situacion%20economica%20financiera%202023/Memoria-Anual_Situacion-Economico-Financiera_2023.pdf",
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 31 12 23",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202023/Estado-de-Ejecucion-por-Finalidad-y-Funcion-31-12-23.pdf",
+          },
+        ],
+        ejecucion2024: [
+          {
+            id: 1,
+            año: 2024,
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 31-03-24",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2024/situacion%20economica%20financiera%202024/Situacion-Economico-Financiera-al-31-03.pdf",
+          },
+          {
+            id: 2,
+            año: 2024,
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 31 06 24",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2024/situacion%20economica%20financiera%202024/Situacion-Economico-Financiera-al-30-06-2024.pdf",
+          },
+          {
+            id: 3,
+            año: 2024,
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 30-09-24",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2024/situacion%20economica%20financiera%202024/Situacion-Economico-Financiera-al-30-09.pdf",
           },
         ],
       },

@@ -42,6 +42,20 @@ export default function PresupuestoPublico2023 () {
               link="./2023/ingresos-2023"
             />
           </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Archivos del presupuesto 2023"
+              textlink="Ver más información"
+              link="./2023/archivos-presupuesto-2023"
+            />
+          </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Rendición de cuentas 2023"
+              textlink="Ver más información"
+              link=""
+            />
+          </div>
         </div>
       </div>
     </>

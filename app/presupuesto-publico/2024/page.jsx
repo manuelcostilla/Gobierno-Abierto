@@ -42,6 +42,20 @@ export default function PresupuestoPublico2024 () {
               link="./2024/ingresos-2024"
             />
           </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Archivos del presupuesto 2024"
+              textlink="Ver más información"
+              link="./2024/archivos-presupuesto-2024"
+            />
+          </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Rendición de cuentas 2024"
+              textlink="Ver más información"
+              link=""
+            />
+          </div>
         </div>
       </div>
     </>

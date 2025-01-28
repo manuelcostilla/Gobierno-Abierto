@@ -6,7 +6,7 @@ export const dataAtajos = [
     title: 'ORGANIGRAMA MUNICIPAL',
     img: 'mapa_estado_municipal',
     alt: 'Mapa del estado municipal',
-    descripcion: 'Es un diagrama que muestra la estructura jerárquica de funcional del gobierno local, indicando las áreas y sus relaciones. Es un aporte a la transparencia y un acercamiento a la ciudadanía a un gobierno abierto ya que permite conocer la estructura organizativa.',
+    descripcion: 'Es un diagrama que muestra la estructura jerárquica funcional del gobierno local, indicando las áreas y sus relaciones. Es un aporte a la transparencia y un acercamiento a la ciudadanía a un gobierno abierto ya que permite conocer la estructura organizativa.',
     link: '../organigrama',
   },
   {
@@ -46,7 +46,7 @@ export const dataAtajos = [
     title: 'CONTACTOS',
     img: 'bookUser',
     alt: 'CONTACTOS',
-    descripcion: 'Sección donde encontra todos los contactos pertinentes al Municipio de Baradero',
+    descripcion: 'Sección donde encontraras todos los contactos pertinentes al Municipio de Baradero',
     link: '../contactos',
   }
 ]

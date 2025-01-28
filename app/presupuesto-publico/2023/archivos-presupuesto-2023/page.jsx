@@ -28,7 +28,7 @@ function archivosDelPresupuesto () {
             />
           </div>
         </div>
-        <ArchivosDelPresupuestoButtons archivosData={archivosDelPresupuestoPdf[0].archivosDelPresupuestoPorAño[0].archivos2023}/>
+        <ArchivosDelPresupuestoButtons archivosData={archivosDelPresupuestoPdf[2].archivosDelPresupuestoPorAño[0].archivos2023}/>
       </div>
     </>
   )

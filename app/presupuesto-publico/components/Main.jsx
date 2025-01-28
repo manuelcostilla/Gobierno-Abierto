@@ -25,59 +25,51 @@ const Main_presupuesto = () => {
             />
           </div>
         </div>
-
-        <div className="flex flex-wrap justify-center items-center pt-20 m-5">
-          <div className="m-5">
-            <SectionCard
-              titulo="Ejercicio 2020"
-              link="/presupuesto-publico/2020"
-              textlink="Ver más información"
-            />
-          </div>
-          <div className="m-5">
-            <SectionCard
-              titulo="Ejercicio 2021"
-              link="/presupuesto-publico/2021"
-              textlink="Ver más información"
-            />
-          </div>
-          <div className="m-5">
-            <SectionCard
-              titulo="Ejercicio 2022"
-              link="/presupuesto-publico/2022"
-              textlink="Ver más información"
-            />
-          </div>
-          <div className="m-5">
-            <SectionCard
-              titulo="Ejercicio 2023"
-              link="/presupuesto-publico/2023"
-              textlink="Ver más información"
-            />
-          </div>
-          <div className="m-5">
-            <SectionCard
-              titulo="Ejercicio 2024"
-              link="/presupuesto-publico/2024"
-              textlink="Ver más información"
-            />
-          </div>
-          <div className="m-5">
-            <SectionCard
-              titulo="Ejercicio 2025"
-              link="/presupuesto-publico/2025"
-              textlink="Ver más información"
-            />
-          </div>
-          <div className="m-5">
-            <SectionCard
-              titulo="Archivos del Presupuesto"
-              link="/presupuesto-publico/archivos-del-presupuesto"
-              textlink="Ver más información"
-            />
+          <div className="flex flex-wrap justify-center items-center pt-20">
+            <div className="m-2">
+              <SectionCard
+                titulo="Ejercicio 2020"
+                link="/presupuesto-publico/2020"
+                textlink="Ver más información"
+              />
+            </div>
+            <div className="m-2">
+              <SectionCard
+                titulo="Ejercicio 2021"
+                link="/presupuesto-publico/2021"
+                textlink="Ver más información"
+              />
+            </div>
+            <div className="m-2">
+              <SectionCard
+                titulo="Ejercicio 2022"
+                link="/presupuesto-publico/2022"
+                textlink="Ver más información"
+              />
+            </div>
+            <div className="m-2">
+              <SectionCard
+                titulo="Ejercicio 2023"
+                link="/presupuesto-publico/2023"
+                textlink="Ver más información"
+              />
+            </div>
+            <div className="m-2">
+              <SectionCard
+                titulo="Ejercicio 2024"
+                link="/presupuesto-publico/2024"
+                textlink="Ver más información"
+              />
+            </div>
+            <div className="m-2">
+              <SectionCard
+                titulo="Ejercicio 2025"
+                link="/presupuesto-publico/2025"
+                textlink="Ver más información"
+              />
+            </div>
           </div>
         </div>
-      </div>
     </>
   )
 }

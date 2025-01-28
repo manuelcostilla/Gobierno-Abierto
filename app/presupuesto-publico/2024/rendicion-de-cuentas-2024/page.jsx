@@ -26,7 +26,7 @@ function rendicionDeCuentas2024 () {
           <div className="w-full lg:w-1/3 flex justify-center ">
             <GeneralText
               title="Contenido rendición de cuentas"
-              text="En este portal podrán acceder a documentos oficiales como el presupuesto anual aprobado, informes trimestrales de gastos y resultados de auditorías externas. También publicamos actualizaciones sobre el avance de obras emblemáticas, como la construcción de la nueva plaza cívica o la renovación del alumbrado público. Además, incluimos espacios de participación ciudadana: formularios para enviar consultas, calendarios de reuniones públicas y encuestas para priorizar necesidades. Todos los datos están disponibles para descargar, revisar y compartir, porque su derecho a saber es nuestra prioridad."
+              text="En esta sección podrán acceder a documentos oficiales de la situación económica y financiera del municipio e informes trimestrales de ejecución gastos  por finalidad y función. Todos los datos están disponibles para descargar, revisar y compartir."
             />
           </div>
         </div>

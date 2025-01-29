@@ -32,9 +32,9 @@ export default function PresupuestoPublico2021 () {
         <div className="flex flex-wrap justify-center items-center container pb-20 pt-20 ">
           <div className="m-5">
             <SectionCard
-              titulo="Gastos 2021"
+              titulo="Presupuesto 2021"
               textlink="Ver más información"
-              link="./2021/gastos-2021"
+              link="./2021/archivos-presupuesto-2021"
             />
           </div>
           <div className="m-5">
@@ -46,11 +46,12 @@ export default function PresupuestoPublico2021 () {
           </div>
           <div className="m-5">
             <SectionCard
-              titulo="Archivos del presupuesto 2021"
+              titulo="Gastos 2021"
               textlink="Ver más información"
-              link="./2021/archivos-presupuesto-2021"
+              link="./2021/gastos-2021"
             />
           </div>
+
           <div className="m-5">
             <SectionCard
               titulo="Rendición de cuentas 2021"

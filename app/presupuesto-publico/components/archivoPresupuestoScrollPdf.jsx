@@ -14,8 +14,7 @@ export function ArchivosDelPresupuestoScrollPdf ({ archivosDelPresupuestoPdf }) 
                 <CardHeader className=" flex font-bold">
                   <CardTitle className="text-center text-base lg:text-left text-balance">
                     <p>
-                      {archivosDelPresupuestoPdf.nombre}{" "}
-                      {archivosDelPresupuestoPdf.año}
+                      {archivosDelPresupuestoPdf.nombre}
                     </p>
                   </CardTitle>
                 </CardHeader>
@@ -24,7 +23,7 @@ export function ArchivosDelPresupuestoScrollPdf ({ archivosDelPresupuestoPdf }) 
                   className="bg-blue-header hover:bg-blue-500 flex justify-center items-center"
                 >
                   <Link
-                    href=""
+                    href= {archivosDelPresupuestoPdf.link}
                     target="_blank"
                     className="block mx-auto lg:mx-0  text-white font-bold py-2 px-4 w-40 text-center rounded-medium text-base xs:text-xs transition duration-300 ease-in-out"
                   >

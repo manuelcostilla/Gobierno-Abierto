@@ -49,6 +49,13 @@ export default function Presupuestopublico2020 () {
               link="./2020/archivos-presupuesto-2020"
             />
           </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Rendición de cuentas 2020"
+              textlink="Ver más información"
+              link="./2020/rendicion-de-cuentas-2020"
+            />
+          </div>
         </div>
       </div>
     </>

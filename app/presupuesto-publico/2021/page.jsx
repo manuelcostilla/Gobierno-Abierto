@@ -51,6 +51,13 @@ export default function PresupuestoPublico2021 () {
               link="./2021/archivos-presupuesto-2021"
             />
           </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Rendición de cuentas 2021"
+              textlink="Ver más información"
+              link="./2021/rendicion-de-cuentas-2021"
+            />
+          </div>
         </div>
       </div>
     </>

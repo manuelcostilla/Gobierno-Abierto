@@ -51,6 +51,13 @@ export default function Presupuestopublico2022 () {
               link="./2022/archivos-presupuesto-2022"
             />
           </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Rendición de cuentas 2022"
+              textlink="Ver más información"
+              link="./2022/rendicion-de-cuentas-2022"
+            />
+          </div>
         </div>
       </div>
     </>

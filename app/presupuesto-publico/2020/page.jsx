@@ -28,11 +28,11 @@ export default function Presupuestopublico2020 () {
           </div>
         </div>
         <div className="flex flex-wrap justify-center items-center container pb-20 pt-20">
-          <div className="m-5">
+        <div className="m-5">
             <SectionCard
-              titulo="Gastos 2020"
+              titulo="Presupuesto 2020"
               textlink="Ver más información"
-              link="./2020/gastos-2020"
+              link="./2020/archivos-presupuesto-2020"
             />
           </div>
           <div className="m-5">
@@ -44,9 +44,9 @@ export default function Presupuestopublico2020 () {
           </div>
           <div className="m-5">
             <SectionCard
-              titulo="Archivos del presupuesto 2020"
+              titulo="Gastos 2020"
               textlink="Ver más información"
-              link="./2020/archivos-presupuesto-2020"
+              link="./2020/gastos-2020"
             />
           </div>
           <div className="m-5">

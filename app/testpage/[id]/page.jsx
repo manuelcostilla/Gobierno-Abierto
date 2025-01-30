@@ -89,20 +89,19 @@ function SecretariaDetail ({ params }) {
               </h3>
 
               {/* Secretarías */}
-              {secretaria.estructura.secretarias?.length > 0 && (
+              {secretaria.estructura.secretaria?.length > 0 && (
                 <div className="mb-8">
                   <div className="flex items-center gap-2 mb-4">
                     <Building size={24} className="text-blue-900" />
                     <h4 className="text-xl font-semibold">Secretarías</h4>
                   </div>
                   <div className="grid gap-4">
-                    {secretaria.estructura.secretarias.map((sec, index) => (
+                    {secretaria.estructura.secretaria.map((sec, index) => (
                       <div key={index} className="bg-gray-50 p-4 rounded-lg">
                         <h5 className="font-semibold text-blue-900">
                           {sec.nombre}
                         </h5>
                         <p className="text-gray-600 text-sm mt-1">
-                          {sec.responsabilidades}
                         </p>
                       </div>
                     ))}

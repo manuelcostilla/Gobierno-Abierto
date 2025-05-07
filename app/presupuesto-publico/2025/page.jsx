@@ -35,6 +35,13 @@ export default function PresupuestoPublico2024 () {
               link="./2025/ingresos-2025"
             />
           </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Rendición de cuentas 2025"
+              textlink="Ver más información"
+              link="./2025/rendicion-de-cuentas-2025"
+            />
+          </div>
         </div>
       </div>
     </>

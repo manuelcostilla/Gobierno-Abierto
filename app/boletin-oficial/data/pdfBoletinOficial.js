@@ -462,4 +462,28 @@ export const pdfBox = [
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin_oficial_2024/Boletin-Oficial-Agosto-2024.pdf",
     boton: "Descargar",
   },
+  {
+    id: 58,
+    año: "2024",
+    texto: "Boletín Oficial Septiembre de 2024",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin_oficial_2024/Boletin-Oficial-Septiembre-2024.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 59,
+    año: "2024",
+    texto: "Boletín Oficial Octubre de 2024",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin_oficial_2024/Boletin-Oficial-Octubre-2024.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 60,
+    año: "2024",
+    texto: "Boletín Oficial Noviembre de 2024",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin_oficial_2024/Boletin-Oficial-Noviembre-2024.pdf",
+    boton: "Descargar",
+  },
 ]

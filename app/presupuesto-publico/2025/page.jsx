@@ -30,9 +30,23 @@ export default function PresupuestoPublico2024 () {
         <div className="flex flex-wrap justify-center items-center container pb-20 pt-20 ">
           <div className="m-5">
             <SectionCard
-              titulo="Grafico Ingresos"
+              titulo="Presupuesto 2025"
+              textlink="Ver más información"
+              link="./2025/archivos-presupuesto-2025"
+            />
+          </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Ingresos 2025"
               textlink="Ver más información"
               link="./2025/ingresos-2025"
+            />
+          </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Gastos 2025"
+              textlink="Ver más información"
+              link="./2025/gastos-2025"
             />
           </div>
           <div className="m-5">

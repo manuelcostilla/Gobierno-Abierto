@@ -43,7 +43,7 @@ export default function Gastos2024 () {
               />
               <CardContentPp
                 title="Menor Variación"
-                content="$310.261.681,01 Servicio de la Deuda"
+                content="$310.261.681,01 HCD"
                 value="142,39% vs. 2023"
               />
               <div className="flex flex-row justify-between">
@@ -125,17 +125,17 @@ export default function Gastos2024 () {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-20 mb-10">
             <Subgraficos
               ChartData={
-                dataSubGraficos[0].graficosGastos2020[0].conduccionSuperior
+                dataSubGraficos[0].graficosGastos2024[0].conduccionSuperior
               }
               chart={chart2}
               setChart={setActivechart2}
               titulo="Gráfico gastos conducción superior 2024"
-              description="Grafico de los gastos en la conducción superior en el año 2024"
+              description=""
             />
 
             <Subgraficos
               ChartData={
-                dataSubGraficos[0].graficosGastos2020[0].secGeneralDeGobierno
+                dataSubGraficos[0].graficosGastos2024[0].secGeneralDeGobierno
               }
               chart={chart2}
               setChart={setActivechart2}
@@ -144,7 +144,7 @@ export default function Gastos2024 () {
             />
 
             <Subgraficos
-              ChartData={dataSubGraficos[0].graficosGastos2020[0].secDeHacienda}
+              ChartData={dataSubGraficos[0].graficosGastos2024[0].secDeHacienda}
               chart={chart2}
               setChart={setActivechart2}
               titulo="Gráfico gastos secretaria de hacienda 2024"
@@ -152,7 +152,7 @@ export default function Gastos2024 () {
             />
             <Subgraficos
               ChartData={
-                dataSubGraficos[0].graficosGastos2020[0].serviciosDeLaDeuda
+                dataSubGraficos[0].graficosGastos2024[0].serviciosDeLaDeuda
               }
               chart={chart2}
               setChart={setActivechart2}
@@ -161,7 +161,7 @@ export default function Gastos2024 () {
             />
             <Subgraficos
               ChartData={
-                dataSubGraficos[0].graficosGastos2020[0]
+                dataSubGraficos[0].graficosGastos2024[0]
                   .secDeCulturaEducacionTurismo
               }
               chart={chart2}
@@ -171,7 +171,7 @@ export default function Gastos2024 () {
             />
             <Subgraficos
               ChartData={
-                dataSubGraficos[0].graficosGastos2020[0]
+                dataSubGraficos[0].graficosGastos2024[0]
                   .secDeObrasServiciosPublicos
               }
               chart={chart2}
@@ -181,7 +181,7 @@ export default function Gastos2024 () {
             />
             <Subgraficos
               ChartData={
-                dataSubGraficos[0].graficosGastos2020[0]
+                dataSubGraficos[0].graficosGastos2024[0]
                   .secModernizacionGestionPublica
               }
               chart={chart2}
@@ -191,7 +191,7 @@ export default function Gastos2024 () {
             />
             <Subgraficos
               ChartData={
-                dataSubGraficos[0].graficosGastos2020[0].secDeDesarrolloHumano
+                dataSubGraficos[0].graficosGastos2024[0].secDeDesarrolloHumano
               }
               chart={chart2}
               setChart={setActivechart2}

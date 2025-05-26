@@ -1539,5 +1539,183 @@ export const dataSubGraficos = [
         ],
       },
     ],
+    graficosGastos2025: [
+      {
+        conduccionSuperior: [
+          {
+            id: 1,
+            nombre: "Desarrollo de Políticas Centrales",
+            valor: 522802829.06,
+          },
+          {
+            id: 2,
+            nombre: "Administración de Justicia Municipal",
+            valor: 130140429.25,
+          },
+          {
+            id: 3,
+            nombre: "Prestación de Servicios en Delegaciones",
+            valor: 397597681.07,
+          },
+        ],
+        secGeneralDeGobierno: [
+          {
+            id: 1,
+            nombre: "Administración y Gestión Políticas de Gobierno",
+            valor: 776795318.46,
+          },
+          {
+            id: 2,
+            nombre: "Seguridad Ciudadana",
+            valor: 873937118.01,
+          },
+          {
+            id: 3,
+            nombre: "Desarrollo Económico Sustentable",
+            valor: 259181079.90,
+          },
+          {
+            id: 4,
+            nombre: "Desarrollo de la Economía Popular y Solidaria",
+            valor: 59550670.27,
+          },
+        ],
+        secDeHacienda: [
+          {
+            id: 1,
+            nombre:
+              "Planificación y Coordinación de la Administración Financiera Municipal",
+            valor: 1102635637.67,
+          },
+          {
+            id: 2,
+            nombre: "Ingresos Públicos",
+            valor: 188007993.36,
+          },
+        ],
+        serviciosDeLaDeuda: [
+          {
+            id: 1,
+            nombre: "Intereses y Gastos de la Deuda",
+            valor: 375632.14,
+          },
+          {
+            id: 2,
+            nombre: "Deuda Flotante",
+            valor: 2101674565.93,
+          },
+          {
+            id: 3,
+            nombre: "Deuda Consolidada",
+            valor: 86182865.92,
+          },
+        ],
+        secDeCulturaEducacionTurismo: [
+          {
+            id: 1,
+            nombre: "Administración y Gestión de la Secretaría",
+            valor: 449965449.20,
+          },
+          {
+            id: 2,
+            nombre: "Desarrollo de Actividades Culturales",
+            valor: 347888766.91,
+          },
+          {
+            id: 3,
+            nombre: "Desarrollo de Actividades Educativas",
+            valor: 746000000.00,
+          },
+          {
+            id: 4,
+            nombre: "Desarrollo de Actividades Deportiva",
+            valor: 553370811.23,
+          },
+        ],
+        secDeObrasServiciosPublicos: [
+          {
+            id: 1,
+            nombre: "Coordinación y Gestión de Servicios",
+            valor: 1826380140.46,
+          },
+          {
+            id: 2,
+            nombre: "Sub Secretaría Servicios Públicos",
+            valor: 1523995000.00,
+          },
+          {
+            id: 3,
+            nombre: "Obras Públicas",
+            valor: 2192382259.47,
+          },
+          {
+            id: 4,
+            nombre: "Obras de Integración Socio Urbana",
+            valor: 1150082009.50,
+          },
+        ],
+        secModernizacionGestionPublica: [
+          {
+            id: 1,
+            nombre: "Sub Secretaría Legal y Técnica",
+            valor: 258921226.60,
+          },
+          {
+            id: 2,
+            nombre: "Planificación y Gestión",
+            valor: 319824625.44,
+          },
+          {
+            id: 3,
+            nombre: "Sub Secretaría de Planificacón Urbana y Hábitat",
+            valor: 159770820.84,
+          },
+          {
+            id: 4,
+            nombre: "Centro Local de Innovación y Cultura (CLIC)",
+            valor: 8500000.00,
+          },
+        ],
+        secDeDesarrolloHumano: [
+          {
+            id: 1,
+            nombre: "Administración y Gestión Políticas Desarrollo Social",
+            valor: 646871356.66,
+          },
+          {
+            id: 2,
+            nombre: "Desarrollo Políticas Sociales",
+            valor: 100600000.00,
+          },
+          {
+            id: 3,
+            nombre: "Desarrollo de Políticas de Familia",
+            valor: 1217445640.89,
+          },
+          {
+            id: 4,
+            nombre: "Unidad de Gestión en Políticas de Género",
+            valor: 96881103.28,
+          },
+        ],
+        secDeSalud: [
+          {
+            id: 1,
+            nombre: "Hospital Municipal",
+            valor: 5839829874.02,
+          },
+          {
+            id: 2,
+            nombre: "Unidades de Atención Primaria",
+            valor: 1104408481.66,
+          },
+          {
+            id: 3,
+            nombre: "Bromatologia e Higiene",
+            valor: 83305333.94,
+          },
+        ],
+      },
+    ],
   },
 ]

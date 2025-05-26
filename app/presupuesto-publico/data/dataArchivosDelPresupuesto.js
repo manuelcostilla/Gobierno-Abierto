@@ -447,6 +447,32 @@ export const archivosDelPresupuestoPdf = [
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024/2024/Recursos%20por%20rubro-2024.pdf",
           },
         ],
+        archivos2025: [
+          {
+            id: 1,
+            año: "2025",
+            nombre: "Gastos por estructura programática",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024/2025/Presupuesto%20de%20gastos%202025-1.pdf",
+          },
+          {
+            id: 2,
+            año: "2025",
+            nombre: "Gastos por fuente de financiamiento",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024/2025/gastos%20x%20fte%20finan%202025-1.pdf",
+          },
+          {
+            id: 3,
+            año: "2025",
+            nombre: "Recursos por procedencia",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024/2025/Recursos%20por%20procedencia%202025.pdf",
+          },
+          {
+            id: 4,
+            año: "2025",
+            nombre: "Recursos por rubro",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024/2025/Recursos%20por%20rubro%202025.pdf",
+          },
+        ],
       },
     ],
   },

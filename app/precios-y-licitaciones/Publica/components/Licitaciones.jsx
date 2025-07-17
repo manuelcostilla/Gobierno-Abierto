@@ -41,7 +41,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
       <Card className="w-full bg-slate-50 p-4">
         <CardHeader>
           <CardTitle className="flex flex-wrap justify-center gap-4">
-            {["2024", "2023", "2022", "2021"].map((year) => (
+            {["2025", "2024", "2023", "2022", "2021"].map((year) => (
               <Button
                 key={year}
                 onClick={() => handleShowObjects(year)}

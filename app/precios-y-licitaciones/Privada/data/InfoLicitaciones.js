@@ -951,4 +951,4 @@ export const dataLicitacionesPrivadas = [
     pdfUrlAdjudicacion: "",
     botonTextoAdjudicacion: "adjudicacion",
   },
-];
+]

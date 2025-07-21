@@ -37,11 +37,10 @@ export const AcordeonDeLicitaciones = ({ data }) => {
 
   return (
     <>
-      {/* Filtros por año */}
       <Card className="w-full bg-slate-50 p-4">
         <CardHeader>
           <CardTitle className="flex flex-wrap justify-center gap-4">
-            {["2025", "2024", "2023", "2022", "2021"].map((year) => (
+            {["2025", "2024", "2023", "2022", "2021", "2020"].map((year) => (
               <Button
                 key={year}
                 onClick={() => handleShowObjects(year)}
@@ -68,7 +67,6 @@ export const AcordeonDeLicitaciones = ({ data }) => {
         </CardHeader>
       </Card>
 
-      {/* Contenido del acordeón */}
       <Card className="bg-slate-50 p-4">
         <ScrollArea className="max-h-[550px] overflow-y-auto">
           {objects.map((item, index) => (

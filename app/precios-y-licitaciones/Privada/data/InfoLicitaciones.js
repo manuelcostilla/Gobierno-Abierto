@@ -6,8 +6,6 @@ export const dataLicitacionesPrivadas = [
     tituloAcordeonAbierto: "Decreto - 1° Llamado - N°30 ",
     Expediente: "Expediente 4009-20-09647 / 2020 S",
     motivo: "Contratación de los Servicios de Luces, Sonido, Pantallas y Filmación que se utilizarán durante la realización de la 46° edición del \"Festival de Música Popular Argentina - Baradero 2020\"",
-    presupuesto: "Presupuesto oficial:",
-    plata: "",
     firma: "ADJUDICADA (Decreto N° 80).",
     pdfUrl: "",
     botonTexto: "1er llamado",

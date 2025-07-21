@@ -39,11 +39,11 @@ Si estás interesado en participar en alguna licitación, consulta la informaci�
             textlink="Ver más información"
             link="/precios-y-licitaciones/Publica"
           />
-          {/* <SectionCard
+          <SectionCard
             titulo="Licitaciones Privadas"
             textlink="Ver más información"
             link="/precios-y-licitaciones/Privada"
-          /> */}
+          />
         </div>
       </div>
     </>

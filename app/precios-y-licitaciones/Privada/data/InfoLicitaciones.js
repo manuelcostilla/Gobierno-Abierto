@@ -266,7 +266,7 @@ export const dataLicitacionesPrivadas = [
     botonTexto: "1er llamado",
     pdfUrlCierre: "",
     botonTextoCierre: "2do llamado",
-    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2021/Ndecreto76-Adjudicacion-Licitacion-Privada-N14-2021.pdf",
+    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones%202021/Ndecreto76-Licitacion-Privada-N14-2021-Desierta.pdf",
     botonTextoAdjudicacion: "adjudicacion"
   },
   {
@@ -281,9 +281,9 @@ export const dataLicitacionesPrivadas = [
     firma: "ADJUDICADA (Decreto N° 19 / 2022).",
     pdfUrl: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2021/Ndecreto740-Licitacion-Privada-N15-2021.pdf",
     botonTexto: "1er llamado",
-    pdfUrlCierre: "",
+    pdfUrlCierre: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones%202021/Ndecreto822-Licitacion-Privada-N15-2021-segundo-llamado.pdf",
     botonTextoCierre: "2do llamado",
-    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2021/Ndecreto19-Adjudicacion-Licitacion-Privada-N15-2021.pdf",
+    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones%202021/Ndecreto19-Adjudicacion-Licitacion-Privada-N15-segundo-llamado-2021.pdf",
     botonTextoAdjudicacion: "adjudicacion"
   },
   {
@@ -298,9 +298,9 @@ export const dataLicitacionesPrivadas = [
     firma: "ADJUDICADA (Decreto N° 20 / 2022).",
     pdfUrl: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2021/Ndecreto765-Licitacion-Privada-N16-2021.pdf",
     botonTexto: "1er llamado",
-    pdfUrlCierre: "",
+    pdfUrlCierre: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones%202021/Ndecreto823-Licitacion-Privada-N16-2021-segundo-llamado.pdf",
     botonTextoCierre: "2do llamado",
-    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2021/Ndecreto20-Adjudicacion-Licitacion-Privada-N16-2021.pdf",
+    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones%202021/Ndecreto20-Adjudicacion-Licitacion-Privada-N16-segundo-llamado-2021.pdf",
     botonTextoAdjudicacion: "adjudicacion"
   },
   {

@@ -434,7 +434,7 @@ export const dataLicitacionesPrivadas = [
     firma: "ADJUDICADA (Decreto N° 111).",
     pdfUrl: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto19-Licitacion-Privada-N5-2023.pdf",
     botonTexto: "1er llamado",
-    pdfUrlCierre: "",
+    pdfUrlCierre: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto73-Licitacion-Privada-N5-segundo-llamado-2023.pdf",
     botonTextoCierre: "2do llamado",
     pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto111-Adjudicacion-Licitacion-Privada-N5-2023.pdf",
     botonTextoAdjudicacion: "adjudicacion"
@@ -674,7 +674,7 @@ export const dataLicitacionesPrivadas = [
     botonTexto: "1er llamado",
     pdfUrlCierre: "",
     botonTextoCierre: "2do llamado",
-    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto945-Adjudicacion-Licitacion-Privada-N19-2023.pdf",
+    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto945-Adjudicacion-Licitacion-Privada-N19-segundo-llamado-2023.pdf",
     botonTextoAdjudicacion: "adjudicacion"
   },
   {
@@ -687,11 +687,11 @@ export const dataLicitacionesPrivadas = [
     presupuesto: "Presupuesto oficial:",
     plata: "",
     firma: "DESIERTA (Decreto N° 973).",
-    pdfUrl: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto747-Licitacion-Privada-N20-2023-Desierta.pdf",
+    pdfUrl: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto747-Licitacion-Privada-N20-2023.pdf",
     botonTexto: "1er llamado",
     pdfUrlCierre: "",
     botonTextoCierre: "2do llamado",
-    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto973-Licitacion-Privada-N20-2023-Desierta.pdf",
+    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto973-Adjudicacion-Licitacion-Privada-N20-segundo-llamado2023.pdf",
     botonTextoAdjudicacion: "adjudicacion"
   },
   {
@@ -742,7 +742,7 @@ export const dataLicitacionesPrivadas = [
     botonTexto: "1er llamado",
     pdfUrlCierre: "",
     botonTextoCierre: "2do llamado",
-    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto17-Adjudicacion-Licitacion-Privada-N23-2023.pdf",
+    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto17-Adjudicacion-Licitacion-Privada-N23-segundo-llamado-2023.pdf",
     botonTextoAdjudicacion: "adjudicacion"
   },
   {
@@ -759,7 +759,7 @@ export const dataLicitacionesPrivadas = [
     botonTexto: "1er llamado",
     pdfUrlCierre: "",
     botonTextoCierre: "2do llamado",
-    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto61-Licitacion-Privada-N24-2023-Fracasada.pdf",
+    pdfUrlAdjudicacion: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones-privadas-baradero/Licitaciones 2023/Ndecreto61-Licitacion-Privada-N24-fracasada-2023.pdf",
     botonTextoAdjudicacion: "adjudicacion"
   },
   {

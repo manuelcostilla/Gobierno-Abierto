@@ -121,15 +121,24 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                   <div className="flex justify-center gap-4 mt-4">
                     <Button
                       onClick={() => handleDownload(item.pdfUrl)}
+                      disabled={!item.pdfUrl}
                       className="bg-blue-500 hover:bg-blue-600 text-white"
                     >
                       {item.botonTexto}
                     </Button>
                     <Button
                       onClick={() => handleDownload(item.pdfUrlCierre)}
+                      disabled={!item.pdfUrlCierre}
                       className="bg-blue-500 hover:bg-blue-600 text-white"
                     >
                       {item.botonTextoCierre}
+                    </Button>
+                    <Button
+                      onClick={() => handleDownload(item.pdfUrlAdjudicacion)}
+                      disabled={!item.pdfUrlAdjudicacion}
+                      className="bg-blue-500 hover:bg-blue-600 text-white"
+                    >
+                      {item.botonTextoAdjudicacion}
                     </Button>
                   </div>
                 </CardContent>

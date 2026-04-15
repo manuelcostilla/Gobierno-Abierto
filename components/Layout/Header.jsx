@@ -4,73 +4,45 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Globe } from "lucide-react"
+import { Globe, Facebook, Instagram, Youtube } from "lucide-react"
 import logo from "../../public/logo_gobiernoAbierto (1).svg"
-import face from "../../public/iconos redes/fb.png"
-import twitter from "../../public/iconos redes/tw.png"
-import instagram from "../../public/iconos redes/ig.png"
-import youtube from "../../public/iconos redes/yt.png"
 import { HeadernavBar } from "./components/Header-navBar"
+
+const XIcon = ({ size = 18, className = "" }) => (
+  <svg viewBox="0 0 24 24" width={size} height={size} fill="currentColor" className={className}>
+    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153ZM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644Z" />
+  </svg>
+)
 
 export const Header = () => {
   return (
     <>
       <header className="sticky top-0 z-50 w-full transition-all duration-300">
-        <div className="flex w-full justify-center items-center sm:flex sm:justify-end sm:items-center sm:w-full h-[40px] bg-blue-header/90 backdrop-blur-sm px-6">
-          <ul className=" xs:mt-1 font-sans pr-5">
-            <li className="inline-block list-none sm:w-auto">
-              <Link
-                href="https://www.facebook.com/MunicipalidaddeBaradero/"
-                target="_blank"
-              >
-                <Image
-                  src={face}
-                  alt="facebook"
-                  width={12}
-                  height={15}
-                  className="text-white hover:text-slate-200 mr-1"
-                />
+        <div className="flex w-full justify-center items-center sm:justify-end h-[45px] bg-blue-header/90 backdrop-blur-sm px-6">
+          <ul className="flex items-center gap-6 font-sans">
+            <li className="list-none">
+              <Link href="https://www.facebook.com/MunicipalidaddeBaradero/" target="_blank" className="text-white hover:text-blue-200 transition-colors">
+                <Facebook size={18} />
               </Link>
             </li>
-            <li className="inline-block list-none sm:w-auto">
-              <Link
-                href="https://www.instagram.com/municipiodebaradero/"
-                target="_blank"
-              >
-                <Image
-                  src={instagram}
-                  width={21}
-                  height={20}
-                  className="text-white hover:text-slate-200 mr-1"
-                />
+            <li className="list-none">
+              <Link href="https://www.instagram.com/municipiodebaradero/" target="_blank" className="text-white hover:text-pink-200 transition-colors">
+                <Instagram size={18} />
               </Link>
             </li>
-            <li className="inline-block list-none sm:w-auto">
-              <Link href="https://twitter.com/municipalidadba" target="_blank">
-                <Image
-                  src={twitter}
-                  width={23}
-                  height={20}
-                  className="text-white hover:text-slate-200 mr-1"
-                />
+            <li className="list-none">
+              <Link href="https://twitter.com/municipalidadba" target="_blank" className="text-white hover:text-neutral-300 transition-colors">
+                <XIcon size={16} />
               </Link>
             </li>
-            <li className="inline-block list-none sm:w-auto">
-              <Link
-                href="https://www.youtube.com/@municipalidadbaradero9936"
-                target="_blank"
-              >
-                <Image
-                  src={youtube}
-                  width={26}
-                  height={20}
-                  className="text-white hover:text-slate-200 mr-2"
-                />
+            <li className="list-none">
+              <Link href="https://www.youtube.com/@municipalidadbaradero9936" target="_blank" className="text-white hover:text-red-300 transition-colors">
+                <Youtube size={20} />
               </Link>
             </li>
-            <li className="inline-block list-none sm:w-auto ">
-              <Link href="https://baradero.gob.ar/" target="_blank">
-                <Globe height={25} width={25} color="white" />
+            <li className="list-none border-l border-white/20 pl-4">
+              <Link href="https://baradero.gob.ar/" target="_blank" className="text-white hover:text-green-200 transition-colors">
+                <Globe size={20} />
               </Link>
             </li>
           </ul>

@@ -8,7 +8,9 @@ const Licitacionespublicas = () => {
     <>
       <BannerText titulo="Licitaciones Públicas" />
       <div className="container mx-auto pb-10 pt-10">
-        <AcordeonDeLicitaciones data={licitaciones} />
+        <div className='overflow-x-hidden pt-12 pb-20'>
+          <AcordeonDeLicitaciones data={licitaciones} />
+        </div>
       </div>
     </>
   )

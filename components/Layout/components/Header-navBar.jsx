@@ -85,7 +85,7 @@ export const HeadernavBar = () => {
     {/* INICIA SECCION ORGANIGRAMA BARRA DE NAVEGACIÓN */}
     <li className="relative" ref={organigramaRef}>
       <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
-        <Link href="/organigrama">ORGANIGRAMA<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
+        <Link href="/organigrama">MAPA DEL ESTADO MUNICIPAL<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
       </button>
       {subMenus.organigrama && (
         <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">

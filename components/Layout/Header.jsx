@@ -15,8 +15,8 @@ import { HeadernavBar } from "./components/Header-navBar"
 export const Header = () => {
   return (
     <>
-      <header className="overflow-x-hidden">
-        <div className="flex w-full justify-center item-center content-center sm:flex sm:justify-end sm:items-center sm:w-full  h-[50px] bg-blue-header">
+      <header className="sticky top-0 z-50 w-full transition-all duration-300">
+        <div className="flex w-full justify-center items-center sm:flex sm:justify-end sm:items-center sm:w-full h-[40px] bg-blue-header/90 backdrop-blur-sm px-6">
           <ul className=" xs:mt-1 font-sans pr-5">
             <li className="inline-block list-none sm:w-auto">
               <Link
@@ -75,12 +75,12 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col sm:w-full md:flex-row md:border border-solid justify-between items-center content-center md:w-auto lg:border-b-4 lg:border-b-green-nav">
-          <Link href="/" className=" md:mb-0">
+        <div className="flex flex-col sm:w-full md:flex-row justify-between items-center bg-white/80 backdrop-blur-md border-b border-gray-200 px-6 py-2 lg:border-b-4 lg:border-b-green-nav">
+          <Link href="/" className="transition-transform hover:scale-105 duration-300">
             <Image
-              alt=""
+              alt="Logo Gobierno Abierto"
               src={logo}
-              className="w-[300px] h-[300px] xs:w-[400px] xs:h-[200px] sm:w-full sm:h-[200px] md:w-[300px] md:h-[200px] lg:w-[300px] lg:h-[300px] mx-auto sm:mx-0"
+              className="w-[180px] h-auto md:w-[220px] lg:w-[250px]"
             />
           </Link>
           <div className="w-full sm:w-auto">

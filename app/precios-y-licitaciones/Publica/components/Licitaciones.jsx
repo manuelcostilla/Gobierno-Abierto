@@ -38,35 +38,45 @@ export const AcordeonDeLicitaciones = ({ data }) => {
   return (
     <>
       {/* Filtros por año */}
-      <Card className="w-full bg-slate-50 p-4">
-        <CardHeader>
-          <CardTitle className="flex flex-wrap justify-center gap-4">
-            {["2025", "2024", "2023", "2022", "2021"].map((year) => (
-              <Button
-                key={year}
-                onClick={() => handleShowObjects(year)}
-                className={`text-sm md:text-base ${
-                  selectedYear === year
-                    ? "bg-green-600 text-white hover:bg-green-700"
-                    : "bg-white text-black hover:bg-slate-100"
-                }`}
-              >
-                {year}
-              </Button>
-            ))}
-            <Button
-              onClick={resetList}
-              className={`text-sm md:text-base ${
-                selectedYear === null
-                  ? "bg-green-600 text-white hover:bg-green-700"
-                  : "bg-white text-black hover:bg-slate-100"
+      <div className="flex flex-col md:flex-row items-center justify-between gap-6 bg-white/80 backdrop-blur-xl border border-neutral-100 p-8 rounded-[2rem] shadow-xl mb-12">
+        <div className="flex items-center gap-6">
+          <div className="p-4 bg-blue-50 text-blue-GobAb rounded-2xl shadow-inner">
+            <Filter size={24} />
+          </div>
+          <div>
+            <h2 className="text-xl font-black text-blue-title tracking-tight uppercase">Licitaciones Públicas</h2>
+            <p className="text-neutral-500 text-sm font-medium">Historial completo por ejercicio anual</p>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap justify-center md:justify-end gap-3 max-w-xl">
+          <Button
+            onClick={resetList}
+            className={`rounded-full px-8 h-12 transition-all duration-300 font-bold tracking-wide shadow-sm
+              ${selectedYear === null
+                ? "bg-green-600 hover:bg-green-700 text-white shadow-green-200"
+                : "hover:border-green-600 hover:text-green-600 bg-white border border-neutral-200"
               }`}
+          >
+            <Grid size={16} className="mr-2" />
+            TODOS
+          </Button>
+          {["2025", "2024", "2023", "2022", "2021"].map((year) => (
+            <Button
+              key={year}
+              onClick={() => handleShowObjects(year)}
+              className={`rounded-full px-6 h-12 transition-all duration-300 font-bold shadow-sm
+                ${selectedYear === year
+                  ? "bg-blue-GobAb hover:bg-blue-700 text-white shadow-blue-200"
+                  : "hover:border-blue-GobAb hover:text-blue-GobAb bg-white border border-neutral-200"
+                }`}
             >
-              Mostrar todos
+              <Calendar size={14} className="mr-2" />
+              {year}
             </Button>
-          </CardTitle>
-        </CardHeader>
-      </Card>
+          ))}
+        </div>
+      </div>
 
       {/* Contenido del acordeón */}
       <Card className="bg-slate-50 p-4">

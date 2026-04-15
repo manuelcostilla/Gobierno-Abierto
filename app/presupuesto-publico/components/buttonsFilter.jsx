@@ -1,27 +1,36 @@
-"use client"
+'use client'
 import { ArchivosDelPresupuestoScrollPdf } from "./archivoPresupuestoScrollPdf"
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Calendar, ChartBar } from "lucide-react"
 
 export function ArchivosDelPresupuestoButtons ({ archivosData }) {
+  if (!archivosData || archivosData.length === 0) return null
+
   return (
-    <>
-      <div>
-        <Card className="flex flex-wrap justify-center text-xs font-sans overflow-x-hidden w-full bg-slate-50">
-          <CardHeader className="w-full flex bg-slate-50">
-            <CardTitle className="flex justify-center flex-wrap">
-              <p> {archivosData[0].año}</p>
-            </CardTitle>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardContent className="bg-slate-50">
-            <ArchivosDelPresupuestoScrollPdf
-              archivosDelPresupuestoPdf={archivosData}
-            />
-          </CardContent>
-        </Card>
+    <div className="space-y-12">
+      {/* Header Interactivo */}
+      <div className="flex flex-col md:flex-row items-center justify-between gap-6 bg-white/80 backdrop-blur-xl border border-neutral-100 p-8 rounded-[2rem] shadow-xl">
+        <div className="flex items-center gap-6">
+          <div className="p-4 bg-green-50 text-green-600 rounded-2xl shadow-inner">
+            <ChartBar size={24} />
+          </div>
+          <div>
+            <h2 className="text-xl font-black text-blue-title tracking-tight uppercase">Documentación por Ejercicio</h2>
+            <p className="text-neutral-500 text-sm font-medium">Archivos correspondientes al año fiscal seleccionado</p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-3 bg-neutral-50 px-6 py-3 rounded-full border border-neutral-100 shadow-inner">
+          <Calendar size={18} className="text-blue-GobAb" />
+          <span className="text-lg font-black text-blue-GobAb tracking-tighter">AÑO {archivosData[0].año}</span>
+        </div>
       </div>
-    </>
+
+      <div>
+        <ArchivosDelPresupuestoScrollPdf
+          archivosDelPresupuestoPdf={archivosData}
+        />
+      </div>
+    </div>
   )
 }

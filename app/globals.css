@@ -75,4 +75,29 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+  /* Custom Utilities */
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+
+  .glass-dark {
+    @apply bg-black/50 backdrop-blur-md border border-white/10 shadow-2xl;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 124, 182, 0.3);
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl;
+  }
+}
+
+@layer base {
+  body {
+    @apply antialiased scroll-smooth;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
 }

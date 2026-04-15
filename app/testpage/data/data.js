@@ -1,12 +1,12 @@
-import { 
-  Landmark, 
-  Users, 
-  LayoutDashboard, 
-  Hammer, 
-  Wallet, 
-  Palette, 
-  HeartPulse, 
-  HandHelping 
+import {
+  Landmark,
+  Users,
+  LayoutDashboard,
+  Hammer,
+  Wallet,
+  Palette,
+  HeartPulse,
+  HandHelping
 } from "lucide-react"
 
 export const secretarias = [

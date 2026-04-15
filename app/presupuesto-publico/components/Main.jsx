@@ -11,12 +11,12 @@ const Main_presupuesto = () => {
             text="Bienvenidos a la sección de Presupuesto Público del Municipio de Baradero. Aquí podrás acceder a información transparente y detallada sobre la asignación y ejecución de los recursos públicos de nuestra comunidad."
           />
           <GeneralText
-            title="¿Qué es Presupuesto?"
+            title="¿Qué es Presupuesto Público?"
             text="El presupuesto público es el documento que refleja las prioridades y necesidades de nuestra ciudad. A través de este, se establece cómo se recaudan y distribuyen los fondos para financiar los servicios y proyectos que benefician a todos los ciudadanos."
           />
           <GeneralText
-            title="Transparencia"
-            text="Nuestro compromiso con la transparencia implica que todos los ciudadanos tengan acceso a la información sobre el uso de los recursos públicos, fomentando el control social y la rendición de cuentas."
+            title="Transparencia y Participación"
+            text="Nuestro compromiso con la transparencia implica que todos los ciudadanos tengan acceso a la información sobre el uso de los recursos públicos."
           />
         </div>
 

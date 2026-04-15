@@ -11,15 +11,17 @@ const Main_licitaciones = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <GeneralText
             title="Bienvenidos"
-            text="En esta sección, el Municipio de Baradero pone a tu disposición toda la información relacionada con las licitaciones, tanto públicas como privadas. Nuestro compromiso con la transparencia asegura que los procesos sean accesibles y claros."
+            text="En esta sección, el Municipio de Baradero pone a tu disposición toda la información relacionada con las licitaciones, tanto públicas como privadas. Nuestro compromiso con la transparencia y la participación ciudadana asegura que todos los procesos de contratación sean accesibles y claros."
           />
           <GeneralText
             title="¿Qué es una Licitación?"
-            text="Es un procedimiento mediante el cual el gobierno municipal convoca a proveedores para la ejecución de obras o adquisición de bienes. Este proceso busca garantizar la competencia y la mejor utilización de los recursos públicos."
+            text="Una licitación es un procedimiento mediante el cual el gobierno municipal convoca a proveedores y contratistas a presentar propuestas para la ejecución de obras, adquisición de bienes o prestación de servicios. Este proceso busca garantizar la competencia, la igualdad de oportunidades y la mejor utilización de los recursos públicos."
           />
           <GeneralText
             title="Contenido"
-            text="Podrás encontrar información detallada sobre las licitaciones convocadas por el Municipio. Las públicas son procesos abiertos a cualquier interesado, mientras que las privadas son por invitación selecta corporativa."
+            text="En esta sección, podrás encontrar información detallada sobre las licitaciones tanto públicas como privadas convocadas por el Municipio de Baradero. Las licitaciones públicas son procesos abiertos en los que cualquier interesado puede participar, cumpliendo con los requisitos establecidos. Aquí podrás consultar anuncios sobre proyectos disponibles para licitación, con detalles clave como los plazos de presentación y los requisitos técnicos o financieros que se deben cumplir. Además, se publicará la documentación necesaria para presentar una oferta, como formularios específicos o certificaciones requeridas. Al finalizar cada licitación, se publicarán los resultados, incluyendo la adjudicación de contratos y el ganador de la licitación.
+Por otro lado, las licitaciones privadas son aquellas en las que solo un grupo seleccionado de empresas o proveedores está invitado a participar. En esta subsección, podrás ver los anuncios correspondientes a estas licitaciones, especificando los requisitos particulares y las condiciones para poder presentar una propuesta. Además, se brindan instrucciones claras sobre cómo participar en este tipo de procesos, incluyendo los criterios de evaluación que se utilizarán para seleccionar al proveedor o contratista adecuado. Al igual que en las licitaciones públicas, se publicarán los resultados y los contratos adjudicados una vez finalizado el proceso.
+Si estás interesado en participar en alguna licitación, consulta la información disponible sobre las licitaciones públicas y privadas que se encuentren abiertas en el Municipio de Baradero."
           />
         </div>
 

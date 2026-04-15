@@ -2,10 +2,15 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Globe, Facebook, Instagram, Twitter, Youtube } from "lucide-react"
-
+import { Globe, Facebook, Instagram, Youtube } from "lucide-react"
 import escudo_baradero from "../../public/imagenes/Escudo_Municipio.png"
 import logo_baradero from "../../public/logo_negro.png"
+
+const XIcon = ({ size = 24, className = "" }) => (
+  <svg viewBox="0 0 24 24" width={size} height={size} fill="currentColor" className={className}>
+    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153ZM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644Z" />
+  </svg>
+)
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -30,8 +35,8 @@ export const Footer = () => {
               <Link href="https://www.instagram.com/municipiodebaradero/" target="_blank" className="text-neutral-600 hover:text-pink-500 transition-colors">
                 <Instagram size={24} />
               </Link>
-              <Link href="https://twitter.com/municipalidadba" target="_blank" className="text-neutral-600 hover:text-sky-400 transition-colors">
-                <Twitter size={24} />
+              <Link href="https://twitter.com/municipalidadba" target="_blank" className="text-neutral-600 hover:text-neutral-900 transition-colors">
+                <XIcon size={22} />
               </Link>
               <Link href="https://www.youtube.com/@municipalidadbaradero9936" target="_blank" className="text-neutral-600 hover:text-red-500 transition-colors">
                 <Youtube size={24} />

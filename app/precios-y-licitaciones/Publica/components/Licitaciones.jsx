@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import { Filter, Grid, Calendar } from "lucide-react"
+import { Filter, Grid, Calendar, ChevronUp, FileText, ChevronRight } from "lucide-react"
 import Direcciondecompras from "./Direcciondecompras"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Button } from "@/components/ui/button"
@@ -36,53 +36,56 @@ export const AcordeonDeLicitaciones = ({ data }) => {
   return (
     <>
       {/* Filtros por año */}
-      <div className="flex flex-col md:flex-row items-center justify-between gap-6 bg-white/80 backdrop-blur-xl border border-neutral-100 p-8 rounded-[2rem] shadow-xl mb-12">
-        <div className="flex items-center gap-6">
-          <div className="p-4 bg-blue-50 text-blue-GobAb rounded-2xl shadow-inner">
-            <Filter size={24} />
+      <div className="max-w-5xl mx-auto mb-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 bg-white/90 backdrop-blur-xl border border-neutral-100 p-5 rounded-3xl shadow-lg">
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-blue-50 text-blue-GobAb rounded-2xl shadow-inner">
+              <Filter size={20} />
+            </div>
+            <div>
+              <h2 className="text-lg font-black text-blue-title tracking-tight uppercase">Licitaciones Públicas</h2>
+              <p className="text-neutral-500 text-xs font-medium">Historial por ejercicio anual</p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-xl font-black text-blue-title tracking-tight uppercase">Licitaciones Públicas</h2>
-            <p className="text-neutral-500 text-sm font-medium">Historial completo por ejercicio anual</p>
-          </div>
-        </div>
 
-        <div className="flex flex-wrap justify-center md:justify-end gap-3 max-w-xl">
-          <Button
-            onClick={resetList}
-            className={`rounded-full px-8 h-12 transition-all duration-300 font-bold tracking-wide shadow-sm
-              ${selectedYear === null
-                ? "bg-green-600 hover:bg-green-700 text-white shadow-green-200"
-                : "hover:border-green-600 hover:text-green-600 bg-white border border-neutral-200"
-              }`}
-          >
-            <Grid size={16} className="mr-2" />
-            TODOS
-          </Button>
-          {["2025", "2024", "2023", "2022", "2021"].map((year) => (
+          <div className="flex flex-wrap justify-center md:justify-end gap-2">
             <Button
-              key={year}
-              onClick={() => handleShowObjects(year)}
-              className={`rounded-full px-6 h-12 transition-all duration-300 font-bold shadow-sm
-                ${selectedYear === year
-                  ? "bg-blue-GobAb hover:bg-blue-700 text-white shadow-blue-200"
-                  : "hover:border-blue-GobAb hover:text-blue-GobAb bg-white border border-neutral-200"
+              variant={selectedYear === null ? "default" : "outline"}
+              onClick={resetList}
+              className={`rounded-full px-6 h-10 transition-all duration-300 font-bold text-xs tracking-wide shadow-sm
+                ${selectedYear === null
+                  ? "bg-green-600 hover:bg-green-700 text-white shadow-green-200"
+                  : "hover:border-green-600 hover:text-green-600 bg-white"
                 }`}
             >
-              <Calendar size={14} className="mr-2" />
-              {year}
+              <Grid size={14} className="mr-2" />
+              TODOS
             </Button>
-          ))}
+            {["2025", "2024", "2023", "2022", "2021"].map((year) => (
+              <Button
+                key={year}
+                variant={selectedYear === year ? "default" : "outline"}
+                onClick={() => handleShowObjects(year)}
+                className={`rounded-full px-5 h-10 transition-all duration-300 font-bold text-xs shadow-sm
+                  ${selectedYear === year
+                    ? "bg-blue-GobAb hover:bg-blue-700 text-white shadow-blue-200"
+                    : "hover:border-blue-GobAb hover:text-blue-GobAb bg-white"
+                  }`}
+              >
+                <Calendar size={12} className="mr-2" />
+                {year}
+              </Button>
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Contenido del acordeón */}
-      <Card className="bg-slate-50 p-4">
-        <ScrollArea className="max-h-[550px] overflow-y-auto">
+      <ScrollArea className="max-w-5xl mx-auto h-[600px] rounded-[2rem] border border-neutral-100 bg-white/50 backdrop-blur-lg p-4 lg:p-10 shadow-inner">
+        <div className="space-y-4 max-w-4xl mx-auto">
           {objects.map((item, index) => (
             <Card
               key={index}
-              className="w-full max-w-[600px] m-auto mb-5 border border-slate-300 rounded-lg"
+              className="w-full max-w-[600px] m-auto mb-5 border border-slate-300 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md"
             >
               <CardContent className="p-4">
                 <button
@@ -91,10 +94,10 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                 >
                   {openIndex === index
                     ? (
-                    <BsFillArrowUpCircleFill className="mr-2 text-blue-500" />
+                    <ChevronUp className="mr-2 text-blue-500" size={18} />
                       )
                     : (
-                    <BsFileEarmarkPdfFill className="mr-2 text-blue-500" />
+                    <FileText className="mr-2 text-blue-500" size={18} />
                       )}
                   {item.titulo} ({item.año})
                 </button>
@@ -146,16 +149,22 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                       </div>
                     </div>
 
-                    <div className="flex flex-wrap justify-center gap-4 mt-8 pt-6 border-t border-slate-100">
+                    <div className="flex flex-wrap justify-center gap-4 mt-6 pt-5 border-t border-slate-100">
                       <Button
+                        variant="default"
+                        size="sm"
                         onClick={() => handleDownload(item.pdfUrl)}
-                        className="bg-blue-GobAb hover:bg-blue-700 text-white rounded-full px-6 shadow-md transition-all hover:-translate-y-0.5"
+                        disabled={!item.pdfUrl}
+                        className="bg-blue-GobAb hover:bg-blue-700 text-white rounded-full px-6 h-10 shadow-md transition-all hover:-translate-y-0.5"
                       >
                         {item.botonTexto}
                       </Button>
                       <Button
+                        variant="secondary"
+                        size="sm"
                         onClick={() => handleDownload(item.pdfUrlCierre)}
-                        className="bg-neutral-800 hover:bg-neutral-900 text-white rounded-full px-6 shadow-md transition-all hover:-translate-y-0.5"
+                        disabled={!item.pdfUrlCierre}
+                        className="bg-neutral-800 hover:bg-neutral-900 text-white rounded-full px-6 h-10 shadow-md transition-all hover:-translate-y-0.5"
                       >
                         {item.botonTextoCierre}
                       </Button>
@@ -165,11 +174,11 @@ export const AcordeonDeLicitaciones = ({ data }) => {
               )}
             </Card>
           ))}
-        </ScrollArea>
-        <CardFooter className="pt-5">
-          <Direcciondecompras />
-        </CardFooter>
-      </Card>
+        </div>
+      </ScrollArea>
+      <CardFooter className="pt-5">
+        <Direcciondecompras />
+      </CardFooter>
     </>
   )
 }

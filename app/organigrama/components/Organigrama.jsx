@@ -2,8 +2,9 @@
 
 import { useState, useMemo } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import { Search, Download, Maximize2 } from "lucide-react"
+import { Search, Download, Maximize2, ArrowRight, FileText } from "lucide-react"
 import {
   Accordion,
   AccordionContent,
@@ -51,6 +52,27 @@ export function Organigrama () {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
+      </div>
+
+      {/* Botones de Acción */}
+      <div className="flex flex-col items-center gap-6 mb-16">
+        <Link href="/testpage">
+          <Button variant="outline" className="group rounded-full px-8 py-6 border-2 border-blue-GobAb text-blue-GobAb hover:bg-blue-GobAb hover:text-white transition-all duration-300 shadow-lg hover:shadow-blue-200 gap-3 w-full max-w-md">
+            <span className="font-bold text-lg uppercase tracking-tight text-balance text-center">Ver Detalle de Áreas de Gobierno</span>
+            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
+          </Button>
+        </Link>
+        
+        <div className="flex flex-wrap justify-center gap-4 w-full">
+          <Button variant="ghost" className="rounded-full px-6 py-4 border border-neutral-200 hover:border-blue-GobAb hover:text-blue-GobAb transition-all gap-2 shadow-sm">
+            <Download size={18} />
+            <span className="font-semibold">Escala Salarial Municipal</span>
+          </Button>
+          <Button variant="ghost" className="rounded-full px-6 py-4 border border-neutral-200 hover:border-blue-GobAb hover:text-blue-GobAb transition-all gap-2 shadow-sm">
+            <FileText size={18} />
+            <span className="font-semibold">Decreto de Aumentos</span>
+          </Button>
+        </div>
       </div>
 
       <AnimatePresence mode="wait">

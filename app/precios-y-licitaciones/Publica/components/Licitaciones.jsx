@@ -98,7 +98,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                     <div className="space-y-3">
                       <p className="mb-4 font-black text-blue-GobAb uppercase text-xs tracking-wider">Detalles de la Licitación</p>
                       <p className="font-bold text-gray-900">{item.tituloAcordeonAbierto}</p>
-                      
+
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-neutral-600">
                         <div className="space-y-1">
                           <p className="text-xs font-bold text-neutral-400 uppercase">Documentación</p>

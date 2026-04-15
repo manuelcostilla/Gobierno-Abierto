@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-  
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/*": [
-        "./*",
+      "@/components/*": [
+        "components/*"
       ],
+      "@/*": [
+        "./*"
+      ]
     },
     "lib": [
       "dom",
@@ -20,22 +21,27 @@
     "incremental": true,
     "module": "esnext",
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/presupuesto-publico/2023/ingresos-2023/components/Grafico_ingresos_procedencia.tsx", "app/presupuesto-publico/gastos-por-area/page.jsx", "app/presupuesto-publico/2021/gastos-2021/page.jsx"  ],
+    "**/*.tsx",
+    "app/presupuesto-publico/2023/ingresos-2023/components/Grafico_ingresos_procedencia.tsx",
+    "app/presupuesto-publico/gastos-por-area/page.jsx",
+    "app/presupuesto-publico/2021/gastos-2021/page.jsx",
+    ".next/dev/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

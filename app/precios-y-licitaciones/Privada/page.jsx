@@ -5,7 +5,7 @@ const Licitacionesprivadas = () => {
   return (
     <>
     <BannerText titulo='Licitaciones Privadas' />
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden pt-12 pb-20'>
         <AcordeonDeLicitaciones data={dataLicitacionesPrivadas}/>
     </div>
     </>

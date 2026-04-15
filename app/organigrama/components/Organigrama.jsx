@@ -62,7 +62,7 @@ export function Organigrama () {
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
           </Button>
         </Link>
-        
+
         <div className="flex flex-wrap justify-center gap-4 w-full">
           <Button variant="ghost" className="rounded-full px-6 py-4 border border-neutral-200 hover:border-blue-GobAb hover:text-blue-GobAb transition-all gap-2 shadow-sm">
             <Download size={18} />

@@ -2,178 +2,133 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { FaBars } from 'react-icons/fa'
-import { AiOutlineRight } from 'react-icons/ai'
-import { BiChevronDown } from 'react-icons/bi'
+import { usePathname } from 'next/navigation'
+import { motion, AnimatePresence, LayoutGroup } from 'framer-motion'
+import { Menu, X } from 'lucide-react'
 
 export const HeadernavBar = () => {
-  const [subMenus, setSubMenus] = useState({
-    organigrama: false,
-    boletin: false,
-    licitaciones: false,
-    presupuesto: false,
-    compromisos: false
-  })
+  const pathname = usePathname()
+  const [isNavOpen, setIsNavOpen] = useState(false)
+  const [hoveredItem, setHoveredItem] = useState(null)
+  const navRef = useRef(null)
 
-  const organigramaRef = useRef(null)
-  const boletinRef = useRef(null)
-  const licitacionesRef = useRef(null)
-  const presupuestoRef = useRef(null)
-  const compromisosRef = useRef(null)
-
-  // const handleSubMenuClick = (menu) => {
-  //   setSubMenus((prevState) => ({
-  //     ...prevState,
-  //     [menu]: !prevState[menu]
-  //   }))
-  // }
+  const navItems = [
+    { name: 'INICIO', href: '/' },
+    { name: 'MAPA DEL ESTADO MUNICIPAL', href: '/organigrama' },
+    { name: 'BOLETÍN OFICIAL', href: '/boletin-oficial' },
+    { name: 'COMPRAS Y LICITACIONES', href: '/precios-y-licitaciones' },
+    { name: 'PRESUPUESTO PÚBLICO', href: '/presupuesto-publico' }
+  ]
 
   const handleClickOutside = (event) => {
-    if (
-      organigramaRef.current &&
-      !organigramaRef.current.contains(event.target) &&
-      boletinRef.current &&
-      !boletinRef.current.contains(event.target) &&
-      licitacionesRef.current &&
-      !licitacionesRef.current.contains(event.target) &&
-      presupuestoRef.current &&
-      !presupuestoRef.current.contains(event.target) &&
-      compromisosRef.current &&
-      !compromisosRef.current.contains(event.target)
-    ) {
-      setSubMenus({
-        organigrama: false,
-        boletin: false,
-        licitaciones: false,
-        presupuesto: false
-      })
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      setIsNavOpen(false)
     }
   }
 
   useEffect(() => {
-    document.addEventListener('click', handleClickOutside)
-
-    return () => {
-      document.removeEventListener('click', handleClickOutside)
-    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  const [isNavOpen, setIsNavOpen] = useState(false)
-
-  const handleNavToggle = () => {
-    setIsNavOpen(!isNavOpen)
-  }
-
   return (
-    <>
-    <div className="flex justify-end items-center w-full h-full p-6 lg:hidden">
-  <button onClick={handleNavToggle}>
-    <FaBars className="mr-5 hidden" size="35px" />
-  </button>
-</div>
-
-<nav className={`text-sm font-medium lg:flex lg:justify-evenly lg:items-center ${isNavOpen ? 'block' : 'hidden'} lg:w-full lg:h-[60px] bg-gray-nav pl-6 pr-6 lg:pl-20 lg:pr-20 w-full h-auto font-sans`}>
-  <ul className={`flex-col lg:flex-row lg:space-x-8 ${isNavOpen ? 'flex' : 'hidden'} lg:flex lg:flex-row`}>
-    <Link href="/">
-      <li className="relative">
-        <button className="text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out">
-          INICIO
+    <nav ref={navRef} className="relative w-full">
+      {/* Mobile Toggle */}
+      <div className="flex justify-end p-4 lg:hidden">
+        <button
+          onClick={() => setIsNavOpen(!isNavOpen)}
+          className="p-2 text-blue-GobAb hover:bg-blue-50 rounded-xl transition-all duration-300 transform active:scale-90 shadow-sm"
+        >
+          {isNavOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
-      </li>
-    </Link>
+      </div>
 
-    {/* INICIA SECCION ORGANIGRAMA BARRA DE NAVEGACIÓN */}
-    <li className="relative" ref={organigramaRef}>
-      <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
-        <Link href="/organigrama">MAPA DEL ESTADO MUNICIPAL<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
-      </button>
-      {subMenus.organigrama && (
-        <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
-          <ul className="py-0 lg:py-2">
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Organigrama</li>
-            </Link>
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Nomina de Empleados</li>
-            </Link>
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />DDJJ de Funcionarios</li>
-            </Link>
-          </ul>
-        </div>
-      )}
-    </li>
+      {/* Desktop Navigation */}
+      <LayoutGroup>
+        <ul className="hidden lg:flex items-center justify-end gap-2 px-6">
+          {navItems.map((item, index) => {
+            const isActive = pathname === item.href
+            const isHovered = hoveredItem === item.name
 
-    {/* INICIA BOLETIN OFICIAL BARRA DE NAVEGACIÓN */}
-    <li className="relative" ref={boletinRef}>
-      <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
-        <Link href="/boletin-oficial">BOLETIN OFICIAL<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
-      </button>
-      {subMenus.boletin && (
-        <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
-          <ul className="py-0 lg:py-2">
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />HCD</li>
-            </Link>
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Ejecutivo Municipal</li>
-            </Link>
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />SIBOM</li>
-            </Link>
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Rendición de Cuentas</li>
-            </Link>
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Ordenanza con Prioridad</li>
-            </Link>
-          </ul>
-        </div>
-      )}
-    </li>
+            return (
+              <motion.li
+                key={item.name}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.5, ease: "easeOut" }}
+                className="relative"
+                onMouseEnter={() => setHoveredItem(item.name)}
+                onMouseLeave={() => setHoveredItem(null)}
+              >
+                <Link href={item.href}>
+                  <div className={`relative z-10 px-6 py-3 text-[12px] font-black tracking-[0.05em] transition-colors duration-500 uppercase
+                    ${isActive || isHovered ? 'text-blue-GobAb' : 'text-neutral-500'}
+                  `}>
+                    {item.name}
+                  </div>
+                </Link>
 
-    {/* INICIA COMPRAS Y LICITACIONES */}
-    <li className="relative" ref={licitacionesRef}>
-      <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
-        <Link href="/precios-y-licitaciones">COMPRAS Y LICITACIONES<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
-      </button>
-      {subMenus.licitaciones && (
-        <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
-          <ul className="py-0 lg:py-2">
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Concurso de Precios</li>
-            </Link>
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Licitaciones Publicas</li>
-            </Link>
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Licitaciones Privadas</li>
-            </Link>
-          </ul>
-        </div>
-      )}
-    </li>
+                {/* Animated Indicator (Active or Hover) */}
+                {(isActive || isHovered) && (
+                  <motion.div
+                    layoutId="nav-indicator"
+                    className={`absolute inset-0 rounded-full z-0 
+                      ${isActive ? 'bg-blue-50/80 shadow-[0_4px_12px_rgba(0,123,186,0.1)]' : 'bg-neutral-50'}
+                    `}
+                    initial={false}
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
 
-    {/* INICIA PRESUPUESTO PUBLICO */}
-    <li className="relative" ref={presupuestoRef}>
-      <button className='text-black text-left w-full lg:w-full lg:p-0 p-2 border-b border-gray-400 lg:border-b-0 px-4 lg:px-0 hover:text-gray-400 transition duration-300 ease-in-out'>
-        <Link href="/presupuesto-publico">PRESUPUESTO PUBLICO<BiChevronDown className="inline lg:hidden ml-2 lg:ml-0" /></Link>
-      </button>
-      {subMenus.presupuesto && (
-        <div className="lg:text-center relative top-[0px] left-0 lg:mt-2 text-black bg-gray-nav lg:absolute lg:top-[35px] lg:left-0 lg:border-b-2 lg:border-b-green-nav lg:border-l-2 lg:border-l-green-nav lg:border-r-2 lg:border-r-green-nav">
-          <ul className="py-0 lg:py-2">
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Presupuesto</li>
-            </Link>
-            <Link href="#">
-              <li className="px-6 py-1 lg:px-4 lg:py-2 border-b border-gray-400 lg:border-b-0 hover:text-gray-700"><AiOutlineRight className="lg:hidden inline mx-2 lg:mx-0" />Pauta Publicitaria</li>
-            </Link>
-          </ul>
-        </div>
-      )}
-    </li>
-  </ul>
-</nav>
-    </>
+                {/* Active Underline Polish */}
+                {isActive && (
+                  <motion.div
+                    layoutId="nav-underline"
+                    className="absolute -bottom-1 left-6 right-6 h-0.5 bg-blue-GobAb rounded-full z-20"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+              </motion.li>
+            )
+          })}
+        </ul>
+      </LayoutGroup>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isNavOpen && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: -10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: -10 }}
+            className="lg:hidden absolute top-full right-4 left-4 mt-2 bg-white/95 backdrop-blur-2xl border border-neutral-200 overflow-hidden z-50 rounded-3xl shadow-2xl p-4"
+          >
+            <ul className="space-y-2">
+              {navItems.map((item, index) => {
+                const isActive = pathname === item.href
+                return (
+                  <motion.li
+                    key={item.name}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.05 }}
+                  >
+                    <Link
+                      href={item.href}
+                      onClick={() => setIsNavOpen(false)}
+                      className={`block p-4 font-black text-[14px] rounded-2xl transition-all duration-300 uppercase tracking-wider
+                        ${isActive ? 'bg-blue-GobAb text-white shadow-lg shadow-blue-200' : 'text-neutral-700 hover:bg-neutral-50'}
+                      `}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.li>
+                )
+              })}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </nav>
   )
 }

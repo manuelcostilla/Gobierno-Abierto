@@ -2,11 +2,20 @@ import React from 'react'
 
 const OrganigramaTitle = () => {
   return (
-    <div className="flex max-w-screen h-36 bg-blue-title justify-center items-center text-center">
-    <h1 className="text-sm lg:text-3xl font-sans text-white font-bold"style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>
-    ESQUEMA DE LA ESTRUCTURA ORGÁNICA-FUNCIONAL DE LA MUNICIPALIDAD DE BARADERO
-    </h1>
-  </div>
+    <div className="relative bg-blue-GobAb py-16 overflow-hidden">
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 bg-[url('/imgorganigrama/CONDUCCIONSUPERIOR.jpg')] bg-cover bg-center blur-sm"></div>
+      </div>
+      <div className="container mx-auto px-4 relative z-10 text-center">
+        <h1 className="text-2xl lg:text-4xl font-sans text-white font-black tracking-tight drop-shadow-lg max-w-4xl mx-auto leading-tight">
+          MAPA DEL ESTADO MUNICIPAL
+        </h1>
+        <div className="h-1 w-24 bg-green-nav mx-auto mt-6 rounded-full"></div>
+        <p className="text-blue-100 mt-6 font-medium text-lg uppercase tracking-widest">
+          Estructura Orgánica-Funcional
+        </p>
+      </div>
+    </div>
   )
 }
 

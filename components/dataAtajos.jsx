@@ -3,7 +3,7 @@
 export const dataAtajos = [
   {
     id: 1,
-    title: 'ORGANIGRAMA MUNICIPAL',
+    title: 'MAPA DEL ESTADO MUNICIPAL',
     img: 'mapa_estado_municipal',
     alt: 'Mapa del estado municipal',
     descripcion: 'Es un diagrama que muestra la estructura jerárquica funcional del gobierno local, indicando las áreas y sus relaciones. Es un aporte a la transparencia y un acercamiento a la ciudadanía a un gobierno abierto ya que permite conocer la estructura organizativa.',

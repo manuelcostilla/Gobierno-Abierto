@@ -1,26 +1,33 @@
-import { Landmark } from "lucide-react"
+import { 
+  Landmark, 
+  Users, 
+  LayoutDashboard, 
+  Hammer, 
+  Wallet, 
+  Palette, 
+  HeartPulse, 
+  HandHelping 
+} from "lucide-react"
 
 export const secretarias = [
   {
     id: 1,
     titulo: "Intendencia",
-    descripcionCorta: "Gestion de la ciudad de Baradero",
+    descripcionCorta: "Gestión de la ciudad de Baradero",
     icon: <Landmark height={70} width={70} color="#007CB6" />,
     imagen: "/testbanner.jpg",
-    cvlink: "#",
     funcionario: {
-      nombre: "Esteban  Damian Sanzio",
+      nombre: "Esteban Damian Sanzio",
       posicion: "Intendente",
       cvfoto: "/test.webp",
       curriculum: "#",
       declaracionJurada: "#",
+      decretoDesignacion: "#",
     },
-    descripcionCompleta:
-      "Esteban Damián Sanzio es el actual intendente de la ciudad de Baradero, comprometido con el desarrollo y bienestar de la comunidad. Durante su gestión, ha trabajado en la mejora de la infraestructura local, el fortalecimiento de los servicios públicos y el impulso de políticas que fomenten el crecimiento económico y social de la ciudad.",
     estructura: {
       secretaria: [
-        { nombre: "Secretaria General De Gobierno" },
-        { nombre: "Secretaria De Planificacion Y Gestion Publica" },
+        { nombre: "Secretaría General De Gobierno" },
+        { nombre: "Secretaría De Planificación Y Gestión Pública" },
         { nombre: "Secretaría De Obras Y Servicios Públicos" },
         { nombre: "Secretaría De Hacienda Y Finanzas Públicas" },
         { nombre: "Secretaría De Cultura, Educación, Comunicación Y Deportes" },
@@ -32,25 +39,154 @@ export const secretarias = [
       "Dirigir la administración general y coordinar el funcionamiento del gobierno municipal.",
       "Representar al municipio en actos oficiales y relaciones institucionales.",
       "Garantizar el cumplimiento de ordenanzas, reglamentos y resoluciones locales.",
-      "Coordinar acciones de gestión de emergencias y protección civil.",
-      "Supervisar la ejecución de políticas públicas en todas las secretarías.",
     ],
-    proyectos: [
-      {
-        titulo: "Mirgor",
-        descripcion: "Fabrica de robotica y autopartes"
-      }
-    ],
+    proyectos: [{ titulo: "Mirgor", descripcion: "Fábrica de robótica y autopartes" }],
     contactos: {
-      Direccion: "xxxxxxxxxxx, xxxxxx Baradero",
-      Celular: "xxxx-xxxxxx",
+      Direccion: "Av. San Martín 905, Baradero",
+      Celular: "03329-xxxxxx",
       email: "intendente@baradero.gob.ar",
       horarios: "Lunes a Viernes: 8:00 - 14:00"
     },
-    links: [
-      { titulo: "Facebook", url: "#" },
-      { titulo: "Instagram", url: "#" },
-      { titulo: "X", url: "#" },
-    ]
+    links: [{ titulo: "Facebook", url: "#" }, { titulo: "Instagram", url: "#" }]
   },
+  {
+    id: 2,
+    titulo: "Secretaría General de Gobierno",
+    descripcionCorta: "Coordinación política y administrativa",
+    icon: <Users height={70} width={70} color="#007CB6" />,
+    imagen: "/testbanner.jpg",
+    funcionario: {
+      nombre: "Nombre del Responsable",
+      posicion: "Secretario General",
+      cvfoto: "/test.webp",
+      curriculum: "#",
+      declaracionJurada: "#",
+      decretoDesignacion: "#",
+    },
+    estructura: { secretarias: [] },
+    funciones: ["Coordinación administrativa", "Relación Institucional"],
+    proyectos: [],
+    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    links: []
+  },
+  {
+    id: 3,
+    titulo: "Secretaría de Planificación y Gestión Pública",
+    descripcionCorta: "Estrategias de gestión y modernización",
+    icon: <LayoutDashboard height={70} width={70} color="#007CB6" />,
+    imagen: "/testbanner.jpg",
+    funcionario: {
+      nombre: "Nombre del Responsable",
+      posicion: "Secretario de Planificación",
+      cvfoto: "/test.webp",
+      curriculum: "#",
+      declaracionJurada: "#",
+      decretoDesignacion: "#",
+    },
+    estructura: { secretarias: [] },
+    funciones: ["Planificación estratégica", "Control de Gestión"],
+    proyectos: [],
+    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    links: []
+  },
+  {
+    id: 4,
+    titulo: "Secretaría de Obras y Servicios Públicos",
+    descripcionCorta: "Infraestructura y servicios urbanos",
+    icon: <Hammer height={70} width={70} color="#007CB6" />,
+    imagen: "/testbanner.jpg",
+    funcionario: {
+      nombre: "Nombre del Responsable",
+      posicion: "Secretario de Obras Públicas",
+      cvfoto: "/test.webp",
+      curriculum: "#",
+      declaracionJurada: "#",
+      decretoDesignacion: "#",
+    },
+    estructura: { secretarias: [] },
+    funciones: ["Mantenimiento vial", "Servicios sanitarios"],
+    proyectos: [],
+    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    links: []
+  },
+  {
+    id: 5,
+    titulo: "Secretaría de Hacienda y Finanzas Públicas",
+    descripcionCorta: "Administración de recursos municipales",
+    icon: <Wallet height={70} width={70} color="#007CB6" />,
+    imagen: "/testbanner.jpg",
+    funcionario: {
+      nombre: "Nombre del Responsable",
+      posicion: "Secretario de Hacienda",
+      cvfoto: "/test.webp",
+      curriculum: "#",
+      declaracionJurada: "#",
+      decretoDesignacion: "#",
+    },
+    estructura: { secretarias: [] },
+    funciones: ["Recaudación municipal", "Presupuesto"],
+    proyectos: [],
+    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    links: []
+  },
+  {
+    id: 6,
+    titulo: "Secretaría de Cultura, Educación, Comunicación y Deportes",
+    descripcionCorta: "Promoción social y cultural",
+    icon: <Palette height={70} width={70} color="#007CB6" />,
+    imagen: "/testbanner.jpg",
+    funcionario: {
+      nombre: "Nombre del Responsable",
+      posicion: "Secretario de Cultura",
+      cvfoto: "/test.webp",
+      curriculum: "#",
+      declaracionJurada: "#",
+      decretoDesignacion: "#",
+    },
+    estructura: { secretarias: [] },
+    funciones: ["Eventos culturales", "Deporte comunitario"],
+    proyectos: [],
+    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    links: []
+  },
+  {
+    id: 7,
+    titulo: "Secretaría de Salud",
+    descripcionCorta: "Atención primaria y hospitalaria",
+    icon: <HeartPulse height={70} width={70} color="#007CB6" />,
+    imagen: "/testbanner.jpg",
+    funcionario: {
+      nombre: "Nombre del Responsable",
+      posicion: "Secretario de Salud",
+      cvfoto: "/test.webp",
+      curriculum: "#",
+      declaracionJurada: "#",
+      decretoDesignacion: "#",
+    },
+    estructura: { secretarias: [] },
+    funciones: ["Gestión hospitalaria", "Prevención"],
+    proyectos: [],
+    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    links: []
+  },
+  {
+    id: 8,
+    titulo: "Secretaría de Desarrollo Social",
+    descripcionCorta: "Asistencia y promoción de derechos",
+    icon: <HandHelping height={70} width={70} color="#007CB6" />,
+    imagen: "/testbanner.jpg",
+    funcionario: {
+      nombre: "Nombre del Responsable",
+      posicion: "Secretario de Desarrollo Social",
+      cvfoto: "/test.webp",
+      curriculum: "#",
+      declaracionJurada: "#",
+      decretoDesignacion: "#",
+    },
+    estructura: { secretarias: [] },
+    funciones: ["Asistencia social", "Políticas de género"],
+    proyectos: [],
+    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    links: []
+  }
 ]

@@ -6,7 +6,7 @@ export function ArchivosDelPresupuestoButtons ({ archivosData }) {
   if (!archivosData || archivosData.length === 0) return null
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 pt-12">
       {/* Header Interactivo */}
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 bg-white/90 backdrop-blur-xl border border-neutral-100 p-5 rounded-3xl shadow-lg">

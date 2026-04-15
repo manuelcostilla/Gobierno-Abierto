@@ -2,6 +2,7 @@ import { Card, CardContent, CardTitle, CardHeader } from "@/components/ui/card"
 import { BannerText } from "@/components/bannertext"
 import { Mail, MapPin, Clock } from "lucide-react"
 import Link from "next/link"
+import { motion } from "framer-motion"
 import { Telefonosfijos } from "@/components/telefonosFijos"
 
 function Contactos () {
@@ -215,7 +216,8 @@ function Contactos () {
                         <div className="p-2.5 bg-blue-50 text-blue-GobAb rounded-xl group-hover:bg-blue-GobAb group-hover:text-white transition-all duration-300">
                           {item.icon && <item.icon.type {...item.icon.props} size={20} />}
                         </div>
-                        {item.link ? (
+                        {item.link
+                          ? (
                           <a
                             href={item.link}
                             target="_blank"
@@ -224,14 +226,16 @@ function Contactos () {
                           >
                             {item.title}
                           </a>
-                        ) : (
+                            )
+                          : (
                           <span className="text-lg font-black text-blue-title tracking-tight uppercase leading-none">{item.title}</span>
-                        )}
+                            )}
                       </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    {item.link ? (
+                    {item.link
+                      ? (
                       <Link
                         href={item.link}
                         className="text-neutral-500 text-sm font-medium hover:text-blue-600 transition-colors"
@@ -239,9 +243,10 @@ function Contactos () {
                       >
                         {item.text}
                       </Link>
-                    ) : (
+                        )
+                      : (
                       <p className="text-neutral-500 text-sm font-medium">{item.text}</p>
-                    )}
+                        )}
                   </CardContent>
                 </Card>
               </motion.div>

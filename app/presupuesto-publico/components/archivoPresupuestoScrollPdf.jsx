@@ -1,40 +1,60 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion } from "framer-motion"
+import { FileDown, FileText, ChevronRight } from "lucide-react"
 
 export function ArchivosDelPresupuestoScrollPdf ({ archivosDelPresupuestoPdf }) {
   return (
-    <div className="flex justify-center ">
-      <ScrollArea className="flex justify-center w-full h-[500px]">
-        {archivosDelPresupuestoPdf.map((archivosDelPresupuestoPdf) => (
-          <div key={archivosDelPresupuestoPdf.id} className="pt-5 pb-5">
-            <Card className="flex w-[250px] lg:w-[700px] lg:h-[80px] m-auto font-sans text-base text-balance xs:text-xs">
-              <CardContent className="w-full flex items-center justify-between p-5 ">
-                <CardHeader className=" flex font-bold">
-                  <CardTitle className="text-center text-base lg:text-left text-balance">
-                    <p>
-                      {archivosDelPresupuestoPdf.nombre}
-                    </p>
-                  </CardTitle>
-                </CardHeader>
+    <ScrollArea className="max-w-5xl mx-auto h-[600px] rounded-[2rem] border border-neutral-100 bg-white/50 backdrop-blur-lg p-4 lg:p-10 shadow-inner">
+      <div className="space-y-4 max-w-4xl mx-auto">
+        {archivosDelPresupuestoPdf.map((item, index) => (
+          <motion.div
+            key={item.id || index}
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.05 }}
+            className="group"
+          >
+            <div className="flex flex-col lg:flex-row items-center justify-between p-5 bg-white border border-neutral-100 rounded-2xl transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-0.5 group-hover:border-blue-200">
+              <div className="flex items-center gap-5 flex-1 mb-4 lg:mb-0">
+                <div className="p-3 bg-neutral-50 text-neutral-400 rounded-xl group-hover:bg-blue-50 group-hover:text-blue-GobAb transition-colors shadow-inner">
+                  <FileText size={20} />
+                </div>
+                <div className="text-center lg:text-left">
+                  <h3 className="text-sm font-black text-neutral-800 tracking-tight group-hover:text-blue-GobAb transition-colors uppercase leading-tight">
+                    {item.nombre}
+                  </h3>
+                  <div className="flex items-center justify-center lg:justify-start gap-2 mt-1 text-neutral-400 text-[10px] font-bold uppercase tracking-widest">
+                    <span>Presupuesto</span>
+                    <span className="w-1 h-1 bg-neutral-200 rounded-full" />
+                    <span className="text-blue-GobAb/60">{item.año || 'Documento Financiero'}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
                 <Button
                   asChild
-                  className="bg-blue-header hover:bg-blue-500 flex justify-center items-center"
+                  size="sm"
+                  className="bg-blue-GobAb hover:bg-blue-700 text-white font-bold h-10 px-6 rounded-full shadow-md transition-all hover:scale-105 active:scale-95 text-[10px] tracking-widest uppercase flex items-center gap-2"
                 >
-                  <Link
-                    href= {archivosDelPresupuestoPdf.link}
-                    target="_blank"
-                    className="block mx-auto lg:mx-0  text-white font-bold py-2 px-4 w-40 text-center rounded-medium text-base xs:text-xs transition duration-300 ease-in-out"
-                  >
-                    <p>Descargar</p>
+                  <Link href={item.link} target="_blank">
+                    <FileDown size={14} />
+                    Descargar
                   </Link>
                 </Button>
-              </CardContent>
-            </Card>
-          </div>
+                <div className="hidden lg:flex p-2 text-neutral-200 group-hover:text-blue-GobAb transition-colors">
+                  <ChevronRight size={18} />
+                </div>
+              </div>
+            </div>
+          </motion.div>
         ))}
-      </ScrollArea>
-    </div>
+      </div>
+    </ScrollArea>
   )
 }

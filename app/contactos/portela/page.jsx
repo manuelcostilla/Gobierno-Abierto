@@ -2,6 +2,7 @@ import { Card, CardContent, CardTitle, CardHeader } from "@/components/ui/card"
 import { BannerText } from "@/components/bannertext"
 import { Mail, MapPin, Clock } from "lucide-react"
 import Link from "next/link"
+import { motion } from "framer-motion"
 import { Telefonosfijos } from "@/components/telefonosFijos"
 
 function Contactos () {
@@ -84,54 +85,69 @@ function Contactos () {
       <BannerText titulo="CONTACTOS MUNICIPALES PORTELA" />
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div className="flex justify-start">
-            <Card className="bg-white m-5 text-black w-full">
-              <CardContent>
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex justify-start w-full"
+          >
+            <Card className="bg-white/80 backdrop-blur-xl border border-neutral-100 rounded-[2.5rem] shadow-xl w-full overflow-hidden">
+              <CardContent className="p-0">
                 <Telefonosfijos dataTelefonia={dataTelefonia} />
               </CardContent>
             </Card>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col gap-6">
             {contactoItems.map((item, index) => (
-              <Card key={index} className="bg-white m-5 text-black">
-                <CardHeader>
-                  <CardTitle>
-                    <div className="flex justify-start">
-                      {item.icon}
-                      {item.link
-                        ? (
-                        <a
-                          href={item.link}
-                          target="_blank"
-                          className="pl-2"
-                          aria-label={item.label}
-                        >
-                          {item.title}
-                        </a>
-                          )
-                        : (
-                        <p className="pl-2">{item.title}</p>
-                          )}
-                    </div>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  {item.link
-                    ? (
-                    <Link
-                      href={item.link}
-                      className="text-gray-600"
-                      target="_blank"
-                    >
-                      {item.text}
-                    </Link>
-                      )
-                    : (
-                    <p className="text-gray-600">{item.text}</p>
-                      )}
-                </CardContent>
-              </Card>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Card className="bg-white/80 backdrop-blur-xl border border-neutral-100 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 group overflow-hidden">
+                  <CardHeader className="pb-2">
+                    <CardTitle>
+                      <div className="flex items-center gap-3">
+                        <div className="p-2.5 bg-blue-50 text-blue-GobAb rounded-xl group-hover:bg-blue-GobAb group-hover:text-white transition-all duration-300">
+                          {item.icon && <item.icon.type {...item.icon.props} size={20} />}
+                        </div>
+                        {item.link
+                          ? (
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            className="text-lg font-black text-blue-title tracking-tight hover:text-blue-GobAb transition-colors uppercase leading-none"
+                            aria-label={item.label}
+                          >
+                            {item.title}
+                          </a>
+                            )
+                          : (
+                          <span className="text-lg font-black text-blue-title tracking-tight uppercase leading-none">{item.title}</span>
+                            )}
+                      </div>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    {item.link
+                      ? (
+                      <Link
+                        href={item.link}
+                        className="text-neutral-500 text-sm font-medium hover:text-blue-600 transition-colors"
+                        target="_blank"
+                      >
+                        {item.text}
+                      </Link>
+                        )
+                      : (
+                      <p className="text-neutral-500 text-sm font-medium">{item.text}</p>
+                        )}
+                  </CardContent>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>

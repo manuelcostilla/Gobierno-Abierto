@@ -7,7 +7,7 @@ export function BannerText ({ titulo }) {
     <div className="relative h-[250px] lg:h-[350px] flex items-center justify-center overflow-hidden bg-blue-header">
       {/* Premium Background Layer */}
       <div className="absolute inset-0 z-0">
-        <div 
+        <div
           className="absolute inset-0 bg-[url('/banner/IMG.Baradero.jpg')] bg-cover bg-center transition-transform duration-1000 scale-105"
           style={{ filter: 'brightness(0.4) saturate(1.2)' }}
         />
@@ -36,8 +36,8 @@ export function BannerText ({ titulo }) {
               ))}
             </h1>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ width: 0, opacity: 0 }}
             animate={{ width: "80px", opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
@@ -45,7 +45,7 @@ export function BannerText ({ titulo }) {
           />
         </div>
       </div>
-      
+
       {/* Decorative pulse element */}
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-400/10 blur-[100px] rounded-full animate-pulse" />
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-green-400/10 blur-[100px] rounded-full animate-pulse delay-1000" />

@@ -1,6 +1,5 @@
 'use client'
 import { ArchivosDelPresupuestoScrollPdf } from "./archivoPresupuestoScrollPdf"
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Calendar, ChartBar } from "lucide-react"
 
 export function ArchivosDelPresupuestoButtons ({ archivosData }) {

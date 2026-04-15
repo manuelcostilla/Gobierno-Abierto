@@ -5,7 +5,7 @@ import { pdfBox } from "../data/pdfBoletinOficial"
 import { BoletinOficial } from "./BoletinOficial"
 import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from "framer-motion"
-import { Filter, Calendar, Grid, LayoutList } from "lucide-react"
+import { Filter, Calendar, Grid } from "lucide-react"
 
 function BoletinOficialButtons () {
   const [selectedYear, setSelectedYear] = useState("todos")
@@ -46,8 +46,8 @@ function BoletinOficialButtons () {
             variant={selectedYear === "todos" ? "default" : "outline"}
             onClick={mostrarTodosBoletines}
             className={`rounded-full px-8 h-12 transition-all duration-300 font-bold tracking-wide shadow-sm
-              ${selectedYear === "todos" 
-                ? "bg-green-600 hover:bg-green-700 text-white shadow-green-200" 
+              ${selectedYear === "todos"
+                ? "bg-green-600 hover:bg-green-700 text-white shadow-green-200"
                 : "hover:border-green-600 hover:text-green-600 bg-white"
               }`}
           >
@@ -60,8 +60,8 @@ function BoletinOficialButtons () {
               variant={selectedYear === año ? "default" : "outline"}
               onClick={() => cambiarBox(año)}
               className={`rounded-full px-6 h-12 transition-all duration-300 font-bold shadow-sm
-                ${selectedYear === año 
-                  ? "bg-blue-GobAb hover:bg-blue-700 text-white shadow-blue-200" 
+                ${selectedYear === año
+                  ? "bg-blue-GobAb hover:bg-blue-700 text-white shadow-blue-200"
                   : "hover:border-blue-GobAb hover:text-blue-GobAb bg-white"
                 }`}
             >

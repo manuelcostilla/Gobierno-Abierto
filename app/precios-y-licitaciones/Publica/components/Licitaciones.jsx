@@ -1,14 +1,12 @@
 "use client"
 import { useState } from "react"
-import { BsFileEarmarkPdfFill, BsFillArrowUpCircleFill } from "react-icons/bs"
+import { Filter, Grid, Calendar } from "lucide-react"
 import Direcciondecompras from "./Direcciondecompras"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
-  CardHeader,
-  CardTitle,
   CardFooter,
 } from "@/components/ui/card"
 

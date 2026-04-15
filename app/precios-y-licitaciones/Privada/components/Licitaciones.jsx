@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import { Filter, Grid, Calendar, ChevronUp, FileText, ChevronRight } from "lucide-react"
+import { Filter, Grid, Calendar, ChevronUp, FileText } from "lucide-react"
 import Direcciondecompras from "./Direcciondecompras"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Button } from "@/components/ui/button"

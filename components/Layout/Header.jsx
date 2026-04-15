@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Globe, Facebook, Instagram, Youtube } from "lucide-react"
 import logo from "../../public/logo_gobiernoAbierto (1).svg"
+import { motion } from "framer-motion"
 import { HeadernavBar } from "./components/Header-navBar"
 
 const XIcon = ({ size = 18, className = "" }) => (
@@ -48,12 +49,20 @@ export const Header = () => {
           </ul>
         </div>
         <div className="flex flex-col sm:w-full md:flex-row justify-between items-center bg-white/80 backdrop-blur-md border-b border-gray-200 px-6 py-2 lg:border-b-4 lg:border-b-green-nav">
-          <Link href="/" className="transition-transform hover:scale-105 duration-300">
-            <Image
-              alt="Logo Gobierno Abierto"
-              src={logo}
-              className="w-[180px] h-auto md:w-[220px] lg:w-[250px]"
-            />
+          <Link href="/">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              whileHover={{ scale: 1.02 }}
+              className="relative group cursor-pointer"
+            >
+              <Image
+                alt="Logo Gobierno Abierto"
+                src={logo}
+                className="w-[180px] h-auto md:w-[220px] lg:w-[250px] transition-all duration-500 drop-shadow-[0_4px_12px_rgba(0,123,186,0.15)] group-hover:drop-shadow-[0_8px_24px_rgba(0,123,186,0.3)] group-hover:brightness-110"
+              />
+              <div className="absolute inset-0 bg-blue-400/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+            </motion.div>
           </Link>
           <div className="w-full sm:w-auto">
             <div className="mt-4 sm:mt-0">

@@ -93,47 +93,66 @@ export const AcordeonDeLicitaciones = ({ data }) => {
               </CardContent>
 
               {openIndex === index && (
-                <CardContent className="transition-all duration-300 ease-in-out p-4 text-sm bg-white">
-                  <p className="mb-2 font-bold">{item.tituloAcordeonAbierto}</p>
-                  <p className="m-2">
-                    {item.decreto} {item.numdecreto}
-                  </p>
-                  <p className="m-2">
-                    {item.tipo} {item.condicion}
-                  </p>
-                  <p className="m-2">{item.Expediente}</p>
-                  <p className="m-2">{item.motivo}</p>
-                  <p className="m-2">
-                    {item.presupuesto} {item.plata}
-                  </p>
-                  <p className="m-2">
-                    {item.adjudicada} {item.firma}
-                  </p>
-                  <p className="m-2">
-                    {item.valorPliego} {item.plataPliego}
-                  </p>
-                  <p className="m-2">
-                    {item.fechaAperturaSobre} {item.fecha}
-                  </p>
-                  <p className="m-2">
-                    {item.adquisicionPliego} {item.adquisicion}
-                  </p>
-                  <p className="m-2">{item.obtencion}</p>
+                <CardContent className="transition-all duration-300 ease-in-out p-0 border-t border-slate-100 bg-white">
+                  <ScrollArea className="max-h-[350px] w-full p-6">
+                    <div className="space-y-3">
+                      <p className="mb-4 font-black text-blue-GobAb uppercase text-xs tracking-wider">Detalles de la Licitación</p>
+                      <p className="font-bold text-gray-900">{item.tituloAcordeonAbierto}</p>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-neutral-600">
+                        <div className="space-y-1">
+                          <p className="text-xs font-bold text-neutral-400 uppercase">Documentación</p>
+                          <p>{item.decreto} {item.numdecreto}</p>
+                          <p>{item.Expediente}</p>
+                        </div>
+                        <div className="space-y-1">
+                          <p className="text-xs font-bold text-neutral-400 uppercase">Tipo y Condición</p>
+                          <p>{item.tipo} {item.condicion}</p>
+                        </div>
+                      </div>
 
-                  <div className="flex justify-center gap-4 mt-4">
-                    <Button
-                      onClick={() => handleDownload(item.pdfUrl)}
-                      className="bg-blue-500 hover:bg-blue-600 text-white"
-                    >
-                      {item.botonTexto}
-                    </Button>
-                    <Button
-                      onClick={() => handleDownload(item.pdfUrlCierre)}
-                      className="bg-blue-500 hover:bg-blue-600 text-white"
-                    >
-                      {item.botonTextoCierre}
-                    </Button>
-                  </div>
+                      <div className="pt-4 border-t border-slate-50">
+                        <p className="text-xs font-bold text-neutral-400 uppercase mb-1">Motivo / Objeto</p>
+                        <p className="italic text-neutral-700 leading-relaxed">{item.motivo}</p>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-slate-50 text-neutral-600">
+                        <div className="space-y-1">
+                          <p className="text-xs font-bold text-neutral-400 uppercase">Presupuesto</p>
+                          <p>{item.presupuesto} {item.plata}</p>
+                          <p className="text-xs font-bold text-neutral-400 uppercase mt-2">Valor Pliego</p>
+                          <p>{item.valorPliego} {item.plataPliego}</p>
+                        </div>
+                        <div className="space-y-1">
+                          <p className="text-xs font-bold text-neutral-400 uppercase">Apertura</p>
+                          <p>{item.fechaAperturaSobre} {item.fecha}</p>
+                          <p className="text-xs font-bold text-neutral-400 uppercase mt-2">Adquisición</p>
+                          <p>{item.adquisicionPliego} {item.adquisicion}</p>
+                        </div>
+                      </div>
+
+                      <div className="pt-4 border-t border-slate-50">
+                        <p className="text-xs font-bold text-neutral-400 uppercase mb-1">Adjudicación</p>
+                        <p>{item.adjudicada} {item.firma}</p>
+                        <p className="mt-1">{item.obtencion}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap justify-center gap-4 mt-8 pt-6 border-t border-slate-100">
+                      <Button
+                        onClick={() => handleDownload(item.pdfUrl)}
+                        className="bg-blue-GobAb hover:bg-blue-700 text-white rounded-full px-6 shadow-md transition-all hover:-translate-y-0.5"
+                      >
+                        {item.botonTexto}
+                      </Button>
+                      <Button
+                        onClick={() => handleDownload(item.pdfUrlCierre)}
+                        className="bg-neutral-800 hover:bg-neutral-900 text-white rounded-full px-6 shadow-md transition-all hover:-translate-y-0.5"
+                      >
+                        {item.botonTextoCierre}
+                      </Button>
+                    </div>
+                  </ScrollArea>
                 </CardContent>
               )}
             </Card>

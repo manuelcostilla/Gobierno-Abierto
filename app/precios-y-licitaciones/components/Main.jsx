@@ -1,10 +1,12 @@
 import React from "react"
+import { BannerText } from "@/components/bannertext"
 import { GeneralText } from "@/components/generaltext"
 import { SectionCard } from "@/components/intersectioncard"
 
 const Main_licitaciones = () => {
   return (
     <div className="bg-neutral-50/50 min-h-screen">
+      <BannerText titulo="Compras y Licitaciones" />
       <div className="container mx-auto py-20 px-6 lg:px-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <GeneralText

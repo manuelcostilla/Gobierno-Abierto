@@ -12,7 +12,7 @@ export const archivosDelPresupuestoPdf = [
           {
             id: 2,
             año: 2020,
-            nombre: "Situacion Economico Financiera al 31-06-20",
+            nombre: "Situacion Economico Financiera al 30-06-20",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2020/situacion%20economico%20Financiera%202020/Situaci%C3%B3n%20Econ%C3%B2mico%20Financiera%2030%2006%202020.pdf",
           },
           {
@@ -38,7 +38,7 @@ export const archivosDelPresupuestoPdf = [
           {
             id: 2,
             año: 2021,
-            nombre: "Situacion Economico Financiera al 31-06-21",
+            nombre: "Situacion Economico Financiera al 30-06-21",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2021/Situaci%C3%B3n%20Econ%C3%B2mico%20Financiera/Situaci%C3%B3n%20Econ%C3%B2mico%20Financiera%2030%2006%202021.pdf",
           },
           {
@@ -64,7 +64,7 @@ export const archivosDelPresupuestoPdf = [
           {
             id: 2,
             año: 2022,
-            nombre: "Situacion Economico Financiera al 31-06-22",
+            nombre: "Situacion Economico Financiera al 30-06-22",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2022/situacion%20economica%20financiera%202022/Situaci%C3%B3n%20Econ%C3%B2mico%20Financiera%2030%2006%202022.pdf",
           },
           {
@@ -90,7 +90,7 @@ export const archivosDelPresupuestoPdf = [
           {
             id: 2,
             año: 2023,
-            nombre: "Situacion Economico Financiera al 31-06-23",
+            nombre: "Situacion Economico Financiera al 30-06-23",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/situacion%20economica%20financiera%202023/Situacion-Economico-Financiera-al-31-06-23.pdf",
           },
           {
@@ -116,7 +116,7 @@ export const archivosDelPresupuestoPdf = [
           {
             id: 2,
             año: 2024,
-            nombre: "Situacion Economico Financiera al 31-06-24",
+            nombre: "Situacion Economico Financiera al 30-06-24",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2024/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202024/Estado-de-Ejecucion-por-Finalidad-y-Funcion-30-06.pdf",
           },
           {
@@ -139,6 +139,24 @@ export const archivosDelPresupuestoPdf = [
             nombre: "Situacion Economico Financiera al 31-03-25",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2025/situacion%20economico%20financiera%202025/Situacion-Economico-Financiera-Del-01-01-2025-al-31-03-2025.pdf",
           },
+          {
+            id: 2,
+            año: 2025,
+            nombre: "Situacion Economico Financiera al 30-06-25",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2025/situacion%20economico%20financiera%202025/Situacion-Economico-Financiera-al-30-06-25.pdf",
+          },
+          {
+            id: 3,
+            año: 2025,
+            nombre: "Situacion Economico Financiera al 30-09-25",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2025/situacion%20economico%20financiera%202025/Situacion-Economico-Financiera-al-30-09-25.pdf",
+          },
+          {
+            id: 4,
+            año: 2025,
+            nombre: "Memoria Anual 2025",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2025/situacion%20economico%20financiera%202025/Memoria_General_Anual_2025.pdf",
+          },
         ],
       },
     ],
@@ -156,7 +174,7 @@ export const archivosDelPresupuestoPdf = [
           {
             id: 2,
             año: 2020,
-            nombre: "Estado de Ejecucion por Finalidad y Funcion 31-06-20",
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 30-06-20",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2020/Estado%20de%20ejecucion%20por%20finalidad%20y%20funci%C3%B3n%202020/Estado%20de%20ejecucion%20por%20finalidad%20y%20funcion%2030%2006%202020.pdf",
           },
           {
@@ -182,7 +200,7 @@ export const archivosDelPresupuestoPdf = [
           {
             id: 2,
             año: 2021,
-            nombre: "Estado de Ejecucion por Finalidad y Funcion 31-06-21",
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 30-06-21",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2021/Estado%20de%20Ejecuci%C3%B3n%20por%20Finalidad%20y%20Funci%C3%B3n/Estado%20de%20Ejecuci%C3%B3n%20por%20Finalidad%20y%20Funci%C3%B3n%20al%2030-06-21.pdf",
           },
           {
@@ -208,7 +226,7 @@ export const archivosDelPresupuestoPdf = [
           {
             id: 2,
             año: 2022,
-            nombre: "Estado de Ejecucion por Finalidad y Funcion 31-06-22",
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 30-06-22",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2022/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202022/Estado%20de%20Ejecuci%C3%B3n%20por%20Finalidad%20y%20Funci%C3%B3n%2030%20-06%20-22.pdf",
           },
           {
@@ -234,7 +252,7 @@ export const archivosDelPresupuestoPdf = [
           {
             id: 2,
             año: 2023,
-            nombre: "Estado de Ejecucion por Finalidad y Funcion 31-06-23",
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 30-06-23",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2023/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202023/Estado-de-Ejecucion-por-Finalidad-y-Funcion-31-06-23.pdf",
           },
           {
@@ -260,7 +278,7 @@ export const archivosDelPresupuestoPdf = [
           {
             id: 2,
             año: 2024,
-            nombre: "Estado de Ejecucion por Finalidad y Funcion 31-06-24",
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 30-06-24",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2024/situacion%20economica%20financiera%202024/Situacion-Economico-Financiera-al-30-06-2024.pdf",
           },
           {
@@ -282,6 +300,24 @@ export const archivosDelPresupuestoPdf = [
             año: 2025,
             nombre: "Estado de Ejecucion por Finalidad y Funcion 31-03-25",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2025/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202025/Estado-de-Ejecucion-por-Finalidad-y-Funcion-Del-01-01-2025-al-31-03-2025.pdf",
+          },
+          {
+            id: 2,
+            año: 2025,
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 30-06-25",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2025/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202025/Estado-de-Ejecucion-por-Finalidad-y-Funcion-30-06-25.pdf",
+          },
+          {
+            id: 3,
+            año: 2025,
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 30-09-25",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2025/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202025/ESTADO-DE-EJECUCION-DEL-PRESUPUESTO-DE-GASTOS-01-al-09-2025.pdf",
+          },
+          {
+            id: 4,
+            año: 2025,
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 31-12-25",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2025/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202025/ESTADO-DE-EJECUCION-DEL-PRESUPUESTO-DE-GASTOS_Anual-2025.pdf",
           },
         ],
       },

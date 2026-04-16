@@ -51,7 +51,7 @@ export const Footer = () => {
           <div className="text-center space-y-4">
             <h3 className="text-neutral-900 font-bold text-lg uppercase tracking-wider">Contacto</h3>
             <div className="space-y-2 text-neutral-600">
-              <p>Municipalidad Santiago del Baradero</p>
+              <p>Municipalidad de Baradero</p>
               <p>Av. San Martín 905</p>
               <p>Baradero (B2942)</p>
               <p>Buenos Aires, Argentina</p>

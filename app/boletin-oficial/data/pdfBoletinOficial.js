@@ -191,7 +191,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 13,
+    id: 25,
     año: "2022",
     texto: "Boletín Oficial Enero de 2022",
     pdfLink:
@@ -199,7 +199,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 25,
+    id: 26,
     año: "2022",
     texto: "Boletín Oficial Febrero de 2022",
     pdfLink:
@@ -207,7 +207,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 26,
+    id: 27,
     año: "2022",
     texto: "Boletín Oficial Marzo de 2022",
     pdfLink:
@@ -215,7 +215,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 27,
+    id: 28,
     año: "2022",
     texto: "Boletín Oficial Abril de 2022",
     pdfLink:
@@ -223,7 +223,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 28,
+    id: 29,
     año: "2022",
     texto: "Boletín Oficial Mayo de 2022",
     pdfLink:
@@ -231,7 +231,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 29,
+    id: 30,
     año: "2022",
     texto: "Boletín Oficial Junio de 2022",
     pdfLink:
@@ -239,7 +239,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 30,
+    id: 31,
     año: "2022",
     texto: "Boletín Oficial Julio de 2022",
     pdfLink:
@@ -247,7 +247,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 31,
+    id: 32,
     año: "2022",
     texto: "Boletín Oficial Agosto de 2022",
     pdfLink:
@@ -255,7 +255,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 32,
+    id: 33,
     año: "2022",
     texto: "Boletín Oficial Septiembre de 2022",
     pdfLink:
@@ -263,7 +263,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 33,
+    id: 34,
     año: "2022",
     texto: "Boletín Oficial Octubre de 2022",
     pdfLink:
@@ -271,7 +271,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 34,
+    id: 35,
     año: "2022",
     texto: "Boletín Oficial Noviembre de 2022",
     pdfLink:
@@ -279,7 +279,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 35,
+    id: 36,
     año: "2022",
     texto: "Boletín Oficial Diciembre de 2022",
     pdfLink:
@@ -287,7 +287,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 36,
+    id: 37,
     año: "2023",
     texto: "Boletín Oficial Enero de 2023",
     pdfLink:
@@ -295,7 +295,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 37,
+    id: 38,
     año: "2023",
     texto: "Boletín Oficial Febrero de 2023",
     pdfLink:
@@ -303,7 +303,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 38,
+    id: 39,
     año: "2023",
     texto: "Boletín Oficial Marzo de 2023",
     pdfLink:
@@ -311,7 +311,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 39,
+    id: 40,
     año: "2023",
     texto: "Boletín Oficial Abril de 2023",
     pdfLink:
@@ -319,7 +319,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 40,
+    id: 41,
     año: "2023",
     texto: "Boletín Oficial Mayo de 2023",
     pdfLink:
@@ -327,7 +327,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 41,
+    id: 42,
     año: "2023",
     texto: "Boletín Oficial Junio de 2023",
     pdfLink:
@@ -335,7 +335,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 42,
+    id: 43,
     año: "2023",
     texto: "Boletín Oficial Julio de 2023",
     pdfLink:
@@ -343,7 +343,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 43,
+    id: 44,
     año: "2023",
     texto: "Boletín Oficial Agosto de 2023",
     pdfLink:
@@ -351,7 +351,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 44,
+    id: 45,
     año: "2023",
     texto: "Boletín Oficial Septiembre de 2023",
     pdfLink:
@@ -359,7 +359,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 45,
+    id: 46,
     año: "2023",
     texto: "Boletín Oficial Octubre de 2023",
     pdfLink:
@@ -367,7 +367,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 46,
+    id: 47,
     año: "2023",
     texto: "Boletín Oficial Noviembre de 2023",
     pdfLink:
@@ -375,7 +375,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 47,
+    id: 48,
     año: "2023",
     texto: "Boletín Oficial Diciembre de 2023",
     pdfLink:
@@ -383,7 +383,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 48,
+    id: 49,
     año: "2024",
     texto: "Boletín Oficial Enero de 2024",
     pdfLink:
@@ -391,7 +391,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 49,
+    id: 50,
     año: "2024",
     texto: "Boletín Oficial Febrero de 2024",
     pdfLink:
@@ -399,7 +399,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 50,
+    id: 51,
     año: "2024",
     texto: "Boletín Oficial Marzo de 2024",
     pdfLink:
@@ -407,7 +407,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 51,
+    id: 52,
     año: "2024",
     texto: "Boletín Oficial Abril de 2024",
     pdfLink:
@@ -415,7 +415,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 52,
+    id: 53,
     año: "2024",
     texto: "Edicto subastas de motos",
     pdfLink:
@@ -423,7 +423,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 53,
+    id: 54,
     año: "2024",
     texto: "Edicto Subsecretaria de Seguridad Ciudadana",
     pdfLink:
@@ -431,7 +431,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 54,
+    id: 55,
     año: "2024",
     texto: "Boletín Oficial Mayo de 2024",
     pdfLink:
@@ -439,7 +439,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 55,
+    id: 56,
     año: "2024",
     texto: "Boletín Oficial Junio de 2024",
     pdfLink:
@@ -447,7 +447,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 56,
+    id: 57,
     año: "2024",
     texto: "Boletín Oficial Julio de 2024",
     pdfLink:
@@ -455,7 +455,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 57,
+    id: 58,
     año: "2024",
     texto: "Boletín Oficial Agosto de 2024",
     pdfLink:
@@ -463,7 +463,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 58,
+    id: 59,
     año: "2024",
     texto: "Boletín Oficial Septiembre de 2024",
     pdfLink:
@@ -471,7 +471,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 59,
+    id: 60,
     año: "2024",
     texto: "Boletín Oficial Octubre de 2024",
     pdfLink:
@@ -479,7 +479,7 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 60,
+    id: 61,
     año: "2024",
     texto: "Boletín Oficial Noviembre de 2024",
     pdfLink:
@@ -487,11 +487,107 @@ export const pdfBox = [
     boton: "Descargar",
   },
   {
-    id: 61,
+    id: 62,
     año: "2024",
     texto: "Boletín Oficial Diciembre de 2024",
     pdfLink:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin_oficial_2024/BOLETIN-OFICIAL-DICIEMBRE-2024.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 63,
+    año: "2025",
+    texto: "Boletín Oficial Enero de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-ENERO-2025.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 64,
+    año: "2025",
+    texto: "Boletín Oficial Febrero de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-FEBRERO-2025.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 65,
+    año: "2025",
+    texto: "Boletín Oficial Marzo de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-MARZO-2025-FINAL.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 66,
+    año: "2025",
+    texto: "Boletín Oficial Abril de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-ABRIL-2025.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 67,
+    año: "2025",
+    texto: "Boletín Oficial Mayo de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-MAYO-2025.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 68,
+    año: "2025",
+    texto: "Boletín Oficial Junio de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-JUNIO-2025.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 69,
+    año: "2025",
+    texto: "Boletín Oficial Julio de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-JULIO-2025.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 70,
+    año: "2025",
+    texto: "Boletín Oficial Agosto de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-AGOSTO-2025.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 71,
+    año: "2025",
+    texto: "Boletín Oficial Septiembre de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-SEPTIEMBRE-2025.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 72,
+    año: "2025",
+    texto: "Boletín Oficial Octubre de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-OCTUBRE-2025.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 73,
+    año: "2025",
+    texto: "Boletín Oficial Noviembre de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-NOVIEMBRE-2025.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 74,
+    año: "2025",
+    texto: "Boletín Oficial Diciembre de 2025",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-DICIEMBRE-2025.pdf",
     boton: "Descargar",
   },
 ]

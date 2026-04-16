@@ -41,12 +41,4 @@ export const dataAtajos = [
     descripcion: 'Esta sección ofrece detalles sobre ingresos y gastos del municipio, incluyendo documentos, gráficos y reportes para asegurar transparencia y rendición de cuentas.',
     link: '../presupuesto-publico',
   },
-  {
-    id: 8,
-    title: 'CONTACTOS',
-    img: 'bookUser',
-    alt: 'CONTACTOS',
-    descripcion: 'Sección donde encontraras todos los contactos pertinentes al Municipio de Baradero',
-    link: '../contactos',
-  }
 ]

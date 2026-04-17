@@ -13,10 +13,10 @@ export const licitaciones = [
       "ADJUDICADA a la firma OSCAR SCORZA EQUIPOS Y SERVICIOS S.R.L., $12.935.500 (Decreto Nº 213/2021).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%201%202021%2Fdecreto%2094%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%201%202021%2Fdecreto%20213%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   // {
   //   id: 2,
@@ -32,10 +32,10 @@ export const licitaciones = [
   //     "PREADJUDICADA a la firma INGENIERO ALBERTO REANA S.A., $76.814.130,86 (Decreto Nº332/2021).",
   //   pdfUrl:
   //     "",
-  //   botonTexto: "Apertura",
+  //   botonTexto: "1er llamado",
   //   pdfUrlCierre:
   //     "",
-  //   botonTextoCierre: "Cierre",
+  //   botonTextoCierre: "Adjudicacion",
   // },
   {
     id: 3,
@@ -51,10 +51,10 @@ export const licitaciones = [
       "ADJUDICADA a la firma MONTAJES NORBA S.A., $43.979.226,47 (Decreto Nº 362/2021).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%203%202021%2Fdecreto%20228%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%203%202021%2Fdecreto%20362%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 4,
@@ -70,10 +70,10 @@ export const licitaciones = [
       "ADJUDICADA a la firma ESCA CONSTRUCCIONES S.R.L., $8.002.313,65 (Decreto Nº 369/2021).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%204%202021%2Fdecreto%20229%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%204%202021%2Fdecreto%20369%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 5,
@@ -89,10 +89,10 @@ export const licitaciones = [
       "ADJUDICADA a la firma SERVICIOS Y CONSTRUCCIONES ARQUIMAQ S.R.L., $18.290.953,12 (Decreto Nº 363/2021).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%205%202021%2Fdecreto%20233%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%205%202021%2Fdecreto%20363%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   // {
   //   id: 6,
@@ -108,10 +108,10 @@ export const licitaciones = [
   //     "ADJUDICADA a la firma ALEQUI S.A., $34.890.802,48 (Decreto Nº 471/2021).",
   //   pdfUrl:
   //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20233.pdf",
-  //   botonTexto: "Apertura",
+  //   botonTexto: "1er llamado",
   //   pdfUrlCierre:
   //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/pdf-decretos-licitaciones%2Fdecreto%20363.pdf",
-  //   botonTextoCierre: "Cierre",
+  //   botonTextoCierre: "Adjudicacion",
   // },
   // {
   //   id: 7,
@@ -126,7 +126,7 @@ export const licitaciones = [
   //     "ADJUDICADA a la firma OSCAR SCORZA EQUIPOS Y SERVICIOS S.R.L., $23.903.400 (Decreto Nº 465/2021).",
   //   pdfUrl:
   //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
-  //   botonTexto: "Apertura",
+  //   botonTexto: "1er llamado",
   // },
   // {
   //   id: 8,
@@ -143,7 +143,7 @@ export const licitaciones = [
   //     "ADJUDICADA a la firma SEJEDUEZE S.A., por el plazo de diecisiete (17) años contados ($5.000.000) y a partir del sexto año (incluido) un canon anual equivalente a 12.000 litros de gasoil común (Decreto Nº 721/2021).",
   //   pdfUrl:
   //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
-  //   botonTexto: "Apertura",
+  //   botonTexto: "1er llamado",
   // },
   // {
   //   id: 9,
@@ -160,7 +160,7 @@ export const licitaciones = [
   //     "ADJUDICADA al SINDICATO DE OBREROS Y EMPLEADOS DE REFINERIA DE MAIZ (SOERM), ejecutará obras en el precio concesionado por un valor de pesos OCHO MILLONES QUINIENTOS MIL ($8.500.000) y a partir del segundo año (incluido) un canon anual equivalente a 17.000 litros de gasoil común (Decreto Nº 649/2021).",
   //   pdfUrl:
   //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
-  //   botonTexto: "Apertura",
+  //   botonTexto: "1er llamado",
   // },
   // {
   //   id: 10,
@@ -177,7 +177,7 @@ export const licitaciones = [
   //     "ADJUDICADA a la empresa STRICKING S.R.L. $9.871.716,35 (Decreto Nº 653/2021).",
   //   pdfUrl:
   //     "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/licitaciones_publicas/licitaciones_publicas_2021/Licitaci%C3%B3n%20P%C3%BAblica%20N%C2%B0%2003-2021.pdf",
-  //   botonTexto: "Apertura",
+  //   botonTexto: "1er llamado",
   // },
   {
     id: 11,
@@ -194,10 +194,10 @@ export const licitaciones = [
       "ADJUDICADA MONTAJES NORBA S.A. $63.779.884,00 (Decreto Nº 807/2021).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2011%202021%2Fdecreto%20671%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2011%202021%2Fdecreto%20807%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 12,
@@ -214,10 +214,10 @@ export const licitaciones = [
       "ADJUDICADA ALEQUI S.A. $64.493.745,00 - por los ítems (Decreto Nº 844/2021)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2012%202021%2Fdecreto%20589%20y%20637%20%20aperturas.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2012%202021%2Fdecreto%20844.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 13,
@@ -233,10 +233,10 @@ export const licitaciones = [
       "ADJUDICADA DELTA CONSTRUCTORA S.A. $36.078.662,73 (Decreto Nº 852/2021).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2013%202021%2Fdecreto%20634%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2013%202021%2Fdecreto%20852%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 14,
@@ -253,10 +253,10 @@ export const licitaciones = [
       "ADJUDICADA AGUAS CORLETTI S.R.L. $13.474.061,45 (Decreto Nº 118/2022).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2014%202021%2Fdecreto%20737%20y%207%20%20aperturas.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2014%202021%2Fdecreto%20118%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 15,
@@ -273,10 +273,10 @@ export const licitaciones = [
       "ADJUDICADA a la empresa STRICKING S.R.L. $13.794.841,14 (Decreto Nº 68/2022).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2015%202021%2Fdecreto%20738%20y%205%20%20aperturas.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2015%202021%2Fdecreto%2068%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 16,
@@ -292,10 +292,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: GUIGIVAN S.R.L. $20.014.852,61 (Decreto Nº 858/2021)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2016%202021%2Fdecreto%20764%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2016%202021%2Fdecreto%20858%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 17,
@@ -312,10 +312,10 @@ export const licitaciones = [
       "ADJUDICADA: INGENIERO ALBERTO REANO S.A., $204.251.970,18 (Decreto Nº 867/2021)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2017%202021%2Fdecreto%20781%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2017%202021%2Fdecreto%20867%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 18,
@@ -332,10 +332,10 @@ export const licitaciones = [
       "ADJUDICADA: O.R. HIJOS CONTRUCCIONES S.A. $9.739.730 (Decreto Nº 17/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2018%202021%2Fdecreto%20783%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2018%202021%2Fdecreto%2017%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 19,
@@ -352,10 +352,10 @@ export const licitaciones = [
       "ADJUDICADA: MONTAJES NORBA S.A. $8.754.597,99 (Decreto Nº 18/2022).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2019%202021%2Fdecreto%20786%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2019%202021%2Fdecreto%2018%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 20,
@@ -372,10 +372,10 @@ export const licitaciones = [
       "ADJUDICADA a la firma ESCA CONSTRUCCIONES S.R.L., $61.440.968,01 (Decreto Nº 83/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2020%202021%2Fdecreto%20791%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2020%202021%2Fdecreto%2083%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 21,
@@ -392,10 +392,10 @@ export const licitaciones = [
       "PREADJUDICADA a la empresa SERVICIOS EMISER S.A. $199.570.798,47 (Decreto Nº 29/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2021%202021%2Fdecreto%20792%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2021%202021%2Fdecreto%2029%20preadj%20y%20379%20cierres.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 22,
@@ -412,10 +412,10 @@ export const licitaciones = [
       "ADJUDICADA a la empresa STRICKING S.R.L. $8.565.593,49 (Decreto Nº 119/2022).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2022%202021%2Fdecreto%20825%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2022%202021%2Fdecreto%20119%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
 
   // arranca 2022
@@ -433,10 +433,10 @@ export const licitaciones = [
       "ADJUDICADA: Ítem 1 MOTONIVELORA a American Vial Group S.R.L. - $22.499.990. Ítem 2 RETROEXCAVADORA CARGADORA a Covema SACIF - $12.250.000 Ítem 3) Camión con caja volcadora, solicitar mejoramiento en el precio a la firma Oscar Scorza Equipos y Servicios S.R.L único oferente. (Decreto Nº 267/2022) ADJUDICADA: OSCAR SCORZA EQUIPOS Y SERVICIOS S.R.L - $15.227.750,00 (Decreto Nº 360/2022).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic%201.%202022%2Fdecreto%20121%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic%201.%202022%2Fdecreto%20267%20y%20360%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 24,
@@ -452,10 +452,10 @@ export const licitaciones = [
       "ADJUDICADA: MERCADO DE LA CONSTRUCCIONES S.A. - $10.115.600 (Ordenanza Nº 7042-2022 - Decreto Nº 285/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic%202.%202022%2Fdecreto%20122%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic%202.%202022%2Fdecreto%20285%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 25,
@@ -471,10 +471,10 @@ export const licitaciones = [
       "ADJUDICADA: a la firma HYGT CHEMICAL S.R.L. - $4.675.440 (Decreto Nº 243/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic%203.%202022%2Fdecreto%20320%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic%203.%202022%2Fdecreto%20243%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 26,
@@ -490,10 +490,10 @@ export const licitaciones = [
       "ADJUDICADA: Por Ítems a las firmas ● DNM Farma S.A. $4.713.700,00. ● Droguería Varadero S.A. $1.770.840,00. ● Royal Farma S.A. $2.649.028,50. ● Euro Swiss S.A. $1.210.497,00. ● Ximax S.R.L $1.652.528,00. ● Max Continental S.A. $659.260,00. ● MG Insumos S.A. $1.066.413,00 (Decreto Nº 287/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%204%202022%2Fdecreto%20163%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%204%202022%2Fdecreto%20287%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 27,
@@ -509,10 +509,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: STRICKING S.R.L. $56.181.300,10 (Decreto Nº 311/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%205%202022%2Fdecreto%20166%20y%20319%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%205%202022%2Fdecreto%20311%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 28,
@@ -528,10 +528,10 @@ export const licitaciones = [
       "PREADJUDICADA: STRICKING S.R.L. - $59.600.084,00 (Decreto Nº 319/2022) ADJUDICADA: STRICKING S.R.L, por un valor de Quinientas cuarenta y nueve mil setecientos sesenta y cinco con 56/100 (549.765,56) Unidades de Viviendas (Uvis – Ley Nº 27271 y 27397) equivalente a la suma de Pesos sesenta millones cuatrocientos dos mil setecientos cuarenta y dos con 06/100 ($60.402.742,06) - (Decreto Nº 756/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%206%202022%2Fdecreto%20167%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%206%202022%2Fdecreto%20319%20y%20756%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 29,
@@ -547,10 +547,10 @@ export const licitaciones = [
       "PREADJUDICADA: STRICKING S.R.L. $102.148.125,00 (Decreto Nº 312/2022) – ADJUDICADA (Decreto Nº 685/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%207%202022%2Fdecreto%20167%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%207%202022%2Fdecreto%20312%20y%20685%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 30,
@@ -566,10 +566,10 @@ export const licitaciones = [
       "ADJUDICADA: DELTA CONSTRUCTORA S.A. - $32.100.000,00 (Decreto Nº 361/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%208%202022%2Fdecreto%20209%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%208%202022%2Fdecreto%20361%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 31,
@@ -585,10 +585,10 @@ export const licitaciones = [
       "ADJUDICADA: STRICKING S.R.L. - $79.149.522,37 (Ordenanza Nº 7070-2022 – Decreto Nº 484/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%209%202022%2Fdecreto%20315%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%209%202022%2Fdecreto%20484%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 32,
@@ -604,10 +604,10 @@ export const licitaciones = [
       "PREADJUDICADA: Ingeniero Alberto Reano S.A. - $76.975.428,97 (Decreto Nº 579/2022) – ADJUDICADA por Decreto Nº 929/2022.",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2010%202022%2Fdecreto%20389%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2010%202022%2Fdecreto%20579%20y%20929%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 33,
@@ -622,10 +622,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: Alequi S.A. - $13.195.252,23 (Decreto Nº 617/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2011%202022%2Fdecreto%20390%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2011%202022%2Fdecreto%20617%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 34,
@@ -640,10 +640,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: TN GROUP S.A- $14.490.000 (Decreto Nº 536/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2012%202022%2Fdecreto%20391%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2012%202022%2Fdecreto%20536%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 35,
@@ -659,10 +659,10 @@ export const licitaciones = [
       "ADJUDICADA: Ingeniero Alberto Reano S.A. - $89.524.357,38 (Decreto Nº 677/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2013%202022%2Fdecreto%20474%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2013%202022%2Fdecreto%20677%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 36,
@@ -678,10 +678,10 @@ export const licitaciones = [
       "ADJUDICADA: ABAV Ingeniería y Construcciones S.A. - $ 46.108.196,80 (Decreto Nº 701/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2014%202022%2Fdecreto%20519%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2014%202022%2Fdecreto%20701%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 37,
@@ -698,10 +698,10 @@ export const licitaciones = [
       "ADJUDICADA: ABAV Ingeniería y Construcciones S.A. - $ 11.690.000 (Decreto Nº 699/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2015%202022%2Fdecreto%20543%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2015%202022%2Fdecreto%20699%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 38,
@@ -717,10 +717,10 @@ export const licitaciones = [
     firma: "Declarada DESIERTA (Decreto Nº 688/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2016%202022%2Fdecreto%20562%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2016%202022%2Fdecreto%20688%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 39,
@@ -737,10 +737,10 @@ export const licitaciones = [
       "Preadjudicada: JUSA S.A. (1.228.613,77 UVIs - equivalente $131.179.092,74), (Decreto Nº 773/2022) ADJUDICADA: JUSA S.A., (1.228.613,77 Uvis equivalente $131.179.092,74) (Decreto Nº 809/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2017%202022%2Fdecreto%20590%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2017%202022%2Fdecreto%20773%20y%20809%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 40,
@@ -757,10 +757,10 @@ export const licitaciones = [
       "Declárese FRACASADA y realizase SEGUNDO LLAMADO - Apertura 07 de diciembre de 2022, a la hora 09:00 (Decreto 841/2022) Declara Fracasada (Decreto Nº 965/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2018%202022%2Fdecreto%20628%20y%20841%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2018%202022%2Fdecreto%20965%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 41,
@@ -776,10 +776,10 @@ export const licitaciones = [
       "ADJUDICADA: OR Hijos Construcciones S.A. - $11.120.062 – Decreto Nº 888/2022",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2019%202022%2Fdecreto%20730%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2019%202022%2Fdecreto%20888%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 42,
@@ -796,10 +796,10 @@ export const licitaciones = [
       "Decreto Nº 792/2022 se deja sin efecto la Licitación Pública Nº 20/2022",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2020%202022%2Fdecreto%20731%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2020%202022%2Fdecreto%20792%20cierre%202022.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 43,
@@ -815,10 +815,10 @@ export const licitaciones = [
       "ADJUDICADA: MERCADO DE LA CONSTRUCCIÓN S.A. - $22.375.661,00 (Ord. 7119 – Decreto Nº 870/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2021%202022%2Fdecreto%20755%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2021%202022%2Fdecreto%20870%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 44,
@@ -834,10 +834,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: APCO S.A. -$ 427.707.003,24 (Decreto Nº 896/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2022%202022%2Fdecreto%20770%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2022%202022%2Fdecreto%20896%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 45,
@@ -853,10 +853,10 @@ export const licitaciones = [
       "ADJUDICADA: ABAV Ingeniería y Construcciones S.R.L. $45.683.074,27 (Decreto Nº 199/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2023%202022%2Fdecreto%20199.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2023%202022%2Fdecreto%20944%20apertura.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 46,
@@ -872,10 +872,10 @@ export const licitaciones = [
       "ADJUDICADA: OR Hijos Construcciones S.A. $44.017.054,00 (Decreto Nº 205/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2024%202022%2Fdecreto%20205.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2024%202022%2Fdecreto%20945%20apertura.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   // aca arrancan año 2023
   {
@@ -893,10 +893,10 @@ export const licitaciones = [
       "PREADJUDICADA: Ingeniería y Arquitectura S.A. $165.674.274,28 (Decreto Nº 266/2023) ADJUDICADA: DECRETO Nº 329/2023",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%201%202023%2Fdecreto%209%20y%2021%20aperturas.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%201%202023%2FDecreto%20preadj.%20266%20y%20adj.%20329%20cierres.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 48,
@@ -913,10 +913,10 @@ export const licitaciones = [
       "ADJUDICADA: Ingrid Deppeler Construcciones S.A.S. $73.436.969,72 (Decreto Nº 643/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%202%202023%2FDecreto%20309%20y%20498%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%202%202023%2Fdecreto%20643%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 49,
@@ -931,10 +931,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: HORMICARD S. A. $88.825.521,84 (Decreto Nº 743/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%203%202023%2Fdecreto%20320%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%203%202023%2Fdecreto%20743%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 50,
@@ -949,10 +949,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: STRICKING S.R.L. $51.570.850 (Decreto Nº 744/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%204%202023%2Fdecreto%20321%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%204%202023%2Fdecreto%20744%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 51,
@@ -968,10 +968,10 @@ export const licitaciones = [
       "PREADJUDICADA: STRICKING S.R.L. - $100.900.000 (Decreto Nº 507/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%205%202023%2Fdecreto%20325%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%205%202023%2FDecreto%20507%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 52,
@@ -986,10 +986,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: STRICKING S.R.L. - $95.000.000 (Decreto Nº 515/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%206%202023%2Fdecreto%20326%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%206%202023%2FDecreto%20515%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 53,
@@ -1004,10 +1004,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: APCO S.A. - $119.987.357,33 (Decreto Nº 525/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%207%202023%2Fdecreto%20344%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%207%202023%2FDecreto%20525%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 54,
@@ -1023,10 +1023,10 @@ export const licitaciones = [
       "ADJUDICADA: MONTAJES NORBA S.A. - $86.129.365,89 (Decreto Nº 526/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%208%202023%2Fdecreto%20345%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%208%202023%2FDecreto%20526%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 55,
@@ -1042,10 +1042,10 @@ export const licitaciones = [
       "ADJUDICADA: Ingeniero Alberto Reano S.A. $111.461.049,42 (Decreto Nº 663/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%209%202023%2Fdecreto%20403%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%209%202023%2Fdecreto%20663%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 56,
@@ -1061,10 +1061,10 @@ export const licitaciones = [
       "ADJUDICADA: Ingeniero Alberto Reano S.A. $139.754.309,68 (Decreto Nº 726/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2010%202023%2Fdecreto%20404%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2010%202023%2Fdecreto%20726%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 57,
@@ -1080,10 +1080,10 @@ export const licitaciones = [
     firma: "DECLARA FRACADA (Decreto Nº 1196/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2011%202023%2FDecreto%20478%20y%20711%20aperturas.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2011%202023%2FDecreto%201196%20-%202023%20Declara%20Fracasada%20Lic.%20Pca.%2011-2023%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 58,
@@ -1098,10 +1098,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: STRICKING S.R.L. $14.188.076,00 (Decreto Nº 891/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2012%202023%2Fdecreto%20570%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2012%202023%2Fdecreto%20891%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 59,
@@ -1117,10 +1117,10 @@ export const licitaciones = [
       "Declara FRACASADA y se deja sin efecto la Licitación Privada Nº 13/2022 (Decreto Nº 773/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2013%202023%2Fdecreto%20571%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2013%202023%2FDecreto%20773%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 60,
@@ -1138,10 +1138,10 @@ export const licitaciones = [
       "ADJUDICADA: HORMICARD S. A. $ 1.297.206.140,03 (Decreto Nº 731/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2014%202023%2Fdecreto%20576%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2014%202023%2FDecreto%20731%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 61,
@@ -1159,10 +1159,10 @@ export const licitaciones = [
       "ADJUDICADA: INGENIERÍA Y ARQUITECTURA S.A., $2.403.441.018,32 (Decreto Nº 1120/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2015%202023%2Fdecreto%20757%2C%20868%20y%20909%20aperturas.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2015%202023%2Fdecreto%201120%20p1%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 62,
@@ -1177,10 +1177,10 @@ export const licitaciones = [
     firma: "ANULADO Decreto Nº 811/2023",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2016%202023%2Fdecreto%20799%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2016%202023%2Fdecreto%20811%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 63,
@@ -1196,10 +1196,10 @@ export const licitaciones = [
     firma: "ADJUDICADA: STRICKING S.R.L. - $33.600.000 (Decreto Nº 1052/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2017%202023%2Fdecreto%20820%20y%20942%20aperturas.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2017%202023%2Fdecreto%201052%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 64,
@@ -1213,10 +1213,10 @@ export const licitaciones = [
     firma: "Declara DESIERTA (Decreto Nº 46/2024)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2018%202023%2Fdecreto%2046%20cierre.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2018%202023%2Fdecreto%201092%20apertura.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 65,
@@ -1231,10 +1231,10 @@ export const licitaciones = [
     firma: "Declara DESIERTA (Decreto Nº 47/2024)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2019%202023%2Fdecreto%2047%20cierre.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2019%202023%2Fdecreto%201093%20apertura.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 66,
@@ -1249,10 +1249,10 @@ export const licitaciones = [
     firma: "Declara DESIERTA (Decreto Nº 48/2024)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2020%202023%2Fdecreto%2048%20cierre.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2020%202023%2Fdecreto%201094%20apertura.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   // aca arrancan año 2024
   {
@@ -1269,10 +1269,10 @@ export const licitaciones = [
       "ADJUDICADA: Declárese DESIERTA y concluye con el proceso licitatorio (Decreto Nº 322/2024)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2024%2FLic.%201%202024%2Fdecreto%20149%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2024%2FLic.%201%202024%2Fdecreto%20322%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
   {
     id: 68,
@@ -1288,9 +1288,9 @@ export const licitaciones = [
       "ADJUDICADA: Ingrid Deppeler Construcciones S.A.S. $128.869.200,00 (Decreto Nº 449/2024)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2024%2FLic.%202%202024%2Fdecreto%20259%20apertura.pdf",
-    botonTexto: "Apertura",
+    botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2024%2FLic.%202%202024%2Fdecreto%20449%20cierre.pdf",
-    botonTextoCierre: "Cierre",
+    botonTextoCierre: "Adjudicacion",
   },
 ]

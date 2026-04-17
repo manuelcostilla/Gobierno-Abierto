@@ -214,7 +214,7 @@ export const licitaciones = [
       "ADJUDICADA ALEQUI S.A. $64.493.745,00 - por los ítems (Decreto Nº 844/2021)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2012%202021%2Fdecreto%20589%20y%20637%20%20aperturas.pdf",
-    botonTexto: "1er llamado",
+    botonTexto: "2do llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2012%202021%2Fdecreto%20844.pdf",
     botonTextoCierre: "Adjudicacion",
@@ -253,7 +253,7 @@ export const licitaciones = [
       "ADJUDICADA AGUAS CORLETTI S.R.L. $13.474.061,45 (Decreto Nº 118/2022).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2014%202021%2Fdecreto%20737%20y%207%20%20aperturas.pdf",
-    botonTexto: "1er llamado",
+    botonTexto: "2do llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2014%202021%2Fdecreto%20118%20cierre.pdf",
     botonTextoCierre: "Adjudicacion",
@@ -273,7 +273,7 @@ export const licitaciones = [
       "ADJUDICADA a la empresa STRICKING S.R.L. $13.794.841,14 (Decreto Nº 68/2022).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2015%202021%2Fdecreto%20738%20y%205%20%20aperturas.pdf",
-    botonTexto: "1er llamado",
+    botonTexto: "2do llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2015%202021%2Fdecreto%2068%20cierre.pdf",
     botonTextoCierre: "Adjudicacion",
@@ -412,7 +412,7 @@ export const licitaciones = [
       "ADJUDICADA a la empresa STRICKING S.R.L. $8.565.593,49 (Decreto Nº 119/2022).",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2022%202021%2Fdecreto%20825%20apertura.pdf",
-    botonTexto: "1er llamado",
+    botonTexto: "2do llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2021%2FLic.%2022%202021%2Fdecreto%20119%20cierre.pdf",
     botonTextoCierre: "Adjudicacion",
@@ -757,7 +757,7 @@ export const licitaciones = [
       "Declárese FRACASADA y realizase SEGUNDO LLAMADO - Apertura 07 de diciembre de 2022, a la hora 09:00 (Decreto 841/2022) Declara Fracasada (Decreto Nº 965/2022)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2018%202022%2Fdecreto%20628%20y%20841%20apertura.pdf",
-    botonTexto: "1er llamado",
+    botonTexto: "2do llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2022%2FLic.%2018%202022%2Fdecreto%20965%20cierre.pdf",
     botonTextoCierre: "Adjudicacion",
@@ -913,7 +913,7 @@ export const licitaciones = [
       "ADJUDICADA: Ingrid Deppeler Construcciones S.A.S. $73.436.969,72 (Decreto Nº 643/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%202%202023%2FDecreto%20309%20y%20498%20apertura.pdf",
-    botonTexto: "1er llamado",
+    botonTexto: "2do llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%202%202023%2Fdecreto%20643%20cierre.pdf",
     botonTextoCierre: "Adjudicacion",
@@ -1196,7 +1196,7 @@ export const licitaciones = [
     firma: "ADJUDICADA: STRICKING S.R.L. - $33.600.000 (Decreto Nº 1052/2023)",
     pdfUrl:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2017%202023%2Fdecreto%20820%20y%20942%20aperturas.pdf",
-    botonTexto: "1er llamado",
+    botonTexto: "2do llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2023%2FLic.%2017%202023%2Fdecreto%201052%20cierre.pdf",
     botonTextoCierre: "Adjudicacion",
@@ -1291,6 +1291,120 @@ export const licitaciones = [
     botonTexto: "1er llamado",
     pdfUrlCierre:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024%2F2024%2FLic.%202%202024%2Fdecreto%20449%20cierre.pdf",
+    botonTextoCierre: "Adjudicacion",
+  },
+  {
+    id: 69,
+    titulo: "Licitación Pública N° 3/2024",
+    año: "2024",
+    tituloAcordeonAbierto: " Decreto 898",
+    Expediente: "EXPTE 4009-20-001748/S – DECRETO 898",
+    motivo:
+      "Obra: POR 2 DÍAS – Motivo: >: Obra: RENOVACION INTEGRAL, REFORMAS Y ACONDICIONAMIENTO ELÉCTRICO Y TÉRMICO CEC N° 801 2DA ETAPA de la Ciudad de Baradero.",
+    presupuesto: "Presupuesto oficial:",
+    plata: "$ 237.608.802,50.-",
+    firma:
+      "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
+    pdfUrl:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024/2024/Lic.%203%202024/Licitacion-Publica-N%C2%B0-3-2024.pdf",
+    botonTexto: "1er llamado",
+    pdfUrlCierre:
+      "",
+    botonTextoCierre: "Adjudicacion",
+  },
+  {
+    id: 70,
+    titulo: "LICITACIÓN PUBLICA N° 3/2024 Segundo llamado",
+    año: "2024",
+    tituloAcordeonAbierto: " Decreto 96",
+    Expediente: "EXPTE 4009-20-001748/S – DECRETO 96",
+    motivo:
+      "POR 2 DÍAS – Motivo: >: Obra: RENOVACION INTEGRAL, REFORMAS Y ACONDICIONAMIENTO ELÉCTRICO Y TÉRMICO CEC N° 801 2DA ETAPA de la Ciudad de Baradero",
+    presupuesto: "Presupuesto oficial:",
+    plata: " $ 237.608.802,50.-",
+    firma:
+      "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
+    pdfUrl:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024/2024/Lic.%203%202024/Licitacion-Publica-3-24-S.pdf",
+    botonTexto: "2do llamado",
+    pdfUrlCierre:
+      "",
+    botonTextoCierre: "Adjudicacion",
+  },
+  {
+    id: 71,
+    titulo: "LICITACIÓN PUBLICA N° 1/2025",
+    año: "2025",
+    tituloAcordeonAbierto: " Decreto 505",
+    Expediente: "EXPTE 4009-20-003059/S – DECRETO 505",
+    motivo:
+      "POR 2 DÍAS – Motivo: >: Obra: RED ELECTRICA Y ALUMBRADO PUBLICO COSTANERA SUR de la ciudad de Baradero",
+    presupuesto: "Presupuesto oficial:",
+    plata: "$ 1.198.264.048,38",
+    firma:
+      "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
+    pdfUrl:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024/2025/licitacion-publica-1-2025.pdf",
+    botonTexto: "1er llamado",
+    pdfUrlCierre:
+      "",
+    botonTextoCierre: "Adjudicacion",
+  },
+  {
+    id: 72,
+    titulo: "LICITACION PUBLICA 2/2025",
+    año: "2025",
+    tituloAcordeonAbierto: " Decreto 831",
+    Expediente: "Decreto 831",
+    motivo:
+      "POR 2 DIAS- Motivo: Obra: CONSTRUCCION NUEVO EDIFICIO ETAPA 1 Jardín de infantes N° 907 Juana Manso de la ciudad de Baradero",
+    presupuesto: "Presupuesto oficial:",
+    plata: "$ 360.334.031,34",
+    firma:
+      "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
+    pdfUrl:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024/2025/Licitacion-Publica-2-2025.pdf",
+    botonTexto: "1er llamado",
+    pdfUrlCierre:
+      "",
+    botonTextoCierre: "Adjudicacion",
+  },
+  {
+    id: 72,
+    titulo: "LICITACION PUBLICA 2/2025 – SEGUNDO LLAMADO",
+    año: "2025",
+    tituloAcordeonAbierto: "Decreto 7",
+    Expediente: "Decreto 7",
+    motivo:
+      "POR 2 DIAS- Motivo: Obra: CONSTRUCCION NUEVO EDIFICIO ETAPA 1 Jardín de infantes N° 907 Juana Manso de la ciudad de Baradero",
+    presupuesto: "Presupuesto oficial:",
+    plata: "$ 360.334.031,34",
+    firma:
+      "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
+    pdfUrl:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024/2025/licitacion-publica-2-2025.docx-SEG-LLAMADO.pdf",
+    botonTexto: "1er llamado",
+    pdfUrlCierre:
+      "",
+    botonTextoCierre: "Adjudicacion",
+  },
+  {
+    id: 73,
+    titulo: "LICITACIÓN PUBLICA N° 1/2026",
+    año: "2026",
+    tituloAcordeonAbierto: "Decreto 220",
+    Expediente: "Decreto 220",
+    motivo:
+      "POR 2 DIAS- Motivo: Obra: Implementación del Servicio Alimentario escolar y el programa MESA en los Municipios de la Pcia. De Bs.AS de ciudad de Baradero – MAYO A DICIEMBRE 2026",
+    presupuesto: "Presupuesto oficial:",
+    plata: "PROGRAMA SAE $ 782.945.600 PROGRAMA MESA $ 468.822.800.-",
+    firma:
+      "Adquisición hasta 48 horas hábiles antes de la apertura a las 10 horas.",
+    pdfUrl:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos_licitaciones_publicas-2021-2024/2025/licitacion-publica-2-2025.docx-SEG-LLAMADO.pdf",
+    botonTexto: "1er llamado",
+    pdfUrlCierre:
+      "",
     botonTextoCierre: "Adjudicacion",
   },
 ]

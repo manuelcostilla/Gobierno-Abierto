@@ -13,6 +13,7 @@ import compra_licitaciones from "../public/atajos/ComprasLicitac.svg"
 import gestion_compromisos from "../public/atajos/GestionComprom.svg"
 import presupuesto_publico from "../public/atajos/PresupPublico.svg"
 import bookUser from "../public/atajos/bookUser.svg"
+import decretos_ordenanzas from "../public/atajos/decretos_ordenanzas.svg"
 
 const images = {
   mapa_estado_municipal,
@@ -21,6 +22,7 @@ const images = {
   gestion_compromisos,
   presupuesto_publico,
   bookUser,
+  decretos_ordenanzas
 }
 
 export const Atajos = () => {

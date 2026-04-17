@@ -61,7 +61,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
               <Grid size={14} className="mr-2" />
               TODOS
             </Button>
-            {["2025", "2024", "2023", "2022", "2021"].map((year) => (
+            {["2026", "2025", "2024", "2023", "2022", "2021"].map((year) => (
               <Button
                 key={year}
                 variant={selectedYear === year ? "default" : "outline"}
@@ -94,11 +94,11 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                 >
                   {openIndex === index
                     ? (
-                    <ChevronUp className="mr-2 text-blue-500" size={18} />
-                      )
+                      <ChevronUp className="mr-2 text-blue-500" size={18} />
+                    )
                     : (
-                    <FileText className="mr-2 text-blue-500" size={18} />
-                      )}
+                      <FileText className="mr-2 text-blue-500" size={18} />
+                    )}
                   {item.titulo} ({item.año})
                 </button>
               </CardContent>

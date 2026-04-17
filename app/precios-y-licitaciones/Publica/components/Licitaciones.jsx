@@ -105,7 +105,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
 
               {openIndex === index && (
                 <CardContent className="transition-all duration-300 ease-in-out p-0 border-t border-slate-100 bg-white">
-                  <ScrollArea className="max-h-[350px] w-full p-6">
+                  <div className="max-h-[350px] w-full p-6 overflow-y-auto overflow-x-hidden">
                     <div className="space-y-3">
                       <p className="mb-4 font-black text-blue-GobAb uppercase text-xs tracking-wider">Detalles de la Licitación</p>
                       <p className="font-bold text-gray-900">{item.tituloAcordeonAbierto}</p>
@@ -169,7 +169,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                         {item.botonTextoCierre}
                       </Button>
                     </div>
-                  </ScrollArea>
+                  </div>
                 </CardContent>
               )}
             </Card>

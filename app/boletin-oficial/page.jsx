@@ -21,7 +21,6 @@ const PdfDownloader = () => {
             text="En nuestro Boletín Oficial podrás encontrar las Ordenanzas Municipales aprobadas por el Honorable Concejo Deliberante (HCD), además de las resoluciones y decretos emitidos por el mismo órgano. Por otro lado,  se incluyen los Decretos y Resoluciones del Departamento Ejecutivo, que son actos administrativos emitidos por el Intendente y su equipo relacionados con la gestión y administración del municipio, las cuales son determinaciones y decisiones operativas para la implementación de políticas públicas."
           />
         </div>
-
         <BoletinOficialButtons />
       </div>
     </div>

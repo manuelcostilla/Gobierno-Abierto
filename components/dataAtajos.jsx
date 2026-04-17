@@ -41,4 +41,12 @@ export const dataAtajos = [
     descripcion: 'Esta sección ofrece detalles sobre ingresos y gastos del municipio, incluyendo documentos, gráficos y reportes para asegurar transparencia y rendición de cuentas.',
     link: '../presupuesto-publico',
   },
+  {
+    id: 6,
+    title: 'DECRETOS Y ORDENANZAS',
+    img: 'decretos_ordenanzas',
+    alt: 'Decretos y ordenanzas',
+    descripcion: 'la sección oficial de Decretos y Ordenanzas del Municipio de Baradero, un espacio fundamental para la transparencia democrática donde centralizamos el marco legal que rige nuestra ciudad y garantizamos que cada vecino tenga acceso directo a las normativas que definen el presente y el futuro de nuestra comunidad.',
+    link: '../decretos-y-ordenanzas',
+  },
 ]

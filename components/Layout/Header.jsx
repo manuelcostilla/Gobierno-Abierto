@@ -48,7 +48,7 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col sm:w-full md:flex-row justify-between items-center bg-white/90 backdrop-blur-lg border-b border-gray-200 px-6 py-2 lg:border-b-4 lg:border-b-green-nav shadow-md">
+        <div className="relative flex flex-row w-full justify-between items-center bg-white/90 backdrop-blur-lg border-b border-gray-200 px-4 md:px-6 py-2 lg:border-b-4 lg:border-b-green-nav shadow-md">
           <Link href="/">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -59,12 +59,12 @@ export const Header = () => {
               <Image
                 alt="Logo Gobierno Abierto"
                 src={logo}
-                className="w-[180px] h-auto md:w-[220px] lg:w-[250px] transition-all duration-500 drop-shadow-[0_4px_12px_rgba(0,123,186,0.15)] group-hover:drop-shadow-[0_8px_24px_rgba(0,123,186,0.3)] group-hover:brightness-110"
+                className="w-[150px] md:w-[220px] lg:w-[250px] h-auto transition-all duration-500 drop-shadow-[0_4px_12px_rgba(0,123,186,0.15)] group-hover:drop-shadow-[0_8px_24px_rgba(0,123,186,0.3)] group-hover:brightness-110"
               />
               <div className="absolute inset-0 bg-blue-400/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
             </motion.div>
           </Link>
-          <div className="w-full sm:w-auto mt-4 md:mt-0">
+          <div className="w-auto">
             <HeadernavBar />
           </div>
         </div>

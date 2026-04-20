@@ -137,7 +137,7 @@ export function GastosPorArea2020({ chart, setChart }) {
                       <CartesianGrid vertical={false} />
                       <XAxis axisLine={false} />
                       <ChartTooltip content={<ChartTooltipContent />} />
-                      <ChartLegend content={<ChartLegendContent />} />
+                      <ChartLegend content={<ChartLegendContent payload={[]} verticalAlign="bottom" />} />
                       <Bar dataKey="valor$" radius={4} />
                     </BarChart>
                   </ResponsiveContainer>

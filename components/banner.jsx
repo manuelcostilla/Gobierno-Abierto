@@ -37,7 +37,7 @@ export default function Banner () {
           </p>
 
           <div className="mt-10">
-            <Link href="https://baradero.opendata.junar.com/dashboards/21829/datos-abiertos-baradero-destacadas/ " target="_blank">
+            <Link href="https://baradero.opendata.junar.com/dashboards/21829/datos-abiertos-baradero-destacadas/" target="_blank">
               <button className="bg-blue-GobAb hover:bg-blue-title text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-blue-500/30 hover:-translate-y-1">
                 Datos Abiertos
               </button>

@@ -27,7 +27,7 @@ function SecretariaDetail ({ params }) {
     <div className="min-h-screen bg-neutral-50/50 pb-20">
       <div className="container mx-auto px-4 py-8">
         <Link
-          href="/testpage"
+          href="/areas-de-gobierno"
           className="inline-flex items-center gap-2 text-blue-GobAb hover:text-blue-title font-bold transition-colors mb-8 group"
         >
           <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />

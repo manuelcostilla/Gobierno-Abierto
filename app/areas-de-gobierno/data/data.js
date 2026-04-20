@@ -56,8 +56,8 @@ export const secretarias = [
     icon: <Users height={70} width={70} color="#007CB6" />,
     imagen: "/testbanner.jpg",
     funcionario: {
-      nombre: "Nombre del Responsable",
-      posicion: "Secretario General",
+      nombre: "Luciana DePauli",
+      posicion: "Secretaria General de Gobierno",
       cvfoto: "/test.webp",
       curriculum: "#",
       declaracionJurada: "#",
@@ -66,7 +66,7 @@ export const secretarias = [
     estructura: { secretarias: [] },
     funciones: ["Coordinación administrativa", "Relación Institucional"],
     proyectos: [],
-    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    contactos: { Direccion: "Baradero", Celular: "-", email: "gobierno@baradero.gob.ar", horarios: "8:00 - 14:00" },
     links: []
   },
   {
@@ -86,7 +86,7 @@ export const secretarias = [
     estructura: { secretarias: [] },
     funciones: ["Planificación estratégica", "Control de Gestión"],
     proyectos: [],
-    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    contactos: { Direccion: "Baradero", Celular: "-", email: "planificacionyobras@baradero.gob.ar", horarios: "8:00 - 14:00" },
     links: []
   },
   {
@@ -106,7 +106,7 @@ export const secretarias = [
     estructura: { secretarias: [] },
     funciones: ["Mantenimiento vial", "Servicios sanitarios"],
     proyectos: [],
-    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    contactos: { Direccion: "Baradero", Celular: "-", email: "habitat@baradero.gob.ar", horarios: "8:00 - 14:00" },
     links: []
   },
   {
@@ -116,7 +116,7 @@ export const secretarias = [
     icon: <Wallet height={70} width={70} color="#007CB6" />,
     imagen: "/testbanner.jpg",
     funcionario: {
-      nombre: "Nombre del Responsable",
+      nombre: "Fabio Artimiak",
       posicion: "Secretario de Hacienda",
       cvfoto: "/test.webp",
       curriculum: "#",
@@ -126,7 +126,7 @@ export const secretarias = [
     estructura: { secretarias: [] },
     funciones: ["Recaudación municipal", "Presupuesto"],
     proyectos: [],
-    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    contactos: { Direccion: "Baradero", Celular: "-", email: "finanzas@baradero.gob.ar", horarios: "8:00 - 14:00" },
     links: []
   },
   {
@@ -136,7 +136,7 @@ export const secretarias = [
     icon: <Palette height={70} width={70} color="#007CB6" />,
     imagen: "/testbanner.jpg",
     funcionario: {
-      nombre: "Nombre del Responsable",
+      nombre: "Santiago Baldi",
       posicion: "Secretario de Cultura",
       cvfoto: "/test.webp",
       curriculum: "#",
@@ -146,7 +146,7 @@ export const secretarias = [
     estructura: { secretarias: [] },
     funciones: ["Eventos culturales", "Deporte comunitario"],
     proyectos: [],
-    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    contactos: { Direccion: "Baradero", Celular: "-", email: "secretaria@baradero.gob.ar", horarios: "8:00 - 14:00" },
     links: []
   },
   {
@@ -156,7 +156,7 @@ export const secretarias = [
     icon: <HeartPulse height={70} width={70} color="#007CB6" />,
     imagen: "/testbanner.jpg",
     funcionario: {
-      nombre: "Nombre del Responsable",
+      nombre: "Darío Puede",
       posicion: "Secretario de Salud",
       cvfoto: "/test.webp",
       curriculum: "#",
@@ -166,7 +166,7 @@ export const secretarias = [
     estructura: { secretarias: [] },
     funciones: ["Gestión hospitalaria", "Prevención"],
     proyectos: [],
-    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    contactos: { Direccion: "Baradero", Celular: "-", email: "", horarios: "8:00 - 14:00" },
     links: []
   },
   {
@@ -176,7 +176,7 @@ export const secretarias = [
     icon: <HandHelping height={70} width={70} color="#007CB6" />,
     imagen: "/testbanner.jpg",
     funcionario: {
-      nombre: "Nombre del Responsable",
+      nombre: "Santiago Ríos",
       posicion: "Secretario de Desarrollo Social",
       cvfoto: "/test.webp",
       curriculum: "#",
@@ -186,7 +186,7 @@ export const secretarias = [
     estructura: { secretarias: [] },
     funciones: ["Asistencia social", "Políticas de género"],
     proyectos: [],
-    contactos: { Direccion: "Baradero", Celular: "-", email: "-", horarios: "8:00 - 14:00" },
+    contactos: { Direccion: "Baradero", Celular: "-", email: "desarrollohumano@baradero.gob.ar", horarios: "8:00 - 14:00" },
     links: []
   }
 ]

@@ -19,7 +19,7 @@ function testPage () {
                 whileHover={{ y: -8 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <Link href={`/testpage/${sec.id}`}>
+                <Link href={`/areas-de-gobierno/${sec.id}`}>
                   <article className="h-full bg-white backdrop-blur-sm border border-neutral-100 rounded-3xl p-10 flex flex-col items-center gap-6 shadow-sm hover:shadow-2xl hover:border-blue-300 transition-all duration-300 group">
                     <div className="p-8 bg-neutral-50 text-blue-GobAb rounded-3xl group-hover:bg-white group-hover:scale-110 group-hover:shadow-lg transition-all duration-500 border border-transparent group-hover:border-blue-100">
                       {sec.icon}

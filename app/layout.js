@@ -11,14 +11,14 @@ export const metadata = {
   description: "La pagina de transparencia del Municipio de Baradero",
 }
 
-export default function RootLayout ({ children }) {
+export default function RootLayout({ children }) {
   return (
     <>
-      <html lang="es-ar">
+      <html lang="es-ar" suppressHydrationWarning>
         <head>
           <link rel="icon" href="../LOGOS_icono-100x100.png" />
         </head>
-        <body className={inter.className}>
+        <body className={inter.className} suppressHydrationWarning>
           <ThemeProvider
             attribute="class"
             defaultTheme="light"

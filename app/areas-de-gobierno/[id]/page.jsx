@@ -1,5 +1,3 @@
-"use client"
-
 import React from "react"
 import {
   Phone,
@@ -15,8 +13,14 @@ import {
 import { secretarias } from "../data/data"
 import Link from "next/link"
 
-function SecretariaDetail ({ params }) {
-  const { id } = params
+export function generateStaticParams() {
+  return secretarias.map((sec) => ({
+    id: sec.id.toString(),
+  }))
+}
+
+export default async function SecretariaDetail({ params }) {
+  const { id } = await params
   const secretaria = secretarias.find((item) => item.id === parseInt(id))
 
   if (!secretaria) {
@@ -161,5 +165,3 @@ function SecretariaDetail ({ params }) {
     </div>
   )
 }
-
-export default SecretariaDetail

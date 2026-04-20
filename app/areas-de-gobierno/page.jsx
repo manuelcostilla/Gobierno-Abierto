@@ -6,7 +6,7 @@ import { BannerText } from "@/components/bannertext"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
-function testPage () {
+function testPage() {
   return (
     <>
       <BannerText titulo="Áreas de Gobierno" />

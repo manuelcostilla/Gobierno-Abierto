@@ -56,7 +56,7 @@ export const secretarias = [
     icon: <Users height={70} width={70} color="#007CB6" />,
     imagen: "/testbanner.jpg",
     funcionario: {
-      nombre: "Luciana DePauli",
+      nombre: "Luciana Depauli",
       posicion: "Secretaria General de Gobierno",
       cvfoto: "/test.webp",
       curriculum: "#",

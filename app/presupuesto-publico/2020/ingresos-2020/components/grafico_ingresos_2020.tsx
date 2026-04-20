@@ -117,91 +117,91 @@ const CustomLegend = ({ config }: { config: ChartConfig }) => (
   </div>
 )
 
-export function GraficosIngresos2020 ({ chart, setChart }) {
+export function GraficosIngresos2020({ chart, setChart }) {
   return (
     <div>
       {chart
         ? (
-        <>
-          <div className="grid gap-4 md:grid-cols-7">
-            <Card className="col-span-4">
-              <CardHeader>
-                <CardTitle>Gráfico ingresos por origen 2020</CardTitle>
-                <CardDescription>
-                  Resumen de los ingresos del 2020 por origen
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="h-[350px]">
-                <ChartContainer config={chartConfig} className="w-[550px] ">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart accessibilityLayer data={chartData}>
-                      <CartesianGrid vertical={false} />
-                      <XAxis axisLine={false} />
-                      <ChartTooltip content={<ChartTooltipContent />} />
-                      <ChartLegend content={<ChartLegendContent />} />
-                      <Bar dataKey="valor$" radius={4} />
-                    </BarChart>
-                  </ResponsiveContainer>
-                </ChartContainer>
-                <p>Información extraída del RAFAM</p>
-              </CardContent>
-            </Card>
-            <Card className="col-span-3">
-              <CardHeader>
-                <CardTitle>Detalles</CardTitle>
-                <CardDescription>División en categorías</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <CustomLegend config={chartConfig} />
-              </CardContent>
-            </Card>
-          </div>
-        </>
-          )
+          <>
+            <div className="grid gap-4 md:grid-cols-7">
+              <Card className="col-span-4">
+                <CardHeader>
+                  <CardTitle>Gráfico ingresos por origen 2020</CardTitle>
+                  <CardDescription>
+                    Resumen de los ingresos del 2020 por origen
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="h-[350px]">
+                  <ChartContainer config={chartConfig} className="w-[550px] ">
+                    <ResponsiveContainer width="100%" height="100%">
+                      <BarChart accessibilityLayer data={chartData}>
+                        <CartesianGrid vertical={false} />
+                        <XAxis axisLine={false} />
+                        <ChartTooltip content={<ChartTooltipContent />} />
+                        <ChartLegend content={<ChartLegendContent payload={[]} verticalAlign="bottom" />} />
+                        <Bar dataKey="valor$" radius={4} />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </ChartContainer>
+                  <p>Información extraída del RAFAM</p>
+                </CardContent>
+              </Card>
+              <Card className="col-span-3">
+                <CardHeader>
+                  <CardTitle>Detalles</CardTitle>
+                  <CardDescription>División en categorías</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <CustomLegend config={chartConfig} />
+                </CardContent>
+              </Card>
+            </div>
+          </>
+        )
         : (
-        <>
-          <div className="grid gap-4 md:grid-cols-7">
-            <Card className="col-span-4">
-              <CardHeader>
-                <CardTitle>Gráfico ingresos por origen 2020</CardTitle>
-                <CardDescription>
-                  Resumen de los ingresos del 2020 por origen
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="h-[350px]">
-                <ChartContainer
-                  config={chartConfig}
-                  className="mx-auto aspect-square w-[350px] "
-                >
-                  <ResponsiveContainer width="100%" height="100%">
-                    <PieChart>
-                      <ChartTooltip content={<ChartTooltipContent />} />
-                      <Pie
-                        data={chartData}
-                        dataKey="valor$"
-                        nameKey="nombre"
-                        innerRadius={60}
-                        strokeWidth={5}
-                      ></Pie>
-                    </PieChart>
-                  </ResponsiveContainer>
-                </ChartContainer>
-                <p className="m-5 pb-5"> Información extraída del RAFAM</p>
-              </CardContent>
-            </Card>
+          <>
+            <div className="grid gap-4 md:grid-cols-7">
+              <Card className="col-span-4">
+                <CardHeader>
+                  <CardTitle>Gráfico ingresos por origen 2020</CardTitle>
+                  <CardDescription>
+                    Resumen de los ingresos del 2020 por origen
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="h-[350px]">
+                  <ChartContainer
+                    config={chartConfig}
+                    className="mx-auto aspect-square w-[350px] "
+                  >
+                    <ResponsiveContainer width="100%" height="100%">
+                      <PieChart>
+                        <ChartTooltip content={<ChartTooltipContent />} />
+                        <Pie
+                          data={chartData}
+                          dataKey="valor$"
+                          nameKey="nombre"
+                          innerRadius={60}
+                          strokeWidth={5}
+                        ></Pie>
+                      </PieChart>
+                    </ResponsiveContainer>
+                  </ChartContainer>
+                  <p className="m-5 pb-5"> Información extraída del RAFAM</p>
+                </CardContent>
+              </Card>
 
-            <Card className="col-span-3">
-              <CardHeader>
-                <CardTitle>Detalles</CardTitle>
-                <CardDescription>División en categorías</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <CustomLegend config={chartConfig} />
-              </CardContent>
-            </Card>
-          </div>
-        </>
-          )}
+              <Card className="col-span-3">
+                <CardHeader>
+                  <CardTitle>Detalles</CardTitle>
+                  <CardDescription>División en categorías</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <CustomLegend config={chartConfig} />
+                </CardContent>
+              </Card>
+            </div>
+          </>
+        )}
     </div>
   )
 }

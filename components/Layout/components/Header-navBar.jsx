@@ -32,14 +32,14 @@ export const HeadernavBar = () => {
   }, [])
 
   return (
-    <nav ref={navRef} className="relative w-full">
+    <nav ref={navRef}>
       {/* Mobile Toggle */}
-      <div className="flex justify-end p-4 lg:hidden">
+      <div className="flex justify-end lg:hidden">
         <button
           onClick={() => setIsNavOpen(!isNavOpen)}
-          className="p-2 text-blue-GobAb hover:bg-blue-50 rounded-xl transition-all duration-300 transform active:scale-90 shadow-sm"
+          className="p-2 text-blue-GobAb hover:bg-blue-50 rounded-xl transition-all duration-300 transform active:scale-95 shadow-sm border border-blue-100 bg-white"
         >
-          {isNavOpen ? <X size={28} /> : <Menu size={28} />}
+          {isNavOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
 
@@ -72,7 +72,7 @@ export const HeadernavBar = () => {
                 {(isActive || isHovered) && (
                   <motion.div
                     layoutId="nav-indicator"
-                    className={`absolute inset-0 rounded-full z-0 
+                    className={`absolute inset-0 rounded-full z-0
                       ${isActive ? 'bg-blue-50/80 shadow-[0_4px_12px_rgba(0,123,186,0.1)]' : 'bg-neutral-50'}
                     `}
                     initial={false}
@@ -101,7 +101,7 @@ export const HeadernavBar = () => {
             initial={{ opacity: 0, scale: 0.95, y: -10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -10 }}
-            className="lg:hidden absolute top-full right-4 left-4 mt-2 bg-white/95 backdrop-blur-2xl border border-neutral-200 overflow-hidden z-50 rounded-3xl shadow-2xl p-4"
+            className="lg:hidden absolute top-full left-4 right-4 mt-2 bg-white/95 backdrop-blur-2xl border border-neutral-200 overflow-hidden z-50 rounded-3xl shadow-2xl p-4"
           >
             <ul className="space-y-2">
               {navItems.map((item, index) => {

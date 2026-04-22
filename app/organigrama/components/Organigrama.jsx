@@ -4,7 +4,7 @@ import { useState, useMemo } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import { Search, Download, Maximize2, ArrowRight, FileText } from "lucide-react"
+import { Search, Download, Maximize2, ArrowRight, FileText, DollarSign } from "lucide-react"
 import {
   Accordion,
   AccordionContent,
@@ -64,10 +64,43 @@ export function Organigrama () {
         </Link>
 
         <div className="flex flex-wrap justify-center gap-4 w-full">
-          <Button variant="ghost" className="rounded-full px-6 py-4 border border-neutral-200 hover:border-blue-GobAb hover:text-blue-GobAb transition-all gap-2 shadow-sm">
-            <Download size={18} />
-            <span className="font-semibold">Escala Salarial Municipal</span>
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="ghost" className="rounded-full px-6 py-4 border border-neutral-200 hover:border-blue-GobAb hover:text-blue-GobAb transition-all gap-2 shadow-sm">
+                <DollarSign size={18} />
+                <span className="font-semibold">Escala Salarial Municipal</span>
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-white/95 backdrop-blur-md">
+              <DialogHeader>
+                <DialogTitle className="text-2xl font-bold text-blue-GobAb tracking-tight">
+                  Escala Salarial Municipal
+                </DialogTitle>
+                <DialogDescription className="text-neutral-500">
+                  Detalle de la escala salarial vigente del municipio.
+                </DialogDescription>
+              </DialogHeader>
+              <div className="mt-4 space-y-6">
+                {/* Imagen de la escala salarial — guardá las imágenes en /public/images/escala-salarial/ */}
+                <div className="w-full rounded-2xl overflow-hidden bg-neutral-50 shadow-inner">
+                  <Image 
+                    src="/images/escala-salarial/paritarias2025.jpeg" 
+                    alt="Escala Salarial Testigo - Paritarias 2025" 
+                    width={1200} 
+                    height={800} 
+                    className="w-full h-auto object-contain" 
+                  />
+                </div>
+                <div className="flex justify-center pt-4">
+                  <a href="/images/escala-salarial/paritarias2025.jpeg" download="Escala-Salarial-Municipal-2025.jpeg">
+                    <Button className="bg-blue-GobAb hover:bg-blue-title gap-2 px-8 rounded-full shadow-lg transition-all hover:-translate-y-1">
+                      <Download size={18} /> Descargar Escala Salarial
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </DialogContent>
+          </Dialog>
           <Button variant="ghost" className="rounded-full px-6 py-4 border border-neutral-200 hover:border-blue-GobAb hover:text-blue-GobAb transition-all gap-2 shadow-sm">
             <FileText size={18} />
             <span className="font-semibold">Decreto de Aumentos</span>

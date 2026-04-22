@@ -85,7 +85,7 @@ export const AcordeonDeLicitaciones = ({ data }) => {
           {objects.map((item, index) => (
             <Card
               key={index}
-              className="w-full max-w-[600px] m-auto mb-5 border border-slate-300 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md"
+              className="p-4 bg-neutral-50 text-black rounded-2xl group-hover:bg-blue-50 group-hover:text-blue-GobAb transition-colors shadow-inner"
             >
               <CardContent className="p-4">
                 <button

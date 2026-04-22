@@ -101,10 +101,40 @@ export function Organigrama () {
               </div>
             </DialogContent>
           </Dialog>
-          <Button variant="ghost" className="rounded-full px-6 py-4 border border-neutral-200 hover:border-blue-GobAb hover:text-blue-GobAb transition-all gap-2 shadow-sm">
-            <FileText size={18} />
-            <span className="font-semibold">Decreto de Aumentos</span>
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="ghost" className="rounded-full px-6 py-4 border border-neutral-200 hover:border-blue-GobAb hover:text-blue-GobAb transition-all gap-2 shadow-sm">
+                <FileText size={18} />
+                <span className="font-semibold">Decreto de Aumentos</span>
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-white/95 backdrop-blur-md">
+              <DialogHeader>
+                <DialogTitle className="text-2xl font-bold text-blue-GobAb tracking-tight">
+                  Decreto de Aumentos
+                </DialogTitle>
+                <DialogDescription className="text-neutral-500">
+                  Documento oficial de los aumentos salariales otorgados.
+                </DialogDescription>
+              </DialogHeader>
+              <div className="mt-4 space-y-6">
+                <div className="w-full h-[600px] rounded-2xl overflow-hidden bg-neutral-50 shadow-inner">
+                  <iframe 
+                    src="/decretos-paritarias/Decreto210.pdf" 
+                    className="w-full h-full border-none"
+                    title="Vista previa del Decreto"
+                  />
+                </div>
+                <div className="flex justify-center pt-4">
+                  <a href="/decretos-paritarias/Decreto210.pdf" download="Decreto-210.pdf">
+                    <Button className="bg-blue-GobAb hover:bg-blue-title gap-2 px-8 rounded-full shadow-lg transition-all hover:-translate-y-1">
+                      <Download size={18} /> Descargar Decreto 210
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
 

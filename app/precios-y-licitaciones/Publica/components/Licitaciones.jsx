@@ -103,18 +103,32 @@ export const AcordeonDeLicitaciones = ({ data }) => {
                       onClick={() => toggleAccordion(index)}
                       className="flex items-center w-full text-left text-base font-semibold transition duration-300"
                     >
-                      {openIndex === index ? (
-                        <ChevronUp className="mr-2 text-blue-500 group-hover:text-blue-GobAb" size={18} />
-                      ) : (
-                        <FileText className="mr-2 text-blue-500 group-hover:text-blue-GobAb" size={18} />
-                      )}
+                      
+                      {/* ICONO CON FONDO */}
+                      <div className="
+                        mr-3
+                        p-2 
+                        bg-neutral-100 
+                        text-neutral-400 
+                        rounded-xl 
+                        transition-all duration-300
+                        group-hover:bg-blue-100
+                        group-hover:text-blue-GobAb
+                      ">
+                        {openIndex === index ? (
+                          <ChevronUp size={24} />
+                        ) : (
+                          <FileText size={24} />
+                        )}
+                      </div>
 
+                      {/* TEXTO */}
                       <span className="transition-colors group-hover:text-blue-GobAb">
                         {item.titulo} ({item.año})
                       </span>
+
                     </button>
                   </CardContent>
-
                   {/* CONTENIDO */}
                   {openIndex === index && (
                     <CardContent className="transition-all duration-300 ease-in-out p-0 border-t border-slate-100 bg-white">

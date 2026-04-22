@@ -81,39 +81,54 @@ export const AcordeonDeLicitaciones = ({ data }) => {
       </div>
 
       <ScrollArea className="max-w-5xl mx-auto h-[600px] rounded-[2rem] border border-neutral-100 bg-white/50 backdrop-blur-lg p-4 lg:p-10 shadow-inner">
-  <div className="space-y-4 max-w-4xl mx-auto">
-    {objects.map((item, index) => (
-      <div key={index} className="group">
-        
-        <Card
-          className={`
-            p-4 rounded-2xl transition-all duration-300 shadow-inner
-            ${openIndex === index 
-              ? "bg-blue-50 border border-blue-200 shadow-md" 
-              : "bg-neutral-50"
-            }
-            group-hover:bg-blue-50 
-            group-hover:shadow-lg 
-            hover:-translate-y-1
-          `}
-        >
-          {/* HEADER */}
-          <CardContent className="p-4">
-            <button
-              onClick={() => toggleAccordion(index)}
-              className="flex items-center w-full text-left text-base font-semibold transition duration-300"
-            >
-              {openIndex === index ? (
-                <ChevronUp className="mr-2 text-blue-500 group-hover:text-blue-GobAb" size={18} />
-              ) : (
-                <FileText className="mr-2 text-blue-500 group-hover:text-blue-GobAb" size={18} />
-              )}
+          <div className="space-y-4 max-w-4xl mx-auto">
+            {objects.map((item, index) => (
+              <div key={index} className="group">
+                
+                <Card
+                  className={`
+                    p-4 rounded-2xl transition-all duration-300 shadow-inner
+                    ${openIndex === index 
+                      ? "bg-blue-50 border border-blue-200 shadow-md" 
+                      : "bg-neutral-50"
+                    }
+                    group-hover:bg-blue-50 
+                    group-hover:shadow-lg 
+                    hover:-translate-y-1
+                  `}
+                >
+                  {/* HEADER */}
+                  <CardContent className="p-4">
+                    <button
+                      onClick={() => toggleAccordion(index)}
+                      className="flex items-center w-full text-left text-base font-semibold transition duration-300"
+                    >
+                      
+                      {/* ICONO CON FONDO */}
+                      <div className="
+                        mr-3
+                        p-2 
+                        bg-neutral-100 
+                        text-neutral-400 
+                        rounded-xl 
+                        transition-all duration-300
+                        group-hover:bg-blue-100
+                        group-hover:text-blue-GobAb
+                      ">
+                        {openIndex === index ? (
+                          <ChevronUp size={24} />
+                        ) : (
+                          <FileText size={24} />
+                        )}
+                      </div>
 
-              <span className="transition-colors group-hover:text-blue-GobAb">
-                {item.titulo} ({item.año})
-              </span>
-            </button>
-          </CardContent>
+                      {/* TEXTO */}
+                      <span className="transition-colors group-hover:text-blue-GobAb">
+                        {item.titulo} ({item.año})
+                      </span>
+
+                    </button>
+                  </CardContent>
 
           {/* CONTENIDO */}
           {openIndex === index && (

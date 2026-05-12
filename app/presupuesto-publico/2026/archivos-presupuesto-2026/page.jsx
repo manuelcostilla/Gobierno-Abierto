@@ -3,10 +3,10 @@ import { BannerText } from "@/components/bannertext"
 import { GeneralText } from "@/components/generaltext"
 import { archivosDelPresupuestoPdf } from "../../data/dataArchivosDelPresupuesto"
 
-function archivosDelPresupuesto () {
+function archivosDelPresupuesto() {
   return (
     <>
-      <BannerText titulo="Archivos del Presupuesto PÚBLICO 2025" />
+      <BannerText titulo="Archivos del Presupuesto PÚBLICO 2026" />
       <div className="container mx-auto mt-10 mb-10">
         <div className="flex flex-col lg:flex-row justify-center items-start text-balance space-y-8 lg:space-y-0 lg:space-x-8 pb-10">
           <div className="w-full lg:w-1/3 flex justify-center">
@@ -28,7 +28,7 @@ function archivosDelPresupuesto () {
             />
           </div>
         </div>
-        <ArchivosDelPresupuestoButtons archivosData={archivosDelPresupuestoPdf[2].archivosDelPresupuestoPorAño[0].archivos2025}/>
+        <ArchivosDelPresupuestoButtons archivosData={archivosDelPresupuestoPdf[2].archivosDelPresupuestoPorAño[0].archivos2026} />
       </div>
     </>
   )

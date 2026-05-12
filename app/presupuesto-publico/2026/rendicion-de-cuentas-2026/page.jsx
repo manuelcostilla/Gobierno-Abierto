@@ -5,7 +5,7 @@ import { archivosDelPresupuestoPdf } from "../../data/dataArchivosDelPresupuesto
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-function rendicionDeCuentas2024() {
+function rendicionDeCuentas2026() {
   return (
     <>
       <BannerText titulo="rendición de cuentas presupuesto PÚBLICO 2026" />
@@ -61,4 +61,4 @@ function rendicionDeCuentas2024() {
   )
 }
 
-export default rendicionDeCuentas2024
+export default rendicionDeCuentas2026

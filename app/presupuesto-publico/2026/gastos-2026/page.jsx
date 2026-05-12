@@ -182,11 +182,11 @@ export default function Gastos2026() {
             <Subgraficos
               ChartData={
                 dataSubGraficos[0].graficosGastos2026[0]
-                  .secModernizacionGestionPublica
+                  .secJefaturaDeGabinete
               }
               chart={chart2}
               setChart={setActivechart2}
-              titulo="Gráfico gastos secretaria de modernización y gestión pública 2026"
+              titulo="Gráfico gastos jefatura de gabinete 2026"
               description=""
             />
             <Subgraficos

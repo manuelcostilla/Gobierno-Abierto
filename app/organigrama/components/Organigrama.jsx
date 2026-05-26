@@ -120,13 +120,13 @@ export function Organigrama () {
               <div className="mt-4 space-y-6">
                 <div className="w-full h-[600px] rounded-2xl overflow-hidden bg-neutral-50 shadow-inner">
                   <iframe 
-                    src="/decretos-paritarias/Decreto210.pdf" 
+                    src="/decretos-paritarias/Decreto336-MAYO.pdf" 
                     className="w-full h-full border-none"
                     title="Vista previa del Decreto"
                   />
                 </div>
                 <div className="flex justify-center pt-4">
-                  <a href="/decretos-paritarias/Decreto210.pdf" download="Decreto-210.pdf">
+                  <a href="/decretos-paritarias/Decreto336-MAYO.pdf" download="Decreto336-MAYO.pdf">
                     <Button className="bg-blue-GobAb hover:bg-blue-title gap-2 px-8 rounded-full shadow-lg transition-all hover:-translate-y-1">
                       <Download size={18} /> Descargar Decreto 210
                     </Button>

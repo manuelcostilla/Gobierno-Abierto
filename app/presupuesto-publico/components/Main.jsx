@@ -55,6 +55,11 @@ const Main_presupuesto = () => {
               link="/presupuesto-publico/2025"
               textlink="Ver detalles"
             />
+            <SectionCard
+              titulo="Ejercicio 2026"
+              link="/presupuesto-publico/2026"
+              textlink="Ver detalles"
+            />
           </div>
         </div>
       </div>

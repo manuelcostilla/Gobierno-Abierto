@@ -158,6 +158,14 @@ export const archivosDelPresupuestoPdf = [
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2025/situacion%20economico%20financiera%202025/Memoria_General_Anual_2025.pdf",
           },
         ],
+        situacion2026: [
+          {
+            id: 1,
+            año: 2026,
+            nombre: "Situacion Economico Financiera al 31-03-26",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2026/situacion%20economico%20financiera%202026/Situacion-Economico-Financiera-al-31-03-2026.pdf",
+          },
+        ],
       },
     ],
   },
@@ -318,6 +326,14 @@ export const archivosDelPresupuestoPdf = [
             año: 2025,
             nombre: "Estado de Ejecucion por Finalidad y Funcion 31-12-25",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2025/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202025/ESTADO-DE-EJECUCION-DEL-PRESUPUESTO-DE-GASTOS_Anual-2025.pdf",
+          },
+        ],
+        ejecucion2026: [
+          {
+            id: 1,
+            año: 2026,
+            nombre: "Estado de Ejecucion por Finalidad y Funcion 31-03-26",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/rendicion%20de%20cuentas/2026/Estado%20de%20ejecucion%20del%20presupuesto%20de%20gastos%202026/Estado-de-Ejecucion-por-Finalidad-y-Funcion-31-03-2026.pdf",
           },
         ],
       },
@@ -507,6 +523,32 @@ export const archivosDelPresupuestoPdf = [
             año: "2025",
             nombre: "Recursos por rubro",
             link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024/2025/Recursos%20por%20rubro%202025.pdf",
+          },
+        ],
+        archivos2026: [
+          {
+            id: 1,
+            año: "2026",
+            nombre: "Gastos por estructura programática",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024/2026/pre_presupuestoporestrucprog.xls",
+          },
+          {
+            id: 2,
+            año: "2026",
+            nombre: "Gastos por fuente de financiamiento",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024/2026/pre_gastosxfuentejurisestrucobra.xls",
+          },
+          {
+            id: 3,
+            año: "2026",
+            nombre: "Recursos por procedencia",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024/2026/pre_listadorecursoxprocedenciaconso.xls",
+          },
+          {
+            id: 4,
+            año: "2026",
+            nombre: "Recursos por rubro",
+            link: "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/Presupuestos%20publicos%202019-2024/2026/pre_presupuestoporrecursos.xls",
           },
         ],
       },

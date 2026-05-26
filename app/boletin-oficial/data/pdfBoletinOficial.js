@@ -590,4 +590,20 @@ export const pdfBox = [
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2025/BOLETIN-OFICIAL-DICIEMBRE-2025.pdf",
     boton: "Descargar",
   },
+  {
+    id: 75,
+    año: "2026",
+    texto: "Boletín Oficial Enero de 2026",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2026/BOLETIN%20OFICIAL%20ENERO%202026%20-%20FINAL.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 76,
+    año: "2026",
+    texto: "Boletín Oficial Febrero de 2026",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2026/BOLETIN%20OFICIAL%20FEBRERO%202026%20-%20FINAL.pdf",
+    boton: "Descargar",
+  },
 ]

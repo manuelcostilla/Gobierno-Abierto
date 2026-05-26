@@ -40,6 +40,9 @@ const predefinedColors = [
 ]
 
 export function generateChartData(data) {
+
+  if (!data || !Array.isArray(data)) return [];
+
   return data.map((item, index) => ({
     nombre: item.nombre,
     valor$: item.valor,
@@ -48,6 +51,7 @@ export function generateChartData(data) {
 }
 
 export function generateChartConfig(data) {
+  if (!data || !Array.isArray(data)) return [];
   return data.reduce((config, item, index) => {
     const key = item.nombre.replace(/\s+/g, "").toLowerCase()
     config[key] = {

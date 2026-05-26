@@ -638,84 +638,126 @@ export const dataSubGraficos = [
             nombre: "Otros",
             valor: 627808017,
           },
+
+        ]
+      }
+    ],
+    graficosIngresos2026: [
+      {
+        graficoIngresosTributarios: [
+          {
+            id: 1,
+            nombre: "Coparticipación Pcial. de Impuesto Ley 10.559",
+            valor: 14104000000,
+          },
+          {
+            id: 2,
+            nombre: "Inmobiliario - Rural - ley 13010/03 descentralizacion",
+            valor: 482532944,
+          },
+          {
+            id: 3,
+            nombre: "Otras Participaciones ley 9226/11969",
+            valor: 884698375,
+          },
+          {
+            id: 4,
+            nombre: "Fondo Fort Recursos Municipales Ley 13850",
+            valor: 762000000,
+          },
+          {
+            id: 5,
+            nombre: "Fondo Municipal de Inclusión Social",
+            valor: 348000000,
+          },
+          {
+            id: 6,
+            nombre: "RA Inmobiliario Rural Mantenimiento y obras viales",
+            valor: 108000000,
+          },
+          {
+            id: 7,
+            nombre: "Otros",
+            valor: 431163467,
+          },
         ],
         graficoIngresosNoTributarios: [
           {
             id: 1,
             nombre: "Tasas",
-            valor: 6888517068,
+            valor: 10590118618,
           },
           {
             id: 2,
             nombre: "Derechos",
-            valor: 459650000,
+            valor: 658020000,
           },
           {
             id: 3,
             nombre: "Alquileres",
-            valor: 10000000,
+            valor: 72000000,
           },
           {
             id: 4,
             nombre: "Multas",
-            valor: 485100000,
+            valor: 875100000,
           },
           {
             id: 5,
             nombre: "Otros",
-            valor: 860500000,
+            valor: 874800000,
           },
         ],
         graficoTasas: [
           {
             id: 1,
             nombre: "Alumbrado, barrido y limpieza",
-            valor: 1208517068,
+            valor: 3749293618,
           },
           {
             id: 2,
             nombre: "Conservación y mejorado de la red vial municipal",
-            valor: 639000000,
+            valor: 882000000,
           },
           {
             id: 3,
             nombre: "Inspección de seguridad e higiene",
-            valor: 2070000000,
+            valor: 3200000000,
           },
           {
             id: 4,
             nombre: "RA-Becas FOMUEPER",
-            valor: 390000000,
+            valor: 575000000,
           },
           {
             id: 5,
             nombre: "Impuesto Automotor",
-            valor: 220000000,
+            valor: 392000000,
           },
           {
             id: 6,
             nombre: "Servicios Asistenciales",
-            valor: 273000000,
+            valor: 360000000,
           },
           {
             id: 7,
             nombre: "RA-Fondo deportivo (FODE)",
-            valor: 130000000,
+            valor: 185000000,
           },
           {
             id: 8,
             nombre: "RA-Fondo de Seguridad (FOSE)",
-            valor: 305000000,
+            valor: 436000000,
           },
           {
             id: 9,
             nombre: "Otras tasas",
-            valor: 1055300000,
+            valor: 458000000,
           },
           {
             id: 10,
             nombre: "OTROS",
-            valor: 597700000,
+            valor: 352825000,
           },
         ],
       },
@@ -1715,7 +1757,183 @@ export const dataSubGraficos = [
             valor: 83305333.94,
           },
         ],
+
       },
     ],
-  },
-]
+    graficosGastos2026: [
+      {
+
+        conduccionSuperior: [
+          {
+            id: 1,
+            nombre: "Desarrollo de Políticas Centrales",
+            valor: 613875794.52,
+          },
+          {
+            id: 2,
+            nombre: "Prestación de Servicios en Delegaciones",
+            valor: 582899132.44,
+          },
+          {
+            id: 3,
+            nombre: "Administración de Justicia Municipal",
+            valor: 231891228.03,
+          },
+        ],
+
+        secGeneralDeGobierno: [
+          {
+            id: 1,
+            nombre: "Administración y Gestión Políticas de Gobierno",
+            valor: 1936953631.06,
+          },
+          {
+            id: 2,
+            nombre: "Seguridad Ciudadana",
+            valor: 1488372187.07,
+          },
+          {
+            id: 3,
+            nombre: "Desarrollo Económico Sustentable",
+            valor: 1020623984.78,
+          },
+          {
+            id: 4,
+            nombre: "Desarrollo de la Economía Popular y Solidaria",
+            valor: 59550670.27,
+          },
+        ],
+
+        secDeHacienda: [
+          {
+            id: 1,
+            nombre: "Planificación y Coordinación de la Administración Financiera Municipal",
+            valor: 1313059885.41,
+          },
+          {
+            id: 2,
+            nombre: "Ingresos Públicos",
+            valor: 252108511.23,
+          },
+        ],
+
+        serviciosDeLaDeuda: [
+          {
+            id: 1,
+            nombre: "Deuda Flotante",
+            valor: 2807095415.78,
+          },
+          {
+            id: 2,
+            nombre: "Deuda Consolidada",
+            valor: 86226864.60,
+          },
+          {
+            id: 3,
+            nombre: "Intereses y Gastos de la Deuda",
+            valor: 35328220.22,
+          },
+        ],
+
+        secDeCulturaEducacionTurismo: [
+          {
+            id: 1,
+            nombre: "Desarrollo de Actividades Culturales",
+            valor: 1391686251.62,
+          },
+          {
+            id: 2,
+            nombre: "Desarrollo de Actividades Educativas",
+            valor: 989275999.95,
+          },
+          {
+            id: 3,
+            nombre: "Desarrollo de Actividades Deportiva",
+            valor: 750398691.62,
+          },
+          {
+            id: 4,
+            nombre: "Administración y Gestión de la Secretaría",
+            valor: 664719536.64,
+          },
+        ],
+
+        secDeObrasServiciosPublicos: [
+          {
+            id: 1,
+            nombre: "Coordinación y Gestión de Servicios",
+            valor: 2941320141.95,
+          },
+          {
+            id: 2,
+            nombre: "Sub Secretaría Servicios Públicos",
+            valor: 1789705000.00,
+          },
+          {
+            id: 3,
+            nombre: "Obras Públicas",
+            valor: 1397662002.76,
+          },
+          {
+            id: 4,
+            nombre: "Obras de Integración Socio Urbana",
+            valor: 1150082029.47,
+          },
+        ],
+
+        secJefaturaDeGabinete: [
+          {
+            id: 1,
+            nombre: "Adm Desarrollo Territorial y Hábitat",
+            valor: 215505970.80,
+          },
+        ],
+
+        secDeDesarrolloHumano: [
+          {
+            id: 1,
+            nombre: "Desarrollo de Políticas de Familia",
+            valor: 1604784353.70,
+          },
+          {
+            id: 2,
+            nombre: "Administración y Gestión Políticas Desarrollo Social",
+            valor: 970051447.43,
+          },
+          {
+            id: 3,
+            nombre: "Unidad de Gestión en Políticas de Género",
+            valor: 167028332.29,
+          },
+          {
+            id: 4,
+            nombre: "Desarrollo Políticas Sociales",
+            valor: 114850880.00,
+          },
+        ],
+
+        secDeSalud: [
+          {
+            id: 1,
+            nombre: "Hospital Municipal",
+            valor: 8109800604.42,
+          },
+          {
+            id: 2,
+            nombre: "Unidades de Atención Primaria",
+            valor: 1732006774.69,
+          },
+          {
+            id: 3,
+            nombre: "Bromatologia e Higiene",
+            valor: 127648085.72,
+          },
+          {
+            id: 4,
+            nombre: "Administración y Gestión de la Salud",
+            valor: 105060911.29,
+          },
+        ],
+      },
+    ],
+  }]

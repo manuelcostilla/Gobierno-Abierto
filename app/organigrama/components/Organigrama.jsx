@@ -83,16 +83,16 @@ export function Organigrama () {
               <div className="mt-4 space-y-6">
                 {/* Imagen de la escala salarial — guardá las imágenes en /public/images/escala-salarial/ */}
                 <div className="w-full rounded-2xl overflow-hidden bg-neutral-50 shadow-inner">
-                  <Image 
-                    src="/images/escala-salarial/EscalaSalarial2025.jpeg" 
-                    alt="Escala Salarial Testigo - Paritarias 2025" 
-                    width={1200} 
-                    height={800} 
-                    className="w-full h-auto object-contain" 
+                  <Image
+                    src="/images/escala-salarial/EscalaSalarial.jpeg"
+                    alt="Escala Salarial Testigo - Paritarias 2025"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto object-contain"
                   />
                 </div>
                 <div className="flex justify-center pt-4">
-                  <a href="/images/escala-salarial/EscalaSalarial2025.jpeg" download="Escala-Salarial-Municipal-2025.jpeg">
+                  <a href="/images/escala-salarial/EscalaSalarial.jpeg" download="Escala-Salarial-Municipal-2025.jpeg">
                     <Button className="bg-blue-GobAb hover:bg-blue-title gap-2 px-8 rounded-full shadow-lg transition-all hover:-translate-y-1">
                       <Download size={18} /> Descargar Escala Salarial
                     </Button>
@@ -119,8 +119,8 @@ export function Organigrama () {
               </DialogHeader>
               <div className="mt-4 space-y-6">
                 <div className="w-full h-[600px] rounded-2xl overflow-hidden bg-neutral-50 shadow-inner">
-                  <iframe 
-                    src="/decretos-paritarias/Decreto336-MAYO.pdf" 
+                  <iframe
+                    src="/decretos-paritarias/Decreto336-MAYO.pdf"
                     className="w-full h-full border-none"
                     title="Vista previa del Decreto"
                   />

@@ -95,4 +95,28 @@ export const pdfBox = [
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos-y-ordenanzas/DECRETO-No-206-2025-Incremento-TASAS-ABRIL-2025.pdf",
     boton: "Descargar",
   },
+  {
+    id: 13,
+    año: "2026",
+    texto: "Decreto 193 - 2026 Incremento TASAS, DERECHOS y TRIBUTOS  - Abril 2026.pdf",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos-y-ordenanzas/Decreto%20193%20-%202026%20Incremento%20TASAS%2C%20DERECHOS%20y%20TRIBUTOS%20%20-%20Abril%202026.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 14,
+    año: "2026",
+    texto: "Decreto 349 - 2026 Incremento tasas-Junio 2026.pdf",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos-y-ordenanzas/Decreto%20349%20-%202026%20Incremento%20tasas-%20Junio%202026.pdf",
+    boton: "Descargar",
+  },
+  {
+    id: 15,
+    año: "2026",
+    texto: "Ordenanza Impositiva N° 7442-2025.pdf",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos-y-ordenanzas/Ordenanza%20Impositiva%20N%C2%B0%207442-2025.pdf",
+    boton: "Descargar",
+  },
 ]

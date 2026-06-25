@@ -56,13 +56,13 @@ export default function PresupuestoPublico2026() {
               link="./2026/rendicion-de-cuentas-2026"
             />
           </div>
-          {/* <div className="m-5">
+          <div className="m-5">
             <SectionCard
               titulo="Datos Abiertos 2026"
               textlink="Ver más información"
-              link="https://baradero.opendata.junar.com/dashboards/21828/presupuesto-situacion-economico-financiera-2025/ "
+              link="https://baradero.opendata.junar.com/dashboards/21833/presupuesto-situacion-economico-financiera-2026/"
             />
-          </div> */}
+          </div>
         </div>
       </div>
     </>

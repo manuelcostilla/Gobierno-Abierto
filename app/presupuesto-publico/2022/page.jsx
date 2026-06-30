@@ -4,7 +4,7 @@ import { BannerText } from "@/components/bannertext"
 import { SectionCard } from "@/components/intersectioncard"
 import { GeneralText } from "@/components/generaltext"
 
-export default function Presupuestopublico2022 () {
+export default function Presupuestopublico2022() {
   return (
     <>
       <BannerText titulo="Ingresos y gastos 2022" />
@@ -57,6 +57,12 @@ export default function Presupuestopublico2022 () {
               textlink="Ver más información"
               link="./2022/rendicion-de-cuentas-2022"
             />
+          </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Datos Abiertos 2022"
+              textlink="Ver más información"
+              link="https://baradero.opendata.junar.com/dashboards/21846/presupuesto-situacion-economico-financiera-2022/" />
           </div>
         </div>
       </div>

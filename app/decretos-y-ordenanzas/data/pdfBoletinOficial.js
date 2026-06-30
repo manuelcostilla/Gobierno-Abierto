@@ -113,7 +113,7 @@ export const pdfBox = [
   },
   {
     id: 15,
-    año: "2026",
+    año: "2025",
     texto: "Ordenanza Impositiva N° 7442-2025.pdf",
     pdfLink:
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/decretos-y-ordenanzas/Ordenanza%20Impositiva%20N%C2%B0%207442-2025.pdf",

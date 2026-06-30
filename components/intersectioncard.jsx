@@ -6,7 +6,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
-export function SectionCard ({ titulo, link, textlink }) {
+export function SectionCard({ titulo, link, textlink }) {
   return (
     <motion.div
       whileHover={{ y: -5 }}
@@ -23,7 +23,7 @@ export function SectionCard ({ titulo, link, textlink }) {
             asChild
             className="group bg-blue-GobAb hover:bg-blue-title text-white rounded-full px-8 py-6 font-bold shadow-lg transition-all"
           >
-            <Link href={link} className="flex items-center gap-2">
+            <Link href={link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               {textlink}
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>

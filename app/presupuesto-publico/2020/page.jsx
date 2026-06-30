@@ -2,7 +2,7 @@ import { BannerText } from "@/components/bannertext"
 import { SectionCard } from "@/components/intersectioncard"
 import { GeneralText } from "@/components/generaltext"
 
-export default function Presupuestopublico2020 () {
+export default function Presupuestopublico2020() {
   return (
     <>
       <BannerText titulo="Ingresos y gastos 2020" />
@@ -28,7 +28,7 @@ export default function Presupuestopublico2020 () {
           </div>
         </div>
         <div className="flex flex-wrap justify-center items-center container pb-20 pt-20">
-        <div className="m-5">
+          <div className="m-5">
             <SectionCard
               titulo="Presupuesto 2020"
               textlink="Ver más información"
@@ -54,6 +54,13 @@ export default function Presupuestopublico2020 () {
               titulo="Rendición de cuentas 2020"
               textlink="Ver más información"
               link="./2020/rendicion-de-cuentas-2020"
+            />
+          </div>
+          <div className="m-5">
+            <SectionCard
+              titulo="Datos Abiertos 2020"
+              textlink="Ver más información"
+              link="https://baradero.opendata.junar.com/dashboards/21848/presupuesto-situacion-economico-financiera-2020/"
             />
           </div>
         </div>

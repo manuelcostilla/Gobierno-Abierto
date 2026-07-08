@@ -606,4 +606,12 @@ export const pdfBox = [
       "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2026/BOLETIN%20OFICIAL%20FEBRERO%202026%20-%20FINAL.pdf",
     boton: "Descargar",
   },
+  {
+    id: 77,
+    año: "2026",
+    texto: "Boletín Oficial Marzo de 2026",
+    pdfLink:
+      "https://pub-38b5321ebad14acfa90d5d21110ccbc7.r2.dev/boletin-oficial-2026/BOLETIN%20OFICIAL%20MARZO%202026%20-%20FINAL.pdf",
+    boton: "Descargar",
+  },
 ]

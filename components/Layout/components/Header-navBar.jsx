@@ -14,7 +14,7 @@ export const HeadernavBar = () => {
 
   const navItems = [
     { name: 'INICIO', href: '/' },
-    { name: 'MAPA DEL ESTADO MUNICIPAL', href: '/organigrama' },
+    // { name: 'MAPA DEL ESTADO MUNICIPAL', href: '/organigrama' },
     { name: 'BOLETÍN OFICIAL', href: '/boletin-oficial' },
     { name: 'COMPRAS Y LICITACIONES', href: '/precios-y-licitaciones' },
     { name: 'PRESUPUESTO PÚBLICO', href: '/presupuesto-publico' }

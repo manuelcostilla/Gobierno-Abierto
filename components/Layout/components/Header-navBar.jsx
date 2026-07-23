@@ -18,6 +18,7 @@ export const HeadernavBar = () => {
     { name: 'BOLETÍN OFICIAL', href: '/boletin-oficial' },
     { name: 'COMPRAS Y LICITACIONES', href: '/precios-y-licitaciones' },
     { name: 'PRESUPUESTO PÚBLICO', href: '/presupuesto-publico' },
+    { name: 'DECRETOS Y ORDENANZAS', href: '/decretos-y-ordenanzas' },
     { name: 'DATOS ABIERTOS', href: 'https://baradero.opendata.junar.com/dashboards/21829/datos-abiertos-baradero-destacadas/' }
   ]
 

@@ -14,6 +14,7 @@ import gestion_compromisos from "../public/atajos/GestionComprom.svg"
 import presupuesto_publico from "../public/atajos/PresupPublico.svg"
 import bookUser from "../public/atajos/bookUser.svg"
 import decretos_ordenanzas from "../public/atajos/decretos_ordenanzas.svg"
+import datos_abiertos from "../public/atajos/datos_abiertos.svg"
 
 const images = {
   mapa_estado_municipal,
@@ -22,7 +23,8 @@ const images = {
   gestion_compromisos,
   presupuesto_publico,
   bookUser,
-  decretos_ordenanzas
+  decretos_ordenanzas,
+  datos_abiertos
 }
 
 export const Atajos = () => {
@@ -53,7 +55,11 @@ export const Atajos = () => {
         >
           {dataAtajos.map((atajo) => (
             <motion.div key={atajo.id} variants={itemVariants}>
-              <Link href={atajo.link} className="block group h-full">
+              <Link 
+                href={atajo.link} 
+                className="block group h-full"
+                {...(atajo.link.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              >
                 <Card className="h-full border-none shadow-md hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-2 glass overflow-hidden flex flex-col">
                   <div className="p-8 flex justify-center bg-blue-50/50 group-hover:bg-blue-100/50 transition-colors">
                     <div className="relative w-24 h-24 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">

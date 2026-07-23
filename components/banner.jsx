@@ -1,8 +1,5 @@
 "use client"
-
-import React from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { motion } from "framer-motion"
 import test from "../public/banner/IMG.Baradero.jpg"
 
@@ -36,13 +33,6 @@ export default function Banner () {
             la participación ciudadana y la rendición de cuentas.
           </p>
 
-          <div className="mt-10">
-            <Link href="https://baradero.opendata.junar.com/dashboards/21829/datos-abiertos-baradero-destacadas/" target="_blank">
-              <button className="bg-blue-GobAb hover:bg-blue-title text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-blue-500/30 hover:-translate-y-1">
-                Datos Abiertos
-              </button>
-            </Link>
-          </div>
 
 
         </motion.div>

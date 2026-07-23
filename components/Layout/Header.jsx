@@ -1,7 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
 "use client"
-
-import React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Globe, Facebook, Instagram, Youtube } from "lucide-react"

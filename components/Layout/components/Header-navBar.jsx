@@ -14,10 +14,11 @@ export const HeadernavBar = () => {
 
   const navItems = [
     { name: 'INICIO', href: '/' },
-    // { name: 'MAPA DEL ESTADO MUNICIPAL', href: '/organigrama' },
+    { name: 'MAPA DEL ESTADO MUNICIPAL', href: '/organigrama' },
     { name: 'BOLETÍN OFICIAL', href: '/boletin-oficial' },
     { name: 'COMPRAS Y LICITACIONES', href: '/precios-y-licitaciones' },
-    { name: 'PRESUPUESTO PÚBLICO', href: '/presupuesto-publico' }
+    { name: 'PRESUPUESTO PÚBLICO', href: '/presupuesto-publico' },
+    { name: 'DATOS ABIERTOS', href: 'https://baradero.opendata.junar.com/dashboards/21829/datos-abiertos-baradero-destacadas/' }
   ]
 
   const handleClickOutside = (event) => {
@@ -60,7 +61,7 @@ export const HeadernavBar = () => {
                 onMouseEnter={() => setHoveredItem(item.name)}
                 onMouseLeave={() => setHoveredItem(null)}
               >
-                <Link href={item.href}>
+                <Link href={item.href} {...(item.href.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
                   <div className={`relative z-10 px-6 py-3 text-[12px] font-black tracking-[0.05em] transition-colors duration-500 uppercase
                     ${isActive || isHovered ? 'text-blue-GobAb' : 'text-neutral-500'}
                   `}>
@@ -116,6 +117,7 @@ export const HeadernavBar = () => {
                     <Link
                       href={item.href}
                       onClick={() => setIsNavOpen(false)}
+                      {...(item.href.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                       className={`block p-4 font-black text-[14px] rounded-2xl transition-all duration-300 uppercase tracking-wider
                         ${isActive ? 'bg-blue-GobAb text-white shadow-lg shadow-blue-200' : 'text-neutral-700 hover:bg-neutral-50'}
                       `}

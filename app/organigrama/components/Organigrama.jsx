@@ -56,13 +56,6 @@ export function Organigrama () {
 
       {/* Botones de Acción */}
       <div className="flex flex-col items-center gap-6 mb-16">
-        <Link href="/areas-de-gobierno">
-          <Button variant="outline" className="group rounded-full px-8 py-6 border-2 border-blue-GobAb text-blue-GobAb hover:bg-blue-GobAb hover:text-white transition-all duration-300 shadow-lg hover:shadow-blue-200 gap-3 w-full max-w-md">
-            <span className="font-bold text-lg uppercase tracking-tight text-balance text-center">Ver Detalle de Áreas de Gobierno</span>
-            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
-          </Button>
-        </Link>
-
         <div className="flex flex-wrap justify-center gap-4 w-full">
           <Dialog>
             <DialogTrigger asChild>

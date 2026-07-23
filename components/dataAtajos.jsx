@@ -1,14 +1,14 @@
 
 
 export const dataAtajos = [
-  // {
-  //   id: 1,
-  //   title: 'MAPA DEL ESTADO MUNICIPAL',
-  //   img: 'mapa_estado_municipal',
-  //   alt: 'Mapa del estado municipal',
-  //   descripcion: 'Es un diagrama que muestra la estructura jerárquica funcional del gobierno local, indicando las áreas y sus relaciones. Es un aporte a la transparencia y un acercamiento a la ciudadanía a un gobierno abierto ya que permite conocer la estructura organizativa.',
-  //   link: '../organigrama',
-  // },
+  {
+    id: 1,
+    title: 'MAPA DEL ESTADO MUNICIPAL',
+    img: 'mapa_estado_municipal',
+    alt: 'Mapa del estado municipal',
+    descripcion: 'Es un diagrama que muestra la estructura jerárquica funcional del gobierno local, indicando las áreas y sus relaciones. Es un aporte a la transparencia y un acercamiento a la ciudadanía a un gobierno abierto ya que permite conocer la estructura organizativa.',
+    link: '../organigrama',
+  },
   {
     id: 2,
     title: 'BOLETÍN OFICIAL',
@@ -48,5 +48,13 @@ export const dataAtajos = [
     alt: 'Decretos y ordenanzas',
     descripcion: 'la sección oficial de Decretos y Ordenanzas del Municipio de Baradero, un espacio fundamental para la transparencia democrática donde centralizamos el marco legal que rige nuestra ciudad y garantizamos que cada vecino tenga acceso directo a las normativas que definen el presente y el futuro de nuestra comunidad.',
     link: '../decretos-y-ordenanzas',
+  },
+  {
+    id: 7,
+    title: 'DATOS ABIERTOS',
+    img: 'datos_abiertos',
+    alt: 'Datos abiertos',
+    descripcion: 'Sitio web que proporciona fácil y transparente acceso a información pública, como presupuestos, decisiones y datos relevantes. Fomenta la participación ciudadana y la rendición de cuentas.',
+    link: 'https://baradero.opendata.junar.com/dashboards/21829/datos-abiertos-baradero-destacadas/',
   },
 ]
